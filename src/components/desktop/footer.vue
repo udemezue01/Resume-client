@@ -5,9 +5,24 @@
 </template>
 
 
+<script>
+
+export default {
+
+data(){
+	return {
+
+	}
+},
 
 
 
-<style lang="less">
+}
+
+
+</script>
+
+
+<style lang="less" scoped>
 
 </style>

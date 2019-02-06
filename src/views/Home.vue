@@ -6,13 +6,15 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
+import navbar_d from '@/components/desktop/navbar.vue'
+
+import navbar_m from '@/components/mobile/navbar.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    navbar
   }
 }
 </script>

@@ -1,20 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
 
 
 
 
-// desktop components
-import Navbar_d from './components/desktop/navbar.vue'
-import Footer_d from './components/desktop/footer.vue'
-import Profile_d from './components/desktop/profile.vue'
+
+// views
+import Home from './views/home.vue'
+import Profile from './views/profile.vue'
+import feeds from './views/feeds.vue'
 
 
 
 
-// mobile components
-import Navbar_m from './components/mobile/navbar.vue'
 
 
 Vue.use(Router)
@@ -28,13 +26,24 @@ export default new Router({
       name: 'home',
       component: Home
     },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+     {
+      path: '/profile',
+      name: 'profile',
+      component: Profile
+    },
+
+     {
+      path: '/feeds',
+      name: 'feeds',
+      component: Feeds
     }
+    // {
+    //   path: '/feeds',
+    //   name: 'feeds',
+    //   // route level code-splitting
+    //   // this generates a separate chunk (about.[hash].js) for this route
+    //   // which is lazy-loaded when the route is visited.
+    //   component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+    // }
   ]
 })
