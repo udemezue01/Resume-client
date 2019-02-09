@@ -5,9 +5,12 @@ import Router from 'vue-router'
 
 
 
+
+
+
 // views
-import Home from './views/home.vue'
-import Profile from './views/profile.vue'
+import home from './views/home.vue'
+import profile from './views/profile.vue'
 import feeds from './views/feeds.vue'
 
 
@@ -24,18 +27,18 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: home
     },
      {
       path: '/profile',
       name: 'profile',
-      component: Profile
+      component: profile
     },
 
      {
       path: '/feeds',
       name: 'feeds',
-      component: Feeds
+      component: feeds
     }
     // {
     //   path: '/feeds',
