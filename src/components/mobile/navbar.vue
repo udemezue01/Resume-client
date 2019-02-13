@@ -54,7 +54,7 @@
 export default {
   data(){
     return{
-      brand:'Resume',
+      brand:'Resume.Io',
     }
   }
 

@@ -20,9 +20,9 @@
         <div class="uk-navbar-center">
           <div>
             <ul class="uk-navbar-nav">
-                <li> <router-link to = "/"> Newsfeeds  </router-link></li>
-                 <li><router-link to ="/profile">  profile </router-link> </li>
-                  <li><a href="#">profile</a></li>
+                <li> <router-link to = "/"> Feeds  </router-link></li>
+                 <li><router-link to ="/">  Discover </router-link> </li>
+                  <li><a href="#">Jobs</a></li>
             </ul>
         </div>
 
