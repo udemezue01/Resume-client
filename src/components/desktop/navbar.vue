@@ -12,8 +12,8 @@
 
         <div class="uk-inline">
         
-        <input class="uk-input">
-        <svgicon icon = "search" class = "uk-form-icon uk-form-icon-flip uk-padding-top" height = "20" width = "30" color ="grey">   </svgicon>
+        <input class="uk-input" placeholder="search">
+        <svgicon icon = "search" class = "uk-form-icon uk-form-icon-flip uk-margin-top" height = "20" width = "30" color ="grey">   </svgicon>
           </div>
       </div>
         
@@ -65,7 +65,7 @@ import {mapActions} from 'vuex';
 export default {
   data(){
     return{
-      brand:'Resume.me',
+      brand:'Resume.io',
     }
   },
 methods :{
