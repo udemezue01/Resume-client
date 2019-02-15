@@ -37,20 +37,42 @@
 
                  <li><a href="#">
                     <div>
-                        <svgicon icon = "home" height="20" width="19" color = "white">  </svgicon>
-                        <div class="uk-navbar-subtitle">Home</div>
+                        <svgicon icon = "clock" height="20" width="19" color = "white">  </svgicon>
+                        <div class="uk-navbar-subtitle">discover</div>
                     </div>
                 </a> </li>
 
 
                   <li><a href="#">
                     <div>
-                        <svgicon icon = "home" height="20" width="19" color = "white">  </svgicon>
-                        <div class="uk-navbar-subtitle">Home</div>
+                        <svgicon icon = "file" height="20" width="19" color = "white">  </svgicon>
+                        <div class="uk-navbar-subtitle">Jobs</div>
                     </div>
-                </a></li>
+                </a>
+              </li>
 
-            <li><router-link to="/">  <svgicon icon = "notification" height="30" width = "19" color = "white">  </svgicon> </router-link> </li>
+               <li>
+
+              <a href="">
+               <div>
+                        <svgicon icon = "notification" height="20" width="19" color = "white">  </svgicon>
+                        <div class="uk-navbar-subtitle">notification</div>
+                    </div>
+                </a>
+
+            </li>
+
+            <li>
+
+              <a href="">
+               <div>
+                        <svgicon icon = "add-button" height="20" width="19" color = "white">  </svgicon>
+                        <div class="uk-navbar-subtitle">create</div>
+                    </div>
+                </a>
+
+            </li>
+
             <li class="uk-active"><router-link to="/profile"> <img src="/img/udem.jpg" height="5opx" width="50px" class="uk-border-circle"> </router-link></li>
             
             
