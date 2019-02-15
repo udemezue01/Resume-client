@@ -7,14 +7,15 @@ import './registerServiceWorker'
 
 
 
-// import VueSVGIcon from 'vue-svgicon'
-// import './custom-icons'
+import VueSVGIcon from 'vue-svgicon'
+import 'uikit/dist/js/uikit.js'
+import './custom-icons'
 //uikit css and javascript
 
-import 'uikit/dist/js/uikit.js'
+
 import './theme/theme.less'
 
-// Vue.use(VueSVGIcon)
+Vue.use(VueSVGIcon)
 
 
 

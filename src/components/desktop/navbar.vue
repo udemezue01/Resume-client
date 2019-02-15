@@ -17,17 +17,7 @@
           </div>
       </div>
         
-        <div class="uk-navbar-center">
-          <div>
-            <ul class="uk-navbar-nav">
-                <li> <router-link to = "/"> Feeds  </router-link></li>
-                 <li><router-link to ="/">  Discover </router-link> </li>
-                  <li><a href="#">Jobs</a></li>
-            </ul>
-        </div>
-
-
-      </div>
+      
 
       <div class="uk-navbar-right">
           <div>
@@ -35,6 +25,31 @@
 
           
         <ul class="uk-navbar-nav">
+
+             <li>  <a href="#">
+                    <div>
+                        <svgicon icon = "chrome-logo" height="20" width="19" color = "white">  </svgicon>
+                        <div class="uk-navbar-subtitle">feeds</div>
+                    </div>
+                </a>
+            </li>
+
+
+                 <li><a href="#">
+                    <div>
+                        <svgicon icon = "home" height="20" width="19" color = "white">  </svgicon>
+                        <div class="uk-navbar-subtitle">Home</div>
+                    </div>
+                </a> </li>
+
+
+                  <li><a href="#">
+                    <div>
+                        <svgicon icon = "home" height="20" width="19" color = "white">  </svgicon>
+                        <div class="uk-navbar-subtitle">Home</div>
+                    </div>
+                </a></li>
+
             <li><router-link to="/">  <svgicon icon = "notification" height="30" width = "19" color = "white">  </svgicon> </router-link> </li>
             <li class="uk-active"><router-link to="/profile"> <img src="/img/udem.jpg" height="5opx" width="50px" class="uk-border-circle"> </router-link></li>
             
