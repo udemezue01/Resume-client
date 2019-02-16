@@ -7,7 +7,7 @@
 
 
 @base-body-background:                         #f5f5f587;
-@base-body-font-family:                         @global-font-family;
+@base-body-font-family:                       'Montserrat', sans-serif;
 @base-body-font-weight:                         normal;
 @base-body-font-size:                           @global-font-size;
 
@@ -50,11 +50,17 @@
 @navbar-nav-item-onclick-color:  white;
 @navbar-toggle-color:  white;
 @navbar-toggle-hover-color: white;
-@navbar-nav-item-padding-horizontal: 10px;
+@navbar-nav-item-padding-horizontal: 19px;
 @navbar-nav-item-font-size: auto;
 @navbar-nav-item-height: 70px;
 
 @navbar-subtitle-font-size:  12px;
+
+//logo
+@logo-color:white;
+@logo-hover-color:white;
+@logo-font-family: 'Oleo Script', cursive;
+@logo-font-size: auto;
 
 .uk-navbar-center{
   .uk-navbar-nav{
@@ -69,15 +75,17 @@
 }
 
 .hook-navbar-container() {
-  padding-left:150px;
-  padding-right:150px;
+  padding-left:100px;
+  padding-right:100px;
   margin-right: auto;
   margin-left: auto;
 
 }
 
 .hook-navbar-subtitle() {
-  text-align: center;   
+  text-align: center; 
+  padding-right:7px; 
+  font-family: 'Montserrat', sans-serif; 
 }
 
 

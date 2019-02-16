@@ -45,7 +45,7 @@
 
                   <li><a href="#">
                     <div>
-                        <svgicon icon = "file" height="20" width="19" color = "white">  </svgicon>
+                        <svgicon icon = "suitcase" height="20" width="19" color = "white">  </svgicon>
                         <div class="uk-navbar-subtitle">Jobs</div>
                     </div>
                 </a>
