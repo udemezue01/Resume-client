@@ -37,7 +37,7 @@
 
                  <li><a href="#">
                     <div>
-                        <svgicon icon = "clock" height="20" width="19" color = "white">  </svgicon>
+                        <svgicon icon = "compass" height="20" width="19" color = "white">  </svgicon>
                         <div class="uk-navbar-subtitle">discover</div>
                     </div>
                 </a> </li>
