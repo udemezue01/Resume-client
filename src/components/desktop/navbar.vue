@@ -102,7 +102,7 @@ import {mapActions} from 'vuex';
 export default {
   data(){
     return{
-      brand:'Resume.io',
+      brand:'Resume',
     }
   },
 methods :{
