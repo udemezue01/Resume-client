@@ -28,7 +28,7 @@
 
              <li>  <a href="#">
                     <div>
-                        <svgicon icon = "chrome-logo" height="20" width="19" color = "white">  </svgicon>
+                        <svgicon icon = "fire" height="20" width="19" color = "white">  </svgicon>
                         <div class="uk-navbar-subtitle">feeds</div>
                     </div>
                 </a>
