@@ -66,7 +66,7 @@ export default {
 
 @import '../../theme/theme.less';
 
-
+@logo-font-size: 16px;
 
 
 .hook-navbar-container() {

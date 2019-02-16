@@ -1,5 +1,5 @@
 <template>
-  <div class="feeds">
+  <div class="login">
  
   </div>
 </template>
