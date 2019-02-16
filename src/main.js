@@ -4,9 +4,6 @@ import router from './router'
 import store from './store/store'
 import './registerServiceWorker'
 
-
-
-
 import VueSVGIcon from 'vue-svgicon'
 import 'uikit/dist/js/uikit.js'
 import './custom-icons'

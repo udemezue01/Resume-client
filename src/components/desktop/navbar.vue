@@ -1,6 +1,8 @@
 <template>
  
-  <div>
+  <div id="navbar-desktop">
+
+    <div uk-sticky="top: #navbar-desktop">
     <nav class="uk-navbar-container uk-margin" uk-navbar>
    
 
@@ -95,10 +97,11 @@
     </div>
       
 
+
 </nav>
 
 
-   
+   </div>
   
   
   </div>
