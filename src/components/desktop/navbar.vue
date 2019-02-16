@@ -73,7 +73,19 @@
 
             </li>
 
-            <li class="uk-active"><router-link to="/profile"> <img src="/img/udem.jpg" height="5opx" width="50px" class="uk-border-circle"> </router-link></li>
+            <li class="uk-active"><router-link to="/profile"> <img src="/img/udem.jpg" height="5opx" width="50px" class="uk-border-circle"> </router-link>
+            </li>
+
+             <li>
+
+              <a href="">
+               <div>
+                        <svgicon icon = "settings" height="20" width="19" color = "white">  </svgicon>
+                        <div class="uk-navbar-subtitle">more</div>
+                    </div>
+                </a>
+
+            </li>
             
             
         </ul>
