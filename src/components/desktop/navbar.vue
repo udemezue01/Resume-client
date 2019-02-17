@@ -37,12 +37,12 @@
             </li>
 
 
-                 <li><a href="#">
+             <!--     <li><a href="#">
                     <div>
                         <svgicon icon = "compass" height="20" width="19" color = "white">  </svgicon>
                         <div class="uk-navbar-subtitle">discover</div>
                     </div>
-                </a> </li>
+                </a> </li> -->
 
 
                   <li><a href="#">
