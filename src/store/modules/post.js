@@ -1,4 +1,4 @@
-import auth from '../api/post';
+import post from '../api/backend/post';
 
 import  {
      POST_BEGIN, 
@@ -21,7 +21,7 @@ export default {
 
     createPost({ commit }, { user, content, media, created_at }) {
       commit(CREATE_POST);
-      return auth.createPost(user, content, media, created_at)
+      return post.createPost(user, content, media, created_at)
         .then(() => commit(POST_SUCCESS))
         .catch(() => commit(POST_FAILURE));
     },
