@@ -8,7 +8,7 @@
 
         <div class="uk-navbar-left">
           <div>
-            <a class="uk-navbar-item uk-logo" href="#">{{brand}}</a>
+            <a class="uk-navbar-item uk-logo" href="#"><img src="/img/icons/logo.png" height="45px" width="45px"></a>
         </div>
 
 
