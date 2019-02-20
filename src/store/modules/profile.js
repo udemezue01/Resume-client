@@ -1,4 +1,4 @@
-import auth from '../../api/backend/profile';
+import profile from '../../api/backend/profile';
 
 import {
   
@@ -46,7 +46,7 @@ export default {
         .then(() => commit(PROFILE_GET_SUCCESS))
         .catch(() => commit(PROFILE_GET_FAILURE));
     },
-    deleteProfile({ commit }, { data }) {
+    deleteProfile({ commit }, { url }) {
       commit(PROFILE_DELETE_BEGIN);
       return profile.deleteprofile(data)
         .then(() => commit(PROFILE_DELETE_SUCCESS))

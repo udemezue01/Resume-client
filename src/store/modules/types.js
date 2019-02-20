@@ -31,6 +31,8 @@ export const SET_TOKEN = 'SET_TOKEN';
 export const REMOVE_TOKEN = 'REMOVE_TOKEN';
 
 
+
+//profile
 export const   	PROFILE_CREATE_BEGIN  =  ' PROFILE_CREATE_BEGIN';
 export const  	PROFILE_CREATE_SUCCESS  =  ' PROFILE_CREATE_SUCCESS';
 export const     PROFILE_CREATE_FAILURE  =  'PROFILE_CREATE_SUCCESS';
@@ -46,6 +48,27 @@ export const      PROFILE_DELETE_FAILURE  = 'PROFILE_DELETE_FAILURE';
 export const      PROFILE_UPDATE_BEGIN   = 'PROFILE_UPDATE_BEGIN';
 export const      PROFILE_UPDATE_SUCCESS  = 'PROFILE_UPDATE_SUCCESS';
 export const      PROFILE_UPDATE_FAILURE    = 'PROFILE_UPDATE_FAILURE';
+
+
+//post
+
+
+export const   	POST_CREATE_BEGIN  =  ' POST_CREATE_BEGIN';
+export const  	POST_CREATE_SUCCESS  =  ' POST_CREATE_SUCCESS';
+export const     POST_CREATE_FAILURE  =  'POST_CREATE_SUCCESS';
+
+export const      POST_GET_BEGIN   =    'POST_GET_BEGIN';
+export const      POST_GET_SUCCESS  =  'POST_GET_BEGIN';
+export const      POST_GET_FAILURE   = 'POST_GET_FAILURE';
+
+export const     POST_DELETE_BEGIN  = 'POST_DELETE_BEGIN';
+export const      POST_DELETE_SUCCESS  = 'POST_DELETE_SUCCESS';
+export const      POST_DELETE_FAILURE  = 'POST_DELETE_FAILURE';
+
+export const      POST_UPDATE_BEGIN   = 'POST_UPDATE_BEGIN';
+export const      POST_UPDATE_SUCCESS  = 'POST_UPDATE_SUCCESS';
+export const      POST_UPDATE_FAILURE    = 'POST_UPDATE_FAILURE';
+
 
 
 
