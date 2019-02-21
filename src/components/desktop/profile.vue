@@ -11,6 +11,8 @@
 
         
                  <img src="/img/udem.jpg" height="200px"  width="200px" class="uk-border-circle uk-align-center" />
+
+                 <button class="uk-button uk-button-default uk-button-small uk-align-center"> edit profile</button>
      
             </div>
             
@@ -26,7 +28,30 @@
           </div>
 
        <!--  end of profile cover -->
-          
+          <div class="uk-section">
+            <div class="uk-container">
+
+              <div class="uk-grid-match uk-padding-small" uk-grid>
+              <!--   the firstsection of the grid -->
+
+                <div class="uk-width-1-5@l">
+
+                  
+                </div>
+              <!--   end of the first section ofthe grid -->
+
+
+            <div class="uk-width-4-5@l">
+              
+
+            </div>
+
+         <!--    end of the second section of thr grid -->
+              </div>
+              
+              
+            </div>
+          </div>
 
 
       
