@@ -8,7 +8,7 @@
          <div>
           
         <ul class="uk-navbar-nav">
-            <li><router-link to="/profile">  <svgicon icon = "chrome-logo" height="23" width = "30" color = "white">  </svgicon> </router-link> </li>
+            <li><router-link to="/profile">  <svgicon icon = "compass" height="23" width = "30" color = "white">  </svgicon> </router-link> </li>
            
         </ul>
 
@@ -74,6 +74,15 @@ export default {
   padding-right:20px;
   margin-right: auto;
   margin-left: auto;
+
+}
+
+.hook-navbar-nav-item-hover() {
+    border-bottom: none;
+
+}
+.hook-navbar-nav-item-active() {
+    border-bottom: none;
 
 }
 

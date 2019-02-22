@@ -12,7 +12,7 @@
         
                  <img src="/img/udem.jpg" height="200px"  width="200px" class="uk-border-circle uk-align-center" />
 
-                 <button class="uk-button uk-button-default uk-button-small uk-align-center"> edit profile</button>
+                 <button class="uk-button uk-button-default uk-button-small uk-align-center uk-padding uk-margin-left">edit profile</button>
      
             </div>
             

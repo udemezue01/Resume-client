@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="footer" uk-sticky="bottom: true" >
 
      <nav class="uk-navbar-container"uk-navbar>
    
@@ -8,7 +8,7 @@
          <div>
           
         <ul class="uk-navbar-nav">
-            <li><router-link to="/profile">  <svgicon icon = "chrome-logo" height="23" width = "30" color = "white">  </svgicon> </router-link> </li>
+            <li><router-link to="/profile">  <svgicon icon = "chrome-logo" height="23" width = "30" color = "black">  </svgicon> </router-link> </li>
            
         </ul>
 
@@ -24,7 +24,7 @@
        <div>
           
         <ul class="uk-navbar-nav">
-            <li><router-link to="/profile">  <svgicon icon = "chrome-logo" height="23" width = "30" color = "white">  </svgicon> </router-link> </li>
+            <li><router-link to="/profile">  <svgicon icon = "chrome-logo" height="23" width = "30" color = "black">  </svgicon> </router-link> </li>
            
         </ul>
 
@@ -38,7 +38,7 @@
           <div>
           
         <ul class="uk-navbar-nav">
-            <li><router-link to="/">  <svgicon icon = "notification" height="23" width = "30" color = "white">  </svgicon> </router-link> </li>
+            <li><router-link to="/">  <svgicon icon = "notification" height="23" width = "30" color = "black">  </svgicon> </router-link> </li>
            
         </ul>
 

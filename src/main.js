@@ -9,7 +9,9 @@ import 'uikit/dist/js/uikit.js'
 import './custom-icons'
 //uikit css and javascript
 
+import VueContentPlaceholders from 'vue-content-placeholders'
 
+Vue.use(VueContentPlaceholders)
 import './theme/theme.less'
 
 Vue.use(VueSVGIcon)
