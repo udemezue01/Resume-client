@@ -28,28 +28,40 @@
           </div>
 
        <!--  end of profile cover -->
-          <div class="uk-section">
+      
+
+         <!--    end of the second section of thr grid -->
+              </div>
+              
+              
+
+
+                <div class="uk-section">
             <div class="uk-container">
 
               <div class="uk-grid-match uk-padding-small" uk-grid>
               <!--   the firstsection of the grid -->
 
-                <div class="uk-width-1-5@l">
+                <div class="uk-width-1-4@l">
 
                   
                 </div>
               <!--   end of the first section ofthe grid -->
 
 
-            <div class="uk-width-4-5@l">
-              
+            <div class="uk-width-3-4@l">
+              <div>
+                
+                  <ul class="uk-child-width-expand"  uk-tab >
+                  <li class="uk-active"><a href="">  feeds</a></li>
+                  <li><a href=""> posts</a> </li>
+                  <li ><a> hello</a></li>
+              </ul>
 
             </div>
+            
+            </div>
 
-         <!--    end of the second section of thr grid -->
-              </div>
-              
-              
             </div>
           </div>
 
