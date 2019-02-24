@@ -52,10 +52,10 @@
             <div class="uk-width-3-4@l">
               <div>
                 
-                  <ul class="uk-child-width-expand"  uk-tab >
-                  <li class="uk-active"><a href="">  feeds</a></li>
-                  <li><a href=""> posts</a> </li>
-                  <li ><a> hello</a></li>
+                  <ul class="uk-flex-center"  uk-tab >
+                  <li class="uk-active"><a href="">  Feeds</a></li>
+                  <li><a href=""> Posts</a> </li>
+                  <li ><a> Application</a></li>
               </ul>
 
             </div>

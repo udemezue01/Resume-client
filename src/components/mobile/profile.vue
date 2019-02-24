@@ -3,22 +3,30 @@
     <div>
 
 
-          <div id="profile-image" class="uk-card-default uk-card-body uk-width-auto uk-align-center">
+    <div id="profile-image" class="uk-card-default uk-card-body uk-width-expanded uk-align-center">
             
                 
-                <img src="/img/udem.jpg" height="150px"  width="150px" class="uk-border-circle uk-align-center" />
+            <img src="/img/udem.jpg" height="150px"  width="150px" class="uk-border-circle uk-align-center" />
 
-                  <button class="uk-button uk-button-default uk-button-small uk-align-center uk-padding uk-margin-right"> edit profile</button>
-          </div>
+            <button class="uk-button uk-button-default uk-button-small uk-align-center uk-padding uk-margin-right"> edit profile</button>
+    </div>
           
       
 </div>
 
-<div uk-lightbox>
-    <a href="./img/udem.jpg"> helllp</a>
-</div>
+<!-- end of the profile section -->
+    <div class="uk-section">
+       <div>
+                
+                  <ul class="uk-flex-center"  uk-tab >
+                  <li class="uk-active"><a href="">  Feeds</a></li>
+                  <li><a href=""> Posts</a> </li>
+                  <li ><a> Application</a></li>
+              </ul>
 
+            </div>
 
+    </div>
 
  </div>
 
@@ -27,9 +35,7 @@
 
 
 <script>
- 
-
-
+import {mapState} from 'vuex';
 
 export default {
 
@@ -37,6 +43,9 @@ export default {
     return{
     
     }
+  },
+  computed:{
+   
   }
 
 }
