@@ -11,17 +11,16 @@ import {
   PASSWORD_EMAIL_SUCCESS,
 } from './types';
 
-export default {
-  namespaced: true,
-  state: {
+
+  const  state = {
     emailCompleted: false,
     emailError: false,
     emailLoading: false,
     resetCompleted: false,
     resetError: false,
     resetLoading: false,
-  },
-  actions: {
+  };
+  const actions =  {
     resetPassword({ commit }, { uid, token, password1, password2 }) {
       commit(PASSWORD_RESET_BEGIN);
       return auth.resetAccountPassword(uid, token, password1, password2)
@@ -40,8 +39,8 @@ export default {
     clearEmailStatus({ commit }) {
       commit(PASSWORD_EMAIL_CLEAR);
     },
-  },
-  mutations: {
+  };
+  const mutations = {
     [PASSWORD_RESET_BEGIN](state) {
       state.resetLoading = true;
     },
@@ -76,5 +75,12 @@ export default {
       state.emailError = false;
       state.emailLoading = false;
     },
-  },
+  };
+
+  export default {
+  namespaced: true,
+  state,
+  actions,
+  mutations,
+
 };

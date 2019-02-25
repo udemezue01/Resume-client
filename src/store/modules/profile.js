@@ -24,16 +24,15 @@ import {
   
 } from './types';
 
-export default {
-  namespaced: true,
-  state: {
+
+ const = state: {
     createCompleted: false,
     createError: false,
     createLoading: false,
     profile:[],
     
   },
-  actions: {
+  const actions =  {
     createProfile({ commit }, { username, avatar, category, created_at }) {
       commit(PROFILE_CREATE_BEGIN);
       return profile.createProfile(username, avatar, category, created_at)
@@ -60,7 +59,7 @@ export default {
     },
   
   },
-  mutations: {
+  const mutations = {
      [PROFILE_CREATE_BEGIN](state) {
       state.createLoading = true;
   
@@ -111,4 +110,9 @@ export default {
    
     
   },
+export default {
+  namespaced: true,
+  state,
+  mutations,
+  actions,
 };

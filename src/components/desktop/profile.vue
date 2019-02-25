@@ -9,6 +9,11 @@
 
             <div class="uk-card-default uk-card-body">
 
+              <content-placeholders>
+  <content-placeholders-heading :img="true" />
+  <content-placeholders-text :lines="3" />
+</content-placeholders>
+
         
                  <img src="/img/udem.jpg" height="200px"  width="200px" class="uk-border-circle uk-align-center" />
 
