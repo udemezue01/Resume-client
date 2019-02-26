@@ -70,7 +70,10 @@
                <div>
                         <svgicon icon = "add-button" height="20" width="19" color = "white">  </svgicon>
                         <div class="uk-navbar-subtitle" type = "button">create</div>
-                        <div uk-dropdown="offset:10; mode:click">
+                       
+                    </div>
+                </a>
+                 <div uk-dropdown="offset:10; mode:click">
                         <ul class="uk-nav uk-dropdown-nav">
                             <li class=""><a href="#"><svgicon icon = "add-text" height="20" width = "19" color = "grey"> </svgicon> post</a></li>
                             <li class=""><a href="#"><svgicon icon = "suitcase" height="20" width = "19" color = "grey"> </svgicon> Jobs</a></li>
@@ -78,8 +81,6 @@
             
                         </ul>
                     </div>
-                    </div>
-                </a>
 
             </li>
 
