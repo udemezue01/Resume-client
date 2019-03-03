@@ -8,7 +8,7 @@
 
         <div class="uk-navbar-left">
           <div>
-            <a class="uk-navbar-item uk-logo" href="#"><img src="/img/icons/logo.png" height="30px" width="40px"></a>
+            <a class="uk-navbar-item uk-logo" href="#"><img src="/img/icons/logo.png" height="20px" width="30px"></a>
         </div>
 
 
@@ -37,12 +37,12 @@
             </li>
 
 
-             <!--     <li><a href="#">
+                 <li><a href="#">
                     <div>
                         <svgicon icon = "compass" height="20" width="19" color = "white">  </svgicon>
                         <div class="uk-navbar-subtitle">discover</div>
                     </div>
-                </a> </li> -->
+                </a> </li>
 
 
               
@@ -58,11 +58,21 @@
                        
                     </div>
                 </a>
-                 <div uk-dropdown="offset:10; mode:click">
+                 <div uk-dropdown="offset:3; mode:click">
                         <ul class="uk-nav uk-dropdown-nav">
-                            <li class=""><a href="#"><svgicon icon = "add-text" height="20" width = "19" color = "grey"> </svgicon> post</a></li>
-                            <li class=""><a href="#"><svgicon icon = "suitcase" height="20" width = "19" color = "grey"> </svgicon> Jobs</a></li>
-                            
+                            <li class=""><a href="#"><svgicon icon = "add" height="15" width = "15" color = "grey"> </svgicon> Post
+                                <div class="uk-navbar-subtitle">share your thoughts </div>
+                            </a>
+
+                            </li>
+                            <li class=""><a href="#"><svgicon icon = "suitcase" height="15" width = "15" color = "grey"> </svgicon> Jobs
+
+                                <div class="uk-navbar-subtitle">post a new job update </div>
+                            </a></li>
+                            <li class=""><a href="#"><svgicon icon = "wifi" height="15" width = "15" color = "grey"> </svgicon> Advertise
+
+                                <div class="uk-navbar-subtitle">reach million adiences </div>
+                            </a></li>
             
                         </ul>
                     </div>
@@ -74,10 +84,10 @@
                 <li>
 
               <a href="">
-               <div>
-                        <svgicon icon = "notification" height="20" width="19" color = "white">  </svgicon>
-                        <div class="uk-navbar-subtitle">notification</div>
-                    </div>
+              
+                        <svgicon icon = "notification" height="40" width="19" color = "white">  </svgicon>
+                        
+                    
                 </a>
 
             </li>
@@ -124,6 +134,9 @@ export default {
     }
   },
 methods :{
+  createPost(){
+
+  }
 
 },
  
