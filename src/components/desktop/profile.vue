@@ -22,8 +22,12 @@
         <!--   end of profile image -->
      <!--    profile-cover -->
           <div id="profile-cover" class="uk-width-3-4@l uk-border-circle">   
-           <div class="uk-cover-container uk-height-medium" >
-               <img src="/img/cover.jpg" alt="" uk-cover  >
+           <div class="uk-cover-container uk-height-medium uk-card-default uk-card-body" >
+               <img src="/img/cover.jpg" alt="" uk-cover >
+
+               <div class="uk-card-footer">
+                 
+               </div>
             </div>
           </div>
 

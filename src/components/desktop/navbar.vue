@@ -45,24 +45,9 @@
                 </a> </li> -->
 
 
-                  <li><a href="#">
-                    <div>
-                        <svgicon icon = "suitcase" height="20" width="19" color = "white">  </svgicon>
-                        <div class="uk-navbar-subtitle">Jobs</div>
-                    </div>
-                </a>
-              </li>
+              
 
-               <li>
-
-              <a href="">
-               <div>
-                        <svgicon icon = "notification" height="20" width="19" color = "white">  </svgicon>
-                        <div class="uk-navbar-subtitle">notification</div>
-                    </div>
-                </a>
-
-            </li>
+           
 
             <li>
 
@@ -86,7 +71,16 @@
 
             <li class="uk-active"><router-link to="/profile"> <img src="/img/udem.jpg" height="5opx" width="50px" class="uk-border-circle"> </router-link>
             </li>
+                <li>
 
+              <a href="">
+               <div>
+                        <svgicon icon = "notification" height="20" width="19" color = "white">  </svgicon>
+                        <div class="uk-navbar-subtitle">notification</div>
+                    </div>
+                </a>
+
+            </li>
              <li>
 
               <a href="">
