@@ -8,15 +8,6 @@ import Router from 'vue-router'
 
 
 
-// views
-
-import profile from '@/views/profile.vue'
-import feeds from '@/views/feeds.vue'
-
-
-
-
-
 const requireAuthenticated = (to, from, next) => {
   store.dispatch('auth/initialize')
     .then(() => {
@@ -45,6 +36,12 @@ const redirectLogout = (to, from, next) => {
 };
 
 
+// views
+
+import profile from '@/views/profile.vue'
+import feeds from '@/views/feeds.vue'
+
+
 Vue.use(Router)
 
 export default new Router({
@@ -63,7 +60,19 @@ export default new Router({
       path: '/feeds',
       name: 'feeds',
       component: feeds
-    }
+    },
+    //   {
+    //   path: '/login',
+    //   name: 'login',
+    //   component: login
+    // },
+   
+    //  {
+    //   path: '/feeds',
+    //   name: 'feeds',
+    //   component: feeds
+    // },
+   
    
   ]
 })

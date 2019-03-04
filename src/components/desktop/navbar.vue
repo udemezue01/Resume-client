@@ -28,12 +28,12 @@
           
         <ul class="uk-navbar-nav">
 
-             <li>  <a href="#">
+             <li>  <router-link to="/feeds">
                     <div>
                         <svgicon icon = "fire" height="20" width="19" color = "white">  </svgicon>
                         <div class="uk-navbar-subtitle">feeds</div>
                     </div>
-                </a>
+                </router-link>
             </li>
 
 
@@ -79,7 +79,7 @@
 
             </li>
 
-            <li class="uk-active"><router-link to="/profile"> <img src="/img/udem.jpg" height="5opx" width="50px" class="uk-border-circle"> </router-link>
+            <li class=""><router-link to="/"> <img src="/img/udem.jpg" height="5opx" width="50px" class="uk-border-circle"> </router-link>
             </li>
                 <li>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="footer" uk-sticky="bottom: true" >
+  <div class="footer" uk-sticky="bottom:true; offset:-30px" >
 
      <nav class="uk-navbar-container"uk-navbar>
    

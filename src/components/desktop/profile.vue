@@ -5,7 +5,7 @@
     <div class="uk-grid-match uk-padding-small" uk-grid>
 
      <!--  the profile image -->
-          <div id="profile-image" class="uk-width-1-4@l">
+          <div id="profile-image" class="uk-width-auto">
 
             <div class="uk-card-default uk-card-body">
 
@@ -26,7 +26,7 @@
                <img src="/img/cover.jpg" alt="" uk-cover >
 
                <div class="uk-card-footer">
-                 
+                 <button>hello</button>
                </div>
             </div>
           </div>
