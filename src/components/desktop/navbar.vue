@@ -60,7 +60,7 @@
                 </a>
                  <div uk-dropdown="offset:3; mode:click">
                         <ul class="uk-nav uk-dropdown-nav">
-                            <li class=""><a href="#"><svgicon icon = "add" height="15" width = "15" color = "grey"> </svgicon> Post
+                            <li class=""><a href="#" uk-toggle="target:#create"><svgicon icon = "add" height="15" width = "15" color = "grey"> </svgicon> Post
                                 <div class="uk-navbar-subtitle">share your thoughts </div>
                             </a>
 
@@ -113,7 +113,34 @@
 
 </nav>
 
+<!-- This is the modal -->
+   <div id="create" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title"></h2>
+        </div>
+        <div class="uk-modal-body">
+             <form>
+                  <div class="uk-margin">
+        <div class="uk-inline">
+            <span class="uk-form-icon" uk-icon="icon: user"></span>
+            <input class="uk-input" type="text">
+        </div>
+    </div>
 
+    <div class="uk-margin">
+        <div class="uk-inline">
+            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+            <input class="uk-input" type="text">
+        </div>
+    </div>
+
+    </form>
+        </div>
+        <div class="uk-modal-footer"></div>
+    </div>
+</div>
    </div>
   
   

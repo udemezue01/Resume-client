@@ -47,24 +47,20 @@
               <!--   the firstsection of the grid -->
 
                 <div class="uk-width-1-4@l">
-
+                         <div>
+        <ul class="uk-tab-right" uk-tab>
+            <li class="uk-active"><a href="#">Home</a> </li>
+            <li><a href="#">Posts</a> </li>
+            <li><a href="#"> Jobs</a> </li>
+             <li><a href="#"> Application</a> </li>
+              <li><a href="#"> jobs</a> </li>
+        </ul>
+    </div>
                   
                 </div>
               <!--   end of the first section ofthe grid -->
 
 
-            <div class="uk-width-3-4@l">
-              <div>
-                
-                  <ul class="uk-flex-center"  uk-tab >
-                  <li class="uk-active"><a href="">  Feeds</a></li>
-                  <li><a href=""> Posts</a> </li>
-                  <li ><a> Application</a></li>
-              </ul>
-
-            </div>
-            
-            </div>
 
             </div>
           </div>
