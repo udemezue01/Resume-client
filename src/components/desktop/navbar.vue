@@ -122,23 +122,16 @@
         </div>
         <div class="uk-modal-body">
              <form>
-                  <div class="uk-margin">
-        <div class="uk-inline">
-            <span class="uk-form-icon" uk-icon="icon: user"></span>
-            <input class="uk-input" type="text">
+      
+         <div class="uk-width-1-1">
+          <label class="uk-form-label" for="form-stacked-text">Whats Happening ?</label>
+        <input class="uk-input" type="text" placeholder="Whats happening">
+            </div>
+            </form>
         </div>
-    </div>
-
-    <div class="uk-margin">
-        <div class="uk-inline">
-            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
-            <input class="uk-input" type="text">
+        <div class="uk-modal-footer">
+          
         </div>
-    </div>
-
-    </form>
-        </div>
-        <div class="uk-modal-footer"></div>
     </div>
 </div>
    </div>

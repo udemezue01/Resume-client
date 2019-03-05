@@ -5,14 +5,18 @@
     <div class="uk-grid-match uk-padding-small" uk-grid>
 
      <!--  the profile image -->
-          <div id="profile-image" class="uk-width-auto">
+          <div id="profile-image" class="uk-width-1-4@l">
 
-            <div class="uk-card-default uk-card-body">
+            <div class="uk-card uk-card-default uk-card-body">
 
         
                  <img src="/img/udem.jpg" height="200px"  width="200px" class="uk-border-circle uk-align-center" />
 
-                 <button class="uk-button uk-button-default uk-button-small uk-align-center uk-padding uk-margin-left">edit profile</button>
+                <!--  <button class="uk-button uk-button-default uk-button-small uk-align-center uk-padding uk-margin-left">edit profile</button> -->
+
+                <div class="uk-card-footer">
+                    <a href="#" class="uk-button uk-button-text uk-align-center">edit Profile</a>
+                </div>
      
             </div>
             
@@ -21,15 +25,15 @@
 
         <!--   end of profile image -->
      <!--    profile-cover -->
-          <div id="profile-cover" class="uk-width-3-4@l uk-border-circle">   
-           <div class="uk-cover-container uk-height-medium uk-card-default uk-card-body" >
+          <div id="profile-cover" class="uk-width-3-4@l">   
+           <div class="uk-cover-container uk-height-medium uk-card uk-card-default uk-card-media-top" >
                <img src="/img/cover.jpg" alt="" uk-cover >
 
                <div class="uk-card-footer">
-                 <button>hello</button>
-               </div>
+                
             </div>
           </div>
+        </div>
 
        <!--  end of profile cover -->
       
