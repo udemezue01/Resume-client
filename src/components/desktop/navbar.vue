@@ -15,7 +15,7 @@
         <div class="uk-inline">
         
         <input class="uk-input" placeholder="search">
-        <svgicon icon = "search" class = "uk-form-icon uk-form-icon-flip uk-margin-top" height = "20" width = "30" color ="grey">   </svgicon>
+        <svgicon icon = "search" class = "uk-form-icon uk-form-icon-flip uk-margin " height = "20" width = "50" color ="grey">   </svgicon>
           </div>
       </div>
         
@@ -117,9 +117,9 @@
    <div id="create" uk-modal>
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="uk-modal-header">
+       <!--  <div class="uk-modal-header">
             <h2 class="uk-modal-title"></h2>
-        </div>
+        </div> -->
         <div class="uk-modal-body">
              <form>
       
@@ -145,23 +145,22 @@
 <script>
 
 import {mapActions} from 'vuex';
-
-
 export default {
-  data(){
-    return{
-      brand:'Resume',
-    }
-  },
-methods :{
-  createPost(){
+
+data(){
+  return {
 
   }
+},
+
+methods:{
+
 
 },
- 
 
 }
+
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

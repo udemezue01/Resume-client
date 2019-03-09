@@ -1,4 +1,4 @@
-ho<template>
+<template>
   <div id="app">
    <navbar-desktop class = "uk-visible@l"> </navbar-desktop>
    <navbar-mobile class= "uk-hidden@l"> </navbar-mobile>

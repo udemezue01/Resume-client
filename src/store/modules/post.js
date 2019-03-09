@@ -1,11 +1,21 @@
 import post from '../api/backend/post';
 
 import  {
-     POST_BEGIN, 
-     POST_CLEAR ,
-     POST_FAILURE ,
-     POST_SUCCESS 
-  
+      POST_CREATE_BEGIN ,
+     POST_CREATE_SUCCESS,
+     POST_CREATE_FAILURE , 
+
+     POST_GET_BEGIN,  
+     POST_GET_SUCCESS,
+     POST_GET_FAILURE,
+
+     POST_DELETE_BEGIN,
+     POST_DELETE_SUCCESS,
+     POST_DELETE_FAILURE,
+
+     POST_UPDATE_BEGIN,
+     POST_UPDATE_SUCCESS,
+     POST_UPDATE_FAILURE
   } from './types';
 
 export default {
@@ -20,34 +30,34 @@ export default {
   actions: {
 
     createPost({ commit }, { user, content, media, created_at }) {
-      commit(CREATE_POST);
+      commit(POST_CREATE_BEGIN);
       return post.createPost(user, content, media, created_at)
-        .then(() => commit(POST_SUCCESS))
-        .catch(() => commit(POST_FAILURE));
+        .then(() => commit(POST_CREATE_SUCCESS))
+        .catch(() => commit(POST_CREATE_FAILURE));
     },
 
 
     getPost({ commit }, { data }) {
-      commit(GET_POST);
+      commit(POST_GET_BEGIN);
       return auth.readPost(data)
-        .then(() => commit(GET_SUCCESS))
-        .catch(() => commit(GET_FAILURE));
+        .then(() => commit(POST_GET_SUCCESS))
+        .catch(() => commit(POST_GET_FAILURE));
     },
 
 
       deletePost({ commit }, { data }) {
-      commit(DELETE_POST);
+      commit(POST_DELETE_BEGIN);
       return auth.verifyAccountEmail(key)
-        .then(() => commit(POST_CLEAR))
-        .catch(() => commit(DELETE_FAILURE));
+        .then(() => commit(POST_DELETE_SUCCESS))
+        .catch(() => commit(POST_DELETE_FAILURE));
     },
 
 
       updatePost({ commit }, { key }) {
-      commit(UPDATE_POST);
+      commit(POST_UPDATE_BEGIN);
       return auth.verifyAccountEmail(key)
-        .then(() => commit(UPDATE_SUCCESS))
-        .catch(() => commit(UPDATE_FAILURE));
+        .then(() => commit(POST_UPDATE_SUCCESS))
+        .catch(() => commit(POST_UPDATE_FAILURE));
     },
   
 
@@ -55,43 +65,62 @@ export default {
   },
   mutations: {
   
-    [CREATE_FAILURE](state) {
+    [POST_CREATE_BEGIN](state) {
       state.registrationError = true;
       state.registrationLoading = false;
     },
-    [CREATE_SUCCESS](state) {
+    [POST_CREATE_SUCCESS](state) {
       state.registrationCompleted = true;
       state.registrationError = false;
       state.registrationLoading = false;
     },
-      [GET_SUCCESS](state, response) {
+      [POST_CREATE_FAILURE](state) {
       state.activationLoading = true;
-      state.post  = response.data();
+     
     },
-    [GET_FAILURE](state) {
+    [POST_GET_BEGIN](state) {
       state.activationLoading = true;
     },
-    [UPDATE_SUCCESS](state) {
+    [POST_GET_SUCCESS](state) {
       state.activationCompleted = false;
       state.activationError = false;
       state.activationLoading = false;
     },
-    [UPDATE_FAILURE](state) {
+    [POST_GET_FAILURE](state) {
       state.activationCompleted = false;
       state.activationError = false;
       state.activationLoading = false;
     },
     
-     [DELETE_SUCCESS](state) {
+     [POST_UPDATE_BEGIN](state) {
       state.activationCompleted = false;
       state.activationError = false;
       state.activationLoading = false;
     },
-    [DELETE_FAILURE](state) {
+    [POST_UPDATE_SUCCESS](state) {
       state.activationCompleted = false;
       state.activationError = false;
       state.activationLoading = false;
     },
-    
+       [POST_UPDATE_FAILURE](state) {
+      state.activationCompleted = false;
+      state.activationError = false;
+      state.activationLoading = false;
+    },
+       [POST_UPDATE_BEGIN](state) {
+      state.activationCompleted = false;
+      state.activationError = false;
+      state.activationLoading = false;
+    },
+    [POST_UPDATE_SUCCESS](state) {
+      state.activationCompleted = false;
+      state.activationError = false;
+      state.activationLoading = false;
+    },
+   [POST_UPDATE_FAILURE](state) {
+      state.activationCompleted = false;
+      state.activationError = false;
+      state.activationLoading = false;
+    },
   },
 };

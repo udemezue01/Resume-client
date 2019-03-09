@@ -51,7 +51,7 @@
               <!--   the firstsection of the grid -->
 
                 <div class="uk-width-1-4@l">
-                         <div>
+      <div class="uk-card uk-card-default uk-align-center">
         <ul class="uk-tab-right" uk-tab>
             <li class="uk-active"><a href="#">Home</a> </li>
             <li><a href="#">Posts</a> </li>
