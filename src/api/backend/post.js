@@ -3,7 +3,7 @@ import session from './session';
 export default {
 
   createPost(full_name, email, password) {
-    return session.post('account/registration/', { user, content ,media });
+    return session.post('/post/', { user, content ,media });
   },
   getPost() {
     return session.get('/post/', data);

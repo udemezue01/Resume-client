@@ -12,7 +12,7 @@
         </div>
 
 
-        <div class="uk-inline">
+        <div class="uk-inline"  v-if="isAuthenticated">
         
         <input class="uk-input" placeholder="search">
         <svgicon icon = "search" class = "uk-form-icon uk-form-icon-flip uk-margin " height = "20" width = "50" color ="grey">   </svgicon>
@@ -21,7 +21,7 @@
         
       
 
-      <div class="uk-navbar-right">
+      <div class="uk-navbar-right" v-if="isAuthenticated">
           <div>
             
 
@@ -145,18 +145,33 @@
 <script>
 
 import {mapActions} from 'vuex';
+import { mapGetters } from 'vuex';
 export default {
 
 data(){
   return {
+  post:{
+    content: "",
+    media : ""
+  },
+  vacancy:{
+    title:"",
+
+  }
 
   }
 },
 
 methods:{
+ creatPost:function(){
+
+ },
 
 
 },
+computed: mapGetters('auth', [
+    'isAuthenticated',
+  ]),
 
 }
 

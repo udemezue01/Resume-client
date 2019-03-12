@@ -20,7 +20,7 @@ import footer_m from '@/components/desktop/footer.vue'
 import footer_d from '@/components/mobile/footer.vue'
 
 //vuex imports
- import { mapGetters } from 'vuex';
+ 
  
 export default {
 
@@ -30,9 +30,7 @@ components:{
   'footer-mobile':footer_m
 },
 
-computed: mapGetters('auth', [
-    'isAuthenticated',
-  ]),
+
 
 }
 

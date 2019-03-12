@@ -4,7 +4,7 @@
      <nav class="uk-navbar-container"uk-navbar>
    
 
-        <div class="uk-navbar-left">
+        <div class="uk-navbar-left"  v-if="isAuthenticated">
          <div>
           
         <ul class="uk-navbar-nav">
@@ -30,7 +30,7 @@
 
       </div>
 
-      <div class="uk-navbar-right">
+      <div class="uk-navbar-right"  v-if="isAuthenticated">
           <div>
           
         <ul class="uk-navbar-nav">
@@ -49,14 +49,17 @@
 </template>
 
 <script>
-
+import {mapGetters} from 'vuex';
 
 export default {
   data(){
     return{
       brand:'Resume.Io',
     }
-  }
+  },
+  computed: mapGetters('auth', [
+    'isAuthenticated',
+  ]),
 
 }
 </script>
