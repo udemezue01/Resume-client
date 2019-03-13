@@ -8,7 +8,8 @@
 
         <div class="uk-navbar-left">
           <div>
-            <a class="uk-navbar-item uk-logo" href="#"><img src="/img/icons/logo.png" height="20px" width="30px"></a>
+            <a class="uk-navbar-item uk-logo" href="#"><img src="/img/icons/logo.png" height="20px" width="30px"> </a>
+
         </div>
 
 
@@ -18,8 +19,17 @@
         <svgicon icon = "search" class = "uk-form-icon uk-form-icon-flip uk-margin " height = "20" width = "50" color ="grey">   </svgicon>
           </div>
       </div>
+       <!--  the navigational part for the getstarted button -->
+      <div class="uk-navbar-right">
+        <div>
+          <ul class="uk-navbar-nav">
+            <li>  <a class="uk-button uk-button-default" href="#modal-full" uk-toggle>Get Started</a></li>
+          </ul>
+
+        </div>
         
-      
+      </div>
+     <!--  end of the navigational for the getstarted button -->
 
       <div class="uk-navbar-right" v-if="isAuthenticated">
           <div>
@@ -113,7 +123,7 @@
 
 </nav>
 
-<!-- This is the modal -->
+<!-- This is the modal  for the create button-->
    <div id="create" uk-modal>
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-default" type="button" uk-close></button>
@@ -135,8 +145,50 @@
     </div>
 </div>
    </div>
+
+  <!--  end of the modal for the create button -->
   
-  
+  <div id="modal-full" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+            <div class="uk-background-cover" style="background-image: url('img/cover.jpg');" uk-height-viewport></div>
+            <div class="uk-padding-large">
+                <div class="uk-margin-medium-top">
+                        <ul class="uk-flex-center" uk-tab>
+                           
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Sign Up</a></li>
+                        </ul>
+                    </div>
+                <form class="uk-align-center">
+    <fieldset class="uk-fieldset">
+
+        <legend class="uk-legend"> Register </legend>
+
+        <div class="uk-margin">
+          <div class="uk-inline">
+            
+       
+         <svgicon class="uk-form-icon" icon="notification" color="blue">   </svgicon>
+            <input class="uk-input uk-form-width-large uk-form-large" type="text" placeholder="Input">
+               </div>
+        </div>
+
+        <div class="uk-margin">
+            <input class="uk-input uk-form-width-large uk-form-large" type="text" placeholder="Input">
+        </div>
+
+        <div class="uk-margin">
+            <input class="uk-input uk-form-width-large uk-form-large" type="text" placeholder="Input">
+        </div>
+
+    </fieldset>
+</form>
+            </div>
+        </div>
+    </div>
+</div>
   </div>
 </template>
 
@@ -150,22 +202,38 @@ export default {
 
 data(){
   return {
+    brand:"Resume",
+
+  login:{
+    email:"",
+    password:""
+  },
+
+  register:{
+    email:"",
+    full_name:"",
+    account_type:['Individual', 'Company' ],
+    password:""
+  },
+
   post:{
     content: "",
     media : ""
   },
+
   vacancy:{
     title:"",
 
-  }
+  },
+
 
   }
 },
 
 methods:{
- creatPost:function(){
 
- },
+
+
 
 
 },
@@ -181,5 +249,56 @@ computed: mapGetters('auth', [
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
 
-// @import '../theme/theme.less';
+@import '../../theme/theme.less';
+
+
+@button-text-color: white;
+@button-font-size:12px;
+@button-line-height: 20px;
+
+.uk-button {
+    /* 1 */
+    margin: 0;
+    /* 2 */
+    border: 1px solid #DA1FF2 ;
+    /* 3 */
+    overflow: visible;
+    /* 4 */
+    font: inherit;
+    color: inherit;
+    /* 5 */
+    text-transform: uppercase;
+    /* 6 */
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 @button-padding-horizontal;
+    vertical-align: middle;
+    font-size: @button-font-size;
+    /* 7 */
+    line-height:20px;
+    /* 8 */
+    text-align: center;
+    /* 9 */
+    text-decoration: none;
+   
+}
+
+ .hook-button(){
+
+    border-radius:5px;
+    padding-left:20px;
+ }
+.uk-button-default {
+    background-color:#DA1FF2;
+    color: white;
+    .hook-button-default;
+}
+.uk-button-default:hover,
+.uk-button-default:focus {
+    background-color: #247CC4;
+    color: white;
+    .hook-button-default-hover;
+}
+
+
 </style>
