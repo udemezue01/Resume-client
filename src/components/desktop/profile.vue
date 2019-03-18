@@ -14,8 +14,8 @@
 
                 <!--  <button class="uk-button uk-button-default uk-button-small uk-align-center uk-padding uk-margin-left">edit profile</button> -->
 
-                <div class="uk-card-footer">
-                    <a href="#" class="uk-button uk-button-text uk-align-center">edit Profile</a>
+                <div class="uk-card-footer uk-align-center">
+                    <a href="#" class="uk-button uk-button-text ">edit Profile</a>
                 </div>
      
             </div>
@@ -47,22 +47,27 @@
                 <div class="uk-section">
             <div class="uk-container">
 
-              <div class="uk-grid-match uk-padding-small" uk-grid>
+              <div class="uk-grid-match uk-padding" uk-grid>
               <!--   the firstsection of the grid -->
 
                 <div class="uk-width-1-4@l">
-      <div class="uk-card uk-card-default uk-align-center">
-        <ul class="uk-tab-right" uk-tab>
-            <li class="uk-active"><a href="#">Home</a> </li>
-            <li><a href="#">Posts</a> </li>
-            <li><a href="#"> Jobs</a> </li>
-             <li><a href="#"> Application</a> </li>
-              <li><a href="#"> jobs</a> </li>
-        </ul>
-    </div>
+                   
                   
                 </div>
               <!--   end of the first section ofthe grid -->
+
+              <div class="uk-width-3-4@l">
+                   <div class="uk-card uk-card-default uk-align-center">
+                      <ul class="uk-flex-center" uk-tab>
+                          <li class="uk-active"><a href="#">Home</a> </li>
+                          <li><a href="#">Posts</a> </li>
+                          <li><a href="#"> Jobs</a> </li>
+                           <li><a href="#"> Application</a> </li>
+                            <li><a href="#"> jobs</a> </li>
+                      </ul>
+                  </div>
+
+              </div>
 
 
 

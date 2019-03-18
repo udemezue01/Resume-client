@@ -59,6 +59,14 @@ import {
     },
   
   },
+  const getters  = {
+    getUserPost:(state, profile) =>{
+      return 
+    },
+    
+
+
+  },
   const mutations = {
      [PROFILE_CREATE_BEGIN](state) {
       state.createLoading = true;
@@ -115,4 +123,5 @@ export default {
   state,
   mutations,
   actions,
+  getters
 };

@@ -8,7 +8,7 @@
 
         <div class="uk-navbar-left">
           <div>
-            <a class="uk-navbar-item uk-logo" href="#"><img src="/img/icons/logo.png" height="20px" width="30px"> </a>
+            <a class="uk-navbar-item uk-logo" href="#"><img src="/img/icons/logo.png" height="20px" width="30px"/> Resume</a>
 
         </div>
 
@@ -31,7 +31,7 @@
       </div>
      <!--  end of the navigational for the getstarted button -->
 
-      <div class="uk-navbar-right" v-if="isAuthenticated">
+      <div class="uk-navbar-right" v-if="!isAuthenticated">
           <div>
             
 
@@ -39,19 +39,19 @@
         <ul class="uk-navbar-nav">
 
              <li>  <router-link to="/feeds">
-                    <div>
-                        <svgicon icon = "fire" height="20" width="19" color = "white">  </svgicon>
-                        <div class="uk-navbar-subtitle">feeds</div>
-                    </div>
+                   
+                        <svgicon icon = "fire" height="30" width="30" color = "white">  </svgicon>&nbsp;
+                        feeds
+              
                 </router-link>
             </li>
 
 
                  <li><a href="#">
-                    <div>
-                        <svgicon icon = "compass" height="20" width="19" color = "white">  </svgicon>
-                        <div class="uk-navbar-subtitle">discover</div>
-                    </div>
+                 
+                        <svgicon icon = "compass" height="30" width="30" color = "white">  </svgicon>&nbsp;
+                        discover
+                  
                 </a> </li>
 
 
@@ -62,15 +62,15 @@
             <li>
 
               <a href="">
-               <div>
-                        <svgicon icon = "add-button" height="20" width="19" color = "white">  </svgicon>
-                        <div class="uk-navbar-subtitle" type = "button">create</div>
+        
+                        <svgicon icon = "add-button" height="30" width="30" color = "white">  </svgicon>&nbsp;
+                        create
                        
-                    </div>
+               
                 </a>
                  <div uk-dropdown="offset:3; mode:click">
                         <ul class="uk-nav uk-dropdown-nav">
-                            <li class=""><a href="#" uk-toggle="target:#create"><svgicon icon = "add" height="15" width = "15" color = "grey"> </svgicon> Post
+                            <li class=""><a href="#" uk-toggle="target:#create"><svgicon icon = "add" height="50" width = "30" color = "grey"> </svgicon> Post
                                 <div class="uk-navbar-subtitle">share your thoughts </div>
                             </a>
 
@@ -95,7 +95,7 @@
 
               <a href="">
               
-                        <svgicon icon = "notification" height="40" width="19" color = "white">  </svgicon>
+                        <svgicon icon = "notification" height="30" width="30" color = "white">  </svgicon>
                         
                     
                 </a>
@@ -104,10 +104,10 @@
              <li>
 
               <a href="">
-               <div>
-                        <svgicon icon = "settings" height="20" width="19" color = "white">  </svgicon>
-                        <div class="uk-navbar-subtitle">more</div>
-                    </div>
+              
+                        <svgicon icon = "settings" height="30" width="30" color = "white">  </svgicon>&nbsp;
+                        more
+                  
                 </a>
 
             </li>
@@ -222,7 +222,9 @@ data(){
   },
 
   vacancy:{
+
     title:"",
+    
 
   },
 
@@ -231,7 +233,21 @@ data(){
 },
 
 methods:{
+  registeration( {email, full_name, account_type, password}){
 
+  },
+  userLogin(){
+
+
+  },
+  createPost(){
+
+
+  },
+  createVacancy(){
+
+
+  }
 
 
 
@@ -254,7 +270,7 @@ computed: mapGetters('auth', [
 
 @button-text-color: white;
 @button-font-size:12px;
-@button-line-height: 20px;
+@button-line-height: 10px;
 
 .uk-button {
     /* 1 */
@@ -289,7 +305,7 @@ computed: mapGetters('auth', [
     padding-left:20px;
  }
 .uk-button-default {
-    background-color:#DA1FF2;
+    background-color:#247CC4;
     color: white;
     .hook-button-default;
 }
@@ -297,8 +313,12 @@ computed: mapGetters('auth', [
 .uk-button-default:focus {
     background-color: #247CC4;
     color: white;
-    .hook-button-default-hover;
+   
 }
+ .hook-button-default-hover(){
+  background-color:#247CC4;
+  color:white;
+ }
 
 
 </style>

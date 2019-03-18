@@ -4,6 +4,8 @@ import router from './router'
 import store from './store/store'
 import './registerServiceWorker'
 
+import VueProgressBar from 'vue-progressbar'
+
 import VueSVGIcon from 'vue-svgicon'
 import 'uikit/dist/js/uikit.js'
 import './custom-icons'
@@ -16,6 +18,22 @@ import './theme/theme.less'
 
 Vue.use(VueSVGIcon)
 
+
+const options = {
+  color: '#bffaf3',
+  failedColor: '#874b4b',
+  thickness: '5px',
+  transition: {
+    speed: '0.2s',
+    opacity: '0.6s',
+    termination: 300
+  },
+  autoRevert: true,
+  location: 'left',
+  inverse: false
+}
+
+Vue.use(VueProgressBar, options)
 
 
 Vue.config.productionTip = false
