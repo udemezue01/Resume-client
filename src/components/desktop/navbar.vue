@@ -20,7 +20,7 @@
           </div>
       </div>
        <!--  the navigational part for the getstarted button -->
-      <div class="uk-navbar-right">
+      <div class="uk-navbar-right" v-if="!isAuthenticated">
         <div>
           <ul class="uk-navbar-nav">
             <li>  <a class="uk-button uk-button-default" href="#modal-full" uk-toggle>Get Started</a></li>
@@ -40,7 +40,7 @@
 
              <li>  <router-link to="/feeds">
                    
-                        <svgicon icon = "fire" height="30" width="30" color = "white">  </svgicon>&nbsp;
+                        <svgicon icon = "fire" height="20" width="30" color = "white">  </svgicon>&nbsp;
                         feeds
               
                 </router-link>
@@ -49,7 +49,7 @@
 
                  <li><a href="#">
                  
-                        <svgicon icon = "compass" height="30" width="30" color = "white">  </svgicon>&nbsp;
+                        <svgicon icon = "compass" height="20" width="30" color = "white">  </svgicon>&nbsp;
                         discover
                   
                 </a> </li>
@@ -63,23 +63,23 @@
 
               <a href="">
         
-                        <svgicon icon = "add-button" height="30" width="30" color = "white">  </svgicon>&nbsp;
+                        <svgicon icon = "add-button" height="20" width="30" color = "white">  </svgicon>&nbsp;
                         create
                        
                
                 </a>
-                 <div uk-dropdown="offset:3; mode:click">
+                 <div uk-dropdown="offset:8; mode:click">
                         <ul class="uk-nav uk-dropdown-nav">
-                            <li class=""><a href="#" uk-toggle="target:#create"><svgicon icon = "add" height="50" width = "30" color = "grey"> </svgicon> Post
+                            <li class=""><a href="#" uk-toggle="target:#create"><svgicon icon = "add" height="13" width = "15" color = "grey"> </svgicon> Post
                                 <div class="uk-navbar-subtitle">share your thoughts </div>
                             </a>
 
                             </li>
-                            <li class=""><a href="#"><svgicon icon = "suitcase" height="15" width = "15" color = "grey"> </svgicon> Jobs
+                            <li class=""><a href="#"><svgicon icon = "suitcase" height="13" width = "15" color = "grey"> </svgicon> Jobs
 
                                 <div class="uk-navbar-subtitle">post a new job update </div>
                             </a></li>
-                            <li class=""><a href="#"><svgicon icon = "wifi" height="15" width = "15" color = "grey"> </svgicon> Advertise
+                            <li class=""><a href="#"><svgicon icon = "wifi" height="13" width = "15" color = "grey"> </svgicon> Advertise
 
                                 <div class="uk-navbar-subtitle">reach million adiences </div>
                             </a></li>
@@ -95,7 +95,7 @@
 
               <a href="">
               
-                        <svgicon icon = "notification" height="30" width="30" color = "white">  </svgicon>
+                        <svgicon icon = "notification" height="20" width="20" color = "white">  </svgicon>
                         
                     
                 </a>
@@ -105,7 +105,7 @@
 
               <a href="">
               
-                        <svgicon icon = "settings" height="30" width="30" color = "white">  </svgicon>&nbsp;
+                        <svgicon icon = "settings" height="20" width="20" color = "white">  </svgicon>&nbsp;
                         more
                   
                 </a>
@@ -152,7 +152,7 @@
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
         <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-            <div class="uk-background-cover" style="background-image: url('img/cover.jpg');" uk-height-viewport></div>
+            <div class="uk-background-cover" style="background-image: url('img/france.jpg');" uk-height-viewport></div>
             <div class="uk-padding-large">
                 <div class="uk-margin-medium-top">
                         <ul class="uk-flex-center" uk-tab>
@@ -196,8 +196,8 @@
   
 <script>
 
-import {mapActions} from 'vuex';
-import { mapGetters } from 'vuex';
+import {mapActions, mapGetters} from 'vuex';
+
 export default {
 
 data(){
@@ -269,21 +269,21 @@ computed: mapGetters('auth', [
 
 
 @button-text-color: white;
-@button-font-size:12px;
-@button-line-height: 10px;
+@button-font-size:8px;
+@button-line-height: 2px;
 
 .uk-button {
     /* 1 */
     margin: 0;
     /* 2 */
-    border: 1px solid #DA1FF2 ;
+    border: 1px solid white ;
     /* 3 */
     overflow: visible;
     /* 4 */
     font: inherit;
     color: inherit;
     /* 5 */
-    text-transform: uppercase;
+    text-transform: capitalize;
     /* 6 */
     display: inline-block;
     box-sizing: border-box;
@@ -291,7 +291,7 @@ computed: mapGetters('auth', [
     vertical-align: middle;
     font-size: @button-font-size;
     /* 7 */
-    line-height:20px;
+    line-height:8px;
     /* 8 */
     text-align: center;
     /* 9 */
@@ -301,7 +301,7 @@ computed: mapGetters('auth', [
 
  .hook-button(){
 
-    border-radius:5px;
+    border-radius:30px;
     padding-left:20px;
  }
 .uk-button-default {

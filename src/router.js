@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-
+import store from './store/store.js'
 
 
 
@@ -40,6 +40,8 @@ const redirectLogout = (to, from, next) => {
 
 import profile from '@/views/profile.vue'
 import feeds from '@/views/feeds.vue'
+import login from '@/views/login.vue'
+import index from '@/views/index.vue'
 
 
 Vue.use(Router)
@@ -48,10 +50,20 @@ export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
+
     {
       path: '/',
+      name: 'index',
+      component: index,
+     
+     
+    },
+    {
+      path: '/profile',
       name: 'profile',
-      component: profile
+      component: profile,
+      beforeEnter: requireAuthenticated,
+
      
     },
 
@@ -59,13 +71,14 @@ export default new Router({
      {
       path: '/feeds',
       name: 'feeds',
-      component: feeds
+      component: feeds,
+      beforeEnter: requireAuthenticated,
     },
-    //   {
-    //   path: '/login',
-    //   name: 'login',
-    //   component: login
-    // },
+      {
+      path: '/login',
+      name: 'login',
+      component: login
+    },
    
     //  {
     //   path: '/feeds',

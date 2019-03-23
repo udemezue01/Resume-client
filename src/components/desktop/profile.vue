@@ -14,7 +14,7 @@
 
                 <!--  <button class="uk-button uk-button-default uk-button-small uk-align-center uk-padding uk-margin-left">edit profile</button> -->
 
-                <div class="uk-card-footer uk-align-center">
+                <div class="uk-card-footer uk-align-center uk-position-bottom-center uk-padding-large">
                     <a href="#" class="uk-button uk-button-text ">edit Profile</a>
                 </div>
      
@@ -86,13 +86,13 @@
 </template>
 
 <script>
+  import {mapState, mapAction} from 'vuex';
  
 export default {
 
-  data(){
-    return{
-      
-    }
+  computed:{
+
+  
   }
 
 }

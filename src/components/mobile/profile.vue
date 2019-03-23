@@ -6,19 +6,27 @@
     <div id="profile-image" class="uk-card-default uk-card-body uk-width-expanded uk-align-center">
             
                 
-            <img src="/img/udem.jpg" height="150px"  width="150px" class="uk-border-circle uk-align-center" />
+           <div class="uk-card uk-card-default uk-card-body">
 
-            <button class="uk-align-center@m uk-button uk-button-default uk-button-small uk-padding-top"> edit profile</button>
-    </div>
-          
+        
+                 <img src="/img/udem.jpg" height="200px"  width="200px" class="uk-border-circle uk-align-center" />
+
+               
+
+                <div class="uk-card-footer uk-align-center uk-position-bottom-center uk-padding-large">
+                    <a href="#" class="uk-button uk-button-text ">edit Profile</a>
+                </div>
+     
+            </div>
       
+</div>
 </div>
 
 <!-- end of the profile section -->
     <div class="uk-section">
        <div>
                 
-                  <ul class="uk-flex-center"  uk-tab >
+                  <ul class="uk-flex-center"  uk-tab="media: @s" >
                   <li class="uk-active"><a href="">  Feeds</a></li>
                   <li><a href=""> Posts</a> </li>
                   <li ><a> Application</a></li>
