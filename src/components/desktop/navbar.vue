@@ -169,18 +169,21 @@
         <div class="uk-margin">
           <div class="uk-inline">
             
-       
-         <svgicon class="uk-form-icon" icon="notification" color="blue">   </svgicon>
-            <input class="uk-input uk-form-width-large uk-form-large" type="text" placeholder="Input">
+      <!--  
+         <svgicon class="uk-form-icon" icon="notification" color="blue" height = "20" width = "20">   </svgicon> -->
+            <input class="uk-input uk-form-width-large uk-form-large" type="text" placeholder="Full name">
                </div>
         </div>
 
         <div class="uk-margin">
-            <input class="uk-input uk-form-width-large uk-form-large" type="text" placeholder="Input">
+            <input class="uk-input uk-form-width-large uk-form-large" type="text" placeholder="Email">
         </div>
 
         <div class="uk-margin">
-            <input class="uk-input uk-form-width-large uk-form-large" type="text" placeholder="Input">
+            <input class="uk-input uk-form-width-large uk-form-large" type="text" placeholder="account type">
+        </div>
+         <div class="uk-margin">
+            <input class="uk-input uk-form-width-large uk-form-large" type="password" placeholder="password">
         </div>
 
     </fieldset>
