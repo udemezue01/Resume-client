@@ -39,15 +39,15 @@ export default {
 
     getPost({ commit }, { data }) {
       commit(POST_GET_BEGIN);
-      return auth.readPost(data)
-        .then(() => commit(POST_GET_SUCCESS))
+      return post.readPost(data)
+        .then(({data}) => commit(POST_GET_SUCCESS, data))
         .catch(() => commit(POST_GET_FAILURE));
     },
 
 
       deletePost({ commit }, { data }) {
       commit(POST_DELETE_BEGIN);
-      return auth.verifyAccountEmail(key)
+      return post.deletePost(key)
         .then(() => commit(POST_DELETE_SUCCESS))
         .catch(() => commit(POST_DELETE_FAILURE));
     },
@@ -55,7 +55,7 @@ export default {
 
       updatePost({ commit }, { key }) {
       commit(POST_UPDATE_BEGIN);
-      return auth.verifyAccountEmail(key)
+      return post.updatePost(key)
         .then(() => commit(POST_UPDATE_SUCCESS))
         .catch(() => commit(POST_UPDATE_FAILURE));
     },
@@ -69,10 +69,11 @@ export default {
       state.registrationError = true;
       state.registrationLoading = false;
     },
-    [POST_CREATE_SUCCESS](state) {
+    [POST_CREATE_SUCCESS](state, data) {
       state.registrationCompleted = true;
       state.registrationError = false;
       state.registrationLoading = false;
+      state.post  =  data;
     },
       [POST_CREATE_FAILURE](state) {
       state.activationLoading = true;

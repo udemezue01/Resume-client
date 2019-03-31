@@ -31,7 +31,7 @@
       </div>
      <!--  end of the navigational for the getstarted button -->
 
-      <div class="uk-navbar-right" v-if="!isAuthenticated">
+      <div class="uk-navbar-right" v-if="isAuthenticated">
           <div>
             
 

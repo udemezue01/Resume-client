@@ -91,9 +91,27 @@
 export default {
 
   computed:{
+    ...mapState('profile',[
 
-  
+      'createCompleted',
+      'createError',
+      'createLoading',
+      'profile'
+
+      ])
+  },
+
+  methods:{
+    ...mapAction('profile',[
+      'createProfile',
+      'updateProfile',
+      'getProfile',
+      'deleteProfile'
+
+      ]),
+
   }
+
 
 }
 </script>

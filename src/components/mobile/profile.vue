@@ -47,13 +47,26 @@ import {mapState} from 'vuex';
 
 export default {
 
-  data(){
-    return{
-    
-    }
+ computed:{
+    ...mapState('profile',[
+
+      'createCompleted',
+      'createError',
+      'createLoading',
+      'profile'
+
+      ])
   },
-  computed:{
-   
+
+  methods:{
+    ...mapAction('profile',[
+      'createProfile',
+      'updateProfile',
+      'getProfile',
+      'deleteProfile'
+
+      ]),
+
   }
 
 }
