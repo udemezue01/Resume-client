@@ -53,9 +53,9 @@ export default {
     },
 
 
-      updatePost({ commit }, { key }) {
+      updatePost({ commit }, { data }) {
       commit(POST_UPDATE_BEGIN);
-      return post.updatePost(key)
+      return post.updatePost(data)
         .then(() => commit(POST_UPDATE_SUCCESS))
         .catch(() => commit(POST_UPDATE_FAILURE));
     },
@@ -73,7 +73,7 @@ export default {
       state.registrationCompleted = true;
       state.registrationError = false;
       state.registrationLoading = false;
-      state.post  =  data;
+      
     },
       [POST_CREATE_FAILURE](state) {
       state.activationLoading = true;
@@ -82,10 +82,11 @@ export default {
     [POST_GET_BEGIN](state) {
       state.activationLoading = true;
     },
-    [POST_GET_SUCCESS](state) {
+    [POST_GET_SUCCESS](state, data) {
       state.activationCompleted = false;
       state.activationError = false;
       state.activationLoading = false;
+      state.post  == data;
     },
     [POST_GET_FAILURE](state) {
       state.activationCompleted = false;

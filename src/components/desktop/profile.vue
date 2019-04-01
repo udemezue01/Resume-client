@@ -86,7 +86,7 @@
 </template>
 
 <script>
-  import {mapState, mapAction} from 'vuex';
+  import {mapState, mapActions} from 'vuex';
  
 export default {
 
@@ -102,7 +102,7 @@ export default {
   },
 
   methods:{
-    ...mapAction('profile',[
+    ...mapActions('profile',[
       'createProfile',
       'updateProfile',
       'getProfile',
