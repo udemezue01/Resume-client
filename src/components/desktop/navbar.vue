@@ -23,7 +23,7 @@
       <div class="uk-navbar-right" v-if="!isAuthenticated">
         <div>
           <ul class="uk-navbar-nav">
-            <li>  <a class="uk-button uk-button-default" href="#modal-full" uk-toggle>Get Started</a></li>
+            <li>  <a class="uk-button uk-button-default uk-button-small" href="#modal-full" uk-toggle>Get Started</a></li>
           </ul>
 
         </div>
@@ -147,6 +147,9 @@
    </div>
 
   <!--  end of the modal for the create button -->
+
+
+ <!--  sign up modal for registration -->
   
   <div id="modal-full" class="uk-modal-full" uk-modal>
     <div class="uk-modal-dialog">
@@ -161,35 +164,56 @@
                             <li><a href="#">Sign Up</a></li>
                         </ul>
                     </div>
-                <form class="uk-align-center">
-    <fieldset class="uk-fieldset">
-
-        <legend class="uk-legend"> Register </legend>
-
-        <div class="uk-margin">
-          <div class="uk-inline">
+            <div class="uk-width-large uk-padding-large">
+        <form action="login.html">
+          <fieldset class="uk-fieldset">
+            <legend class="uk-legend">Login</legend>
+            <div class="uk-margin">
+              <div class="uk-inline uk-width-1-1">
+                <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
+                <input class="uk-input uk-form-large" required placeholder="Email" type="email">
+              </div>
+            </div>
+            <div class="uk-margin">
+              <div class="uk-inline uk-width-1-1">
+                <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
+                <input class="uk-input uk-form-large" required placeholder="Password" type="password">
+              </div>
+            </div>
             
-      <!--  
-         <svgicon class="uk-form-icon" icon="notification" color="blue" height = "20" width = "20">   </svgicon> -->
-            <input class="uk-input uk-form-width-large uk-form-large" type="text" placeholder="Full name">
-               </div>
+            <div class="uk-margin">
+              <label><input class="uk-checkbox" type="checkbox"> Keep me logged in</label>
+            </div>
+            <div class="uk-margin">
+              <button type="submit" class="uk-button uk-button-danger uk-button-large uk-width-1-1">LOG IN</button>
+            </div>
+          </fieldset>
+        </form>
+        <div>
+          <div class="uk-text-center">
+            <a class="uk-link-reset uk-text-small" data-uk-toggle="target: #recover;animation: uk-animation-slide-top-small">Forgot your password?</a>
+          </div>
+          <div class="uk-margin-small-top" id="recover" hidden>
+            <form action="login.html">
+              
+              <div class="uk-margin-small">
+                <div class="uk-inline uk-width-1-1">
+                  <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: mail"></span>
+                  <input class="uk-input" placeholder="E-mail" required type="text">
+                </div>
+              </div>
+              <div class="uk-margin-small">
+                <button type="submit" class="uk-button uk-button-primary uk-width-1-1">SEND PASSWORD</button>
+              </div>
+              
+            </form>
+          </div>
         </div>
-
-        <div class="uk-margin">
-            <input class="uk-input uk-form-width-large uk-form-large" type="text" placeholder="Email">
-        </div>
-
-        <div class="uk-margin">
-            <input class="uk-input uk-form-width-large uk-form-large" type="text" placeholder="account type">
-        </div>
-         <div class="uk-margin">
-            <input class="uk-input uk-form-width-large uk-form-large" type="password" placeholder="password">
-        </div>
-
-    </fieldset>
-</form>
+      </div>
             </div>
         </div>
+
+        <!-- end of the modal for registration -->
     </div>
 </div>
   </div>
@@ -271,57 +295,57 @@ computed: mapGetters('auth', [
 @import '../../theme/theme.less';
 
 
-@button-text-color: white;
-@button-font-size:8px;
-@button-line-height: 2px;
+// @button-text-color: white;
+// @button-font-size:8px;
+// @button-line-height: 2px;
 
-.uk-button {
-    /* 1 */
-    margin: 0;
-    /* 2 */
-    border: 1px solid white ;
-    /* 3 */
-    overflow: visible;
-    /* 4 */
-    font: inherit;
-    color: inherit;
-    /* 5 */
-    text-transform: capitalize;
-    /* 6 */
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 0 @button-padding-horizontal;
-    vertical-align: middle;
-    font-size: @button-font-size;
-    /* 7 */
-    line-height:8px;
-    /* 8 */
-    text-align: center;
-    /* 9 */
-    text-decoration: none;
+// .uk-button {
+//     /* 1 */
+//     margin: 0;
+//     /* 2 */
+//     border: 1px solid white ;
+//     /* 3 */
+//     overflow: visible;
+//     /* 4 */
+//     font: inherit;
+//     color: inherit;
+//     /* 5 */
+//     text-transform: capitalize;
+//     /* 6 */
+//     display: inline-block;
+//     box-sizing: border-box;
+//     padding: 0 @button-padding-horizontal;
+//     vertical-align: middle;
+//     font-size: @button-font-size;
+//     /* 7 */
+//     line-height:3px;
+//     /* 8 */
+//     text-align: center;
+//     /* 9 */
+//     text-decoration: none;
    
-}
+// }
 
- .hook-button(){
+//  .hook-button(){
 
-    border-radius:30px;
-    padding-left:20px;
- }
-.uk-button-default {
-    background-color:#247CC4;
-    color: white;
-    .hook-button-default;
-}
-.uk-button-default:hover,
-.uk-button-default:focus {
-    background-color: #247CC4;
-    color: white;
+//     border-radius:20px;
+//     padding-left:20px;
+//  }
+// .uk-button-default {
+//     background-color:#247CC4;
+//     color: white;
+//     .hook-button-default;
+// }
+// .uk-button-default:hover,
+// .uk-button-default:focus {
+//     background-color: #247CC4;
+//     color: white;
    
-}
- .hook-button-default-hover(){
-  background-color:#247CC4;
-  color:white;
- }
+// }
+//  .hook-button-default-hover(){
+//   background-color:#247CC4;
+//   color:white;
+//  }
 
 
 </style>

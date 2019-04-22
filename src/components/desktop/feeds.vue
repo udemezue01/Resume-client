@@ -38,7 +38,13 @@ data(){
 	}
 },
 
+// computed:{
+//   ...mapState('stream', [
+//       ''
 
+
+//     ])
+// }
 
 }
 

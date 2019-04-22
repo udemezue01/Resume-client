@@ -5,10 +5,10 @@ export default {
   createApplication(full_name, email, password) {
     return session.post('account/registration/', { user, content ,media });
   },
-  getAPplication(data) {
+  getApplication(data) {
     return session.get('/apply/', data);
   },
-  updatevacancy(data) {
+  updateApplication(data) {
     return session.patch('/apply/', data);
   },
   deleteVacancy(url) {

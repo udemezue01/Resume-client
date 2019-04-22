@@ -2,10 +2,10 @@ import session from './session';
 
 export default {
 
-  createPost(full_name, email, password) {
+  createPost(user,content, media) {
     return session.post('/post/', { user, content ,media });
   },
-  getPost() {
+  getPost(data) {
     return session.get('/post/', data);
   },
   updatePost(data) {

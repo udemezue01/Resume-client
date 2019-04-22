@@ -2,16 +2,26 @@ import session from './session';
 
 export default {
 
-  createPost(full_name, email, password) {
-    return session.post('account/registration/', { user, content ,media });
+  createProfile(user, username, country,category, avatar, status, cv_upload,education, certification, work_history,website) {
+    return session.post('/profile/', { user, username ,country, category, avatar, status, cv_upload, education,certification, work_history, website });
   },
-  getPost() {
-    return session.get('/post/', data);
+  getProfile(data) {
+    return session.get('/profile/', data);
   },
-  updatePost(data) {
-    return session.patch('/post/', data);
+  updateProfile(data) {
+    return session.patch('/profile/', data);
   },
-  deletePost(url) {
-    return session.delete('/post/', data);
+  deleteProfile(url) {
+    return session.delete('/profile/', data);
   },
+  createEducation (school, year_started, year_ended){
+    return session.post('/profile/p/education/', {user, school, year_started, year_ended})
+  },
+
+  createCertification (user, organization, year_obtained){
+    return session.post('/profile/p/certification', {user, organization, year_obtained})
+  },
+  createWorkHistory (user, company, year_started, year_ended){
+    return session.post ('/profile/p/workhistory', {user, company, year_started, year_ended})
+  }
 };
