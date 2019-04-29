@@ -41,7 +41,7 @@ const redirectLogout = (to, from, next) => {
 import profile from '@/views/profile.vue'
 import feeds from '@/views/feeds.vue'
 import login from '@/views/login.vue'
-import index from '@/views/index.vue'
+import landing from '@/views/landing.vue'
 
 
 Vue.use(Router)
@@ -53,8 +53,8 @@ export default new Router({
 
     {
       path: '/',
-      name: 'index',
-      component: index,
+      name: 'landing',
+      component: landing,
      
      
     },

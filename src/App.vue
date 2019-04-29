@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-   <navbar-desktop class = "uk-visible@l"> </navbar-desktop>
-   <navbar-mobile class= "uk-hidden@l"> </navbar-mobile>
+   <navbar-desktop class = "uk-visible@l" v-if="isAuthenticated"> </navbar-desktop>
+   <navbar-mobile class= "uk-hidden@l"  v-if="isAuthenticated"> </navbar-mobile>
     <router-view/>
 
     <footer-mobile class= "uk-hidden@l">  </footer-mobile>
@@ -20,7 +20,7 @@ import footer_m from '@/components/desktop/footer.vue'
 import footer_d from '@/components/mobile/footer.vue'
 
 //vuex imports
- 
+ import {mapActions, mapGetters} from 'vuex';
  
 export default {
 
@@ -30,11 +30,12 @@ components:{
   'footer-mobile':footer_m
 },
 
+computed: mapGetters('auth', [
+    'isAuthenticated',
+  ]),
 
 
 }
-
-
 </script>
 
 

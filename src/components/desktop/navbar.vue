@@ -1,8 +1,12 @@
 <template>
- 
-  <div id="navbar-desktop">
+   
 
-    <div uk-sticky="top: #navbar-desktop">
+
+  <!--  The navigational bar -->
+
+  <div id="navbar-desktop" class="uk-position-top">
+
+    <div uk-sticky="top: #navbar-desktop" >
     <nav class="uk-navbar-container uk-margin" uk-navbar>
    
 
@@ -13,17 +17,21 @@
         </div>
 
 
-        <div class="uk-inline"  v-if="isAuthenticated">
+        <div class="uk-inline">
         
         <input class="uk-input" placeholder="search">
         <svgicon icon = "search" class = "uk-form-icon uk-form-icon-flip uk-margin " height = "20" width = "50" color ="grey">   </svgicon>
           </div>
       </div>
+
+
        <!--  the navigational part for the getstarted button -->
-      <div class="uk-navbar-right" v-if="!isAuthenticated">
+
+
+      <div class="uk-navbar-right">
         <div>
           <ul class="uk-navbar-nav">
-            <li>  <a class="uk-button uk-button-default uk-button-small" href="#modal-full" uk-toggle>Get Started</a></li>
+            <li>  <a class="uk-button uk-button-small uk-button-primary" href="#modal-full" uk-toggle>Get Started</a></li>
           </ul>
 
         </div>
@@ -31,7 +39,7 @@
       </div>
      <!--  end of the navigational for the getstarted button -->
 
-      <div class="uk-navbar-right" v-if="isAuthenticated">
+      <div class="uk-navbar-right">
           <div>
             
 
@@ -40,7 +48,7 @@
 
              <li>  <router-link to="/feeds">
                    
-                        <svgicon icon = "fire" height="20" width="30" color = "white">  </svgicon>&nbsp;
+                        <!-- <svgicon icon = "fire" height="20" width="30" color = "white">  </svgicon> -->&nbsp;
                         feeds
               
                 </router-link>
@@ -68,6 +76,8 @@
                        
                
                 </a>
+                <!-- the navbar drop down -->
+
                  <div uk-dropdown="offset:8; mode:click">
                         <ul class="uk-nav uk-dropdown-nav">
                             <li class=""><a href="#" uk-toggle="target:#create"><svgicon icon = "add" height="13" width = "15" color = "grey"> </svgicon> Post
@@ -86,6 +96,8 @@
             
                         </ul>
                     </div>
+
+                  <!-- end of the navbar dropdown -->
 
             </li>
 
@@ -127,7 +139,7 @@
    <div id="create" uk-modal>
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-default" type="button" uk-close></button>
-       <!--  <div class="uk-modal-header">
+  <!--  <div class="uk-modal-header">
             <h2 class="uk-modal-title"></h2>
         </div> -->
         <div class="uk-modal-body">
@@ -160,14 +172,16 @@
                 <div class="uk-margin-medium-top">
                         <ul class="uk-flex-center" uk-tab>
                            
-                            <li><a href="#">Login</a></li>
-                            <li><a href="#">Sign Up</a></li>
+                            <li><a href="#">LOGIN</a></li>
+                            <li><a href="#">SIGN UP</a></li>
                         </ul>
                     </div>
-            <div class="uk-width-large uk-padding-large">
-        <form action="login.html">
+            <div class="uk-width-large uk-padding-large" >
+
+
+        <form action="">
           <fieldset class="uk-fieldset">
-            <legend class="uk-legend">Login</legend>
+          <!--   <legend class="uk-legend"></legend> -->
             <div class="uk-margin">
               <div class="uk-inline uk-width-1-1">
                 <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
@@ -185,16 +199,20 @@
               <label><input class="uk-checkbox" type="checkbox"> Keep me logged in</label>
             </div>
             <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-danger uk-button-large uk-width-1-1">LOG IN</button>
+              <button type="submit" class="uk-button uk-button-primary uk-button-large uk-width-1-1">LOG IN</button>
             </div>
+            
           </fieldset>
         </form>
+        <div class="uk-margin">
+              <button type="submit" class="uk-button uk-button-danger uk-button-large uk-width-1-1">LOGIN WITH GOOGLE</button>
+            </div>
         <div>
           <div class="uk-text-center">
             <a class="uk-link-reset uk-text-small" data-uk-toggle="target: #recover;animation: uk-animation-slide-top-small">Forgot your password?</a>
           </div>
           <div class="uk-margin-small-top" id="recover" hidden>
-            <form action="login.html">
+            <form action="">
               
               <div class="uk-margin-small">
                 <div class="uk-inline uk-width-1-1">
@@ -203,7 +221,7 @@
                 </div>
               </div>
               <div class="uk-margin-small">
-                <button type="submit" class="uk-button uk-button-primary uk-width-1-1">SEND PASSWORD</button>
+                <button type="submit" class="uk-button uk-button-primary uk-button-large uk-width-1-1">SEND PASSWORD</button>
               </div>
               
             </form>
@@ -214,6 +232,8 @@
         </div>
 
         <!-- end of the modal for registration -->
+
+
     </div>
 </div>
   </div>
@@ -280,9 +300,6 @@ methods:{
 
 
 },
-computed: mapGetters('auth', [
-    'isAuthenticated',
-  ]),
 
 }
 

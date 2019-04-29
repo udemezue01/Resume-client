@@ -1,5 +1,5 @@
 <template>
-  <div id="hero">
+  <div id="hero" class="uk-padding-large">
 
   		<!-- TEXT -->
 			<div class="uk-container uk-container-small uk-flex-auto uk-text-center" data-uk-scrollspy="target: > .animate; cls: uk-animation-slide-bottom-small uk-invisible; delay: 300">
