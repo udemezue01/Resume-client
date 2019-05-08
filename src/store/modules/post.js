@@ -21,9 +21,9 @@ import  {
 export default {
   namespaced: true,
   state: {
-    createCompleted: false,
-    createError: false,
-    createLoading: false,
+    postCompleted: false,
+    postError: false,
+    postLoading: false,
     post:[],
     
   },

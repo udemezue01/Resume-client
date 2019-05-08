@@ -12,7 +12,7 @@ const requireAuthenticated = (to, from, next) => {
   store.dispatch('auth/initialize')
     .then(() => {
       if (!store.getters['auth/isAuthenticated']) {
-        next('/login');
+        next('/');
       } else {
         next();
       }

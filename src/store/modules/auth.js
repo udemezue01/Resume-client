@@ -15,6 +15,7 @@ const initialState = {
   authenticating: false,
   error: false,
   token: null,
+  sucess:false
 };
 
 const getters = {
@@ -48,10 +49,10 @@ const actions = {
 const mutations = {
   [LOGIN_BEGIN](state) {
     state.authenticating = true;
-    state.error = false;
+
   },
   [LOGIN_FAILURE](state) {
-    state.authenticating = false;
+
     state.error = true;
   },
   [LOGIN_SUCCESS](state) {

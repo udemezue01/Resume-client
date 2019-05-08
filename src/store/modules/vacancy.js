@@ -2,22 +2,21 @@ import profile from '../../api/backend/profile';
 
 import {
   
-     PROFILE_CREATE_BEGIN ,
-     PROFILE_CREATE_SUCCESS,
-     PROFILE_CREATE_FAILURE , 
+  COMMENT_GET_BEGIN,
+  COMMENT_GET_SUCCESS,
+  COMMENT_GET_FAILURE,
 
-     PROFILE_GET_BEGIN,  
-     PROFILE_GET_SUCCESS,
-     PROFILE_GET_FAILURE,
+  COMMENT_CREATE_BEGIN,
+  COMMENT_CREATE_SUCCESS,
+  COMMENT_CREATE_FAILURE,
 
-     PROFILE_DELETE_BEGIN,
-     PROFILE_DELETE_SUCCESS,
-     PROFILE_DELETE_FAILURE,
+  COMMENT_UPDATE_BEGIN,
+  COMMENT_UPDATE_SUCCESS,
+  COMMENT_UPDATE_FAILURE,
 
-     PROFILE_UPDATE_BEGIN,
-     PROFILE_UPDATE_SUCCESS,
-     PROFILE_UPDATE_FAILURE
-
+  COMMENT_DELETE_BEGIN,
+  COMMENT_DELETE_SUCCESS,
+  COMMENT_DELETE_FAILURE,
 
 
 
@@ -26,32 +25,32 @@ import {
 
 
  const = state: {
-    profileCompleted: false,
-    profileError: false,
-    profileLoading: false,
-    profile:[],
+    commentSuccess: false,
+    commentError: false,
+    commentLoading: false,
+    comment:[],
     
   },
   const actions =  {
-    createProfile({ commit }, { username, avatar, category, created_at }) {
+    createComment({ commit }, { content, created_at }) {
       commit(PROFILE_CREATE_BEGIN);
-      return profile.createProfile(username, avatar, category, created_at)
+      return profile.createProfile(content, created_at)
         .then(() => commit(PROFILE_CREATE_SUCCESS))
         .catch(() => commit(PROFILE_CREATE_FAILURE));
     },
-    getProfile({ commit }, { data }) {
+    getComment({ commit }, { data }) {
       commit(PROFILE_GET_BEGIN);
       return profile.getprofile(data)
         .then(() => commit(PROFILE_GET_SUCCESS))
         .catch(() => commit(PROFILE_GET_FAILURE));
     },
-    deleteProfile({ commit }, { url }) {
+    deleteComment({ commit }, { url }) {
       commit(PROFILE_DELETE_BEGIN);
       return profile.deleteprofile(data)
         .then(() => commit(PROFILE_DELETE_SUCCESS))
         .catch(() => commit(PROFILE_DELETE_FAILURE));
     },
-    updateProfile({ commit }, { data }) {
+    updateComment({ commit }, { data }) {
       commit(PROFILE_UPDATE_BEGIN);
       return profile.updateProfile(data)
         .then(() => commit(PROFILE_UPDATE_SUCCESS))

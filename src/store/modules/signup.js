@@ -69,12 +69,11 @@ export default {
     },
     [REGISTRATION_FAILURE](state) {
       state.registrationError = true;
-      state.registrationLoading = false;
+      
     },
     [REGISTRATION_SUCCESS](state) {
       state.registrationCompleted = true;
-      state.registrationError = false;
-      state.registrationLoading = false;
+     
     },
   },
 };

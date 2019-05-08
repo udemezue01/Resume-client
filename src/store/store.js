@@ -7,6 +7,8 @@ import password from './modules/auth.js'
 import post from './modules/auth.js'
 import profile from './modules/auth.js'
 import signup from './modules/auth.js'
+// import news from '/modules/news.js'
+// import stream from '/modules/stream.js'
 
 
 
@@ -20,6 +22,8 @@ export default new Vuex.Store({
   		post,
   		profile,
   		signup,
+
+
 
 
 

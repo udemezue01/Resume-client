@@ -13,13 +13,14 @@ import {
 
 export default {
   namespaced: true,
+
+  
   state: {
-    activationCompleted: false,
-    activationError: false,
-    activationLoading: false,
-    registrationCompleted: false,
-    registrationError: false,
-    registrationLoading: false,
+    streamCompleted: false,
+    streamError: false,
+    streamLoading: false,
+    streams:[]
+  
   },
   actions: {
     createAccount({ commit }, { full_name, email, password }) {
