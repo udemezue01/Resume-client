@@ -6,7 +6,7 @@
     <div class="uk-grid-collapse uk-child-width-1-2@m uk-child-width-1-1@s uk-flex-middle" uk-grid>
 
     <!--   the large section banner -->
-          <div class="uk-background-cover uk-visible@l" style="background-image: url('img/france.jpg');height: 100%;" uk-height-viewport></div>
+          <div class="uk-background-cover uk-visible@l uk-section" style="background-image: url('img/france.jpg');height: 100%;" uk-height-viewport></div>
 
        <!--    end of the large image section banner -->
 
@@ -27,19 +27,19 @@
             <div class="uk-width-large uk-padding-large uk-align-center" >
 
 
-        <form action="" class="register">
+        <form action="" class="register uk-form-stacked">
           <fieldset class="uk-fieldset">
           <!--   <legend class="uk-legend"></legend> -->
             <div class="uk-margin">
               <div class="uk-inline uk-width-1-1">
                 <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
-                <input class="uk-input uk-form-xlarge" required placeholder="Email" type="email">
+                <input class="uk-input uk-form-xlarge" required placeholder="Email" type="email" v-model="login.email">
               </div>
             </div>
             <div class="uk-margin">
               <div class="uk-inline uk-width-1-1">
                 <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
-                <input class="uk-input uk-form-xlarge" required placeholder="Password" type="password">
+                <input class="uk-input uk-form-xlarge" required placeholder="Password" type="password" v-model="login.password">
               </div>
             </div>
             
@@ -47,13 +47,13 @@
               <label><input class="uk-checkbox" type="checkbox"> Keep me logged in</label>
             </div>
             <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-primary uk-button-large uk-width-1-1">LOG IN</button>
+              <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1" v-on:click="userLogin()">Sign In</button>
             </div>
             
           </fieldset>
         </form>
         <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-danger uk-button-large uk-width-1-1">LOGIN WITH GOOGLE</button>
+              <button type="submit" class="uk-button uk-button-danger uk-button-medium uk-width-1-1">LOGIN WITH GOOGLE</button>
             </div>
         <div>
           <div class="uk-text-center">
@@ -69,7 +69,7 @@
                 </div>
               </div>
               <div class="uk-margin-small">
-                <button type="submit" class="uk-button uk-button-primary uk-button-large uk-width-1-1">SEND PASSWORD</button>
+                <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1">SEND PASSWORD</button>
               </div>
               
             </form>
@@ -100,7 +100,7 @@ login:{
   register:{
 	full_name:"",
 	email:"",
-	account_type:[""]
+	account_type:["individual", "company"]
     
 
   },
@@ -122,15 +122,56 @@ computed:{
 
 },
   method:{
-    userLogin:{
+    userLogin(login){
+      this.$store.dispatch('auth/login', login)
+      .then(() => this.$router.push('/home'))
+      .catch(err => console.log(err))
+
 
     },
-    userRegister:{
+    userRegister(register){
+      this.$store.dispatch('signup/register', register)
       
-    }
+  
+    },
   }
 }
   
 </script>
 
-   
+<style scoped lang="less">
+
+@import '../theme/theme.less';
+
+
+.uk-section-primary {
+    background: linear-gradient(45deg,#247CC4,#336BAE);
+    .hook-section-primary;
+}
+ .hook-section-primary(){
+  background-image:linear-gradient(45deg,#247CC4,#336BAE);
+ }
+
+ .hook-form() {
+  border-radius: 20px;
+  border:1px solid;
+ }
+
+ .hook-button(){
+  border-radius: 20px;
+ }
+
+
+ @form-focus-background: #247CC4;
+ @form-focus-color: white;
+
+
+@form-background:  #247CC4;
+@form-color: white;
+@form-placeholder-color: white;
+
+
+@button-default-background: #336BAE;
+@button-default-active-background:  #336BAE;
+</style>
+
