@@ -13,15 +13,15 @@
     <!--    the user form and registration section -->
             <div class="uk-padding-large uk-flex-center uk-section-primary" uk-height-viewport >
 
-              <div class="web-intro" >
+              <div class="web-intro uk-margin-left" >
                 
-              <h1> Resume</h1>
+              <h2> Resume</h2>
               </div>
                 <div class="uk-margin-medium-top">
                         <ul class="uk-flex-center" uk-tab>
                            
-                            <li><a href="#" toggle=".register">LOGIN</a></li>
-                            <li><a href="#" toggle="">SIGN UP</a></li>
+                            <li><a href="#" toggle=">.register">LOGIN</a></li>
+                            <li><a href="#" toggle=">.register">SIGN UP</a></li>
                         </ul>
                     </div>
             <div class="uk-width-large uk-padding-large uk-align-center" >
@@ -122,12 +122,14 @@ computed:{
 
 },
   method:{
-    userLogin(){
-      this.$store.dispatch('auth/login', login)
+    userLogin:function(login){
+
+        this.$store.dispatch('modules/auth/login', login)
     
       .then(() => this.$router.push('/home'))
       .catch(err => console.log(err))
 
+}
 
     },
     userRegister(register){
@@ -135,9 +137,9 @@ computed:{
       
   
     },
-  },
+  }
 
-}
+
   
 </script>
 
