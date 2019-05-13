@@ -42,20 +42,20 @@ import {
     getProfile({ commit }, { data }) {
       commit(PROFILE_GET_BEGIN);
       return profile.getprofile(data)
-        .then(() => commit(PROFILE_GET_SUCCESS))
-        .catch(() => commit(PROFILE_GET_FAILURE));
+        .then((response) => commit(PROFILE_GET_SUCCESS, response))
+        .catch((error) => commit(PROFILE_GET_FAILURE, error));
     },
     deleteProfile({ commit }, { url }) {
       commit(PROFILE_DELETE_BEGIN);
       return profile.deleteprofile(data)
-        .then(() => commit(PROFILE_DELETE_SUCCESS))
-        .catch(() => commit(PROFILE_DELETE_FAILURE));
+        .then((response) => commit(PROFILE_DELETE_SUCCESS, response))
+        .catch((error) => commit(PROFILE_DELETE_FAILURE, error));
     },
     updateProfile({ commit }, { data }) {
       commit(PROFILE_UPDATE_BEGIN);
       return profile.updateProfile(data)
-        .then(() => commit(PROFILE_UPDATE_SUCCESS))
-        .catch(() => commit(PROFILE_UPDATE_FAILURE));
+        .then((response) => commit(PROFILE_UPDATE_SUCCESS, response))
+        .catch((error) => commit(PROFILE_UPDATE_FAILURE, error));
     },
   
   },
@@ -69,48 +69,39 @@ import {
   },
   const mutations = {
      [PROFILE_CREATE_BEGIN](state) {
-      state.createLoading = true;
+      state.profileLoading = true;
   
      
     },
     [PROFILE_CREATE_FAILURE](state) {
-      state.createError = true;
-      state.createLoading = false;
+    state.profileError = true;
      
     },
     [PROFILE_CREATE_SUCCESS](state) {
-      state.createCompleted = true;
-      state.createError = false;
-      state.createLoading = false;
+      state.profileCompleted = true;
      
     },
       [PROFILE_GET_BEGIN](state) {
-      state.activationLoading = true;
-      state.createLoading = true;
+      state.profileLoading = true;
     },
       [PROFILE_GET_SUCCESS](state) {
-      state.activationLoading = true;
+      state.profileCompleted = true;
       state.profile = response.data();
     },
     [PROFILE_GET_FAILURE](state) {
-      state.createLoading = false;
-      state.createError = true;
+      state.profileError = true;
     },
     [PROFILE_UPDATE_BEGIN](state) {
       
-      state.createLoading = false;
+      state.profileLoading = false;
 
     },
     [PROFILE_UPDATE_SUCCESS](state) {
-      state.createCompleted = true;
-      state.activationError = false;
-      state.activationLoading = false;
+     state.profileCompleted = true;
     },
     
      [PROFILE_UPDATE_FAILURE](state) {
-      state.activationCompleted = false;
-      state.createError = true;
-      state.activationLoading = false;
+      state.profileError = true;
     },
     [PROFILE_DELETE_BEGIN](state){
       state.createLoading = true;

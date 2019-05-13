@@ -30,8 +30,8 @@ import {
     sendPasswordResetEmail({ commit }, { email }) {
       commit(PASSWORD_EMAIL_BEGIN);
       return auth.sendAccountPasswordResetEmail(email)
-        .then(() => commit(PASSWORD_EMAIL_SUCCESS))
-        .catch(() => commit(PASSWORD_EMAIL_FAILURE));
+        .then((response) => commit(PASSWORD_EMAIL_SUCCESS, response))
+        .catch((error) => commit(PASSWORD_EMAIL_FAILURE, error));
     },
     clearResetStatus({ commit }) {
       commit(PASSWORD_RESET_CLEAR);

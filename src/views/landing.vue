@@ -16,6 +16,7 @@
               <div class="web-intro uk-margin-left" >
                 
               <h2> Resume</h2>
+              <p>Social Network for Proffesionals</p>
               </div>
                 <div class="uk-margin-medium-top">
                         <ul class="uk-flex-center" uk-tab>
@@ -33,13 +34,13 @@
             <div class="uk-margin">
               <div class="uk-inline uk-width-1-1">
                 <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
-                <input class="uk-input uk-form-xlarge" required placeholder="Email" type="email" v-model="login.email">
+                <input class="uk-input uk-form-xlarge" required placeholder="Email" type="email" v-model="resumeLogin.email">
               </div>
             </div>
             <div class="uk-margin">
               <div class="uk-inline uk-width-1-1">
                 <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
-                <input class="uk-input uk-form-xlarge" required placeholder="Password" type="password" v-model="login.password">
+                <input class="uk-input uk-form-xlarge" required placeholder="Password" type="password" v-model="resumeLogin.password">
               </div>
             </div>
             
@@ -47,7 +48,7 @@
               <label><input class="uk-checkbox" type="checkbox"> Keep me logged in</label>
             </div>
             <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1" v-on:click="userLogin()">Sign In</button>
+              <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1" v-on:click="userLogin" >Sign In</button>
             </div>
             
           </fieldset>
@@ -92,7 +93,7 @@ export default {
 data(){
   return {
   
-login:{
+ resumeLogin:{
     email: "",
     password : ""
   },
@@ -121,16 +122,19 @@ computed:{
     ]),
 
 },
-  method:{
-    userLogin:function(login){
+  methods:{
+    ...mapActions('auth', [
 
-        this.$store.dispatch('modules/auth/login', login)
-    
-      .then(() => this.$router.push('/home'))
-      .catch(err => console.log(err))
+      'login',
+      'logout'
+      ]),
+  userLogin(){
 
-}
+    this.login(this.resumeLogin)
+    .then(()=> this.$router.push('/feeds'))
+    .catch((err)=> console.log(error))      
 
+},
     },
     userRegister(register){
       this.$store.dispatch('signup/register', register)

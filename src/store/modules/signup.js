@@ -25,8 +25,8 @@ export default {
     createAccount({ commit }, { full_name, email, password }) {
       commit(REGISTRATION_BEGIN);
       return auth.createAccount(full_name, email,account_type, password)
-        .then(() => commit(REGISTRATION_SUCCESS, response))
-        .catch(() => commit(REGISTRATION_FAILURE, error));
+        .then((response) => commit(REGISTRATION_SUCCESS, response))
+        .catch((error) => commit(REGISTRATION_FAILURE, error));
     },
     activateAccount({ commit }, { key }) {
       commit(ACTIVATION_BEGIN);
