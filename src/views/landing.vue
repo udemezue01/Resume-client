@@ -6,7 +6,7 @@
     <div class="uk-grid-collapse uk-child-width-1-2@m uk-child-width-1-1@s uk-flex-middle" uk-grid>
 
     <!--   the large section banner -->
-          <div class="uk-background-cover uk-visible@l uk-section" style="background-image: url('img/france.jpg');" uk-height-viewport></div>
+          <div class="uk-background-cover uk-visible@l uk-section" style="background-image: url('img/resume.jpg');" uk-height-viewport></div>
 
        <!--    end of the large image section banner -->
 

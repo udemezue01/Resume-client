@@ -9,6 +9,9 @@ const session = axios.create({
   xsrfCookieName: CSRF_COOKIE_NAME,
   xsrfHeaderName: CSRF_HEADER_NAME,
   baseURL: BASE_URL,
+  headers:{
+  	'Access-Control-Allow-Origin':'*'
+  }
 });
 
 export default session;

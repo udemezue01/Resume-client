@@ -16,8 +16,8 @@ import navbar_m from '@/components/mobile/navbar.vue'
 
 
 //footer
-import footer_m from '@/components/desktop/footer.vue'
-import footer_d from '@/components/mobile/footer.vue'
+import footer_m from '@/components/mobile/footer.vue'
+import footer_d from '@/components/desktop/footer.vue'
 
 //vuex imports
  import {mapActions, mapGetters} from 'vuex';

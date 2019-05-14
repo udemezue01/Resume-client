@@ -1,21 +1,35 @@
 <template>
-  <div id="app">
+  <div id="footer-d">
 
-  	<div class="uk-section uk-section-xsmall uk-section-default uk-position-bottom uk-position-fixed" style="border-top: 1px solid #f2f2f2">
-			<div class="uk-container uk-container-small uk-text-small">
-				<div class="uk-grid" data-uk-grid>
-					<div class="uk-width-expand">
-						<a href="#" class="uk-link-reset"><span data-uk-icon="icon: arrow-right"></span> <strong>Next article</strong>
-						<span class="uk-visible@s">- Vivamus hendrerit tristique tortor vel ultricies</span></a>
-					</div>
-					<div class="uk-width-auto uk-text-right">
-						<a href="#" class="uk-icon-link" data-uk-icon="icon: facebook"></a>
-						<a href="#" class="uk-icon-link" data-uk-icon="icon: twitter"></a>
-						<a href="#" class="uk-icon-link" data-uk-icon="icon: instagram"></a>
-					</div>
-				</div>
-			</div>
-		</div>
+  
+    
+        <nav class="uk-navbar-container uk-position-bottom  uk-position-fixed" uk-navbar>
+    <div class="uk-navbar-left">
+
+        <ul class="uk-navbar-nav">
+           <li><router-link to="/profile">  <svgicon icon = "compass" height="23" width = "30" color = "black">  </svgicon> </router-link> </li>
+            
+          
+        </ul>
+
+    </div>
+     <div class="uk-navbar-center">
+
+        <ul class="uk-navbar-nav">
+           <li><router-link to="/profile">  <svgicon icon = "add" height="23" width = "30" color = "black">  </svgicon> </router-link> </li>
+        </ul>
+
+    </div>
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav">
+           <li><router-link to="/profile">  <svgicon icon = "inbox" height="23" width = "30" color = "black">  </svgicon> </router-link> </li>
+        </ul>
+
+    </div>
+</nav>
+    
+  
    
   </div>
 </template>
@@ -26,9 +40,9 @@
 export default {
 
 data(){
-	return {
+  return {
 
-	}
+  }
 },
 
 
@@ -40,5 +54,20 @@ data(){
 
 
 <style lang="less" scoped>
+
+@import '../../theme/theme.less';
+
+
+@navbar-background:   #eee;
+@navbar-nav-item-color:black;
+@navbar-item-color: black;
+@navbar-nav-item-active-color: black;
+@navbar-nav-item-hover-color:  black;
+@navbar-nav-item-onclick-color:  white;
+@navbar-toggle-color:  white;
+@navbar-toggle-hover-color: white;
+@navbar-nav-item-padding-horizontal: 9px;
+@navbar-nav-item-font-size: 17px;
+@navbar-nav-item-height: 90px;
 
 </style>
