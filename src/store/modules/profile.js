@@ -25,13 +25,13 @@ import {
 } from './types';
 
 
- const = state: {
+ const state =  {
     profileCompleted: false,
     profileError: false,
     profileLoading: false,
     profile:[],
     
-  },
+  };
   const actions =  {
     createProfile({ commit }, { username, avatar, category, created_at }) {
       commit(PROFILE_CREATE_BEGIN);
@@ -58,7 +58,7 @@ import {
         .catch((error) => commit(PROFILE_UPDATE_FAILURE, error));
     },
   
-  },
+  };
   const getters  = {
     getUserPost:(state, profile) =>{
       return 
@@ -66,7 +66,7 @@ import {
     
 
 
-  },
+  };
   const mutations = {
      [PROFILE_CREATE_BEGIN](state) {
       state.profileLoading = true;
@@ -108,7 +108,7 @@ import {
     },
    
     
-  },
+  };
 export default {
   namespaced: true,
   state,

@@ -29,7 +29,7 @@
 
 
 <script>
-
+import {mapState} from 'vuex';
 export default {
 
 data(){
@@ -38,13 +38,13 @@ data(){
 	}
 },
 
-// computed:{
-//   ...mapState('stream', [
-//       ''
+computed:{
+  ...mapState('stream', [
+    
 
 
-//     ])
-// }
+    ])
+}
 
 }
 

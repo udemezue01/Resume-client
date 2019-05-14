@@ -70,4 +70,13 @@ data(){
 @navbar-nav-item-font-size: 17px;
 @navbar-nav-item-height: 90px;
 
+
+
+.hook-navbar-container() {
+  padding-left:20px;
+  padding-right:20px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
 </style>

@@ -6,7 +6,11 @@
     <div class="uk-grid-collapse uk-child-width-1-2@m uk-child-width-1-1@s uk-flex-middle" uk-grid>
 
     <!--   the large section banner -->
-          <div class="uk-background-cover uk-visible@l uk-section" style="background-image: url('img/resume.jpg');" uk-height-viewport></div>
+          <div class="uk-cover-container uk-visible@l uk-section" uk-height-viewport>
+         
+                    <img src="img/resume.jpg" alt="" uk-cover height="100%" width="100%">
+
+            </div>
 
        <!--    end of the large image section banner -->
 
@@ -21,8 +25,8 @@
                 <div class="uk-margin-medium-top">
                         <ul class="uk-flex-center" uk-tab>
                            
-                            <li><a href="#" toggle=">.register">LOGIN</a></li>
-                            <li><a href="#" toggle=">.register">SIGN UP</a></li>
+                            <li><a href="#" toggle=">.register">Login</a></li>
+                            <li><a href="#" toggle=">.register">Sign Up</a></li>
                         </ul>
                     </div>
             <div class="uk-width-large uk-padding-large uk-align-center" >

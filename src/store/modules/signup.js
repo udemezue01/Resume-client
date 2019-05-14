@@ -1,4 +1,4 @@
-import auth from '../../api/auth';
+import auth from '../../api/backend/auth';
 
 import {
   ACTIVATION_BEGIN,

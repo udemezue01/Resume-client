@@ -7,13 +7,13 @@
 <script>
 
 import feeds_d from '@/components/desktop/feeds.vue';
-import profile_m from '@/components/mobile/profile.vue';
+import feeds_m from '@/components/mobile/feeds.vue';
 
 export default {
   name: 'home',
 components:{
 		'feeds-d':feeds_d,
-		'profile-m':profile_m,
+		'feeds-m':feeds_m,
 	}
 }
 </script>

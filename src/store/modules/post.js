@@ -1,4 +1,4 @@
-import post from '../api/backend/post';
+import post from '../../api/backend/post';
 
 import  {
       POST_CREATE_BEGIN ,

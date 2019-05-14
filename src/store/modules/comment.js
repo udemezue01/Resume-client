@@ -24,13 +24,14 @@ import {
 } from './types';
 
 
- const = state: {
+const state = {
     commentSuccess: false,
     commentError: false,
     commentLoading: false,
     comment:[],
     
-  },
+  };
+
   const actions =  {
     createComment({ commit }, { content, created_at }) {
       commit(COMMENT_CREATE_BEGIN);
@@ -57,7 +58,7 @@ import {
         .catch(() => commit(COMMENT_UPDATE_FAILURE));
     },
   
-  },
+  };
 
   const mutations = {
      [COMMENT_CREATE_BEGIN](state) {
@@ -76,44 +77,41 @@ import {
      
     },
     
-      [PROFILE_GET_BEGIN](state) {
+      [COMMENT_GET_BEGIN](state) {
       state.activationLoading = true;
       state.createLoading = true;
     },
-      [PROFILE_GET_SUCCESS](state) {
+      [COMMENT_GET_SUCCESS](state) {
       state.activationLoading = true;
       state.profile = response.data();
     },
-    [PROFILE_GET_FAILURE](state) {
+    [COMMENT_GET_FAILURE](state) {
       state.createLoading = false;
       state.createError = true;
     },
-    [PROFILE_UPDATE_BEGIN](state) {
+    [COMMENT_UPDATE_BEGIN](state) {
       
       state.createLoading = false;
 
     },
-    [PROFILE_UPDATE_SUCCESS](state) {
+    [COMMENT_UPDATE_SUCCESS](state) {
       state.createCompleted = true;
       state.activationError = false;
       state.activationLoading = false;
     },
     
-     [PROFILE_UPDATE_FAILURE](state) {
+     [COMMENT_UPDATE_FAILURE](state) {
       state.activationCompleted = false;
       state.createError = true;
       state.activationLoading = false;
     },
-    [PROFILE_DELETE_BEGIN](state){
-      state.createLoading = true;
-    },
    
     
-  },
+  };
 export default {
   namespaced: true,
   state,
   mutations,
   actions,
-  getters
+
 };
