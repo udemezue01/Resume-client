@@ -38,18 +38,18 @@
             <div class="uk-margin">
               <div class="uk-inline uk-width-1-1">
                 <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
-                <input class="uk-input uk-form-xlarge" required placeholder="Email" type="email" v-model="resumeLogin.email">
+                <input class="uk-input uk-form-xlarge" required placeholder="Email" type="email" v-model="signIn.email">
               </div>
             </div>
             <div class="uk-margin">
               <div class="uk-inline uk-width-1-1">
                 <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
-                <input class="uk-input uk-form-xlarge" required placeholder="Password" type="password" v-model="resumeLogin.password">
+                <input class="uk-input uk-form-xlarge" required placeholder="Password" type="password" v-model="signIn.password">
               </div>
             </div>
             
             <div class="uk-margin">
-              <label><input class="uk-checkbox" type="checkbox"> Keep Me logged In</label>
+              <label><input class="uk-checkbox" type="checkbox" > Keep Me logged In</label>
             </div>
             <div class="uk-margin">
               <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1" v-on:click.prevent="userLogin" >Sign In</button>
@@ -97,7 +97,7 @@ export default {
 data(){
   return {
   
- resumeLogin:{
+ signIn:{
     email: "",
     password : ""
   },
@@ -121,7 +121,9 @@ computed:{
     'registrationLoading'
     ]),
   ...mapState('auth',[
-    ''
+    'authenticating',
+    'error',
+    'success'
 
     ]),
 
@@ -130,18 +132,28 @@ computed:{
     ...mapActions('auth', [
 
       'login',
-      'logout'
+    
       ]),
+     ...mapActions('signup', [
+
+      'createAccount',
+ 
+      ]),
+
+
+
   userLogin(){
 
-    this.login(this.resumeLogin)
+    this.login(this.signIn)
     .then(()=> this.$router.push('/feeds'))
     .catch((err)=> console.log(error))      
 
 },
     },
-    userRegister(register){
-      this.$store.dispatch('signup/register', register)
+    userRegister(){
+      this.createAccount(this.register)
+      .then(() => this.$router.push('/profile'))
+      .catch((err) => console.log(error))
       
   
     },
