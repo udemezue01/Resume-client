@@ -12,7 +12,7 @@ export default {
     return session.patch('/profile/', data);
   },
   deleteProfile(url) {
-    return session.delete('/profile/', data);
+    return session.delete('/profile/', url);
   },
   createEducation (school, year_started, year_ended){
     return session.post('/profile/p/education/', {user, school, year_started, year_ended})

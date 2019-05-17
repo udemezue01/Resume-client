@@ -32,8 +32,8 @@ export default {
     createPost({ commit }, { user, content, media, created_at }) {
       commit(POST_CREATE_BEGIN);
       return post.createPost(user, content, media, created_at)
-        .then(() => commit(POST_CREATE_SUCCESS))
-        .catch(() => commit(POST_CREATE_FAILURE));
+        .then((response) => commit(POST_CREATE_SUCCESS, response.data))
+        .catch((error) => commit(POST_CREATE_FAILURE, error.data));
     },
 
 
@@ -41,7 +41,7 @@ export default {
       commit(POST_GET_BEGIN);
       return post.readPost(data)
         .then(({data}) => commit(POST_GET_SUCCESS, data))
-        .catch(() => commit(POST_GET_FAILURE));
+        .catch((error) => commit(POST_GET_FAILURE, error.data));
     },
 
 
@@ -83,43 +83,33 @@ export default {
       state.activationLoading = true;
     },
     [POST_GET_SUCCESS](state, data) {
-      state.activationCompleted = false;
-      state.activationError = false;
-      state.activationLoading = false;
-      state.post  == data;
+      state.postCompleted = true;
+      state.post = data;
     },
     [POST_GET_FAILURE](state) {
-      state.activationCompleted = false;
-      state.activationError = false;
-      state.activationLoading = false;
+      state.postError = true;
     },
     
      [POST_UPDATE_BEGIN](state) {
-      state.activationCompleted = false;
-      state.activationError = false;
-      state.activationLoading = false;
+     state.postLoading = true;
     },
     [POST_UPDATE_SUCCESS](state) {
-      state.activationCompleted = false;
-      state.activationError = false;
-      state.activationLoading = false;
+     state.postCompleted = true;
     },
        [POST_UPDATE_FAILURE](state) {
+      state.postError = true;
+    },
+       [POST_DELETE_BEGIN](state) {
       state.activationCompleted = false;
       state.activationError = false;
       state.activationLoading = false;
     },
-       [POST_UPDATE_BEGIN](state) {
+    [POST_DELETE_SUCCESS](state) {
       state.activationCompleted = false;
       state.activationError = false;
       state.activationLoading = false;
     },
-    [POST_UPDATE_SUCCESS](state) {
-      state.activationCompleted = false;
-      state.activationError = false;
-      state.activationLoading = false;
-    },
-   [POST_UPDATE_FAILURE](state) {
+   [POST_DELETE_FAILURE](state) {
       state.activationCompleted = false;
       state.activationError = false;
       state.activationLoading = false;

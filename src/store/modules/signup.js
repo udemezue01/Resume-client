@@ -40,6 +40,7 @@ export default {
     clearActivationStatus({ commit }) {
       commit(ACTIVATION_CLEAR);
     },
+    
   },
   mutations: {
     [ACTIVATION_BEGIN](state) {

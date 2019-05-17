@@ -25,12 +25,12 @@ import {
 
 
  const = state: {
-    commentSuccess: false,
-    commentError: false,
-    commentLoading: false,
-    comment:[],
+    vacancySuccess: false,
+    vacancyFailure: false,
+    vacancyLoading: false,
+    vacancy:[],
     
-  },
+  };
   const actions =  {
     createComment({ commit }, { content, created_at }) {
       commit(PROFILE_CREATE_BEGIN);
@@ -57,63 +57,79 @@ import {
         .catch(() => commit(PROFILE_UPDATE_FAILURE));
     },
   
-  },
+  };
   const getters  = {
-    getUserPost:(state, profile) =>{
-      return 
+    isCompany:state => {
+      if(state.user.account_type =='company'){
+        return !!state.vacancy
+        else{
+          return state.vacancy
+        }
+      }
+    }
     },
     
 
 
-  },
+  };
+
   const mutations = {
-     [PROFILE_CREATE_BEGIN](state) {
-      state.createLoading = true;
+     [VACANCY_CREATE_BEGIN](state) {
+      state.vacancyLoading = true;
   
      
     },
-    [PROFILE_CREATE_FAILURE](state) {
-      state.createError = true;
-      state.createLoading = false;
+    [VACANCY_CREATE_FAILURE](state) {
+      state.vacancyError = true;
+
      
     },
-    [PROFILE_CREATE_SUCCESS](state) {
-      state.createCompleted = true;
-      state.createError = false;
-      state.createLoading = false;
+    [VACANCY_CREATE_SUCCESS](state) {
+      state.vacancySuccess = true;
+ 
      
     },
-      [PROFILE_GET_BEGIN](state) {
-      state.activationLoading = true;
-      state.createLoading = true;
+      [VACANCY_GET_BEGIN](state) {
+      state.vacancyLoading = true;
+    
     },
-      [PROFILE_GET_SUCCESS](state) {
-      state.activationLoading = true;
-      state.profile = response.data();
+      [VACANCY_GET_SUCCESS](state) {
+      state.vacancyLoading = true;
+      state.vacancy = response.data
+     
     },
-    [PROFILE_GET_FAILURE](state) {
-      state.createLoading = false;
-      state.createError = true;
+    [VACANCY_GET_FAILURE](state) {
+     
+      state.vacancyError = true;
     },
-    [PROFILE_UPDATE_BEGIN](state) {
+    [VACANCY_UPDATE_BEGIN](state) {
       
-      state.createLoading = false;
+      state.vacancyLoading = false;
+      state.vacancy = response.data
 
     },
-    [PROFILE_UPDATE_SUCCESS](state) {
-      state.createCompleted = true;
-      state.activationError = false;
-      state.activationLoading = false;
+    [VACANCY_UPDATE_FAILURE](state) {
+
+      state.vacancyError = true;
+   
+    },
+      [VACANCY_UPDATE_SUCCESS](state) {
+      state.vacancySuccess = true;
+       state.vacancy = response.data
+ 
     },
     
-     [PROFILE_UPDATE_FAILURE](state) {
-      state.activationCompleted = false;
-      state.createError = true;
-      state.activationLoading = false;
+     [VACANCY_DELETE_FAILURE](state) {
+      state.vacancySuccess = true;
+   
     },
-    [PROFILE_DELETE_BEGIN](state){
-      state.createLoading = true;
+    [VACANCY_DELETE_BEGIN](state){
+      state.vacancyLoading = true;
     },
+       [VACANCY_DELETE_SUCCESS](state){
+      state.vacancySuccess = true;
+    },
+   
    
     
   },

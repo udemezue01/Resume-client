@@ -8,7 +8,7 @@
     <!--   the large section banner -->
           <div class="uk-cover-container uk-visible@l uk-section" uk-height-viewport>
          
-                    <img src="img/resume.jpg" alt="" uk-cover height="100%" width="100%">
+                    <img src="img/resume.jpg" alt="" uk-cover uk-height-viewport >
 
             </div>
 
@@ -49,10 +49,10 @@
             </div>
             
             <div class="uk-margin">
-              <label><input class="uk-checkbox" type="checkbox"> Keep me logged in</label>
+              <label><input class="uk-checkbox" type="checkbox"> Keep Me logged In</label>
             </div>
             <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1" v-on:click="userLogin" >Sign In</button>
+              <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1" v-on:click.prevent="userLogin" >Sign In</button>
             </div>
             
           </fieldset>
@@ -62,7 +62,7 @@
             </div>
         <div>
           <div class="uk-text-center">
-            <a class="uk-link-reset uk-text-small" data-uk-toggle="target: #recover;animation: uk-animation-slide-top-small">Forgot your password?</a>
+            <a class="uk-link-reset uk-text-small" data-uk-toggle="target: #recover;animation: uk-animation-slide-top-small">Forgot Your Password?</a>
           </div>
           <div class="uk-margin-small-top" id="recover" hidden>
             <form action="">
@@ -74,7 +74,7 @@
                 </div>
               </div>
               <div class="uk-margin-small">
-                <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1">SEND PASSWORD</button>
+                <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1">Send Password</button>
               </div>
               
             </form>

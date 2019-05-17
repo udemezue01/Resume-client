@@ -26,7 +26,7 @@ const actions = {
   login({ commit }, { email, password }) {
     commit(LOGIN_BEGIN);
     return auth.login(email, password)
-      .then(({ data }) => commit(SET_TOKEN, data.key))
+      .then(({ data }) => commit(SET_TOKEN, data.token))
       .then(() => commit(LOGIN_SUCCESS))
       .catch((error) => commit(LOGIN_FAILURE, error));
   },
@@ -44,6 +44,14 @@ const actions = {
       commit(REMOVE_TOKEN);
     }
   },
+  googleLogin({commit}, {}){
+    return auth.googleLogin()
+  },
+  facebookLogin({commit}, {}){
+
+    return auth.facebookLogin()
+  },
+  
 };
 
 const mutations = {

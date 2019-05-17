@@ -4,11 +4,24 @@ export default {
   login(email, password) {
     return session.post('/api/login/', { email, password });
   },
+ 
+  // google auth
+  googleLogin(){
+    return session.post('api/google',)
+  },
+
+  // facebook auth
+
+  facebookLogin(){
+    return session.post('api/login/faceook/',)
+  },
+
+
   logout() {
     return session.post('/api/logout/', {});
   },
   createAccount(full_name, email,account_type, password) {
-    return session.post('/accounts/api/register', {  full_name, email, account_type , password });
+    return session.post('/api/register/', {  full_name, email, account_type , password });
   },
   changeAccountPassword(password1, password2) {
     return session.post('/api/password/change/', { password1, password2 });
