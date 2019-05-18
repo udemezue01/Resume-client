@@ -4,6 +4,7 @@ import router from './router'
 import store from './store/store'
 import './registerServiceWorker'
 
+
 import VueProgressBar from 'vue-progressbar'
 
 import VueSVGIcon from 'vue-svgicon'
@@ -20,7 +21,7 @@ Vue.use(VueSVGIcon)
 
 
 const options = {
-  color: '#bffaf3',
+  color: '#247CC4',
   failedColor: '#874b4b',
   thickness: '5px',
   transition: {
@@ -29,7 +30,7 @@ const options = {
     termination: 300
   },
   autoRevert: true,
-  location: 'left',
+  location: 'top',
   inverse: false
 }
 

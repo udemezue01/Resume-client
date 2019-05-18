@@ -8,6 +8,8 @@ import password from './modules/password.js'
 import post from './modules/post.js'
 import profile from './modules/profile.js'
 import signup from './modules/signup.js'
+import vacancy from './modules/vacancy.js'
+import application from './modules/application.js'
 
 //third party modules
 // import news from '/modules/news.js'
@@ -25,6 +27,8 @@ export default new Vuex.Store({
   		post,
   		profile,
   		signup,
+  		vacancy,
+  		application
   		// stream,
 
 

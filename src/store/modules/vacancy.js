@@ -2,21 +2,22 @@ import profile from '../../api/backend/profile';
 
 import {
   
-  COMMENT_GET_BEGIN,
-  COMMENT_GET_SUCCESS,
-  COMMENT_GET_FAILURE,
+  VACANCY_GET_BEGIN,
+  VACANCY_GET_SUCCESS,
+  VACANCY_GET_FAILURE,
 
-  COMMENT_CREATE_BEGIN,
-  COMMENT_CREATE_SUCCESS,
-  COMMENT_CREATE_FAILURE,
+  VACANCY_CREATE_BEGIN,
+  VACANCY_CREATE_SUCCESS,
+  VACANCY_CREATE_FAILURE,
 
-  COMMENT_UPDATE_BEGIN,
-  COMMENT_UPDATE_SUCCESS,
-  COMMENT_UPDATE_FAILURE,
+ VACANCY_UPDATE_BEGIN,
+ VACANCY_UPDATE_SUCCESS,
+ VACANCY_UPDATE_FAILURE,
+  
 
-  COMMENT_DELETE_BEGIN,
-  COMMENT_DELETE_SUCCESS,
-  COMMENT_DELETE_FAILURE,
+VACANCY_DELETE_BEGIN,
+VACANCY_DELETE_SUCCESS,
+VACANCY_DELETE_FAILURE
 
 
 
@@ -24,7 +25,7 @@ import {
 } from './types';
 
 
- const = state: {
+ const state = {
     vacancySuccess: false,
     vacancyFailure: false,
     vacancyLoading: false,
@@ -58,20 +59,21 @@ import {
     },
   
   };
-  const getters  = {
-    isCompany:state => {
-      if(state.user.account_type =='company'){
-        return !!state.vacancy
-        else{
-          return state.vacancy
-        }
-      }
+const getters = {
+
+  isCompany: state =>{
+    if (state.vacancy.user.account_type =="individual"){
+      return !!state.vacancy
     }
-    },
-    
+    else{
+      return state.vacancy
+    }
+  }
+
+};
 
 
-  };
+  
 
   const mutations = {
      [VACANCY_CREATE_BEGIN](state) {
@@ -132,11 +134,12 @@ import {
    
    
     
-  },
+  };
 export default {
   namespaced: true,
   state,
   mutations,
   actions,
   getters
+
 };

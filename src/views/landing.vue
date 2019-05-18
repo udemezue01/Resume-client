@@ -1,6 +1,7 @@
 <template>
   <div id="landing">
   	<div class="uk-cover-container" uk-height-viewport>
+       <vue-progress-bar></vue-progress-bar>
 
 
     <div class="uk-grid-collapse uk-child-width-1-2@m uk-child-width-1-1@s uk-flex-middle" uk-grid>
@@ -143,10 +144,14 @@ computed:{
 
 
   userLogin(){
+    
 
     this.login(this.signIn)
+    .then(()=>  this.$Progress.start())
     .then(()=> this.$router.push('/feeds'))
-    .catch((err)=> console.log(error))      
+
+
+    .catch((err)=> console.log(err.status_code))      
 
 },
     },
