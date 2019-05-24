@@ -1,7 +1,7 @@
 <template>
   <div id="landing">
   	<div class="uk-cover-container" uk-height-viewport>
-       <vue-progress-bar></vue-progress-bar>
+       
 
 
     <div class="uk-grid-collapse uk-child-width-1-2@m uk-child-width-1-1@s uk-flex-middle" uk-grid>
@@ -174,11 +174,13 @@ computed:{
 
 
 .uk-section-primary {
-    background: linear-gradient(45deg,#247CC4,#336BAE);
+    background:  linear-gradient(to right, #744fff, #008eff, #00afff, #00c5cc, #21d397);
+
     .hook-section-primary;
 }
  .hook-section-primary(){
-  background-image:linear-gradient(45deg,#247CC4,#336BAE);
+  background-image: linear-gradient(to right, #744fff, #008eff, #00afff, #00c5cc, #21d397);
+
  }
 
  .hook-form() {
