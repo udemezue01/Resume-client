@@ -174,12 +174,11 @@ computed:{
 
 
 .uk-section-primary {
-    background:  linear-gradient(to right, #744fff, #008eff, #00afff, #00c5cc, #21d397);
-
+    background: linear-gradient(45deg,#744FFF,#21D397);
     .hook-section-primary;
 }
  .hook-section-primary(){
-  background-image: linear-gradient(to right, #744fff, #008eff, #00afff, #00c5cc, #21d397);
+  background-image: linear-gradient(45deg,#744FFF,#21D397);
 
  }
 
