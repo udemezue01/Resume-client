@@ -9,7 +9,7 @@
     <!--   the large section banner -->
           <div class="uk-cover-container uk-visible@l uk-section" uk-height-viewport>
          
-                    <img src="img/resume.jpg" alt="" uk-cover uk-height-viewport >
+                    <img src="img/resume1.png" alt="" uk-cover uk-height-viewport >
 
             </div>
 
@@ -18,9 +18,9 @@
     <!--    the user form and registration section -->
             <div class="uk-padding-large uk-flex-center uk-section-primary" uk-height-viewport >
 
-              <div class="web-intro uk-margin-left" >
+              <div class="web-intro uk-margin-left uk-align-center" >
                 
-              <h2> Resume</h2>
+              <h2 style="font-family: 'Righteous', cursive;"> Resume</h2>
               <p>Social Network for Proffesionals</p>
               </div>
                 <div class="uk-margin-medium-top">
@@ -192,16 +192,26 @@ computed:{
  }
 
 
- @form-focus-background: #247CC4;
+ @form-focus-background: transparent;
  @form-focus-color: white;
 
 
-@form-background:  #247CC4;
+@form-background:  transparent;
 @form-color: white;
 @form-placeholder-color: white;
 
+@button-primary-background:                     #21D397!important; 
+@button-primary-color:                          white!important;
+@button-primary-hover-background:               darken(@button-primary-background, 5%);
+@button-primary-hover-color:                    @global-inverse-color;
+@button-primary-active-background:              darken(@button-primary-background, 10%);
+@button-primary-active-color:                   @global-inverse-color;
 
-@button-default-background: #336BAE;
-@button-default-active-background:  #336BAE;
+.hook-button-primary(){
+
+ 
+
+
+}
 </style>
 

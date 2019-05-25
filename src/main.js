@@ -21,7 +21,7 @@ Vue.use(VueSVGIcon)
 
 
 const options = {
-  color: '#247CC4',
+  color: '#21D397',
   failedColor: '#874b4b',
   thickness: '5px',
   transition: {
