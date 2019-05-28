@@ -23,7 +23,7 @@ const requireUnauthenticated = (to, from, next) => {
   store.dispatch('auth/initialize')
     .then(() => {
       if (store.getters['auth/isAuthenticated']) {
-        next('/home');
+        next('/profile');
       } else {
         next();
       }
@@ -42,6 +42,7 @@ import profile from '@/views/profile.vue'
 import feeds from '@/views/feeds.vue'
 import login from '@/views/login.vue'
 import landing from '@/views/landing.vue'
+import notfound from '@/views/404.vue'
 
 
 Vue.use(Router)
@@ -55,6 +56,7 @@ export default new Router({
       path: '/',
       name: 'landing',
       component: landing,
+      beforeEnterEnter:requireUnauthenticated,
      
      
     },
@@ -79,7 +81,12 @@ export default new Router({
       name: 'login',
       component: login
     },
-   
+
+    {
+       path: '*',
+      name: 'notfound',
+      component: notfound
+    }
     //  {
     //   path: '/feeds',
     //   name: 'feeds',

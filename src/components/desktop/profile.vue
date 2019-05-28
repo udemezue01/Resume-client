@@ -98,7 +98,8 @@ export default {
       'createLoading',
       'profile'
 
-      ])
+      ]),
+
   },
 
   methods:{
@@ -109,8 +110,26 @@ export default {
       'deleteProfile'
 
       ]),
+    ...mapActions('Vacancy', [
+
+          'createVacancy',
+          'updateVacancy',
+          'deleteVacancy',
+
+      ]),
+      ...mapActions('application', [
+          'ceateApplication',
+          'updateApplication',
+          'deleteApplication',
+
+
+        ])
   
 
+  },
+  mounted(){
+
+    this.getProfile;
   }
 
 

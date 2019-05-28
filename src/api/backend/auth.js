@@ -2,7 +2,7 @@ import session from './session';
 
 export default {
   login(email, password) {
-    return session.post('/api/login/', { email, password });
+    return session.post('/api/token/', { email, password });
   },
  
   // google auth

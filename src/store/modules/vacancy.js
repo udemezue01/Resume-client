@@ -59,18 +59,18 @@ VACANCY_DELETE_FAILURE
     },
   
   };
-const getters = {
+// const getters = {
 
-  isCompany: state =>{
-    if (state.vacancy.user.account_type =="individual"){
-      return !!state.vacancy
-    }
-    else{
-      return state.vacancy
-    }
-  }
+//   isCompany: state =>{
+//     if (state.vacancy.user.account_type =="individual"){
+//       return !!state.vacancy
+//     }
+//     else{
+//       return state.vacancy
+//     }
+//   }
 
-};
+// };
 
 
   
@@ -140,6 +140,6 @@ export default {
   state,
   mutations,
   actions,
-  getters
+  // getters
 
 };

@@ -6,8 +6,8 @@
    <navbar-mobile class= "uk-hidden@l"  v-if="isAuthenticated"> </navbar-mobile>
     <router-view/>
    
-
-    <footer-mobile class= "uk-hidden@l">  </footer-mobile>
+<!-- 
+    <footer-mobile class= "uk-hidden@l">  </footer-mobile> -->
   </div>
 </template>
 

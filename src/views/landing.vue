@@ -1,6 +1,6 @@
 <template>
   <div id="landing">
-  	<div class="uk-cover-container" uk-height-viewport>
+  	<div class="uk-cover-container">
        
 
 
@@ -9,7 +9,7 @@
     <!--   the large section banner -->
           <div class="uk-cover-container uk-visible@l uk-section" uk-height-viewport>
          
-                    <img src="img/resume1.png" alt="" uk-cover uk-height-viewport >
+                    <img src="img/resume1.png" alt="" uk-cover uk-height-viewport style="height: 100%;" >
 
             </div>
 
@@ -174,11 +174,11 @@ computed:{
 
 
 .uk-section-primary {
-    background: linear-gradient(45deg,#744FFF,#21D397);
+    background: linear-gradient(50deg,#744FFF,#21D397);
     .hook-section-primary;
 }
  .hook-section-primary(){
-  background-image: linear-gradient(45deg,#744FFF,#21D397);
+  background-image: linear-gradient(50deg,#744FFF,#21D397);
 
  }
 
