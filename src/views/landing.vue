@@ -16,12 +16,12 @@
        <!--    end of the large image section banner -->
 
     <!--    the user form and registration section -->
-            <div class="uk-padding-large uk-flex-center uk-section-primary" uk-height-viewport >
+            <div class="uk-flex-center uk-section-primary" uk-height-viewport >
 
-              <div class="web-intro uk-margin-left uk-align-center" >
+              <div class="uk-margin-xlarge-left web-intro " >
                 
-              <h2 style="font-family: 'Righteous', cursive;"> Resume</h2>
-              <p>Social Network for Proffesionals</p>
+              <h2 style="font-family: 'Righteous', cursive;" class="uk-text-center"> Resume</h2>
+              <p class="uk-text-center">Social Network for Proffesionals</p>
               </div>
                 <div class="uk-margin-medium-top">
                         <ul class="uk-flex-center" uk-tab>

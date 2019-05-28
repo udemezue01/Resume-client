@@ -12,7 +12,7 @@
 
         <div class="uk-navbar-left">
           <div>
-            <a class="uk-navbar-item uk-logo" href="#"><img src="/img/icons/logo.png" height="20px" width="30px"/> Resume</a>
+            <a class="uk-navbar-item uk-logo" href="#"> Resume</a>
 
         </div>
 
@@ -25,19 +25,7 @@
       </div>
 
 
-       <!--  the navigational part for the getstarted button -->
-
-
-      <div class="uk-navbar-right">
-        <div>
-          <ul class="uk-navbar-nav">
-            <li>  <a class="uk-button uk-button-small uk-button-primary" href="#modal-full" uk-toggle>Get Started</a></li>
-          </ul>
-
-        </div>
-        
-      </div>
-     <!--  end of the navigational for the getstarted button -->
+     
 
       <div class="uk-navbar-right">
           <div>
@@ -222,57 +210,13 @@ data(){
 @import '../../theme/theme.less';
 
 
-// @button-text-color: white;
-// @button-font-size:8px;
-// @button-line-height: 2px;
 
-// .uk-button {
-//     /* 1 */
-//     margin: 0;
-//     /* 2 */
-//     border: 1px solid white ;
-//     /* 3 */
-//     overflow: visible;
-//     /* 4 */
-//     font: inherit;
-//     color: inherit;
-//     /* 5 */
-//     text-transform: capitalize;
-//     /* 6 */
-//     display: inline-block;
-//     box-sizing: border-box;
-//     padding: 0 @button-padding-horizontal;
-//     vertical-align: middle;
-//     font-size: @button-font-size;
-//     /* 7 */
-//     line-height:3px;
-//     /* 8 */
-//     text-align: center;
-//     /* 9 */
-//     text-decoration: none;
-   
-// }
+ @form-focus-background: transparent;
+ @form-focus-color: white;
 
-//  .hook-button(){
 
-//     border-radius:20px;
-//     padding-left:20px;
-//  }
-// .uk-button-default {
-//     background-color:#247CC4;
-//     color: white;
-//     .hook-button-default;
-// }
-// .uk-button-default:hover,
-// .uk-button-default:focus {
-//     background-color: #247CC4;
-//     color: white;
-   
-// }
-//  .hook-button-default-hover(){
-//   background-color:#247CC4;
-//   color:white;
-//  }
-
+@form-background:  transparent;
+@form-color: white;
+@form-placeholder-color: white;
 
 </style>
