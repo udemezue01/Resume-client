@@ -226,7 +226,7 @@ data(){
 @form-color: #eee;
 @form-placeholder-color: #657786;
  .hook-form() {
-  border-radius: 20px;
+  border-radius: 10px;
   border:1px solid;
  }
 

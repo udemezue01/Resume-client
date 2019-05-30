@@ -53,13 +53,13 @@
               <label><input class="uk-checkbox" type="checkbox" > Keep Me logged In</label>
             </div>
             <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1" v-on:click.prevent="userLogin" >Sign In</button>
+              <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 uk-box-shadow-xlarge" v-on:click.prevent="userLogin" >Sign In</button>
             </div>
             
           </fieldset>
         </form>
         <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-danger uk-button-medium uk-width-1-1">Login With Google</button>
+              <button type="submit" class="uk-button uk-button-danger uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">Login With Google</button>
             </div>
         <div>
           <div class="uk-text-center">
@@ -75,7 +75,7 @@
                 </div>
               </div>
               <div class="uk-margin-small">
-                <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1">Send Password</button>
+                <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">Send Password</button>
               </div>
               
             </form>
@@ -183,12 +183,12 @@ computed:{
  }
 
  .hook-form() {
-  border-radius: 20px;
+  border-radius: 10px;
   border:1px solid;
  }
 
  .hook-button(){
-  border-radius: 20px;
+  border-radius: 10px;
  }
 
 

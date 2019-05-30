@@ -49,7 +49,7 @@
     </div>
     <div class="uk-card-footer">
         <div class="uk-margin">
-            <input class="uk-input" type="text" placeholder="write a comment...">
+            <input class="uk-input uk-width-1-1" type="text" placeholder="write a comment...">
         </div>
     </div>
 </div>
@@ -150,13 +150,13 @@ export default {
 @form-color: #eee;
 @form-placeholder-color: #657786;
  .hook-form() {
-  border-radius: 20px;
+  border-radius: 10px;
   border:1px solid;
  }
 
 
 .hook-section-default() {
-  border-radius: 15px;
+  border-radius: 10px;
 
 }
 
