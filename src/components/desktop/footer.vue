@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
   <div id="footer-d">
 
   
@@ -80,4 +80,3 @@ data(){
 
 }
 </style>
- -->

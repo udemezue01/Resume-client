@@ -20,8 +20,8 @@
 
               <div class="uk-margin-xlarge-left web-intro " >
                 
-              <h2 style="font-family: 'Righteous', cursive;" class="uk-text-center"> Resume</h2>
-              <p class="uk-text-center">Social Network for Proffesionals</p>
+              <h2 style="font-family: 'Righteous', cursive;padding-top: 10px;" class="uk-text-center"> Resume</h2>
+              <p class="uk-text-center">career social network</p>
               </div>
                 <div class="uk-margin-medium-top">
                         <ul class="uk-flex-center" uk-tab>
@@ -192,8 +192,7 @@ computed:{
  }
 
 
- @form-focus-background: transparent;
- @form-focus-color: white;
+
 
 
 @form-background:  transparent;

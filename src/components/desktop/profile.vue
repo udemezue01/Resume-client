@@ -1,81 +1,74 @@
 <template>
- <div class="uk-container">
+ <div class="uk-container uk-padding-large">
 
 
-    <div class="uk-grid-match uk-padding-small" uk-grid>
+   
+    <div uk-grid class="uk-grid-medium uk-child-width-1-3@m">
 
-     <!--  the profile image -->
-          <div id="profile-image" class="uk-width-1-4@l">
-
-            <div class="uk-card uk-card-default uk-card-body">
-
-        
-                 <img src="/img/udem.jpg" height="200px"  width="200px" class="uk-border-circle uk-align-center" />
-
-                <!--  <button class="uk-button uk-button-default uk-button-small uk-align-center uk-padding uk-margin-left">edit profile</button> -->
-
-                <div class="uk-card-footer uk-align-center uk-position-bottom-center uk-padding-large">
-                    <a href="#" class="uk-button uk-button-text ">edit Profile</a>
+     <!--  the first grid -->
+    <div>
+      
+      <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="img/resume1.png" alt="">
+                <div class="uk-overlay uk-position-center">
+                  <!-- <img src="img/udem.jpg" alt="" class= "uk-border-circle" width="250" height="250"> -->
                 </div>
-     
             </div>
-            
-               
-          </div>
-
-        <!--   end of profile image -->
-     <!--    profile-cover -->
-          <div id="profile-cover" class="uk-width-3-4@l">   
-           <div class="uk-cover-container uk-height-medium uk-card uk-card-default uk-card-media-top" >
-               <img src="/img/cover.jpg" alt="" uk-cover >
-
-               <div class="uk-card-footer">
-                
+            <div class="uk-card-body uk-padding-large">
+                <h3 class="uk-card-title">Media Top</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
             </div>
-          </div>
+        </div>
+    </div>
+
+    <!-- end of the first grid -->
+<!-- 
+    the second grid -->
+    <div>
+       <div class="uk-margin uk-section-default uk-section-xsmall">
+            <input class="uk-input uk-form-width-auto" type="text" placeholder="Say something...">
+        </div>
+      <div class="uk-card uk-card-default">
+    <div class="uk-card-header">
+        <div class="uk-grid-small uk-flex-middle" uk-grid>
+            <div class="uk-width-auto">
+                <img class="uk-border-circle" width="40" height="40" src="img/udem.jpg">
+            </div>
+            <div class="uk-width-expand">
+                <h6 class="uk-card-title uk-margin-remove-bottom">Resume</h6>
+                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">@resume_john</time></p>
+            </div>
+        </div>
+    </div>
+     <div class="uk-card-media-top uk-width-auto">
+        <img src="/img/udem.jpg" alt="">
+    </div>
+    <div class="uk-card-body ">
+        
+    </div>
+    <div class="uk-card-footer">
+        <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="write a comment...">
+        </div>
+    </div>
+</div>
+    </div>
+
+ <!--    end of the second of the second grid -->
+    <div>
+      
+       <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+                <img src="img/resume1.png" alt="">
+            </div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title">Media Top</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
         </div>
 
-       <!--  end of profile cover -->
-      
-
-         <!--    end of the second section of thr grid -->
-              </div>
-              
-              
-
-
-                <div class="uk-section">
-            <div class="uk-container">
-
-              <div class="uk-grid-match uk-padding" uk-grid>
-              <!--   the firstsection of the grid -->
-
-                <div class="uk-width-1-4@l">
-                   
-                  
-                </div>
-              <!--   end of the first section ofthe grid -->
-
-              <div class="uk-width-3-4@l">
-                   <div class="uk-card uk-card-default uk-align-center">
-                      <ul class="uk-flex-center" uk-tab>
-                          <li class="uk-active"><a href="#">Home</a> </li>
-                          <li><a href="#">Posts</a> </li>
-                          <li><a href="#"> Jobs</a> </li>
-                           <li><a href="#"> Application</a> </li>
-                            <li><a href="#"> jobs</a> </li>
-                      </ul>
-                  </div>
-
-              </div>
-
-
-
-            </div>
-          </div>
-
-
-      
+    </div>
 </div>
 
 
@@ -127,9 +120,9 @@ export default {
   
 
   },
-  mounted(){
+  created(){
 
-    this.getProfile;
+    return this.getProfile;
   }
 
 
@@ -140,5 +133,31 @@ export default {
 <style scoped lang="less">
 
 
+@import '../../theme/theme.less';
+@padding-large-padding: 90px;
+
+@padding-large-padding-l:  100px;
+
+
+@container-max-width:                   3500px;
+
+
+@form-focus-background: transparent;
+ @form-focus-color: #eee;
+@form-height:  40px;
+
+@form-background:  transparent;
+@form-color: #eee;
+@form-placeholder-color: #657786;
+ .hook-form() {
+  border-radius: 20px;
+  border:1px solid;
+ }
+
+
+.hook-section-default() {
+  border-radius: 15px;
+
+}
 
 </style>

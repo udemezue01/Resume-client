@@ -16,13 +16,18 @@
 
         </div>
 
-
-        <div class="uk-inline">
+          <div class="uk-navbar-center">
+         <div class="uk-inline">
         
         <input class="uk-input" placeholder="search">
-        <svgicon icon = "search" class = "uk-form-icon uk-form-icon-flip uk-margin " height = "20" width = "50" color ="grey">   </svgicon>
+        <svgicon icon = "search" class = "uk-form-icon uk-form-icon-flip uk-margin-small-bottom" height = "20" width = "50" color ="grey">   </svgicon>
           </div>
+        
       </div>
+
+       
+      </div>
+
 
 
      
@@ -209,14 +214,21 @@ data(){
 
 @import '../../theme/theme.less';
 
-
+.hook-navbar-nav-item-hover() {
+  
+}
 
  @form-focus-background: transparent;
- @form-focus-color: white;
-
+ @form-focus-color: #eee;
+@form-height:  40px;
 
 @form-background:  transparent;
-@form-color: white;
-@form-placeholder-color: white;
+@form-color: #eee;
+@form-placeholder-color: #657786;
+ .hook-form() {
+  border-radius: 20px;
+  border:1px solid;
+ }
+
 
 </style>
