@@ -60,7 +60,7 @@
       
        <div class="uk-card uk-card-default">
             <div class="uk-card-media-top">
-                <img src="img/resume1.png" alt="">
+                <img src="img/resume-air.png" alt="">
             </div>
             <div class="uk-card-body">
                 <h3 class="uk-card-title">Media Top</h3>
@@ -92,6 +92,9 @@ export default {
       'profile'
 
       ]),
+    ...mapActions('profile', [
+         'getProfile',
+      ])
 
   },
 
@@ -99,8 +102,8 @@ export default {
     ...mapActions('profile',[
       'createProfile',
       'updateProfile',
-      'getProfile',
-      'deleteProfile'
+   
+      'deleteProfile',
 
       ]),
     ...mapActions('Vacancy', [
@@ -122,7 +125,7 @@ export default {
   },
   created(){
 
-    return this.getProfile;
+   this.getProfile
   }
 
 
@@ -143,7 +146,7 @@ export default {
 
 
 @form-focus-background: transparent;
- @form-focus-color: #eee;
+ @form-focus-color: #eee;;
 @form-height:  40px;
 
 @form-background:  transparent;

@@ -4,7 +4,7 @@ import router from './router'
 import store from './store/store'
 import './registerServiceWorker'
 
-
+import axios from 'axios'
 import VueProgressBar from 'vue-progressbar'
 
 import VueSVGIcon from 'vue-svgicon'

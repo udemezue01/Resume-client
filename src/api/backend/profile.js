@@ -6,7 +6,7 @@ export default {
     return session.post('/profile/', { user, username ,country, category, avatar, status, cv_upload, education,certification, work_history, website });
   },
   getProfile(data) {
-    return session.get('/profile/', data);
+    return session.get('/profile/zeushimself/', data);
   },
   updateProfile(data) {
     return session.patch('/profile/', data);

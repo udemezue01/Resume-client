@@ -41,16 +41,16 @@
 
              <li>  <router-link to="/feeds">
                    
-                        <!-- <svgicon icon = "fire" height="20" width="30" color = "white">  </svgicon> -->&nbsp;
+                        <!-- <svgicon icon = "fire" height="20" width="30" color = "white">  </svgicon> -->
                         feeds
               
                 </router-link>
             </li>
-
+              &nbsp;
 
                  <li><a href="#">
                  
-                        <svgicon icon = "compass" height="20" width="30" color = "white">  </svgicon>&nbsp;
+                        
                         discover
                   
                 </a> </li>
@@ -60,58 +60,25 @@
 
            
 
-            <li>
-
-              <a href="">
-        
-                        <svgicon icon = "add-button" height="20" width="30" color = "white">  </svgicon>&nbsp;
-                        create
-                       
-               
-                </a>
-                <!-- the navbar drop down -->
-
-                 <div uk-dropdown="offset:8; mode:click">
-                        <ul class="uk-nav uk-dropdown-nav">
-                            <li class=""><a href="#" uk-toggle="target:#create"><svgicon icon = "add" height="13" width = "15" color = "grey"> </svgicon> Post
-                                <div class="uk-navbar-subtitle">share your thoughts </div>
-                            </a>
-
-                            </li>
-                            <li class=""><a href="#"><svgicon icon = "suitcase" height="13" width = "15" color = "grey"> </svgicon> Jobs
-
-                                <div class="uk-navbar-subtitle">post a new job update </div>
-                            </a></li>
-                            <li class=""><a href="#"><svgicon icon = "wifi" height="13" width = "15" color = "grey"> </svgicon> Advertise
-
-                                <div class="uk-navbar-subtitle">reach million adiences </div>
-                            </a></li>
-            
-                        </ul>
-                    </div>
-
-                  <!-- end of the navbar dropdown -->
-
-            </li>
-
-            <li class=""><router-link to="/"> <img src="/img/udem.jpg" height="5opx" width="50px" class="uk-border-circle"> </router-link>
-            </li>
-                <li>
+           
+                &nbsp;<li>
 
               <a href="">
               
-                        <svgicon icon = "notification" height="20" width="20" color = "white">  </svgicon>
+                        <svgicon icon = "notification" height="35" width="40" color = "#657786">  </svgicon>
                         
                     
                 </a>
 
             </li>
+             &nbsp;
+             <li class=""><router-link to="/"> <img src="/img/udem.jpg" height="5opx" width="60px" class="uk-border-circle" style="border:3px solid #21D397"> </router-link>
+            </li>
              <li>
 
-              <a href="">
+              <a href="" class="uk-button uk-button-default uk-button-small" v-on:click.prevent="userLogout">
               
-                        <svgicon icon = "settings" height="20" width="20" color = "white">  </svgicon>&nbsp;
-                        more
+                        create
                   
                 </a>
 
@@ -201,8 +168,21 @@ data(){
 
   }
 },
+computed:{
+  ...mapActions('auth', [
 
+    'logout'
+    ])
+},
 
+methods:{
+
+  userLogout(){
+    this.logout
+    .then(() => this.$router.push('/feeds'))
+  
+  }
+}
 
 }
 
@@ -213,6 +193,8 @@ data(){
 <style scoped lang="less">
 
 @import '../../theme/theme.less';
+
+@button-line-height:  30px; 
 
 .hook-navbar-nav-item-hover() {
   

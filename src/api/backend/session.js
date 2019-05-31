@@ -1,6 +1,6 @@
 
 import axios from 'axios';
-import app from '../../main';
+
 
 const CSRF_COOKIE_NAME = 'csrftoken';
 const CSRF_HEADER_NAME = 'X-CSRFToken';

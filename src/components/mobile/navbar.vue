@@ -8,7 +8,7 @@
          <div>
           
         <ul class="uk-navbar-nav">
-            <li><router-link to="/profile">  <svgicon icon = "compass" height="23" width = "30" color = "white">  </svgicon> </router-link> </li>
+            <li><router-link to="/profile">  <svgicon icon = "compass" height="23" width = "30" color = "#657786">  </svgicon> </router-link> </li>
            
         </ul>
 
@@ -34,7 +34,7 @@
           <div>
           
         <ul class="uk-navbar-nav">
-            <li><router-link to="/">  <svgicon icon = "notification" height="23" width = "30" color = "white">  </svgicon> </router-link> </li>
+            <li><router-link to="/">  <svgicon icon = "notification" height="23" width = "30" color = "#657786">  </svgicon> </router-link> </li>
            
         </ul>
 

@@ -1,41 +1,20 @@
 <template>
- <div class="uk-container uk-padding-large">
-    <div>
+ <div class="uk-container-small uk-padding-large">
 
-
-    <div id="profile-image" class="uk-card-default uk-card-body uk-width-expanded uk-align-center">
-            
-                
-           <div class="uk-card uk-card-default uk-card-body">
-
-        
-                 <img src="/img/udem.jpg" height="200px"  width="200px" class="uk-border-circle uk-align-center" />
-
-               
-
-                <div class="uk-card-footer uk-align-center uk-position-bottom-center uk-padding-large">
-                    <a href="#" class="uk-button uk-button-text ">edit Profile</a>
+     <div class="uk-card uk-card-default uk-width-1-1">
+            <div class="uk-card-media-top">
+                <img src="img/resume1.png" alt="">
+                <div class="uk-overlay uk-position-center">
+                  <img src="img/udem.jpg" alt="" class= "uk-border-circle" width="250" height="250" style="border:3px solid #21D397">
                 </div>
-     
             </div>
-      
-</div>
-</div>
-
-<!-- end of the profile section -->
-    <div class="uk-section">
-       <div>
-                
-                  <ul class="uk-flex-center"  uk-tab="media: @s" >
-                  <li class="uk-active"><a href="">  Feeds</a></li>
-                  <li><a href=""> Posts</a> </li>
-                  <li ><a> Application</a></li>
-              </ul>
-
+            <div class="uk-card-body uk-padding-large">
+                <h3 class="uk-card-title">Media Top</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
             </div>
-
+        </div>
     </div>
-
+    
  </div>
 
 
@@ -55,6 +34,11 @@ export default {
       'createLoading',
       'profile'
 
+      ]),
+    ...mapActions('profile', [
+      'getProfile'
+
+
       ])
   },
 
@@ -62,11 +46,13 @@ export default {
     ...mapActions('profile',[
       'createProfile',
       'updateProfile',
-      'getProfile',
       'deleteProfile'
 
       ]),
 
+  },
+  created(){
+    this.getProfile
   }
 
 }
@@ -77,6 +63,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
+
+@import '../../theme/theme.less';
+
+.uk-card(){
+  border-radius:5px;
+}
 
 
 

@@ -24,6 +24,7 @@ import footer_d from '@/components/desktop/footer.vue'
 
 //vuex imports
  import {mapActions, mapGetters} from 'vuex';
+ import axios from 'axios';
  
 export default {
 
@@ -37,9 +38,20 @@ components:{
 
 computed: mapGetters('auth', [
     'isAuthenticated',
+    'logout',
   ]),
 
 
+created(){
+
+  axios.interceptors.response.use(function (error) {
+if (error.status ==401){
+  this.logout
+  .then(()=> this.$outer.push('/'))
+}
+return Promise.reject(error);
+});
+},
 }
 </script>
 

@@ -42,7 +42,7 @@ import {
     getProfile({ commit }, { data }) {
       commit(PROFILE_GET_BEGIN);
       return profile.getProfile(data)
-        .then((response) => commit(PROFILE_GET_SUCCESS, response))
+        .then(({data}) => commit(PROFILE_GET_SUCCESS, response))
         .catch((error) => commit(PROFILE_GET_FAILURE, error));
     },
     deleteProfile({ commit }, { url }) {
@@ -84,9 +84,9 @@ import {
       [PROFILE_GET_BEGIN](state) {
       state.profileLoading = true;
     },
-      [PROFILE_GET_SUCCESS](state, response) {
+      [PROFILE_GET_SUCCESS](state, data) {
       state.profileCompleted = true;
-      state.profile = response.data();
+      state.profile = data;
     },
     [PROFILE_GET_FAILURE](state) {
       state.profileError = true;

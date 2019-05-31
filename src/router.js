@@ -12,7 +12,7 @@ const requireAuthenticated = (to, from, next) => {
   store.dispatch('auth/initialize')
     .then(() => {
       if (!store.getters['auth/isAuthenticated']) {
-        next('/');
+        next('/profile');
       } else {
         next();
       }
@@ -23,7 +23,7 @@ const requireUnauthenticated = (to, from, next) => {
   store.dispatch('auth/initialize')
     .then(() => {
       if (store.getters['auth/isAuthenticated']) {
-        next('/profile');
+        next('/');
       } else {
         next();
       }
@@ -56,7 +56,7 @@ export default new Router({
       path: '/',
       name: 'landing',
       component: landing,
-      beforeEnterEnter:requireUnauthenticated,
+      beforeEnter:requireUnauthenticated,
      
      
     },
@@ -79,13 +79,15 @@ export default new Router({
       {
       path: '/login',
       name: 'login',
-      component: login
+      component: login,
+      beforeEnter:requireUnauthenticated,
     },
 
     {
        path: '*',
       name: 'notfound',
-      component: notfound
+      component: notfound,
+      
     }
     //  {
     //   path: '/feeds',
