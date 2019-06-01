@@ -18,7 +18,7 @@ Vue.use(VueContentPlaceholders)
 import './theme/theme.less'
 
 Vue.use(VueSVGIcon)
-
+Vue.prototype.$http = axios
 
 const options = {
   color: '#21D397',

@@ -56,7 +56,7 @@ export default new Router({
       path: '/',
       name: 'landing',
       component: landing,
-      beforeEnter:requireUnauthenticated,
+      // beforeEnter:requireUnauthenticated,
      
      
     },
