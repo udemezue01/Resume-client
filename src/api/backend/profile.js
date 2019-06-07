@@ -6,13 +6,13 @@ export default {
     return session.post('/profile/', { user, username ,country, category, avatar, status, cv_upload, education,certification, work_history, website });
   },
   getProfile(data) {
-    return session.get('/profile/zeushimself/', data);
+    return session.get('/profile/', data);
   },
   updateProfile(data) {
     return session.patch('/profile/', data);
   },
   deleteProfile(url) {
-    return session.delete('/profile/', url);
+    return session.delete('/profile/:username/', url);
   },
   createEducation (school, year_started, year_ended){
     return session.post('/profile/p/education/', {user, school, year_started, year_ended})

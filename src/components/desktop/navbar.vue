@@ -12,7 +12,7 @@
 
         <div class="uk-navbar-left">
           <div>
-            <a class="uk-navbar-item uk-logo" href="#"> Resume</a>
+            <a class="uk-navbar-item uk-logo" href="#"> Resume.ly</a>
 
         </div>
 
@@ -20,12 +20,12 @@
          <div class="uk-inline">
         
         <input class="uk-input" placeholder="search">
-        <svgicon icon = "search" class = "uk-form-icon uk-form-icon-flip uk-margin-small-bottom" height = "20" width = "50" color ="grey">   </svgicon>
+        <svgicon icon = "search" class = "uk-form-icon uk-form-icon-flip uk-margin-small-top uk-padding-top" height = "25" width = "55" color ="#657786">   </svgicon>
           </div>
         
       </div>
 
-       
+   
       </div>
 
 
@@ -42,7 +42,7 @@
              <li>  <router-link to="/feeds">
                    
                         <!-- <svgicon icon = "fire" height="20" width="30" color = "white">  </svgicon> -->
-                        feeds
+                        Feeds
               
                 </router-link>
             </li>
@@ -51,9 +51,19 @@
                  <li><a href="#">
                  
                         
-                        discover
+                        Discover
                   
                 </a> </li>
+                </li>
+              &nbsp;
+
+                 <li><a href="#">
+                 
+                        
+                        Jobs
+                  
+                </a> </li>
+
 
 
               
@@ -72,11 +82,11 @@
 
             </li>
              &nbsp;
-             <li class=""><router-link to="/"> <img src="/img/udem.jpg" height="5opx" width="60px" class="uk-border-circle" style="border:3px solid #21D397"> </router-link>
+             <li class=""><router-link to="/"> <img src="/img/udem.jpg" height="4opx" width="50px" class="uk-border-circle" style="border:3px solid #21D397"> </router-link>
             </li>
-             <li>
+             <li class="uk-button uk-button-default uk-button-small">
 
-              <a href="" class="uk-button uk-button-default uk-button-small" v-on:click.prevent="userLogout">
+              <a href=""  v-on:click.prevent="userLogout()">
               
                         create
                   
@@ -169,17 +179,19 @@ data(){
   }
 },
 computed:{
-  ...mapActions('auth', [
-
-    'logout'
-    ])
+  
 },
 
 methods:{
 
+  ...mapActions('auth', [
+
+    'logout'
+    ]),
+
   userLogout(){
-    this.logout
-    .then(() => this.$router.push('/feeds'))
+    this.logout()
+    .then(() => this.$router.push('/'))
   
   }
 }
@@ -200,17 +212,33 @@ methods:{
   
 }
 
- @form-focus-background: transparent;
- @form-focus-color: #eee;
-@form-height:  40px;
+@form-focus-background: transparent;
+ @form-focus-color: #657786;
+
+@form-height:  45px;
+@form-padding-vertical:10px;
+
 
 @form-background:  transparent;
-@form-color: #eee;
+@form-color: #d2d2d2;
 @form-placeholder-color: #657786;
+.uk-input::placeholder { 
+
+  color: @form-placeholder-color;
+  text-align: left;
+
+   }
+
+
  .hook-form() {
   border-radius: 10px;
   border:1px solid;
+  
  }
+
+ // .hook-form-focus() {
+ // //   color:#657786;
+ // // }
 
 
 </style>

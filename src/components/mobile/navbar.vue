@@ -1,17 +1,12 @@
 <template>
   <div class="nav">
 
-     <nav class="uk-navbar-container"uk-navbar>
+     <nav class="uk-navbar-container"uk-navbar v-if="isAuthenticated">
    
 
-        <div class="uk-navbar-left"  v-if="isAuthenticated">
+        <div class="uk-navbar-left"  >
          <div>
-          
-        <ul class="uk-navbar-nav">
-            <li><router-link to="/profile">  <svgicon icon = "compass" height="23" width = "30" color = "#657786">  </svgicon> </router-link> </li>
-           
-        </ul>
-
+            <a class="uk-navbar-item uk-logo" href="#">{{brand}}</a>
         </div>
 
       </div>
@@ -21,19 +16,19 @@
         
         <div class="uk-navbar-center">
     
-        <div>
-            <a class="uk-navbar-item uk-logo" href="#">{{brand}}</a>
-        </div>
+        
 
     
 
 
       </div>
 
-      <div class="uk-navbar-right"  v-if="isAuthenticated">
+      <div class="uk-navbar-right" >
           <div>
           
         <ul class="uk-navbar-nav">
+          <li><router-link to="/">  <svgicon icon = "compass" height="23" width = "30" color = "#657786">  </svgicon> </router-link> </li>
+            <li><router-link to="/">  <svgicon icon = "suitcase" height="23" width = "30" color = "#657786">  </svgicon> </router-link> </li>
             <li><router-link to="/">  <svgicon icon = "notification" height="23" width = "30" color = "#657786">  </svgicon> </router-link> </li>
            
         </ul>

@@ -12,7 +12,7 @@ const requireAuthenticated = (to, from, next) => {
   store.dispatch('auth/initialize')
     .then(() => {
       if (!store.getters['auth/isAuthenticated']) {
-        next('/profile');
+        next('/register');
       } else {
         next();
       }
@@ -23,7 +23,7 @@ const requireUnauthenticated = (to, from, next) => {
   store.dispatch('auth/initialize')
     .then(() => {
       if (store.getters['auth/isAuthenticated']) {
-        next('/');
+        next('/feeds');
       } else {
         next();
       }
@@ -40,8 +40,8 @@ const redirectLogout = (to, from, next) => {
 
 import profile from '@/views/profile.vue'
 import feeds from '@/views/feeds.vue'
+import register from '@/views/register.vue'
 import login from '@/views/login.vue'
-import landing from '@/views/landing.vue'
 import notfound from '@/views/404.vue'
 
 
@@ -54,9 +54,9 @@ export default new Router({
 
     {
       path: '/',
-      name: 'landing',
-      component: landing,
-      // beforeEnter:requireUnauthenticated,
+      name: 'login',
+      component: login,
+      
      
      
     },
@@ -77,9 +77,9 @@ export default new Router({
       beforeEnter: requireAuthenticated,
     },
       {
-      path: '/login',
-      name: 'login',
-      component: login,
+      path: '/register',
+      name: 'register',
+      component: register,
       beforeEnter:requireUnauthenticated,
     },
 
@@ -87,6 +87,7 @@ export default new Router({
        path: '*',
       name: 'notfound',
       component: notfound,
+      beforeEnter:requireUnauthenticated,
       
     }
     //  {
