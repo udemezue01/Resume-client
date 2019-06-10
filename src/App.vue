@@ -34,10 +34,7 @@ components:{
   'footer-mobile':footer_m
 },
 
- mounted () {
-// [App.vue specific] When App.vue is finish loading finish the progress bar
-this.$Progress.finish()
-},
+
 
 computed: mapGetters('auth', [
     'isAuthenticated',
@@ -55,6 +52,13 @@ if (error.status ==401){
 return Promise.reject(error);
 });
 },
+ mounted () {
+// [App.vue specific] When App.vue is finish loading finish the progress bar
+this.$Progress.finish()
+},
+
+
+
 }
 </script>
 

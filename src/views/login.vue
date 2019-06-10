@@ -4,7 +4,7 @@
        
 
 
-    <div class="uk-grid-collapse uk-child-width-1-2@m uk-child-width-1-1@s uk-flex-middle" uk-grid>
+    <div class="uk-grid-collapse uk-child-width-1-2@m  uk-flex-middle" uk-grid>
 
     <!--   the large section banner -->
           <div class="uk-cover-container uk-visible@l uk-section" uk-height-viewport>
@@ -16,17 +16,17 @@
        <!--    end of the large image section banner -->
 
     <!--    the user form and registration section -->
-            <div class="uk-flex-center uk-section-primary" uk-height-viewport >
+            <div class="uk-section-primary" uk-height-viewport >
 
-              <div class="uk-margin-xlarge-left web-intro " >
+              <div class="uk-margin-large-left uk-width-large web-intro " >
                 
               <h2 style="font-family: 'Righteous', cursive;padding-top: 10px;" class="uk-text-left"> Resume.ly</h2>
-              <p class="uk-text-left">career social network</p>
+              <h5 class="uk-text-left" style="font-family:  'Montserrat', sans-serif;">career social network</h5>
               </div>
                 
 
-                  <!--   login form -->
-            <div class="uk-width-large uk-padding-large uk-align-center"  id="login-form">
+        <!--   login form -->
+            <div class="uk-width-large uk-align-left uk-padding-large"  id="login-form">
 
 
         <form action="" class=" uk-form-stacked">
@@ -34,50 +34,54 @@
           <!--   <legend class="uk-legend"></legend> -->
             <div class="uk-margin">
               <div class="uk-inline uk-width-1-1">
-                <svgicon icon = "user" class = "uk-form-icon uk-form-icon-flip uk-margin-small-top uk-padding-top uk-padding-bottom-small" height = "23" width = "55" color ="white">   </svgicon>
-                <input class="uk-input uk-form-xlarge" required placeholder="Email" type="email" v-model="signIn.email">
+                <div class="uk-margin">
+              <label> Email</label>
+            </div>
+                
+                <input class="uk-input uk-form-width-large  uk-form-large" required placeholder="" type="email" v-model="signIn.email">
               </div>
             </div>
             <div class="uk-margin">
               <div class="uk-inline uk-width-1-1">
-                <svgicon icon = "padlock" class = "uk-form-icon uk-form-icon-flip uk-margin-small-top uk-padding-top" height = "23" width = "55" color ="white">   </svgicon>
-                <input class="uk-input uk-form-xlarge" required placeholder="Password" type="password" v-model="signIn.password">
+                  <div class="uk-margin">
+              <label> Password</label>
+            </div>
+                
+                <input class="uk-input uk-form-width-large uk-form-large" required placeholder="" type="password" v-model="signIn.password">
               </div>
             </div>
             
+            
             <div class="uk-margin">
-              <label><input class="uk-checkbox" type="checkbox" > Keep Me logged In</label>
-            </div>
-            <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 uk-box-shadow-xlarge" v-on:click.prevent="userLogin()" >Sign In</button>
+              <button type="submit" class="uk-button uk-button-primary uk-button-large uk-width-1-1 uk-box-shadow-xlarge" v-on:click.prevent="userLogin()" >Sign In</button>
             </div>
             
           </fieldset>
         </form>
-        <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-danger uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">Login With Google</button>
-            </div>
-        <div>
-          <div class="uk-text-center">
-            <a class="uk-link-reset uk-text-small" data-uk-toggle="target: #recover;animation: uk-animation-slide-top-small">Forgot Your Password?</a>
+   
+
+      <!--   <div class="uk-flex-center uk-width-large">
+          <div class="uk-flex-center">
+            <a class="uk-link-reset uk-text-medium" data-uk-toggle="target: #recover;animation: uk-animation-slide-top-small">Forgot Your Password?</a>
           </div>
-          <div class="uk-margin-small-top" id="recover" hidden>
+
+          <div class="uk-width-large" id="recover" hidden>
             <form action="">
               
-              <div class="uk-margin-small">
+              <div class="uk-margin">
                 <div class="uk-inline uk-width-1-1">
                   <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: mail"></span>
                   <input class="uk-input" placeholder="E-mail" required type="text">
                 </div>
               </div>
-              <div class="uk-margin-small">
+              <div class="uk-margin">
                 <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">Send Password</button>
               </div>
               
             </form>
         </div>
 
-      </div>
+      </div> -->
 
    
           </div>
@@ -199,8 +203,21 @@ computed:{
  }
 
 
+@form-width-large:                              500px;
+@form-padding-vertical:                         1px;
 
+.uk-input{
+   font-family:   'Montserrat', sans-serif;
+  font-weight: bolder;
+}
 
+.uk-input::placeholder { 
+
+  color: @form-placeholder-color;
+  font-family:  'Quicksand', sans-serif;
+  
+
+ }
 
 @form-background:  transparent;
 @form-color: white;

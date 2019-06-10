@@ -55,12 +55,12 @@
      <div class="uk-card-media-top uk-width-auto">
         <img src="/img/udem1.jpg" alt="">
     </div>
-    <div class="uk-card-body ">
+    <div class="uk-card-body uk-remove-margin">
       <p> its a wonderful day in paris with co workers</p>
         
     </div>
-    <div class="uk-card-footer">
-        <div class="uk-margin-small uk-inline">
+    <div class="uk-card-footer uk-remove-margin">
+        <div class="uk-inline uk-remove-margin">
             <input class="uk-input uk-form-width-large" type="text" placeholder="write a comment...">
              <svgicon icon = "photo-camera" class = "uk-form-icon uk-form-icon-flip uk-margin-small-top uk-padding-top" height = "25" width = "55" color ="#657786">   </svgicon>
 
@@ -70,6 +70,9 @@
     </div>
 
  <!--    end of the second of the second grid -->
+
+
+<!--  the start of th third grid -->
  <div>
    <div class="uk-card uk-card-default">
     <div class="uk-card-header">
@@ -77,28 +80,29 @@
             <div class="uk-width-auto">
                 <img class="uk-border-circle" width="40" height="40" src="img/udem.jpg" style="border:2px solid #21D397">
             </div>
-            <div class="uk-width-expand">
-                <h6 class="uk-card-title uk-margin-remove-bottom">Resume</h6>
-                <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">16m ago</time></p>
-            </div>
+              <div class="uk-width-expand">
+                  <h6 class="uk-card-title uk-margin-remove-bottom">Resume</h6>
+                  <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">16m ago</time></p>
+              </div>
         </div>
     </div>
      <div class="uk-card-media-top uk-width-auto">
         <img src="/img/udem2.jpg" alt="" height="150">
     </div>
-    <div class="uk-card-body ">
-      <h5> Web developer </h5><hr>
-      <p>  a very sofisticated web developer is needed </p>
-        
-    </div>
-    <div class="uk-card-footer">
-        <div class="uk-margin-small uk-inline">
-            <button class="uk-button uk-button-primary uk-button-medium"> Apply Now</button>
+      <div class="uk-card-body ">
+        <h5> Web developer </h5><hr>
+        <p>  a very sofisticated web developer is needed </p>
+          
+      </div>
+      <div class="uk-card-footer">
+              <div class="uk-margin-small uk-inline">
+                  <button class="uk-button uk-button-primary uk-button-medium"> Apply Now</button>
 
-        </div>
-    </div>
+              </div>
+      </div>
 </div>
     </div>
+    <!-- end of the third grid -->
 
 
     </div>

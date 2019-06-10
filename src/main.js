@@ -9,6 +9,7 @@ import VueProgressBar from 'vue-progressbar'
 
 import VueSVGIcon from 'vue-svgicon'
 import 'uikit/dist/js/uikit.js'
+import 'uikit/dist/js/uikit-icons.js'
 import './custom-icons'
 //uikit css and javascript
 

@@ -28,7 +28,7 @@
 
   
   
-          <div class="uk-width-large   uk-padding-large uk-align-center " id="register-form" >
+          <div class="uk-width-large uk-padding-large" id="register-form" >
 
 
         <form action="" class=" uk-form-stacked">
@@ -37,28 +37,39 @@
             <div class="uk-margin">
             
               <div class="uk-inline uk-width-1-1">
+                <div class="uk-margin">
+              <label> Full Name / Organisation</label>
+            </div>
+                
                 <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
-                <input class="uk-input uk-form-xlarge" required placeholder="full name/ organization" type="text">
+                <input class="uk-input uk-form-width-large  uk-form-large" required placeholder="" type="text">
               </div>
             </div>
             <div class="uk-margin">
             
               <div class="uk-inline uk-width-1-1">
+                <div class="uk-margin">
+              <label> Email</label>
+            </div>
+                
                 <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
-                <input class="uk-input uk-form-xlarge" required placeholder="email" type="email" >
+                <input class="uk-input uk-form-width-large  uk-form-large" required placeholder="" type="email" >
               </div>
             </div>
              <div class="uk-margin uk-width-1-1">
-             
-            <select class="uk-select">
-                <option> Individual</option>
-                <option> Company</option>
+             <div class="uk-margin">
+              <label> Account Type</label>
+            </div>
+                
+            <select class="uk-select uk-form-width-large  uk-form-large">
+                <option> business</option>
+                <option> Personal</option>
             </select>
         </div>
 
            
             <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 uk-box-shadow-xlarge" v-on:click.prevent="userRegister" >register</button>
+              <button type="submit" class="uk-button uk-button-primary uk-button-large uk-width-1-1 uk-box-shadow-xlarge" v-on:click.prevent="userRegister" >register</button>
             </div>
             
           </fieldset>
@@ -145,12 +156,12 @@ computed:{
 }
  .hook-section-primary(){
   background-image: linear-gradient(50deg,#744FFF,#21D397);
-  animation: example 5s infinite;
+//   animation: example 5s infinite;
 
-@keyframes example {
-  from {background-image: linear-gradient(50deg,#744FFF,#21D397);}
-  to {background-image: linear-gradient(50deg,#21D397, #744FFF);}
-}
+// @keyframes example {
+//   from {background-image: linear-gradient(50deg,#744FFF,#21D397);}
+//   to {background-image: linear-gradient(50deg,#21D397, #744FFF);}
+// }
  }
 
  .hook-form() {
@@ -163,12 +174,26 @@ computed:{
  }
 
 
+@form-width-large:                              690px;
+@form-padding-vertical:                         2px;
 
+.uk-input{
+   font-family:   'Montserrat', sans-serif;
+  font-weight: bolder;
+}
 
+.uk-input::placeholder { 
+
+  color: @form-placeholder-color;
+  font-family:  'Quicksand', sans-serif;
+  font-weight: bold;
+
+ }
 
 @form-background:  transparent;
 @form-color: white;
 @form-placeholder-color: white;
+@form-height:  40px;
 
 @button-primary-background:                     #21D397!important; 
 @button-primary-color:                          white!important;
@@ -180,7 +205,6 @@ computed:{
 .hook-button-primary(){
 
  
-
 
 }
 </style>
