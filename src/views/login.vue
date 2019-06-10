@@ -20,13 +20,13 @@
 
               <div class="uk-margin-large-left uk-width-large web-intro " >
                 
-              <h2 style="font-family: 'Righteous', cursive;padding-top: 6px;" class="uk-text-left"> Resume.ly</h2>
-              <h5 class="uk-text-left" style="font-family:  'Montserrat', sans-serif;">career social network</h5>
+              <h3 style="font-family: 'Righteous', cursive;padding-top: 4px;" class="uk-text-left"> Resume.ly</h3>
+              <!-- <h5 class="uk-text-left" style="font-family:  'Montserrat', sans-serif;">career social network</h5> -->
               </div>
                 
 
         <!--   login form -->
-            <div class="uk-width-large uk-align-center uk-padding-medium"  id="login-form">
+            <div class="uk-width-large uk-align-center uk-padding-large"  id="login-form">
 
 
         <form action="" class=" uk-form-stacked">
