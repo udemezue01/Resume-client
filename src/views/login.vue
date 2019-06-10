@@ -20,13 +20,13 @@
 
               <div class="uk-margin-large-left uk-width-large web-intro " >
                 
-              <h2 style="font-family: 'Righteous', cursive;padding-top: 10px;" class="uk-text-left"> Resume.ly</h2>
+              <h2 style="font-family: 'Righteous', cursive;padding-top: 6px;" class="uk-text-left"> Resume.ly</h2>
               <h5 class="uk-text-left" style="font-family:  'Montserrat', sans-serif;">career social network</h5>
               </div>
                 
 
         <!--   login form -->
-            <div class="uk-width-large uk-align-left uk-padding-large"  id="login-form">
+            <div class="uk-width-large uk-align-center uk-padding-medium"  id="login-form">
 
 
         <form action="" class=" uk-form-stacked">
@@ -35,34 +35,36 @@
             <div class="uk-margin">
               <div class="uk-inline uk-width-1-1">
                 <div class="uk-margin">
-              <label> Email</label>
+            
             </div>
                 
-                <input class="uk-input uk-form-width-large  uk-form-large" required placeholder="" type="email" v-model="signIn.email">
+                <input class="uk-input uk-form-medium" required placeholder="E-mail" type="email" v-model="signIn.email">
               </div>
             </div>
             <div class="uk-margin">
               <div class="uk-inline uk-width-1-1">
                   <div class="uk-margin">
-              <label> Password</label>
             </div>
                 
-                <input class="uk-input uk-form-width-large uk-form-large" required placeholder="" type="password" v-model="signIn.password">
+                <input class="uk-input uk-form-medium" required placeholder="Password" type="password" v-model="signIn.password">
               </div>
             </div>
             
             
             <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-primary uk-button-large uk-width-1-1 uk-box-shadow-xlarge" v-on:click.prevent="userLogin()" >Sign In</button>
+              <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 uk-box-shadow-xlarge" v-on:click.prevent="userLogin()" >Sign In</button>
             </div>
             
           </fieldset>
         </form>
+        <div class="uk-margin">
+              <button type="submit" class="uk-button uk-button-danger uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">Continue With Google</button>
+            </div>
    
 
-      <!--   <div class="uk-flex-center uk-width-large">
+        <div class="uk-flex-center uk-align-center uk-width-large">
           <div class="uk-flex-center">
-            <a class="uk-link-reset uk-text-medium" data-uk-toggle="target: #recover;animation: uk-animation-slide-top-small">Forgot Your Password?</a>
+            <a class="uk-link-reset uk-text-small" data-uk-toggle="target: #recover;animation: uk-animation-slide-top-small">Forgot Your Password?</a>
           </div>
 
           <div class="uk-width-large" id="recover" hidden>
@@ -81,7 +83,7 @@
             </form>
         </div>
 
-      </div> -->
+      </div>
 
    
           </div>
@@ -203,7 +205,7 @@ computed:{
  }
 
 
-@form-width-large:                              500px;
+@form-width-large:                              300px;
 @form-padding-vertical:                         1px;
 
 .uk-input{

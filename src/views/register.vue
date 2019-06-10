@@ -42,7 +42,7 @@
             </div>
                 
                 <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
-                <input class="uk-input uk-form-width-large  uk-form-large" required placeholder="" type="text">
+                <input class="uk-input uk-form-medium" required placeholder="" type="text">
               </div>
             </div>
             <div class="uk-margin">
@@ -53,7 +53,7 @@
             </div>
                 
                 <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
-                <input class="uk-input uk-form-width-large  uk-form-large" required placeholder="" type="email" >
+                <input class="uk-input uk-form-medium" required placeholder="" type="email" >
               </div>
             </div>
              <div class="uk-margin uk-width-1-1">
@@ -61,7 +61,7 @@
               <label> Account Type</label>
             </div>
                 
-            <select class="uk-select uk-form-width-large  uk-form-large">
+            <select class="uk-select uk-form-medium">
                 <option> business</option>
                 <option> Personal</option>
             </select>
@@ -69,7 +69,7 @@
 
            
             <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-primary uk-button-large uk-width-1-1 uk-box-shadow-xlarge" v-on:click.prevent="userRegister" >register</button>
+              <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 uk-box-shadow-xlarge" v-on:click.prevent="userRegister" >register</button>
             </div>
             
           </fieldset>
