@@ -8,7 +8,7 @@
      <!--  the first grid -->
     <div>
       
-      <div class="uk-card uk-card-default uk-box-shadow-xlarge">
+      <div class="uk-card uk-card-default uk-card-hover">
             <div class="uk-card-media-top">
                 <img src="img/cover.jpg" alt="">
                  <div class="uk-overlay uk-position-center">
@@ -40,7 +40,7 @@
 
           </div>
         </div>
-      <div class="uk-card uk-card-default">
+      <div class="uk-card uk-card-default uk-card-hover">
     <div class="uk-card-header">
         <div class="uk-grid-small uk-flex-middle" uk-grid>
             <div class="uk-width-auto">

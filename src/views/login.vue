@@ -1,10 +1,10 @@
 <template>
   <div id="landing">
-  	<div class="uk-cover-container">
+    <div class="uk-cover-container">
        
 
 
-    <div class="uk-grid-collapse uk-child-width-1-2@m  uk-flex-middle" uk-grid>
+    <div class="uk-grid-collapse uk-child-width-1-2@m uk-child-width-1-1@s uk-flex-middle" uk-grid>
 
     <!--   the large section banner -->
           <div class="uk-cover-container uk-visible@l uk-section" uk-height-viewport>
@@ -16,17 +16,17 @@
        <!--    end of the large image section banner -->
 
     <!--    the user form and registration section -->
-            <div class="uk-section-primary" uk-height-viewport >
+            <div class="uk-flex-center uk-section-primary" uk-height-viewport >
 
-              <div class="uk-margin-large-left uk-width-large web-intro " >
+              <div class="uk-margin-xlarge-left web-intro " >
                 
-              <h3 style="font-family: 'Righteous', cursive;padding-top: 4px;" class="uk-text-left"> Resume.ly</h3>
-              <!-- <h5 class="uk-text-left" style="font-family:  'Montserrat', sans-serif;">career social network</h5> -->
+              <h2 style="font-family: 'Righteous', cursive;padding-top: 10px;" class="uk-text-center"> Resume</h2>
+              <p class="uk-text-center">career social network</p>
               </div>
-                
+               
 
-        <!--   login form -->
-            <div class="uk-width-large uk-align-center uk-padding-large"  id="login-form">
+                  <!--   login form -->
+            <div class="uk-width-large uk-padding-large uk-align-center login-form" >
 
 
         <form action="" class=" uk-form-stacked">
@@ -34,49 +34,43 @@
           <!--   <legend class="uk-legend"></legend> -->
             <div class="uk-margin">
               <div class="uk-inline uk-width-1-1">
-                <div class="uk-margin">
-            
-            </div>
-                
-                <input class="uk-input uk-form-medium" required placeholder="E-mail" type="email" v-model="signIn.email">
+                <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
+                <input class="uk-input uk-form-xlarge" required placeholder="Email" type="email" v-model="signIn.email">
               </div>
             </div>
             <div class="uk-margin">
               <div class="uk-inline uk-width-1-1">
-                  <div class="uk-margin">
-            </div>
-                
-                <input class="uk-input uk-form-medium" required placeholder="Password" type="password" v-model="signIn.password">
+                <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
+                <input class="uk-input uk-form-xlarge" required placeholder="Password" type="password" v-model="signIn.password">
               </div>
             </div>
             
-            
             <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 uk-box-shadow-xlarge" v-on:click.prevent="userLogin()" >Sign In</button>
+              <label><input class="uk-checkbox" type="checkbox" > Keep Me logged In</label>
+            </div>
+            <div class="uk-margin">
+              <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 uk-box-shadow-xlarge" v-on:click.prevent="userLogin" >Sign In</button>
             </div>
             
           </fieldset>
         </form>
         <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-danger uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">Continue With Google</button>
+              <button type="submit" class="uk-button uk-button-danger uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">Login With Google</button>
             </div>
-   
-
-        <div class="uk-flex-center uk-align-center uk-width-large">
-          <div class="uk-flex-center">
+        <div>
+          <div class="uk-text-center">
             <a class="uk-link-reset uk-text-small" data-uk-toggle="target: #recover;animation: uk-animation-slide-top-small">Forgot Your Password?</a>
           </div>
-
-          <div class="uk-width-large" id="recover" hidden>
+          <div class="uk-margin-small-top" id="recover" hidden>
             <form action="">
               
-              <div class="uk-margin">
+              <div class="uk-margin-small">
                 <div class="uk-inline uk-width-1-1">
                   <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: mail"></span>
                   <input class="uk-input" placeholder="E-mail" required type="text">
                 </div>
               </div>
-              <div class="uk-margin">
+              <div class="uk-margin-small">
                 <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">Send Password</button>
               </div>
               
@@ -85,7 +79,61 @@
 
       </div>
 
-   
+    <!--     end of login form  -->
+<!-- 
+    register form -->
+  
+       <!--    <div class="uk-width-large uk-padding-large uk-align-center register-form" >
+
+
+        <form action="" class=" uk-form-stacked">
+          <fieldset class="uk-fieldset">
+         
+            <div class="uk-margin">
+              <div class="uk-inline uk-width-1-1">
+                <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
+                <input class="uk-input uk-form-xlarge" required placeholder="full name" type="email" v-model="signIn.email">
+              </div>
+            </div>
+            <div class="uk-margin">
+              <div class="uk-inline uk-width-1-1">
+                <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
+                <input class="uk-input uk-form-xlarge" required placeholder="Password" type="password" v-model="signIn.password">
+              </div>
+            </div>
+            
+           
+            <div class="uk-margin">
+              <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 uk-box-shadow-xlarge" v-on:click.prevent="userLogin" >register</button>
+            </div>
+            
+          </fieldset>
+        </form>
+        <div class="uk-margin">
+              <button type="submit" class="uk-button uk-button-danger uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">Login With Google</button>
+            </div>
+        <div>
+          <div class="uk-text-center">
+            <a class="uk-link-reset uk-text-small" data-uk-toggle="target: #recover;animation: uk-animation-slide-top-small">Forgot Your Password?</a>
+          </div>
+          <div class="uk-margin-small-top" id="recover" hidden>
+            <form action="">
+              
+              <div class="uk-margin-small">
+                <div class="uk-inline uk-width-1-1">
+                  <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: mail"></span>
+                  <input class="uk-input" placeholder="E-mail" required type="text">
+                </div>
+              </div>
+              <div class="uk-margin-small">
+                <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">Send Password</button>
+              </div>
+              
+            </form>
+        </div>
+      </div>
+ -->
+    <!-- end of register form -->
           </div>
       </div>
   </div>
@@ -110,9 +158,9 @@ data(){
   },
 
   register:{
-	full_name:"",
-	email:"",
-	account_type:["individual", "company"]
+  full_name:"",
+  email:"",
+  account_type:["individual", "company"]
     
 
   },
@@ -120,8 +168,6 @@ data(){
 
   }
 },
-
-
 computed:{
   ...mapState('signup',[
 
@@ -155,7 +201,7 @@ computed:{
     
 
     this.login(this.signIn)
-    .then(()=>  this.$Progress.finish())
+    .then(()=>  this.$Progress.start())
     .then(()=> this.$router.push('/profile'))
 
 
@@ -187,12 +233,7 @@ computed:{
 }
  .hook-section-primary(){
   background-image: linear-gradient(50deg,#744FFF,#21D397);
-//   animation: example 5s infinite;
 
-// @keyframes example {
-//   from {background-image: linear-gradient(50deg,#744FFF,#21D397);}
-//   to {background-image: linear-gradient(50deg,#21D397, #744FFF);}
-// }
  }
 
  .hook-form() {
@@ -205,26 +246,12 @@ computed:{
  }
 
 
-@form-width-large:                              300px;
-@form-padding-vertical:                         1px;
 
-.uk-input{
-   font-family:   'Montserrat', sans-serif;
-  font-weight: bolder;
-}
 
-.uk-input::placeholder { 
-
-  color: @form-placeholder-color;
-  font-family:  'Quicksand', sans-serif;
-  
-
- }
 
 @form-background:  transparent;
 @form-color: white;
 @form-placeholder-color: white;
-@form-height:  40px;
 
 @button-primary-background:                     #21D397!important; 
 @button-primary-color:                          white!important;
@@ -240,4 +267,3 @@ computed:{
 
 }
 </style>
-
