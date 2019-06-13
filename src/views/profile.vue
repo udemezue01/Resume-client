@@ -7,8 +7,23 @@
 
      <!--  the first grid -->
     <div>
+
+      <content-loader
+    :height="600"
+    :width="400"
+    :speed="1"
+    primaryColor="#dadada"
+    secondaryColor="#e9e9e9"
+  v-if="!profile">
+    <rect x="0" y="70" rx="5" ry="5" width="400" height="200" /> 
+    <circle cx="201.77590591894563" cy="271.54590591894566" r="93.27590591894564" /> 
+    <circle cx="227.5" cy="367.27" r="1" />
+    <rect x="66.5" y="388.27" rx="0" ry="0" width="252" height="24" /> 
+    <rect x="79.5" y="424.27" rx="0" ry="0" width="228" height="13" />
+    <rect x="100.5" y="448.27" rx="0" ry="0" width="183" height="12" />
+  </content-loader>
       
-      <div class="uk-card uk-card-default uk-card-hover">
+      <div class="uk-card uk-card-default" v-else>
             <div class="uk-card-media-top">
                 <img src="img/cover.jpg" alt="">
                  <div class="uk-overlay uk-position-center">
@@ -40,7 +55,17 @@
 
           </div>
         </div>
-      <div class="uk-card uk-card-default uk-card-hover">
+
+        <ContentLoader v-if="!profile" :height="475" primaryColor = " #dadada" :speed="1" secondaryColor="#e9e9e9">
+ <circle cx="30" cy="30" r="30" /> 
+    <rect x="75" y="13" rx="4" ry="4" width="100" height="13" /> 
+    <rect x="75" y="37" rx="4" ry="4" width="50" height="8" /> 
+    <rect x="0" y="70" rx="5" ry="5" width="400" height="900" />
+    <rect x="328.5" y="18.27" rx="0" ry="0" width="50" height="9" />
+</ContentLoader>
+
+        
+      <div class="uk-card uk-card-default" v-else>
     <div class="uk-card-header">
         <div class="uk-grid-small uk-flex-middle" uk-grid>
             <div class="uk-width-auto">
@@ -117,8 +142,15 @@
 
 <script>
   import {mapState, mapActions} from 'vuex';
+  import {  ContentLoader } from 'vue-content-loader'; 
  
 export default {
+  components:{
+
+   ContentLoader
+
+
+  },
 
   computed:{
     ...mapState('profile',[

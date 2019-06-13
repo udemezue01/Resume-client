@@ -45,9 +45,7 @@
               </div>
             </div>
             
-            <div class="uk-margin">
-              <label><input class="uk-checkbox" type="checkbox" > Keep Me logged In</label>
-            </div>
+           
             <div class="uk-margin">
               <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 uk-box-shadow-xlarge" v-on:click.prevent="userLogin" >Sign In</button>
             </div>

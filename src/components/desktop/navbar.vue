@@ -7,7 +7,7 @@
   <div id="navbar-desktop" class="uk-position-top">
 
     <div uk-sticky="top: #navbar-desktop" >
-    <nav class="uk-navbar-container uk-margin" uk-navbar>
+    <nav class="uk-navbar-container uk-margin " uk-navbar>
    
 
         <div class="uk-navbar-left">
@@ -81,7 +81,21 @@
                 </a>
 
             </li>
+            &nbsp;
+
+            <li>
+               <content-loader
+                :height="475"
+                :width="400"
+                :speed="1"
+                primaryColor="#dadada"
+                secondaryColor="#e9e9e9"
+              >
+                <circle cx="30" cy="30" r="30" />
+         </content-loader>
+            </li>
              &nbsp;
+            
              <li class=""><router-link to="/"> <img src="/img/udem.jpg" height="4opx" width="50px" class="uk-border-circle" style="border:3px solid #21D397"> </router-link>
             </li>
              <li class="uk-button uk-button-default uk-button-small">
@@ -155,8 +169,15 @@
 <script>
 
 import {mapActions, mapGetters} from 'vuex';
+ import {  ContentLoader } from 'vue-content-loader'; 
 
 export default {
+   components:{
+
+   ContentLoader
+
+
+  },
 
 data(){
   return {
