@@ -116,9 +116,10 @@ data(){
 computed:{
   ...mapState('signup',[
 
+    'registrationLoading',
     'registrationCompleted',
     'registrationError',
-    'registrationLoading'
+    
     ]),
  
 

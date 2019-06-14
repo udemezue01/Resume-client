@@ -34,6 +34,21 @@ export default {
 
 data(){
 	return {
+    comment:{
+
+      content:'',
+      media:''
+    },
+
+     stream:{
+
+
+    },
+     reactions:{
+
+    },
+
+
 
 	}
 },
