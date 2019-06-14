@@ -155,24 +155,12 @@ data(){
     password : ""
   },
 
-  register:{
-  full_name:"",
-  email:"",
-  account_type:["individual", "company"]
-    
-
-  },
 
 
   }
 },
 computed:{
-  ...mapState('signup',[
 
-    'registrationCompleted',
-    'registrationError',
-    'registrationLoading'
-    ]),
   ...mapState('auth',[
     'authenticating',
     'error',
@@ -187,11 +175,7 @@ computed:{
       'login',
     
       ]),
-     ...mapActions('signup', [
 
-      'createAccount',
- 
-      ]),
 
 
 
@@ -207,13 +191,7 @@ computed:{
 
 },
     },
-    userRegister(){
-      this.createAccount(this.register)
-      .then(() => this.$router.push('/profile'))
-      .catch((err) => console.log(error))
-      
-  
-    },
+
   }
 
 

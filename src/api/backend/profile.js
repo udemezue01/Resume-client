@@ -14,14 +14,5 @@ export default {
   deleteProfile(url) {
     return session.delete('/profile/', url);
   },
-  createEducation (school, year_started, year_ended){
-    return session.post('/profile/p/education/', {user, school, year_started, year_ended})
-  },
 
-  createCertification (user, organization, year_obtained){
-    return session.post('/profile/p/certification', {user, organization, year_obtained})
-  },
-  createWorkHistory (user, company, year_started, year_ended){
-    return session.post ('/profile/p/workhistory', {user, company, year_started, year_ended})
-  }
-};
+}

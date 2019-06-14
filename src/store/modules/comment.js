@@ -68,7 +68,7 @@ const state = {
     },
     [COMMENT_CREATE_FAILURE](state) {
       state.commentError = true;
-      state.createLoading = false;
+      
      
     },
     [COMMENT_CREATE_SUCCESS](state, data) {
@@ -83,7 +83,7 @@ const state = {
     },
       [COMMENT_GET_SUCCESS](state) {
       state.activationLoading = true;
-      state.profile = response.data();
+      state.comment = response.data();
     },
     [COMMENT_GET_FAILURE](state) {
       state.createLoading = false;

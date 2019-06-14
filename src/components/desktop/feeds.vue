@@ -29,7 +29,7 @@
 
 
 <script>
-import {mapState} from 'vuex';
+import {mapState, mapActions} from 'vuex';
 export default {
 
 data(){
@@ -43,8 +43,24 @@ computed:{
     
 
 
-    ])
+    ]),
+ 
+},
+methods:{
+   ...mapActions('comment', [
+      'createComment',
+      'updateComment',
+      'deleteComment',
+
+    ]),
+
+
+},
+created(){
+  this.getFeed
+
 }
+
 
 }
 

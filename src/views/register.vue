@@ -69,7 +69,7 @@
 
            
             <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 uk-box-shadow-xlarge" v-on:click.prevent="userRegister" >register</button>
+              <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 uk-box-shadow-xlarge" v-on:click.prevent="userRegister()" >register</button>
             </div>
             
           </fieldset>
@@ -105,7 +105,7 @@ data(){
   register:{
 	full_name:"",
 	email:"",
-	account_type:["individual", "company"]
+	account_type:["Personal", "Business"]
     
 
   }
