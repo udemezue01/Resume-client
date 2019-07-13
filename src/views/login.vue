@@ -75,63 +75,11 @@
             </form>
         </div>
 
-      </div>
+      </div> <br>
+      <div class="uk-margin">
+              <button type="submit" class="uk-button uk-button-danger uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">Create Account</button>
+            </div>
 
-    <!--     end of login form  -->
-<!-- 
-    register form -->
-  
-       <!--    <div class="uk-width-large uk-padding-large uk-align-center register-form" >
-
-
-        <form action="" class=" uk-form-stacked">
-          <fieldset class="uk-fieldset">
-         
-            <div class="uk-margin">
-              <div class="uk-inline uk-width-1-1">
-                <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
-                <input class="uk-input uk-form-xlarge" required placeholder="full name" type="email" v-model="signIn.email">
-              </div>
-            </div>
-            <div class="uk-margin">
-              <div class="uk-inline uk-width-1-1">
-                <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
-                <input class="uk-input uk-form-xlarge" required placeholder="Password" type="password" v-model="signIn.password">
-              </div>
-            </div>
-            
-           
-            <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 uk-box-shadow-xlarge" v-on:click.prevent="userLogin" >register</button>
-            </div>
-            
-          </fieldset>
-        </form>
-        <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-danger uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">Login With Google</button>
-            </div>
-        <div>
-          <div class="uk-text-center">
-            <a class="uk-link-reset uk-text-small" data-uk-toggle="target: #recover;animation: uk-animation-slide-top-small">Forgot Your Password?</a>
-          </div>
-          <div class="uk-margin-small-top" id="recover" hidden>
-            <form action="">
-              
-              <div class="uk-margin-small">
-                <div class="uk-inline uk-width-1-1">
-                  <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: mail"></span>
-                  <input class="uk-input" placeholder="E-mail" required type="text">
-                </div>
-              </div>
-              <div class="uk-margin-small">
-                <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">Send Password</button>
-              </div>
-              
-            </form>
-        </div>
-      </div>
- -->
-    <!-- end of register form -->
           </div>
       </div>
   </div>
