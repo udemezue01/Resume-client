@@ -25,9 +25,9 @@
       
       <div class="uk-card uk-card-default" v-else>
             <div class="uk-card-media-top">
-                <img src="img/cover.jpg" alt="">
+                <img src="img/cover.jpg" alt="" style="border-radius: 3px;">
                  <div class="uk-overlay uk-position-center">
-                  <img src="img/udem.jpg" alt="" class= "uk-border-circle" width="200" height="200" style="border:3px solid #21D397">
+                  <img src="img/udem.jpg" alt="" class= "uk-border-circle" width="200" height="200" style="z-index: 1;position: relative;border:3px solid;background: #21D397;background-image:linear-gradient(45deg,#744FFF,#21D397); ">
                 </div>
             </div>
             <div class="uk-card-body uk-padding-large ">
@@ -145,50 +145,56 @@
   import {  ContentLoader } from 'vue-content-loader'; 
  
 export default {
+  
   components:{
 
    ContentLoader
 
-
   },
 
+  apollo:{
+    
+  },
+  
+
   computed:{
-    ...mapState('profile',[
+    // ...mapState('profile',[
 
-      'createCompleted',
-      'createError',
-      'createLoading',
-      'profile'
+    //   'createCompleted',
+    //   'createError',
+    //   'createLoading',
+    //   'profile'
 
-      ]),
-    ...mapActions('profile', [
-         'getProfile',
-      ])
+    //   ]),
+    // ...mapActions('profile', [
+    //      'getProfile',
+    //   ])
 
   },
 
   methods:{
-    ...mapActions('profile',[
-      'createProfile',
-      'updateProfile',
+    // ...mapActions('profile',[
+    //   'createProfile',
+    //   'updateProfile',
    
-      'deleteProfile',
+    //   'deleteProfile',
 
-      ]),
-    ...mapActions('Vacancy', [
+    //   ]),
+    // ...mapActions('Vacancy', [
 
-          'createVacancy',
-          'updateVacancy',
-          'deleteVacancy',
+    //       'createVacancy',
+    //       'updateVacancy',
+    //       'deleteVacancy',
 
-      ]),
-      ...mapActions('application', [
-          'ceateApplication',
-          'updateApplication',
-          'deleteApplication',
+    //   ]),
+    //   ...mapActions('application', [
+    //       'ceateApplication',
+    //       'updateApplication',
+    //       'deleteApplication',
 
 
-        ])
+    //     ])
+
   
 
   },
