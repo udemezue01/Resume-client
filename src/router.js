@@ -64,7 +64,7 @@ export default new Router({
       path: '/profile',
       name: 'profile',
       component: profile,
-      beforeEnter: requireAuthenticated,
+      // beforeEnter: requireAuthenticated,
 
      
     },
