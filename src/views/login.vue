@@ -76,8 +76,9 @@
         </div>
 
       </div> <br>
+ 
       <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-danger uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">Create Account</button>
+              <button type="submit" class="uk-button uk-button-outline uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">Create Account</button>
             </div>
 
           </div>
