@@ -28,60 +28,62 @@
                   <!--   login form -->
             <div class="uk-width-large uk-padding-large uk-align-center login-form" >
 
-
-        <form action="" class=" uk-form-stacked">
-          <fieldset class="uk-fieldset">
-          <!--   <legend class="uk-legend"></legend> -->
-            <div class="uk-margin">
-              <div class="uk-inline uk-width-1-1">
-                <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
-                <input class="uk-input uk-form-xlarge" required placeholder="Email" type="email" v-model="signIn.email">
-              </div>
+                <!-- login -->
+      <form class="toggle-class" action="">
+        <fieldset class="uk-fieldset">
+          <div class="uk-margin">
+            <div class="uk-inline uk-width-1-1">
+              <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
+              <input class="uk-input uk-form-xlarge " required placeholder="Username" type="text">
             </div>
-            <div class="uk-margin">
-              <div class="uk-inline uk-width-1-1">
-                <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
-                <input class="uk-input uk-form-xlarge" required placeholder="Password" type="password" v-model="signIn.password">
-              </div>
-            </div>
-            
-           
-            <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 uk-box-shadow-xlarge" v-on:click.prevent="userLogin" >Sign In</button>
-            </div>
-            
-          </fieldset>
-        </form>
-        <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-danger uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">Login With Google</button>
-            </div>
-        <div>
-          <div class="uk-text-center">
-            <a class="uk-link-reset uk-text-small" data-uk-toggle="target: #recover;animation: uk-animation-slide-top-small">Forgot Your Password?</a>
           </div>
-          <div class="uk-margin-small-top" id="recover" hidden>
-            <form action="">
-              
-              <div class="uk-margin-small">
-                <div class="uk-inline uk-width-1-1">
-                  <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: mail"></span>
-                  <input class="uk-input" placeholder="E-mail" required type="text">
-                </div>
-              </div>
-              <div class="uk-margin-small">
-                <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">Send Password</button>
-              </div>
-              
-            </form>
-        </div>
+          <div class="uk-margin">
+            <div class="uk-inline uk-width-1-1">
+              <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
+              <input class="uk-input uk-form-xlarge " required placeholder="Password" type="password">
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label><input class="uk-checkbox" type="checkbox"> Keep me logged in</label>
+          </div>
+          <div class="uk-margin-bottom">
+            <button type="submit" class="uk-button uk-button-primary uk-width-1-1">LOG IN</button>
+          </div>
+        </fieldset>
+      </form>
+      <!-- /login -->
 
-      </div> <br>
- 
-      <div class="uk-margin">
+      <!-- recover password -->
+      <form class="toggle-class" action="" hidden>
+        <div class="uk-margin">
+          <div class="uk-inline uk-width-1-1">
+            <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: mail"></span>
+            <input class="uk-input uk-border-pill" placeholder="E-mail" required type="text">
+          </div>
+        </div>
+        <div class="uk-margin-bottom">
+          <button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">SEND PASSWORD</button>
+        </div>
+      </form>
+      <!-- /recover password -->
+      
+      <!-- action buttons -->
+      <div>
+        <div class="uk-text-center">
+          <a class="uk-link-reset uk-text-small toggle-class" data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade">Forgot your password?</a>
+          <div class="uk-margin">
               <button type="submit" class="uk-button uk-button-outline uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">Create Account</button>
             </div>
 
           </div>
+          <a class="uk-link-reset uk-text-small toggle-class" data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade" hidden><span data-uk-icon="arrow-left"></span> Back to Login</a>
+        </div>
+      </div>
+
+
+      </div> <br>
+ 
+      
       </div>
   </div>
 </div>
