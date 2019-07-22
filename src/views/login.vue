@@ -34,7 +34,7 @@
           <div class="uk-margin">
             <div class="uk-inline uk-width-1-1">
               <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
-              <input class="uk-input uk-form-xlarge " required placeholder="Username" type="text">
+              <input class="uk-input uk-form-xlarge " required placeholder="Email" type="text">
             </div>
           </div>
           <div class="uk-margin">
@@ -47,7 +47,11 @@
             <label><input class="uk-checkbox" type="checkbox"> Keep me logged in</label>
           </div>
           <div class="uk-margin-bottom">
-            <button type="submit" class="uk-button uk-button-primary uk-width-1-1">LOG IN</button>
+            <button type="submit" class="uk-button uk-button-primary uk-width-1-1 uk-box-shadow-xlarge">LOG IN</button>
+          </div>
+
+           <div class="uk-margin-bottom">
+            <button type="submit" class="uk-button uk-button-danger uk-width-1-1 uk-box-shadow-xlarge">CONTINUE WITH GOOGLE</button>
           </div>
         </fieldset>
       </form>
@@ -58,11 +62,11 @@
         <div class="uk-margin">
           <div class="uk-inline uk-width-1-1">
             <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: mail"></span>
-            <input class="uk-input uk-border-pill" placeholder="E-mail" required type="text">
+            <input class="uk-input" placeholder="E-mail" required type="text">
           </div>
         </div>
         <div class="uk-margin-bottom">
-          <button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">SEND PASSWORD</button>
+          <button type="submit" class="uk-button uk-button-primary uk-width-1-1">SEND PASSWORD</button>
         </div>
       </form>
       <!-- /recover password -->
@@ -71,18 +75,18 @@
       <div>
         <div class="uk-text-center">
           <a class="uk-link-reset uk-text-small toggle-class" data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade">Forgot your password?</a>
-          <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-outline uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">Create Account</button>
-            </div>
-
+          
           </div>
           <a class="uk-link-reset uk-text-small toggle-class" data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade" hidden><span data-uk-icon="arrow-left"></span> Back to Login</a>
         </div>
+          <div class="uk-margin toggle-class">
+              <button type="submit" class="uk-button uk-button-outline uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">CREATE ACCOUNT</button>
+            </div>
       </div>
 
 
-      </div> <br>
- 
+      </div> 
+       
       
       </div>
   </div>
@@ -94,7 +98,6 @@
   
 <script>
 
-import {mapActions, mapGetters, mapState} from 'vuex';
 
 export default {
 
@@ -106,41 +109,21 @@ data(){
     password : ""
   },
 
+  register:{
+    full_name:"",
+    email:"",
+    account_type:""
 
+  }
 
   }
 },
 computed:{
 
-  ...mapState('auth',[
-    'authenticating',
-    'error',
-    'success'
-
-    ]),
 
 },
   methods:{
-    ...mapActions('auth', [
-
-      'login',
-    
-      ]),
-
-
-
-
-  userLogin(){
-    
-
-    this.login(this.signIn)
-    .then(()=>  this.$Progress.start())
-    .then(()=> this.$router.push('/profile'))
-
-
-    .catch((err)=> console.log(err.status_code))      
-
-},
+  
     },
 
   }
@@ -164,7 +147,7 @@ computed:{
  }
 
  .hook-form() {
-  border-radius: 10px;
+  border-radius: 12px;
   border:1px solid;
  }
 

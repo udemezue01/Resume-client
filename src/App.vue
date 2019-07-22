@@ -2,8 +2,8 @@
   <div id="app">
     
 <vue-progress-bar></vue-progress-bar>
-   <navbar-desktop class = "uk-visible@l" v-if="isAuthenticated"> </navbar-desktop>
-   <navbar-mobile class= "uk-hidden@l"  v-if="isAuthenticated"> </navbar-mobile>
+   <navbar-desktop class = "uk-visible@l" v-if="userId"> </navbar-desktop>
+   <navbar-mobile class= "uk-hidden@l"  v-if="userId"> </navbar-mobile>
     <router-view/>
    
 <!-- 
@@ -22,9 +22,7 @@ import navbar_m from '@/components/mobile/navbar.vue'
 import footer_m from '@/components/mobile/footer.vue'
 import footer_d from '@/components/desktop/footer.vue'
 
-//vuex imports
- import {mapActions, mapGetters} from 'vuex';
- import axios from 'axios';
+
  
 export default {
 
@@ -36,26 +34,14 @@ components:{
 
 
 
-computed: mapGetters('auth', [
-    'isAuthenticated',
-    'logout',
-  ]),
-
-
-created(){
-
-  axios.interceptors.response.use(function (error) {
-if (error.status ==401){
-  this.logout
-  .then(()=> this.$outer.push('/'))
-}
-return Promise.reject(error);
-});
+computed:{
+  userId () {
+        return this.$root.$data.userId
+      }
 },
- mounted () {
-// [App.vue specific] When App.vue is finish loading finish the progress bar
-this.$Progress.finish()
-},
+
+
+
 
 
 

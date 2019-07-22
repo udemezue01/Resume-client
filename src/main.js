@@ -34,30 +34,52 @@ const options = {
   location: 'top',
   inverse: false
 }
+import VueApollo from 'vue-apollo'
 import { ApolloClient } from 'apollo-client'
 import { createHttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'
+import { setContext } from 'apollo-link-context';
+
+
+
 
 // HTTP connection to the API
 const httpLink = createHttpLink({
   // You should use an absolute URL here
-  uri: '127.0.0.1:8000/graph/',
+  uri: 'http://127.0.0.1:8000/graph/',
 })
+
+
+// Create a new Middleware Link using setContext
+const middlewareLink = setContext(() => ({
+  headers: {
+    authorization: `Bearer ${token}`
+  }
+}));
 
 // Cache implementation
 const cache = new InMemoryCache()
 
+// Change your link assignment from
+// const link = httpLink;
+// to
+
+const link = middlewareLink.concat(httpLink);
 // Create the apollo client
 const apolloClient = new ApolloClient({
-  link: httpLink,
+  link,
   cache,
+  connectToDevTools: true
 })
 
 const apolloProvider = new VueApollo({
   defaultClient: apolloClient,
+  defaultOptions: {
+    $loadingKey: 'loading'
+  }
 })
 
-import VueApollo from 'vue-apollo'
+
 
 Vue.use(VueApollo)
 Vue.use(VueProgressBar, options)

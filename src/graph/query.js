@@ -1,23 +1,54 @@
-import gql from 'graph-tag';
+import gql from 'graphql-tag';
 
 
 
 
-const profile = gql`
-			profile(username:!string){
-				user{
-					id
-					fullName
-					email
-				}
-				status
-				country
-				job{
-					id
-					position
-				}
+export const USER_PROFILE = gql`
+			query{
+				  account {
+				    id
+				    fullName
+				    email
+				    profile {
+				      id
+				      username
+				      avatar
+				      country
+				      status
+				      location
+				      coverPhoto
+				    }
+				  }
+				  education {
+				    id
+				    school
+				    yearStarted
+				    yearEnded
+				  }
+				  skill {
+				    id
+				    skill
+				    level
+				  }
+				  certification {
+				    id
+				    organization
+				    yearObtained
+				  }
+				  job {
+				    id
+				    position
+				    description
+				  }
+				  post {
+				    id
+				    text
+				    video
+				    photo
+				    file
+				    createdAt
+				  }
+}
 
-
-			}
 
 `

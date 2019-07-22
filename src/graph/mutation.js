@@ -3,19 +3,19 @@ import gql from 'graph-tag';
 
 
 
-const create_account  =  gql`
+const CREATE_ACCOUNT  =  gql`
 	
 
 `,
 
-const login   = gql`
+const USER_LOGIN   = gql`
 
 `
 ,
 	//profile
 
 
-const profilecreate = gql`
+const CREATE_PROFILE = gql`
 
 `,
 const profileupdate = gql`
