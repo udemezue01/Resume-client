@@ -30,7 +30,7 @@
 
 
 <script>
-import {mapState, mapActions} from 'vuex';
+
 
 import {  ContentLoader } from 'vue-content-loader'; 
 
@@ -42,7 +42,7 @@ export default {
 
   data(){
     return{
-      profile:"",
+      userProfile:"",
     }
   },
 

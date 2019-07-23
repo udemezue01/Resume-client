@@ -154,14 +154,19 @@ export default {
 data(){
 
     return{
-      userProfile:[],
+      userProfile:"",
+      // education:[],
+      // skill:[],
+      // certification:[],
+      // post:[],
+
     }
   },
 
 
   apollo:{
   	userProfile:{
-  			 query:USER_PROFILE
+  		query:USER_PROFILE
   	},
 
 

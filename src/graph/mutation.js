@@ -8,10 +8,20 @@ const CREATE_ACCOUNT  =  gql`
 
 `,
 
-const USER_LOGIN   = gql`
+export const USER_LOGIN   = gql`
 
-`
-,
+			mutation{
+
+		  		tokenAuth($email:string!, $password:string!){
+
+		    		tokenAuth(email:$email, password:$password){
+		    			token
+		    		}
+			  }
+			}
+
+			`
+			,
 	//profile
 
 

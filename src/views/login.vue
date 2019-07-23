@@ -99,6 +99,9 @@
 <script>
 
 
+ //import {USER_LOGIN} from '../../graph/mutation.js';
+
+
 export default {
 
 data(){
@@ -123,8 +126,19 @@ computed:{
 
 },
   methods:{
-  
-    },
+    userLogin(){
+      const { email, password } = this.$data
+      this.$apollo.mutate({
+
+        mutation:USER_LOGIN,
+        variables:{
+          email:signIn.email,
+          password:signIn.password
+        }
+
+      })
+    }
+  },
 
   }
 
@@ -172,8 +186,14 @@ computed:{
 
 .hook-button-primary(){
 
- 
-
+ font-size: 12px;
 
 }
+.hook-button-danger(){
+
+ font-size: 12px;
+
+}
+
+
 </style>
