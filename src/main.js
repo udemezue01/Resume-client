@@ -41,6 +41,8 @@ import { InMemoryCache } from 'apollo-cache-inmemory'
 import { setContext } from 'apollo-link-context';
 
 
+// Cache implementation
+const cache = new InMemoryCache()
 
 
 // HTTP connection to the API
@@ -51,20 +53,27 @@ const httpLink = createHttpLink({
 
 
 // Create a new Middleware Link using setContext
-const middlewareLink = setContext(() => ({
-  headers: {
-    authorization: `Bearer ${token}`
-  }
-}));
 
-// Cache implementation
-const cache = new InMemoryCache()
+const authLink = setContext((_, { headers }) => {
+  // get the authentication token from local storage if it exists
+  const token = localStorage.getItem('token');
+  // return the headers to the context so httpLink can read them
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : "",
+    }
+  }
+});
+
+
+
 
 // Change your link assignment from
 // const link = httpLink;
 // to
 
-const link = middlewareLink.concat(httpLink);
+const link = authLink.concat(httpLink);
 // Create the apollo client
 const apolloClient = new ApolloClient({
   link,
