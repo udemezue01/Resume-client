@@ -50,14 +50,16 @@
             <button type="submit" class="uk-button uk-button-primary uk-width-1-1 uk-box-shadow-xlarge">LOG IN</button>
           </div>
 
-           <div class="uk-margin-bottom">
+         
+        </fieldset>
+      </form>
+
+        <div class="uk-margin-bottom">
             <button type="submit" class="uk-button uk-button-danger uk-width-1-1 uk-box-shadow-xlarge">CONTINUE WITH GOOGLE</button>
           </div>
            <div class="uk-margin-bottom">
             <button type="submit" class="uk-button uk-button-facebook uk-width-1-1 uk-box-shadow-xlarge">CONTINUE WITH FACEBOOK</button>
           </div>
-        </fieldset>
-      </form>
       <!-- /login -->
 
       <!-- recover password -->
