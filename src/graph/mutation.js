@@ -4,19 +4,29 @@ import gql from 'graph-tag';
 
 
 const CREATE_ACCOUNT  =  gql`
-	
+	mutation{
+		accountCreate(full_name:$full_name, email:$email, account_type:$account_type, password:$password){
+
+			user{
+				id,
+				full_name,
+				email,
+				account_type
+			}
+		}
+		
+
+		}
 
 `,
 
 export const USER_LOGIN   = gql`
 
 			mutation{
-
-		  		tokenAuth($email:string!, $password:string!){
-
-		    		tokenAuth(email:$email, password:$password){
+		
+		 		tokenAuth(email:$email, password:$password){
 		    			token
-		    		}
+
 			  }
 			}
 

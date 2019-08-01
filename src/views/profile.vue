@@ -13,6 +13,7 @@
 
 <script>
   import {profile} from '../graph/query.js';
+  
 
   import {  ContentLoader } from 'vue-content-loader'; 
   import profile_d from '@/components/desktop/profile.vue';

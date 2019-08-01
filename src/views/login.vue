@@ -85,11 +85,61 @@
           <a class="uk-link-reset uk-text-small toggle-class" data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade" hidden><span data-uk-icon="arrow-left"></span> Back to Login</a>
         </div>
           <div class="uk-margin toggle-class">
-              <button type="submit" class="uk-button uk-button-outline uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">CREATE ACCOUNT</button>
+              <button type="submit" class="uk-button uk-button-outline uk-button-medium uk-width-1-1 uk-box-shadow-xlarge" href="#modal-center" uk-toggle>CREATE ACCOUNT</button>
             </div>
       </div>
 
+<!-- the modal for creating account -->
 
+<div id="modal-center" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+           <div class="uk-width-large uk-padding-large uk-align-center login-form" >
+
+                <!-- login -->
+      <form class="toggle-class" action="">
+        <fieldset class="uk-fieldset">
+          <div class="uk-margin">
+            <div class="uk-inline uk-width-1-1">
+              <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
+              <input class="uk-input uk-form-xlarge " required placeholder="Full Name" type="text" style="color: #d2d2d2;">
+            </div>
+          </div>
+          <div class="uk-margin">
+            <div class="uk-inline uk-width-1-1">
+              <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
+              <input class="uk-input uk-form-xlarge " required placeholder="Email" type="email"  style="color: #d2d2d2;">
+            </div>
+          </div>
+          <div class="uk-margin">
+            <div class="uk-inline uk-width-1-1">
+              <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
+              <input class="uk-input uk-form-xlarge " required placeholder="Password" type="password"  style="color: #d2d2d2;">
+            </div>
+          </div>
+         
+          <div class="uk-margin-bottom">
+            <button type="submit" class="uk-button uk-button-primary uk-width-1-1 uk-box-shadow-xlarge">REGISTER</button>
+          </div>
+
+         
+        </fieldset>
+      </form>
+      <div class="uk-margin-bottom">
+            <button type="submit" class="uk-button uk-button-facebook uk-width-1-1 uk-box-shadow-xlarge">SIGN UP WITH FACEBOOK</button>
+          </div>
+
+         <div class="uk-margin-bottom">
+            <button type="submit" class="uk-button uk-button-danger uk-width-1-1 uk-box-shadow-xlarge">SIGN UP WITH GOOGLE</button>
+          </div>
+</div>
+
+    </div>
+</div>
+
+<!-- end of the modal for creating account -->
       </div> 
        
       
@@ -144,6 +194,24 @@ computed:{
       })
     }
   },
+  userRegister(){
+    const{full_name, email, account_type, password} = this.data
+    this.$apollo.mutate({
+
+      mutation:USER_CREATE,
+      variables:{
+        full_name:signIn.full_name,
+        
+      }
+    })
+
+  },
+
+
+  facebookLogin(){
+
+  },
+
 
   }
 
