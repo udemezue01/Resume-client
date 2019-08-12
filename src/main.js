@@ -48,7 +48,7 @@ const cache = new InMemoryCache()
 // HTTP connection to the API
 const httpLink = createHttpLink({
   // You should use an absolute URL here
-  uri: 'http://127.0.0.1:8000/graph/',
+  uri: 'http://127.0.0.1:8000/',
 })
 
 
@@ -83,9 +83,7 @@ const apolloClient = new ApolloClient({
 
 const apolloProvider = new VueApollo({
   defaultClient: apolloClient,
-  defaultOptions: {
-    $loadingKey: 'loading'
-  }
+ 
 })
 
 

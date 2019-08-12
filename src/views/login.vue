@@ -16,12 +16,12 @@
        <!--    end of the large image section banner -->
 
     <!--    the user form and registration section -->
-            <div class="uk-flex-center uk-section-primary" uk-height-viewport >
+            <div class="uk-flex-center uk-section-default" uk-height-viewport >
 
               <div class="uk-margin-xlarge-left web-intro " >
                 
-              <h2 style="font-family: 'Righteous', cursive;padding-top: 10px;" class="uk-text-center"> Resume</h2>
-              <p class="uk-text-center">career social network</p>
+              <h2 style="font-family: 'Righteous', cursive;padding-top: 10px; color:#21D397;" class="uk-text-center"> Resume</h2>
+              <p class="uk-text-center" style="color: #21D397;">career social network</p>
               </div>
                
 
@@ -34,20 +34,20 @@
           <div class="uk-margin">
             <div class="uk-inline uk-width-1-1">
               <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
-              <input class="uk-input uk-form-xlarge " required placeholder="Email" type="text">
+              <input class="uk-input uk-form-xlarge " required placeholder="Email" type="text" v-model= "signIn.email"  style="color: #d2d2d2;">
             </div>
           </div>
           <div class="uk-margin">
             <div class="uk-inline uk-width-1-1">
               <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
-              <input class="uk-input uk-form-xlarge " required placeholder="Password" type="password">
+              <input class="uk-input uk-form-xlarge " required placeholder="Password" type="password" v-model= "signIn.password"  style="color: #d2d2d2;">
             </div>
           </div>
           <div class="uk-margin">
             <label><input class="uk-checkbox" type="checkbox"> Keep me logged in</label>
           </div>
           <div class="uk-margin-bottom">
-            <button type="submit" class="uk-button uk-button-primary uk-width-1-1 uk-box-shadow-xlarge">LOG IN</button>
+            <button type="submit" class="uk-button uk-button-primary uk-width-1-1 uk-box-shadow-xlarge" v-on:click ="userLogin()">LOG IN</button>
           </div>
 
          
@@ -62,12 +62,21 @@
           </div>
       <!-- /login -->
 
-      <!-- recover password -->
-      <form class="toggle-class" action="" hidden>
+    
+     
+      
+      <!-- action buttons -->
+      <div>
+        <div class="uk-text-center">
+          <a class="uk-link-reset uk-text-small toggle-class" data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade" style="color:#0000;">Forgot your password?</a>
+          
+          </div>
+            <!-- recover password -->
+           <form class="toggle-class" action="" hidden>
         <div class="uk-margin">
           <div class="uk-inline uk-width-1-1">
             <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: mail"></span>
-            <input class="uk-input" placeholder="E-mail" required type="text">
+            <input class="uk-input" placeholder="E-mail" required type="text"  style="color: #d2d2d2;">
           </div>
         </div>
         <div class="uk-margin-bottom">
@@ -75,13 +84,7 @@
         </div>
       </form>
       <!-- /recover password -->
-      
-      <!-- action buttons -->
-      <div>
-        <div class="uk-text-center">
-          <a class="uk-link-reset uk-text-small toggle-class" data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade">Forgot your password?</a>
-          
-          </div>
+
           <a class="uk-link-reset uk-text-small toggle-class" data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade" hidden><span data-uk-icon="arrow-left"></span> Back to Login</a>
         </div>
           <div class="uk-margin toggle-class">
@@ -104,7 +107,7 @@
           <div class="uk-margin">
             <div class="uk-inline uk-width-1-1">
               <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
-              <input class="uk-input uk-form-xlarge " required placeholder="Full Name" type="text" style="color: #d2d2d2;">
+              <input class="uk-input uk-form-xlarge " required placeholder="Full Name" type="text" style="color: #d2d2d2;"  >
             </div>
           </div>
           <div class="uk-margin">
@@ -154,7 +157,9 @@
 <script>
 
 
- //import {USER_LOGIN} from '../../graph/mutation.js';
+// import {USER_LOGIN} from '../graph/mutation.js';
+import gql from 'graphql-tag'
+
 
 
 export default {
@@ -182,23 +187,41 @@ computed:{
 },
   methods:{
     userLogin(){
-      const { email, password } = this.$data
+      
+
       this.$apollo.mutate({
 
-        mutation:USER_LOGIN,
+        mutation: USER_LOGIN,
+
         variables:{
           email:signIn.email,
           password:signIn.password
         }
 
-      })
-    }
+      }).then((data) => {
+      // Result
+      console.log(data)
+
+    }).catch((error)=>{
+
+      console.log(error)
+    })
   },
   userRegister(){
     const{full_name, email, account_type, password} = this.data
     this.$apollo.mutate({
 
-      mutation:USER_CREATE,
+      mutation:gql`
+
+          mutation{
+        
+            tokenAuth(email:$email, password:$password){
+                  token
+
+            }
+          }
+
+          `,
       variables:{
         full_name:signIn.full_name,
         
@@ -207,11 +230,7 @@ computed:{
 
   },
 
-
-  facebookLogin(){
-
-  },
-
+}
 
   }
 
@@ -224,18 +243,22 @@ computed:{
 @import '../theme/theme.less';
 
 
-.uk-section-primary {
-    background: linear-gradient(50deg,#744FFF,#21D397);
-    .hook-section-primary;
+.uk-section-default {
+    background: white;
+    .hook-section-default;
 }
- .hook-section-primary(){
-  background-image: linear-gradient(50deg,#744FFF,#21D397);
+ .hook-section-default(){
+  //background-image: linear-gradient(50deg,#744FFF,#21D397);
+
+  color: #333;
+
 
  }
 
  .hook-form() {
   border-radius: 12px;
   border:1px solid;
+  color: black;
  }
 
  .hook-button(){
@@ -247,8 +270,8 @@ computed:{
 
 
 @form-background:  transparent;
-@form-color: white;
-@form-placeholder-color: white;
+@form-color: black;
+@form-placeholder-color: black;
 
 @button-primary-background:                     #21D397!important; 
 @button-primary-color:                          white!important;

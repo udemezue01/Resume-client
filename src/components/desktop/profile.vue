@@ -155,19 +155,14 @@ data(){
 
     return{
       userProfile:"",
-      // education:[],
-      // skill:[],
-      // certification:[],
-      // post:[],
+ 
 
     }
   },
 
 
   apollo:{
-  	userProfile:{
-  		query:USER_PROFILE
-  	},
+  	userProfile:USER_PROFILE,
 
 
    },
