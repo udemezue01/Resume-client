@@ -2,8 +2,8 @@
   <div id="app">
     
 <vue-progress-bar></vue-progress-bar>
-   <navbar-desktop class = "uk-visible@l" v-if="userId"> </navbar-desktop>
-   <navbar-mobile class= "uk-hidden@l"  v-if="userId"> </navbar-mobile>
+   <navbar-desktop class = "uk-visible@l" v-if="token"> </navbar-desktop>
+   <navbar-mobile class= "uk-hidden@l"  v-if="token"> </navbar-mobile>
     <router-view/>
    
 <!-- 
@@ -35,8 +35,8 @@ components:{
 
 
 computed:{
-  userId () {
-        return this.$root.$data.userId
+  token () {
+        return localStorage.getItem('token')
       }
 },
 

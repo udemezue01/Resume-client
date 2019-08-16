@@ -4,36 +4,45 @@ import store from './store/store.js'
 
 
 
-
-
-
-
-const requireAuthenticated = (to, from, next) => {
-  store.dispatch('auth/initialize')
-    .then(() => {
-      if (!store.getters['auth/isAuthenticated']) {
-        next('/register');
-      } else {
-        next();
-      }
-    });
+const requireAuthenticated = (to, from, next) =>{
+   const token = localStorage.getItem('token');
+   if (!token){
+    next("/")
+   }else{
+    next("/feeds");
+   }
 };
 
-const requireUnauthenticated = (to, from, next) => {
-  store.dispatch('auth/initialize')
-    .then(() => {
-      if (store.getters['auth/isAuthenticated']) {
-        next('/feeds');
-      } else {
-        next();
-      }
-    });
-};
 
-const redirectLogout = (to, from, next) => {
-  store.dispatch('auth/logout')
-    .then(() => next('/login'));
-};
+
+
+
+// const requireAuthenticated = (to, from, next) => {
+//   store.dispatch('auth/initialize')
+//     .then(() => {
+//       if (!store.getters['auth/isAuthenticated']) {
+//         next('/register');
+//       } else {
+//         next();
+//       }
+//     });
+// };
+
+// const requireUnauthenticated = (to, from, next) => {
+//   store.dispatch('auth/initialize')
+//     .then(() => {
+//       if (store.getters['auth/isAuthenticated']) {
+//         next('/feeds');
+//       } else {
+//         next();
+//       }
+//     });
+// };
+
+// const redirectLogout = (to, from, next) => {
+//   store.dispatch('auth/logout')
+//     .then(() => next('/login'));
+// };
 
 
 // views
@@ -64,7 +73,7 @@ export default new Router({
       path: '/profile',
       name: 'profile',
       component: profile,
-      // beforeEnter: requireAuthenticated,
+      beforeEnter: requireAuthenticated,
 
      
     },
@@ -80,14 +89,14 @@ export default new Router({
       path: '/register',
       name: 'register',
       component: register,
-      beforeEnter:requireUnauthenticated,
+      //beforeEnter:requireUnauthenticated,
     },
 
     {
        path: '*',
       name: 'notfound',
       component: notfound,
-      beforeEnter:requireUnauthenticated,
+      //beforeEnter:requireUnauthenticated,
       
     }
     //  {

@@ -12,7 +12,7 @@
 </template>
 
 <script>
-  import {profile} from '../graph/query.js';
+import {USER_PROFILE} from '../graph/query.js';
   
 
   import {  ContentLoader } from 'vue-content-loader'; 
@@ -28,9 +28,18 @@ export default {
    "profile-m":profile_m,
 
   },
+  data(){
+    return {
+
+      profile:""
+
+    }
+
+  },
+
 
   apollo:{
-    
+    profile:USER_PROFILE
   },
   
 

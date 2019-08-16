@@ -2,145 +2,62 @@ import gql from 'graphql-tag'
 
 
 
-// const CREATE_ACCOUNT  =  gql`
-// 	mutation{
-// 		accountCreate(full_name:$full_name, email:$email, account_type:$account_type, password:$password){
+export const SIGNIN_USER_MUTATION = gql`
 
-// 			user{
-// 				id,
-// 				full_name,
-// 				email,
-// 				account_type
-// 			}
-// 		}
-		
-
-// 		}
-
-// `,
-
-
-	const USER_LOGIN   = gql`
-
-		mutation{
-	
-	 		tokenAuth(email:$email, password:$password){
-	    			token
-
-		  }
-		}
-
-		`;
-		
-
-
-
-	//profile
-
-
-// const CREATE_PROFILE = gql`
-
-// `,
-// const profileupdate = gql`
-
-// `,
-// const profiledelete = gql`
-
-// `,
-// 	//education
-
-// const educationcreate = gql`
-
-// `,
-
-// const educationupdate = gql`
-
-// `,
-
-// const educationdelete = gql`
-
-// `,
-// 	//certification
-// const certificationcreate = gql`
-
-// `,
-
-// const certificationupdate = gql`
-
-// `,
-
-// const certificationdelete = gql`
-// `,
-
-// 	//skill
-// const skillcreate = gql`
-
-// `,
-// const skillupdate = gql`
-
-// `,
-// const skilldelete = gql`
-
-// `,
-
-
-
-// 	//  post
-// const postcreate = gql`
-// 	mutation{
-// 		postCreate(user:String!, content:String!, media:String!){
-// 			user
-// 			content
-// 			media
-// 		}
-// 	}
-
-// `,
-
-// const postupdate =gql`
-
-// `,
-// const postdelete = gql`
-
-// `,
-// 	// job
-
-// const jobcreate = gql`
-
-// `,
-
-// const jobupdate = gql`
-
-// `,
-
-// const jobdelete = gql`
-
-
-// `,
-// 	//work history
-
-// const workhistorycreate = gql`
-
-// `,
-
-// const workhistoryupdate = gql`
-
-// `,
-// const workhistorydelete = gql`
-// `,
-
-// 	//application
-
-// const applicationcreate = gql`
-
-// `,
-
-// const applicationupdate = gql`
-// `,
-
-// const applicationdelete = gql`
-
-
-export default {
-	USER_LOGIN,
+mutation ($email:String!,$password:String!){
+	tokenAuth(email:$email, password:$password){
+		token
+	}
 }
+`;
+
+
+// export const REGISTER_USER_MUTATION  = gql`
+
+// mutation ($full_name:String!, $email:String, $account_type:String!, $password:String!){
+
+// 	postCreate(text:$text, photo:$photo, video:$String ){
+// 		text
+// 		photo
+// 		video
+// 	}
+// }
+// `;
+// export const PROFILE_CREATE_MUTATION  = gql`
+
+// mutation ($text:String!, $photo:String, $video:String){
+
+// 	postCreate(text:$text, photo:$photo, video:$String ){
+// 		text
+// 		photo
+// 		video
+// 	}
+// }
+// `;
+
+//POST MUTATION
+
+// export const POST_CREATE_MUTATION  = gql`
+
+// mutation ($text:String!, $photo:String, $video:String){
+
+// 	postCreate(text:$text, photo:$photo, video:$String ){
+// 		text
+// 		photo
+// 		video
+// 	}
+// }
+// `;
+//JOB MUTATION
+// export const JOB_CREATE_MUTATION = gql`
+
+
+
+// `;
+
+//APPLICATION MUTATION
+
+// export const APPLICATION_CREATE_MUTATION = gql`
+
+// `
+//

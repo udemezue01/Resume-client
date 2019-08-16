@@ -1,4 +1,5 @@
-import gql from 'graphql-tag';
+import gql from 'graphql-tag'
+
 
 
 
@@ -17,6 +18,7 @@ export const USER_PROFILE = gql`
 				      status
 				      location
 				      coverPhoto
+				      
 				    }
 				  }
 				  education {

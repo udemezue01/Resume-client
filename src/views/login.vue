@@ -47,7 +47,7 @@
             <label><input class="uk-checkbox" type="checkbox"> Keep me logged in</label>
           </div>
           <div class="uk-margin-bottom">
-            <button type="submit" class="uk-button uk-button-primary uk-width-1-1 uk-box-shadow-xlarge" v-on:click ="userLogin()">LOG IN</button>
+            <button type="submit" class="uk-button uk-button-primary uk-width-1-1 uk-box-shadow-xlarge" @click ="userLogin">LOG IN</button>
           </div>
 
          
@@ -157,7 +157,7 @@
 <script>
 
 
-// import {USER_LOGIN} from '../graph/mutation.js';
+ import {SIGNIN_USER_MUTATION} from '../graph/mutation.js';
 import gql from 'graphql-tag'
 
 
@@ -191,11 +191,11 @@ computed:{
 
       this.$apollo.mutate({
 
-        mutation: USER_LOGIN,
+        mutation: SIGNIN_USER_MUTATION,
 
         variables:{
-          email:signIn.email,
-          password:signIn.password
+          email:this.signIn.email,
+          password:this.signIn.password
         }
 
       }).then((data) => {
@@ -211,17 +211,7 @@ computed:{
     const{full_name, email, account_type, password} = this.data
     this.$apollo.mutate({
 
-      mutation:gql`
-
-          mutation{
-        
-            tokenAuth(email:$email, password:$password){
-                  token
-
-            }
-          }
-
-          `,
+      mutation:SIGNIN_USER_MUTATION,
       variables:{
         full_name:signIn.full_name,
         
