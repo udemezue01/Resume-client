@@ -4,48 +4,12 @@ import store from './store/store.js'
 
 
 
-const requireAuthenticated = (to, from, next) =>{
-   const token = localStorage.getItem('token');
-   if (!token){
-    next("/")
-   }else{
-    next("/feeds");
-   }
-};
+// router.beforeEach((to, from, next) => {
 
+//   const token  = localStorage.getItem('token')
 
-
-
-
-// const requireAuthenticated = (to, from, next) => {
-//   store.dispatch('auth/initialize')
-//     .then(() => {
-//       if (!store.getters['auth/isAuthenticated']) {
-//         next('/register');
-//       } else {
-//         next();
-//       }
-//     });
-// };
-
-// const requireUnauthenticated = (to, from, next) => {
-//   store.dispatch('auth/initialize')
-//     .then(() => {
-//       if (store.getters['auth/isAuthenticated']) {
-//         next('/feeds');
-//       } else {
-//         next();
-//       }
-//     });
-// };
-
-// const redirectLogout = (to, from, next) => {
-//   store.dispatch('auth/logout')
-//     .then(() => next('/login'));
-// };
-
-
-// views
+//   // ...
+// })
 
 import profile from '@/views/profile.vue'
 import feeds from '@/views/feeds.vue'
@@ -83,7 +47,7 @@ export default new Router({
       path: '/feeds',
       name: 'feeds',
       component: feeds,
-      beforeEnter: requireAuthenticated,
+      //beforeEnter: requireAuthenticated,
     },
       {
       path: '/register',

@@ -49,6 +49,15 @@
 
           </div>
         </div>
+        <div>
+    <ul class="uk-child-width-expand" uk-tab>
+        <li class="uk-active"><a href="#">Feeds</a></li>
+        <li><a href="#">posts</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Bookmarks</a></li>
+
+    </ul>
+</div>
 
       	 	<ContentLoader v-if="!profile" :height="475" primaryColor = " #dadada" :speed="1" secondaryColor="#e9e9e9">
 				 	<circle cx="30" cy="30" r="30" /> 
@@ -96,23 +105,111 @@
    <div class="uk-overflow-auto uk-height-max-large">
        <ul class="uk-list uk-list-divider">
         <li>
-            <div class="uk-card uk-card-small uk-card-default uk-card-body uk-width-1-1@m">
-          <h3 class="uk-card-title">Default</h3>
-          <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="uk-card uk-card-small uk-card-default  uk-width-1-1@m">
+              <div class="uk-card-header">
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                      <img class="uk-border-circle" width="40" height="40" src="img/udem.jpg">
+                  </div>
+                  <div class="uk-width-expand">
+                      <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                      <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                  </div>
+              </div>
+          </div>
+          <div class="uk-card-body">
+            <p> If the browser isn't running well, resetting to a default state might help. You can choose to preserve your personal data and only reset settings or to perform a fully fresh reinstall.</p>
+          </div>
+          <div class="uk-card-footer ">
+        <a href="#" class="uk-button uk-button-text">Read more</a>
+    </div>
       </div>
 
         </li>
-        <li>
-          <div class="uk-card uk-card-small uk-card-default uk-card-body uk-width-1-1@m">
-    <h3 class="uk-card-title">Default</h3>
-    <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</div>
+             <li>
+            <div class="uk-card uk-card-small uk-card-default  uk-width-1-1@m">
+              <div class="uk-card-header">
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                      <img class="uk-border-circle" width="40" height="40" src="img/udem.jpg">
+                  </div>
+                  <div class="uk-width-expand">
+                      <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                      <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                  </div>
+              </div>
+          </div>
+          <div class="uk-card-body">
+            
+          </div>
+          <div class="uk-card-footer">
+        <a href="#" class="uk-button uk-button-text">Read more</a>
+    </div>
+      </div>
+
         </li>
-        <li>
-          <div class="uk-card uk-card-small uk-card-default uk-card-body uk-width-1-1@m">
-    <h3 class="uk-card-title">Default</h3>
-    <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</div>
+           <li>
+            <div class="uk-card uk-card-small uk-card-default  uk-width-1-1@m">
+              <div class="uk-card-header">
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                      <img class="uk-border-circle" width="40" height="40" src="img/udem.jpg">
+                  </div>
+                  <div class="uk-width-expand">
+                      <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                      <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                  </div>
+              </div>
+          </div>
+          <div class="uk-card-body">
+            
+          </div>
+          <div class="uk-card-footer">
+        <a href="#" class="uk-button uk-button-text">Read more</a>
+    </div>
+      </div>
+
+        </li>
+
+         <li>
+            <div class="uk-card uk-card-small uk-card-default  uk-width-1-1@m">
+              <div class="uk-card-header">
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                      <img class="uk-border-circle" width="40" height="40" src="img/udem.jpg">
+                  </div>
+                  <div class="uk-width-expand">
+                      <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                      <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                  </div>
+              </div>
+          </div>
+          <div class="uk-card-body">
+            
+          </div>
+          <div class="uk-card-footer">
+        <a href="#" class="uk-button uk-button-text">Read more</a>
+    </div>
+      </div>
+
+        </li>
+         <li>
+            <div class="uk-card uk-card-small uk-card-default  uk-width-1-1@m">
+              <div class="uk-card-header">
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                      <img class="uk-border-circle" width="40" height="40" src="img/udem.jpg">
+                  </div>
+                  <div class="uk-width-expand">
+                      <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                      <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                  </div>
+              </div>
+          </div>
+          <div class="uk-card-body">
+            
+          </div>
+      </div>
 
         </li>
       </ul>
