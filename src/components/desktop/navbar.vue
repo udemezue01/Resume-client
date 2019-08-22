@@ -19,7 +19,7 @@
           <div class="uk-navbar-center">
          <div class="uk-inline">
         
-        <input class="uk-input" placeholder="search">
+        <input class="uk-input" placeholder="search...">
         <svgicon icon = "search" class = "uk-form-icon uk-form-icon-flip uk-margin-small-top uk-padding-top" height = "25" width = "55" color ="#657786">   </svgicon>
           </div>
         
@@ -41,41 +41,26 @@
 
              <li>  <router-link to="/feeds">
                    
-                        <!-- <svgicon icon = "fire" height="20" width="30" color = "white">  </svgicon> -->
-                        Feeds
-              
-                </router-link>
+                       Feeds              </router-link>
             </li>
               &nbsp;
 
                  <li><a href="#">
                  
                         
-                        Discover
+                         <svgicon icon = "compass" height="30" width="40" color = "#657786">  </svgicon>
                   
                 </a> </li>
                 </li>
               &nbsp;
 
-                 <li><a href="#">
-                 
-                        
-                        Jobs
-                  
-                </a> </li>
-
-
-
-              
-
-           
-
+                
            
                 &nbsp;<li>
 
               <a href="">
               
-                        <svgicon icon = "notification" height="35" width="40" color = "#657786">  </svgicon>
+                        <svgicon icon = "notification" height="30" width="40" color = "#657786">  </svgicon>
                         
                     
                 </a>
@@ -252,7 +237,7 @@ methods:{
 
 
  .hook-form() {
-  border-radius: 10px;
+  border-radius:50px;
   border:1px solid;
   
  }

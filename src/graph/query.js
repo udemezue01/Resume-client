@@ -53,4 +53,4 @@ export const USER_PROFILE = gql`
 }
 
 
-`
+`;

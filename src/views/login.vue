@@ -21,7 +21,7 @@
               <div class="uk-margin-xlarge-left web-intro " >
                 
               <h2 style="font-family: 'Righteous', cursive;padding-top: 10px; color:#21D397;" class="uk-text-center"> Resume</h2>
-              <p class="uk-text-center" style="color: #21D397;">career social network</p>
+              <p class="uk-text-center" style="color: #00000;">career social network</p>
               </div>
                
 
@@ -47,7 +47,7 @@
             <label><input class="uk-checkbox" type="checkbox"> Keep me logged in</label>
           </div>
           <div class="uk-margin-bottom">
-            <button type="submit" class="uk-button uk-button-primary uk-width-1-1 uk-box-shadow-xlarge" @click ="userLogin">LOG IN</button>
+            <button type="submit" class="uk-button uk-button-primary uk-width-1-1 uk-box-shadow-xlarge" v-on:click.submit.prevent ="userLogin" >LOG IN</button>
           </div>
 
          
@@ -99,10 +99,10 @@
 
         <button class="uk-modal-close-default" type="button" uk-close></button>
 
-           <div class="uk-width-large uk-padding-large uk-align-center login-form" >
+           <div class="uk-width-large uk-padding-large uk-align-center login-form" style="border-radius: 50%;" >
 
                 <!-- login -->
-      <form class="toggle-class" action="">
+      <form class="toggle-class" action="" >
         <fieldset class="uk-fieldset">
           <div class="uk-margin">
             <div class="uk-inline uk-width-1-1">
@@ -131,11 +131,11 @@
         </fieldset>
       </form>
       <div class="uk-margin-bottom">
-            <button type="submit" class="uk-button uk-button-facebook uk-width-1-1 uk-box-shadow-xlarge">SIGN UP WITH FACEBOOK</button>
+            <button type="submit" class="uk-button uk-button-facebook uk-width-1-1 uk-box-shadow-xlarge">FACEBOOK</button>
           </div>
 
          <div class="uk-margin-bottom">
-            <button type="submit" class="uk-button uk-button-danger uk-width-1-1 uk-box-shadow-xlarge">SIGN UP WITH GOOGLE</button>
+            <button type="submit" class="uk-button uk-button-danger uk-width-1-1 uk-box-shadow-xlarge">GOOGLE</button>
           </div>
 </div>
 
@@ -185,7 +185,12 @@ computed:{
 
 
 },
-  methods:{
+
+created () {
+// [App.vue specific] When App.vue is finish loading finish the progress bar
+this.$Progress.finish()
+},
+methods:{
     userLogin(){
       
 
@@ -198,13 +203,17 @@ computed:{
           password:this.signIn.password
         }
 
-      }).then((data) => {
-      // Result
-      console.log(data)
+      }).then(data => {
 
-    }).catch((error)=>{
+      const token = data.token
+      localStorage.setItem('token', token)
+      this.$router.push("/profile")
 
-      console.log(error)
+
+    })
+    .catch(err =>{
+      localStorage.removeItem('token',)
+      console.log(err)
     })
   },
   userRegister(){
@@ -249,6 +258,7 @@ computed:{
   border-radius: 12px;
   border:1px solid;
   color: black;
+  border-color:black;
  }
 
  .hook-button(){

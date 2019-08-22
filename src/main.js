@@ -24,7 +24,7 @@ Vue.prototype.$http = axios
 const options = {
   color: '#21D397',
   failedColor: '#874b4b',
-  thickness: '5px',
+  thickness: '8px',
   transition: {
     speed: '0.2s',
     opacity: '0.6s',
@@ -50,6 +50,7 @@ const httpLink = createHttpLink({
   // You should use an absolute URL here
   uri: 'http://127.0.0.1:8000/',
  
+ 
 })
 
 
@@ -62,12 +63,17 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      authorization: token ? `Bearer ${token}` : "",
+
+      authorization: token ? `Bearer ${token}` : "true",
     }
   }
 });
-
-
+//  const token = localStorage.getItem('token');
+// const authLink = setContext(() => ({
+//   headers: {
+//     authorization: `Bearer ${token}`
+//   }
+// }));
 
 
 // Change your link assignment from
