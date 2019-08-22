@@ -93,34 +93,32 @@
 
 <!--  the start of th third grid -->
  <div>
-   <div class="uk-card uk-card-default">
-    <div class="uk-card-header">
-        <div class="uk-grid-small uk-flex-middle" uk-grid>
-            <div class="uk-width-auto">
-                <img class="uk-border-circle" width="40" height="40" src="img/udem.jpg" style="border:4px solid #21D397;">
-            </div>
-              <div class="uk-width-expand">
-                  <h6 class="uk-card-title uk-margin-remove-bottom">Resume</h6>
-                  <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">16m ago</time></p>
-              </div>
-        </div>
-    </div>
-     <div class="uk-card-media-top uk-width-auto">
-        <img src="/img/udem2.jpg" alt="" height="150" >
-    </div>
-      <div class="uk-card-body ">
-        <h5> Web developer </h5><hr>
-        <p>  a very sofisticated web developer is needed </p>
-          
+   <div class="uk-overflow-auto uk-height-max-large">
+       <ul class="uk-list uk-list-divider">
+        <li>
+            <div class="uk-card uk-card-small uk-card-default uk-card-body uk-width-1-1@m">
+          <h3 class="uk-card-title">Default</h3>
+          <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
-      <div class="uk-card-footer">
-              <div class="uk-margin-small uk-inline">
-                  <button class="uk-button uk-button-primary uk-button-medium"> Apply Now</button>
 
-              </div>
-      </div>
+        </li>
+        <li>
+          <div class="uk-card uk-card-small uk-card-default uk-card-body uk-width-1-1@m">
+    <h3 class="uk-card-title">Default</h3>
+    <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 </div>
+        </li>
+        <li>
+          <div class="uk-card uk-card-small uk-card-default uk-card-body uk-width-1-1@m">
+    <h3 class="uk-card-title">Default</h3>
+    <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+
+        </li>
+      </ul>
     </div>
+
+  </div>
     <!-- end of the third grid -->
 
 
