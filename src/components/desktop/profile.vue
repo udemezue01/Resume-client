@@ -28,20 +28,23 @@
       <!-- end of the first grid -->
       <!-- 
          the second grid -->
-      <div>
+      <div >
          <div class="uk-margin uk-section-default uk-section-xsmall">
             <!--  <input class="uk-input uk-form-width-auto" type="text" placeholder="Say something..."> -->
             <div class="uk-inline">
-               <input class="uk-input uk-form-width-large" placeholder="What's new?">
+            
+                <textarea class="uk-form large uk-textarea uk-form-width-large" placeholder="Whats New ?"></textarea>
                <svgicon icon = "photo-camera" class = "uk-form-icon uk-form-icon-flip uk-margin-small-top uk-padding-top" height = "25" width = "55" color ="#657786">   </svgicon>
             </div>
          </div>
          <div>
             <ul class="uk-child-width-expand" uk-tab>
                <li class="uk-active"><a href="#">Feeds</a></li>
-               <li><a href="#">posts</a></li>
+               
                <li><a href="#">Media</a></li>
                <li><a href="#">Bookmarks</a></li>
+                <li><a href="#">Candidate</a></li>
+
             </ul>
          </div>
          <ContentLoader v-if="!profile" :height="475" primaryColor = " #dadada" :speed="1" secondaryColor="#e9e9e9">
