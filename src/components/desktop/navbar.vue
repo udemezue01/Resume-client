@@ -1,152 +1,100 @@
 <template>
-   
-
-
-  <!--  The navigational bar -->
-
-  <div id="navbar-desktop" class="uk-position-top">
-
-    <div uk-sticky="top: #navbar-desktop" >
-    <nav class="uk-navbar-container uk-margin " uk-navbar>
-   
-
-        <div class="uk-navbar-left">
-          <div>
-            <a class="uk-navbar-item uk-logo" href="#"> Resume.ly</a>
-
-        </div>
-
-          <div class="uk-navbar-center">
-         <div class="uk-inline">
-        
-        <input class="uk-input" placeholder="search...">
-        <svgicon icon = "search" class = "uk-form-icon uk-form-icon-flip uk-margin-small-top uk-padding-top" height = "25" width = "55" color ="#657786">   </svgicon>
-          </div>
-        
-      </div>
-
-   
-      </div>
-
-
-
-     
-
-      <div class="uk-navbar-right">
-          <div>
-            
-
-          
-        <ul class="uk-navbar-nav">
-
-             <li>  <router-link to="/feeds">
-                   
-                       Feeds              </router-link>
-            </li>
-              &nbsp;
-
-                 <li><a href="#">
-                 
-                        
-                         <svgicon icon = "compass" height="30" width="40" color = "#657786">  </svgicon>
-                  
-                </a> </li>
-                </li>
-              &nbsp;
-
-                
-           
-                &nbsp;<li>
-
-              <a href="">
-              
+ <!--  The navigational bar -->
+<div id="navbar-desktop" class="uk-position-top">
+   <div uk-sticky="top: #navbar-desktop" >
+      <nav class="uk-navbar-container uk-margin " uk-navbar>
+         <div class="uk-navbar-left">
+            <div>
+               <a class="uk-navbar-item uk-logo" href="#"> Resume.ly</a>
+            </div>
+            <div class="uk-navbar-center">
+               <div class="uk-inline">
+                  <input class="uk-input" placeholder="search...">
+                  <svgicon icon = "search" class = "uk-form-icon uk-form-icon-flip uk-margin-small-top uk-padding-top" height = "25" width = "55" color ="#657786">   </svgicon>
+               </div>
+            </div>
+         </div>
+         <div class="uk-navbar-right">
+            <div>
+               <ul class="uk-navbar-nav">
+                  <li>
+                     <router-link to="/feeds">
+                        Feeds              
+                     </router-link>
+                  </li>
+                  &nbsp;
+                  <li>
+                     <a href="#">
+                        <svgicon icon = "compass" height="30" width="40" color = "#657786">  </svgicon>
+                     </a>
+                  </li>
+                  </li>
+                  &nbsp;
+                  &nbsp;
+                  <li>
+                     <a href="">
                         <svgicon icon = "notification" height="30" width="40" color = "#657786">  </svgicon>
-                        
-                    
-                </a>
-
-            </li>
-            &nbsp;
-
-            <li>
-               <content-loader
-                :height="475"
-                :width="400"
-                :speed="1"
-                primaryColor="#dadada"
-                secondaryColor="#e9e9e9"
-              >
-                <circle cx="30" cy="30" r="30" />
-         </content-loader>
-            </li>
-             &nbsp;
-            
-             <li class=""><router-link to="/"> <img src="/img/udem.jpg" height="4opx" width="50px" class="uk-border-circle" style="border:3px solid #21D397"> </router-link>
-            </li>
-             <li class="uk-button uk-button-default uk-button-small">
-
-              <a href=""  v-on:click.prevent="userLogout()">
-              
-                        create
-                  
-                </a>
-
-            </li>
-            
-            
-        </ul>
-
-        </div>
-
-    </div>
-      
-
-
-</nav>
-
-<!-- This is the modal  for the create button-->
-   <div id="create" uk-modal>
-    <div class="uk-modal-dialog">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-  <!--  <div class="uk-modal-header">
-            <h2 class="uk-modal-title"></h2>
-        </div> -->
-        <div class="uk-modal-body">
-             <form>
-      
-         <div class="uk-width-1-1">
-          <label class="uk-form-label" for="form-stacked-text">Whats Happening ?</label>
-        <input class="uk-input" type="text" placeholder="Whats happening">
+                     </a>
+                  </li>
+                  &nbsp;
+                  <li>
+                     <content-loader
+                        :height="475"
+                        :width="400"
+                        :speed="1"
+                        primaryColor="#dadada"
+                        secondaryColor="#e9e9e9"
+                        >
+                        <circle cx="30" cy="30" r="30" />
+                     </content-loader>
+                  </li>
+                  &nbsp;
+                  <li class="">
+                     <router-link to="/"> <img src="/img/udem.jpg" height="4opx" width="50px" class="uk-border-circle" style="border:3px solid #21D397"> </router-link>
+                  </li>
+                  <li class="uk-button uk-button-default uk-button-small">
+                     <a href=""  v-on:click.prevent="userLogout()">
+                     create
+                     </a>
+                  </li>
+               </ul>
             </div>
-            </form>
-        </div>
-        <div class="uk-modal-footer">
-          
-        </div>
-    </div>
-</div>
-   </div>
-
-  <!--  end of the modal for the create button -->
-
-
- <!--  sign up modal for registration -->
-  
-  <div id="modal-full" class="uk-modal-full" uk-modal>
-    <div class="uk-modal-dialog">
-        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
-        
-        </div>
+         </div>
+      </nav>
+      <!-- This is the modal  for the create button-->
+      <div id="create" uk-modal>
+         <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <!--  <div class="uk-modal-header">
+               <h2 class="uk-modal-title"></h2>
+               </div> -->
+            <div class="uk-modal-body">
+               <form>
+                  <div class="uk-width-1-1">
+                     <label class="uk-form-label" for="form-stacked-text">Whats Happening ?</label>
+                     <input class="uk-input" type="text" placeholder="Whats happening">
+                  </div>
+               </form>
+            </div>
+            <div class="uk-modal-footer">
+            </div>
+         </div>
       </div>
-            </div>
-        </div>
-
-        <!-- end of the modal for registration -->
-
-
-    </div>
+   </div>
+   <!--  end of the modal for the create button -->
+   <!--  sign up modal for registration -->
+   <div id="modal-full" class="uk-modal-full" uk-modal>
+      <div class="uk-modal-dialog">
+         <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+      </div>
+   </div>
 </div>
-  </div>
+</div>
+<!-- end of the modal for registration -->
+</div>
+</div>
+</div>
+
 </template>
 
 
