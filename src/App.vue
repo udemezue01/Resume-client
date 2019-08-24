@@ -36,7 +36,7 @@ components:{
 
 computed:{
   token () {
-        return localStorage.getItem('token')
+        return localStorage.getItem('token');
       }
 },
 

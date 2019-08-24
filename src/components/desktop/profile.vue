@@ -37,7 +37,7 @@
                <svgicon icon = "photo-camera" class = "uk-form-icon uk-form-icon-flip uk-margin-small-top uk-padding-top" height = "25" width = "55" color ="#657786">   </svgicon>
             </div>
          </div>
-         <div>
+         <div class="uk-section-default">
             <ul class="uk-child-width-expand" uk-tab>
                <li class="uk-active"><a href="#">Feeds</a></li>
                
@@ -259,7 +259,7 @@ data(){
 
 
 @form-focus-background: transparent;
- @form-focus-color: #657786;
+
 @form-height:  43px;
 
 @form-background:  transparent;

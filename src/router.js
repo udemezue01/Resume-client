@@ -20,7 +20,10 @@ import notfound from '@/views/404.vue'
 
 Vue.use(Router)
 
-export default new Router({
+
+
+
+const router =  new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
@@ -72,3 +75,26 @@ export default new Router({
    
   ]
 })
+
+
+router.beforeEach((to, from, next) => {
+  const token  = localStorage.getItem('token');
+  if (to.fullPath === '/profile') {
+    if (!token) {
+      next('/');
+    }
+  }
+  if (to.fullPath ==='/feeds'){
+    if (!token){
+      next('/')
+    }
+  }
+  if (to.fullPath === '/') {
+    if (token) {
+      next('/profile');
+    }
+  }
+  next();
+});
+
+export default router

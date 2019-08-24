@@ -19,13 +19,18 @@
                <ul class="uk-navbar-nav">
                   <li>
                      <router-link to="/feeds">
-                        Feeds              
+                        <svgicon icon = "web" height="30" width="30" color = "#657786">  </svgicon>           
                      </router-link>
                   </li>
                   &nbsp;
                   <li>
                      <a href="#">
-                        <svgicon icon = "compass" height="30" width="40" color = "#657786">  </svgicon>
+                        <svgicon icon = "discover" height="30" width="30" color = "#657786">  </svgicon>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <svgicon icon = "recruitment" height="30" width="30" color = "#657786">  </svgicon>
                      </a>
                   </li>
                   </li>
@@ -33,7 +38,7 @@
                   &nbsp;
                   <li>
                      <a href="">
-                        <svgicon icon = "notification" height="30" width="40" color = "#657786">  </svgicon>
+                        <svgicon icon = "notification" height="30" width="30" color = "#657786">  </svgicon>
                      </a>
                   </li>
                   &nbsp;
@@ -52,8 +57,8 @@
                   <li class="">
                      <router-link to="/"> <img src="/img/udem.jpg" height="4opx" width="50px" class="uk-border-circle" style="border:3px solid #21D397"> </router-link>
                   </li>
-                  <li class="uk-button uk-button-default uk-button-small">
-                     <a href=""  v-on:click.prevent="userLogout()">
+                  <li >
+                     <a href=""  v-on:click.prevent="userLogout()" class="uk-button uk-button-default uk-button-small">
                      create
                      </a>
                   </li>
