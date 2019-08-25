@@ -63,11 +63,11 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-
-      authorization: token ? `Bearer ${token}` : null,
+      authorization: token ? `Bearer ${token}` : "",
     }
   }
 });
+
 //  const token = localStorage.getItem('token');
 // const authLink = setContext(() => ({
 //   headers: {
@@ -79,11 +79,9 @@ const authLink = setContext((_, { headers }) => {
 // Change your link assignment from
 // const link = httpLink;
 // to
-
-const link = authLink.concat(httpLink);
 // Create the apollo client
 const apolloClient = new ApolloClient({
-  link,
+  link: authLink.concat(httpLink),
   cache,
   connectToDevTools: true
 })

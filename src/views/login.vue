@@ -170,10 +170,11 @@ methods:{
           password:this.signIn.password
         }
 
-      }).then(data => {
-
-      const token = data.token
-      localStorage.setItem('token', token)
+      }).then(resp => {
+        const token = resp.data.tokenAuth.token
+        
+  
+      localStorage.setItem( 'token' , token);
       this.$router.push("/profile")
 
 
@@ -237,7 +238,7 @@ methods:{
 
 
 @form-background:  transparent;
-@form-color: black;
+
 @form-placeholder-color: black;
 
 @button-primary-background:                     #21D397!important; 
