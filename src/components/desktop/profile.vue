@@ -7,9 +7,9 @@
             <rect x="0" y="70" rx="5" ry="5" width="400" height="200" />
             <circle cx="201.77590591894563" cy="271.54590591894566" r="93.27590591894564" />
             <circle cx="227.5" cy="367.27" r="1" />
-            <rect x="66.5" y="388.27" rx="0" ry="0" width="252" height="24" />
-            <rect x="79.5" y="424.27" rx="0" ry="0" width="228" height="13" />
-            <rect x="100.5" y="448.27" rx="0" ry="0" width="183" height="12" />
+            <rect x="66.5" y="388.27" rx="0" ry="0" width="252" height="13" />
+            <rect x="66.5" y="424.27" rx="0" ry="0" width="252" height="13" />
+            <rect x="66.5" y="448.27" rx="0" ry="0" width="252" height="13" />
          </content-loader>
          <div class="uk-card uk-card-default" v-else>
             <div class="uk-card-media-top">
@@ -84,7 +84,42 @@
       <!--  the start of th third grid -->
       <div>
          <div class="uk-overflow-auto uk-height-max-large">
-            <ul class="uk-list uk-list-divider">
+
+           <ul class="uk-list uk-list-divider" v-if="!profile">
+            <li> 
+
+               <content-loader  :height="160" :width="400" :speed="2" primaryColor="#dadada" secondaryColor="#e9e9e9" >
+         
+                <rect x="70" y="15" rx="4" ry="4" width="117" height="6.4" /> 
+              <rect x="70" y="35" rx="3" ry="3" width="85" height="6.4" /> 
+              <rect x="0" y="80" rx="3" ry="3" width="350" height="6.4" /> 
+              <rect x="0" y="100" rx="3" ry="3" width="380" height="6.4" /> 
+              <rect x="0" y="120" rx="3" ry="3" width="201" height="6.4" /> 
+              <circle cx="30" cy="30" r="30" />
+        
+          
+          
+        </content-loader>
+
+            </li>
+
+            <li>
+               <content-loader  :height="160" :width="400" :speed="2" primaryColor="#dadada" secondaryColor="#e9e9e9" >
+         
+                <rect x="70" y="15" rx="4" ry="4" width="117" height="6.4" /> 
+              <rect x="70" y="35" rx="3" ry="3" width="85" height="6.4" /> 
+              <rect x="0" y="80" rx="3" ry="3" width="350" height="6.4" /> 
+              <rect x="0" y="100" rx="3" ry="3" width="380" height="6.4" /> 
+              <rect x="0" y="120" rx="3" ry="3" width="201" height="6.4" /> 
+              <circle cx="30" cy="30" r="30" />
+        
+          
+          
+        </content-loader>
+            </li>
+          </ul>
+         
+            <ul class="uk-list uk-list-divider" v-else>
                <li>
                   <div class="uk-card uk-card-small uk-card-default  uk-width-1-1@m">
                      <div class="uk-card-header">

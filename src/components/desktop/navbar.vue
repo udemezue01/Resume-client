@@ -19,18 +19,18 @@
                <ul class="uk-navbar-nav">
                   <li>
                      <router-link to="/feeds">
-                        <svgicon icon = "web" height="30" width="30" color = "#657786">  </svgicon>           
+                        Feeds          
                      </router-link>
                   </li>
                   &nbsp;
                   <li>
                      <a href="#">
-                        <svgicon icon = "discover" height="30" width="30" color = "#657786">  </svgicon>
+                        Discover
                      </a>
                   </li>
                   <li>
                      <a href="#">
-                        <svgicon icon = "recruitment" height="30" width="30" color = "#657786">  </svgicon>
+                       Jobs
                      </a>
                   </li>
                   </li>
@@ -143,13 +143,8 @@ computed:{
 
 methods:{
 
-  ...mapActions('auth', [
-
-    'logout'
-    ]),
-
   userLogout(){
-    this.logout()
+    localStorage.removeItem('token')
     .then(() => this.$router.push('/'))
   
   }
