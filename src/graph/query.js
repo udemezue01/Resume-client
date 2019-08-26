@@ -5,7 +5,7 @@ import gql from 'graphql-tag'
 
 
 export const USER_PROFILE = gql`
-			{
+	{
   account {
     id
     fullName
@@ -20,12 +20,6 @@ export const USER_PROFILE = gql`
       coverPhoto
     }
   }
-  education {
-    id
-    school
-    yearStarted
-    yearEnded
-  }
   skills {
     id
     skill
@@ -36,15 +30,10 @@ export const USER_PROFILE = gql`
     organization
     yearObtained
   }
-  job {
-    id
-    position
-    description
-  }
-  post {
+  posts {
     id
     text
-    video
+    photo
     createdAt
   }
 }

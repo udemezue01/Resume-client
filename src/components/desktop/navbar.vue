@@ -41,21 +41,21 @@
                         <svgicon icon = "notification" height="30" width="30" color = "#657786">  </svgicon>
                      </a>
                   </li>
+              
                   &nbsp;
-                  <li>
-                     <content-loader
+                  <li class="">
+                     
+                     <router-link to="/" > 
+                        <content-loader
                         :height="475"
                         :width="400"
                         :speed="1"
                         primaryColor="#dadada"
                         secondaryColor="#e9e9e9"
-                        >
+                       v-if="$apollo.loading" >
                         <circle cx="30" cy="30" r="30" />
                      </content-loader>
-                  </li>
-                  &nbsp;
-                  <li class="">
-                     <router-link to="/"> <img src="/img/udem.jpg" height="4opx" width="50px" class="uk-border-circle" style="border:3px solid #21D397"> </router-link>
+                      <img src="/img/udem.jpg" height="4opx" width="50px" class="uk-border-circle" style="border:3px solid #21D397" v-else> </router-link>
                   </li>
                   <li >
                      <a href=""  v-on:click.prevent="userLogout()" class="uk-button uk-button-default uk-button-small">

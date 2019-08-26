@@ -15,7 +15,7 @@
             <div class="uk-card-media-top">
                <img src="img/cover.jpg" alt="" style="border-radius: 3px;">
                <div class="uk-overlay uk-position-center">
-                  <img src="img/udem.jpg" alt="" class= "uk-border-circle" width="200" height="200" style="z-index: 1;position: relative;border:3px solid;background: #21D397; ">
+                  <img src="img/udem.jpg" alt="" class= "uk-border-circle" width="200" height="200" style="z-index: 1;position: relative;border:3px solid #21D397; ">
                </div>
             </div>
             <div class="uk-card-body uk-padding-large ">
