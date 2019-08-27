@@ -153,11 +153,13 @@ computed:{
 
 },
 
-created () {
-// [App.vue specific] When App.vue is finish loading finish the progress bar
-this.$Progress.finish()
-},
 methods:{
+
+    saveUserData (id, token) {
+        // localStorage.setItem(USER_ID, id)
+        localStorage.setItem(AUTH_TOKEN, token)
+        // this.$root.$data.userId = localStorage.getItem(USER_ID)
+      },
     userLogin(){
       
 
@@ -171,35 +173,30 @@ methods:{
         }
 
       }).then(resp => {
+
+        // const id  = resp.data.tokenAuth.user.id
         const token = resp.data.tokenAuth.token
-        
-  
-      localStorage.setItem( 'token' , token);
-      this.$router.push("/profile")
+
+        localStorage.setItem( 'token' , token);
+        // this.saveUserData(id, token)
+
+        this.$router.push("/profile")
 
 
-    })
-    .catch(err =>{
-      localStorage.removeItem('token',)
+    }).catch(err =>{
+
+      localStorage.removeItem('token')
+
       console.log(err)
     })
-  },
-  userRegister(){
-    const{full_name, email, account_type, password} = this.data
-    this.$apollo.mutate({
+  }
 
-      mutation:SIGNIN_USER_MUTATION,
-      variables:{
-        full_name:signIn.full_name,
-        
-      }
-    })
-
-  },
+},
+ 
 
 }
 
-  }
+
 
 
   

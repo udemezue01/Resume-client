@@ -78,8 +78,8 @@ export default {
 
 
 @form-focus-background: transparent;
- @form-focus-color: #21D397;
- @form-color: #21D397;
+@form-focus-color: #21D397;
+@form-color: #21D397;
 @form-height:  43px;
 
 @form-background:  transparent;

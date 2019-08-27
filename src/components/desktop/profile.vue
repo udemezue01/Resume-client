@@ -55,10 +55,10 @@
             <rect x="328.5" y="18.27" rx="0" ry="0" width="50" height="9" />
          </ContentLoader>
          <div class="uk-card uk-card-default" v-else>
-            <div class="uk-card-header">
+            <div class="uk-card-header" >
                <div class="uk-grid-small uk-flex-middle" uk-grid>
                   <div class="uk-width-auto">
-                     <img class="uk-border-circle" width="40" height="40" src="img/udem.jpg" style="border:4px solid #21D397">
+                     <img class="uk-border-circle" width="40" height="40" src="img/udem.jpg" style="border:2px solid #21D397">
                   </div>
                   <div class="uk-width-expand">
                      <h6 class="uk-card-title uk-margin-remove-bottom">Resume</h6>
@@ -69,10 +69,34 @@
             <div class="uk-card-media-top uk-width-auto">
                <img src="/img/udem1.jpg" alt="">
             </div>
-            <div class="uk-card-body uk-remove-margin">
-               <p> its a wonderful day in paris with co workers</p>
+            <div style="padding: 10px;">
+              <ul class="uk-iconnav">
+                
+                     <a href="">
+                        <svgicon icon = "like" height="20" width="20" color = "#657786">  </svgicon>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="">
+                        <svgicon icon = "user" height="20" width="20" color = "#657786">  </svgicon>
+                     </a>
+                  </li>
+           
+            </ul>
             </div>
-            <div class="uk-card-footer uk-remove-margin">
+            <hr class="padding-small">
+            <div class="uk-card-body " >
+
+               <p> its a wonderful day in paris with co workers from naturally doing things in Nigeria and Afghanistan and making thig
+
+                     to happend from Do you know that billions of search queries are made every minute to the search engine. 99% of these queries ends in one website or the other. 
+                             What if these websites where owned by you.
+                          Own a website Today for as low as 25k
+              rollercoaster -bleachers....<span style="color:  #21D397;"> read more</span>
+
+               </p>
+            </div>
+            <div class="uk-card-footer" style="padding: 10px;">
                <div class="uk-inline uk-remove-margin">
                   <input class="uk-input uk-form-width-large" type="text" placeholder="write a comment...">
                   <svgicon icon = "photo-camera" class = "uk-form-icon uk-form-icon-flip uk-margin-small-top uk-padding-top" height = "25" width = "55" color ="#657786">   </svgicon>
@@ -256,7 +280,7 @@ data(){
 
 
   apollo:{
-  	userProfile:USER_PROFILE,
+  	Profile:USER_PROFILE,
 
 
    },
