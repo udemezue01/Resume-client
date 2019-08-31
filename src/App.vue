@@ -31,20 +31,12 @@ components:{
   'navbar-mobile':navbar_m,
   'footer-mobile':footer_m
 },
-
-
-
+  
 computed:{
   token () {
         return localStorage.getItem('token');
       }
 },
-
-
-
-
-
-
 
 }
 </script>

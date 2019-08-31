@@ -14,7 +14,7 @@
          <div class="uk-card uk-card-default" v-else>
             <div class="uk-card-media-top">
                <img src="img/cover.jpg" alt="" style="border-radius: 3px;">
-               <div class="uk-overlay uk-position-center">
+               <div class="uk-overlay uk-position-center uk-padding-top">
                   <img src="img/udem.jpg" alt="" class= "uk-border-circle" width="200" height="200" style="z-index: 1;position: relative;border:3px solid #21D397; ">
                </div>
             </div>
@@ -29,7 +29,17 @@
       <!-- 
          the second grid -->
       <div >
-         <div class="uk-margin uk-section-default uk-section-xsmall">
+        <content-loader
+    :height="30"
+    :width="406"
+    :speed="2"
+    primaryColor="#dadada"
+    secondaryColor="#e9e9e9"
+    v-if="$apollo.loading"
+  >
+    <rect x="23" y="-8.75" rx="3" ry="3" width="415.65" height="31.3" />
+  </content-loader>
+         <div class="uk-margin uk-section-default uk-section-xsmall" v-else>
             <!--  <input class="uk-input uk-form-width-auto" type="text" placeholder="Say something..."> -->
             <div class="uk-inline">
             
@@ -37,7 +47,20 @@
                <svgicon icon = "photo-camera" class = "uk-form-icon uk-form-icon-flip uk-margin-small-top uk-padding-top" height = "25" width = "55" color ="#657786">   </svgicon>
             </div>
          </div>
-         <div class="uk-section-default">
+
+         <content-loader
+    :height="33"
+    :width="406"
+    :speed="2"
+    primaryColor="#dadada"
+    secondaryColor="#e9e9e9"
+    v-if="$apollo.loading"
+  >
+    <rect x="23" y="20" rx="3" ry="3" width="85" height="6.4" /> 
+    <rect x="140.55" y="19" rx="3" ry="3" width="85" height="6.4" /> 
+    <rect x="265.55" y="18" rx="3" ry="3" width="85" height="6.4" />
+  </content-loader>
+         <div class="uk-section-default" v-else>
             <ul class="uk-child-width-expand" uk-tab>
                <li class="uk-active"><a href="#">Feeds</a></li>
                
@@ -47,13 +70,25 @@
 
             </ul>
          </div>
-         <ContentLoader  :height="475" primaryColor = " #dadada" :speed="1" secondaryColor="#e9e9e9" v-if="$apollo.loading">
-            <circle cx="30" cy="30" r="30" />
-            <rect x="75" y="13" rx="4" ry="4" width="100" height="13" />
-            <rect x="75" y="37" rx="4" ry="4" width="50" height="8" />
-            <rect x="0" y="70" rx="5" ry="5" width="400" height="900" />
-            <rect x="328.5" y="18.27" rx="0" ry="0" width="50" height="9" />
-         </ContentLoader>
+       
+         <content-loader
+    :height="475"
+    :width="400"
+    :speed="2"
+    primaryColor="#dadada"
+    secondaryColor="#e9e9e9"
+    v-if="$apollo.loading"
+  >
+    <circle cx="30" cy="30" r="30" /> 
+    <rect x="75" y="13" rx="4" ry="4" width="100" height="13" /> 
+    <rect x="75" y="37" rx="4" ry="4" width="50" height="8" /> 
+    <rect x="0" y="70" rx="5" ry="5" width="400" height="250" /> 
+    <rect x="-0.72" y="358.67" rx="0" ry="0" width="375.81" height="10" /> 
+    <rect x="-3.44" y="388.67" rx="0" ry="0" width="311.84" height="10" /> 
+    <rect x="-4.44" y="414.23" rx="0" ry="0" width="380.44" height="10" /> 
+    <rect x="324" y="13" rx="4" ry="4" width="57" height="7.41" />
+  </content-loader>
+
          <div class="uk-card uk-card-default" v-else>
             <div class="uk-card-header" >
                <div class="uk-grid-small uk-flex-middle" uk-grid>
@@ -158,7 +193,7 @@
                         </div>
                      </div>
                      <div class="uk-card-body">
-                        <p> If the browser isn't running well, resetting to a default state might help. You can choose to preserve your personal data and only reset settings or to perform a fully fresh reinstall.</p>
+                        <p> If the browser isn't running wl.</p>
                      </div>
                      <div class="uk-card-footer ">
                         <a href="#" class="uk-button uk-button-default uk-align-right">Read more</a>

@@ -72,18 +72,6 @@ const authLink = setContext((_, { headers }) => {
   }
 });
 
-//  const token = localStorage.getItem('token');
-// const authLink = setContext(() => ({
-//   headers: {
-//     authorization: `Bearer ${token}`
-//   }
-// }));
-
-
-// Change your link assignment from
-// const link = httpLink;
-// to
-// Create the apollo client
 const apolloClient = new ApolloClient({
   link: authLink.concat(httpLink),
   cache,
@@ -102,13 +90,10 @@ Vue.use(VueProgressBar, options)
 
 
 Vue.config.productionTip = false
-// let userId = localStorage.getItem(USER_ID)
+
 new Vue({
   router,
   store,
-  // data: {
-  //   userId
-  // },
   apolloProvider,
   render: h => h(App)
 }).$mount('#app')

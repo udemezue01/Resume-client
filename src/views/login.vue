@@ -122,10 +122,8 @@
 
   
 <script>
+import {SIGNIN_USER_MUTATION} from '../graph/mutation.js';
 
-
- import {SIGNIN_USER_MUTATION} from '../graph/mutation.js';
-import gql from 'graphql-tag'
 
 
 
@@ -155,11 +153,7 @@ computed:{
 
 methods:{
 
-    saveUserData (id, token) {
-        // localStorage.setItem(USER_ID, id)
-        localStorage.setItem(AUTH_TOKEN, token)
-        // this.$root.$data.userId = localStorage.getItem(USER_ID)
-      },
+ 
     userLogin(){
       
 
@@ -174,12 +168,10 @@ methods:{
 
       }).then(resp => {
 
-        // const id  = resp.data.tokenAuth.user.id
         const token = resp.data.tokenAuth.token
 
         localStorage.setItem( 'token' , token);
-        // this.saveUserData(id, token)
-
+        
         this.$router.push("/profile")
 
 
