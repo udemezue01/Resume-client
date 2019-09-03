@@ -3,14 +3,22 @@
    <div uk-grid class="uk-grid-medium uk-child-width-1-3@m">
       <!--  the first grid -->
       <div>
-         <content-loader :height="600" :width="400" :speed="1"  primaryColor="#dadada" secondaryColor="#e9e9e9" v-if="$apollo.loading">
-            <rect x="0" y="70" rx="5" ry="5" width="400" height="200" />
-            <circle cx="201.77590591894563" cy="271.54590591894566" r="93.27590591894564" />
-            <circle cx="227.5" cy="367.27" r="1" />
-            <rect x="66.5" y="388.27" rx="0" ry="0" width="252" height="13" />
-            <rect x="66.5" y="424.27" rx="0" ry="0" width="252" height="13" />
-            <rect x="66.5" y="448.27" rx="0" ry="0" width="252" height="13" />
-         </content-loader>
+        <content-loader
+    :height="475"
+    :width="400"
+    :speed="2"
+    primaryColor="#dadada"
+    secondaryColor="#ecebeb"
+    v-if="$apollo.loading"
+  >
+    <rect x="-23.73" y="-1" rx="5" ry="5" width="484" height="236" /> 
+    <circle cx="198.68" cy="228.94" r="88.54" /> 
+    <rect x="35" y="335.67" rx="0" ry="0" width="330" height="9" /> 
+    <rect x="84" y="381.67" rx="0" ry="0" width="0" height="0" /> 
+    <rect x="53" y="357.67" rx="0" ry="0" width="286" height="9" /> 
+    <rect x="34" y="378.67" rx="0" ry="0" width="325" height="13" />
+  </content-loader>
+        
          <div class="uk-card uk-card-default" v-else>
             <div class="uk-card-media-top">
                <img src="img/cover.jpg" alt="" style="border-radius: 3px;">
@@ -20,7 +28,8 @@
             </div>
             <div class="uk-card-body uk-padding-large ">
                <div class="uk-align-center">
-                  <h3 class="uk-text-center">Udem Aramide </h3>
+                  <h4 class="uk-text-center"> </h4> <br>
+                
                </div>
             </div>
          </div>
@@ -307,14 +316,15 @@ export default {
 data(){
 
     return{
-      profile:[],
+      profile:[]
  
 
     }
   },
 
 
-  apollo:{
+  apollo: {
+
   	Profile:USER_PROFILE,
 
 

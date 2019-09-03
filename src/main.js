@@ -49,6 +49,7 @@ const cache = new InMemoryCache()
 const httpLink = createHttpLink({
   // You should use an absolute URL here
   uri: 'http://127.0.0.1:8000/',
+  credentials: 'same-origin'
  
 
  
@@ -65,7 +66,7 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      authorization: token ? `Bearer ${token}` : "",
+      authorization: token ? `JWT ${token}` : "",
      
     },
     

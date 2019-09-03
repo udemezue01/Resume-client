@@ -179,7 +179,7 @@ methods:{
 
       localStorage.removeItem('token')
 
-      console.log(err)
+    
     })
   }
 
