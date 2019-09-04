@@ -28,7 +28,7 @@
             </div>
             <div class="uk-card-body uk-padding-large ">
                <div class="uk-align-center">
-                  <h4 class="uk-text-center"> </h4> <br>
+                  <h4 class="uk-text-center"> {{account.fullName}}</h4> <br>
                 
                </div>
             </div>
@@ -38,26 +38,9 @@
       <!-- 
          the second grid -->
       <div >
-        <content-loader
-    :height="30"
-    :width="406"
-    :speed="2"
-    primaryColor="#dadada"
-    secondaryColor="#e9e9e9"
-    v-if="$apollo.loading"
-  >
-    <rect x="23" y="-8.75" rx="3" ry="3" width="415.65" height="31.3" />
-  </content-loader>
-         <div class="uk-margin uk-section-default uk-section-xsmall" v-else>
-            <!--  <input class="uk-input uk-form-width-auto" type="text" placeholder="Say something..."> -->
-            <div class="uk-inline">
-            
-                <textarea class="uk-form large uk-textarea uk-form-width-large" placeholder="Whats New ?"></textarea>
-               <svgicon icon = "photo-camera" class = "uk-form-icon uk-form-icon-flip uk-margin-small-top uk-padding-top" height = "25" width = "55" color ="#657786">   </svgicon>
-            </div>
-         </div>
+       
 
-         <content-loader
+  <content-loader
     :height="33"
     :width="406"
     :speed="2"
@@ -65,9 +48,9 @@
     secondaryColor="#e9e9e9"
     v-if="$apollo.loading"
   >
-    <rect x="23" y="20" rx="3" ry="3" width="85" height="6.4" /> 
-    <rect x="140.55" y="19" rx="3" ry="3" width="85" height="6.4" /> 
-    <rect x="265.55" y="18" rx="3" ry="3" width="85" height="6.4" />
+    <rect x="23" y="20" rx="3" ry="3" width="85" height="8.0" /> 
+    <rect x="140.55" y="19" rx="3" ry="3" width="85" height="8.0" /> 
+    <rect x="265.55" y="18" rx="3" ry="3" width="85" height="8.0" />
   </content-loader>
          <div class="uk-section-default" v-else>
             <ul class="uk-child-width-expand" uk-tab>
@@ -105,7 +88,7 @@
                      <img class="uk-border-circle" width="40" height="40" src="img/udem.jpg" style="border:2px solid #21D397">
                   </div>
                   <div class="uk-width-expand">
-                     <h6 class="uk-card-title uk-margin-remove-bottom">Resume</h6>
+                     <h6 class="uk-card-title uk-margin-remove-bottom uk-text-small">{{account.fullName}}</h6>
                      <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">16m ago</time></p>
                   </div>
                </div>
@@ -185,6 +168,8 @@
           
         </content-loader>
             </li>
+            
+
           </ul>
          
             <ul class="uk-list uk-list-divider" v-else>
@@ -196,8 +181,8 @@
                               <img class="uk-border-circle" width="40" height="40" src="img/udem.jpg">
                            </div>
                            <div class="uk-width-expand">
-                              <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
-                              <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                              <h3 class="uk-card-title uk-margin-remove-bottom uk-text-small">{{account.fullName}}</h3>
+                              <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">30m ago</time></p>
                            </div>
                         </div>
                      </div>
@@ -205,30 +190,11 @@
                         <p> If the browser isn't running wl.</p>
                      </div>
                      <div class="uk-card-footer ">
-                        <a href="#" class="uk-button uk-button-default uk-align-right">Read more</a>
+                        <a href="#" class="uk-button uk-button-default uk-align-right"> Details</a>
                      </div>
                   </div>
                </li>
-               <li>
-                  <div class="uk-card uk-card-small uk-card-default  uk-width-1-1@m">
-                     <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                           <div class="uk-width-auto">
-                              <img class="uk-border-circle" width="40" height="40" src="img/udem.jpg">
-                           </div>
-                           <div class="uk-width-expand">
-                              <h5 class="uk-card-title uk-margin-remove-bottom">Title</h5>
-                              <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="uk-card-body">
-                     </div>
-                     <div class="uk-card-footer">
-                        <a href="#" class="uk-button uk-button-default uk-align-right">Read more</a>
-                     </div>
-                  </div>
-               </li>
+              
                <li>
                   <div class="uk-card uk-card-small uk-card-default  uk-width-expand">
                      <div class="uk-card-header">
@@ -237,15 +203,15 @@
                               <img class="uk-border-circle" width="40" height="40" src="img/udem.jpg">
                            </div>
                            <div class="uk-width-expand">
-                              <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
-                              <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                              <h3 class="uk-card-title uk-margin-remove-bottom uk-text-small">{{account.fullName}}</h3>
+                              <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">30m ago</time></p>
                            </div>
                         </div>
                      </div>
                      <div class="uk-card-body">
                      </div>
                      <div class="uk-card-footer">
-                        <a href="#" class="uk-button uk-button-default uk-align-right">Read more</a>
+                        <a href="#" class="uk-button uk-button-default uk-align-right">Details</a>
                      </div>
                   </div>
                </li>
@@ -257,15 +223,15 @@
                               <img class="uk-border-circle" width="40" height="40" src="img/udem.jpg">
                            </div>
                            <div class="uk-width-expand">
-                              <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
-                              <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                              <h3 class="uk-card-title uk-margin-remove-bottom uk-text-small">{{account.fullName}}</h3>
+                              <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">30m ago</time></p>
                            </div>
                         </div>
                      </div>
                      <div class="uk-card-body">
                      </div>
                      <div class="uk-card-footer">
-                        <a href="#" class="uk-button uk-button-default uk-align-right">Read more</a>
+                        <a href="#" class="uk-button uk-button-default uk-align-right"> Details</a>
                      </div>
                   </div>
                </li>
@@ -277,8 +243,8 @@
                               <img class="uk-border-circle" width="40" height="40" src="img/udem.jpg">
                            </div>
                            <div class="uk-width-expand">
-                              <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
-                              <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+                              <h3 class="uk-card-title uk-margin-remove-bottom uk-text-small">{{account.fullName}}</h3>
+                              <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">30m ago</time></p>
                            </div>
                         </div>
                      </div>
@@ -316,7 +282,7 @@ export default {
 data(){
 
     return{
-      profile:[]
+      account:[]
  
 
     }
@@ -325,7 +291,8 @@ data(){
 
   apollo: {
 
-  	Profile:USER_PROFILE,
+  	account:USER_PROFILE,
+  
 
 
    },
