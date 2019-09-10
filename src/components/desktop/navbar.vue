@@ -24,14 +24,14 @@
                   </li>
                   &nbsp;
                   <li>
-                     <a href="#">
+                     <router-link to ="/discover">
                         Discover
-                     </a>
+                     </router-link>
                   </li>
                   <li>
-                     <a href="#">
+                    <router-link to = "/jobs">
                        Jobs
-                     </a>
+                    </router-link>
                   </li>
                   </li>
               
@@ -40,7 +40,7 @@
                   <li>
                      
                     <router-link to = "/profile">
-                      <img src="/img/udem.jpg" height="4opx" width="50px" class="uk-border-circle" style="border:3px solid #21D397" > 
+                      <img src="/img/udem.jpg" height="4opx" width="50px" class="uk-border-circle" style="border:1px solid #21D397" > 
                     </router-link>
                   </li>
 
@@ -50,9 +50,13 @@
                      </a>
                   </li>
                   <li >
-                     <a href=""  v-on:click.prevent="userLogout()" class="uk-button uk-button-default uk-button-small">
+                    <!--  <a href=""  v-on:click.prevent="userLogout()" class="uk-button uk-button-default uk-button-small">
                      post
+                     </a> -->
+                     <a href="">
+                       <button class="uk-button uk-button-primary uk-button-medium"  v-on:click.prevent="userLogout()"> create</button>
                      </a>
+                     
                   </li>
                </ul>
             </div>
@@ -111,29 +115,26 @@ export default {
 
 data(){
   return {
-    brand:"Resume",
-
-
+  
   post:{
-    content: "",
-    media : ""
-  },
-
-  vacancy:{
-
-    title:"",
-    
+    text : "",
+    photo:"",
+    video:""
 
   },
+
 
 
   }
 },
-computed:{
-  
-},
+
 
 methods:{
+  postCreate(){
+  
+
+  },
+
 
   userLogout(){
     localStorage.removeItem('token')

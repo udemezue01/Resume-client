@@ -22,7 +22,7 @@
          <div class="uk-card uk-card-default" v-else>
             <div class="uk-card-media-top">
                <img src="img/cover.jpg" alt="" style="border-radius: 3px;">
-               <div class="uk-overlay uk-position-center uk-padding-top">
+               <div class="uk-overlay uk-position-center uk-padding-top" style="padding: 90px;">
                   <img src="img/udem.jpg" alt="" class= "uk-border-circle" width="200" height="200" style="z-index: 1;position: relative;border:3px solid #21D397; ">
                </div>
             </div>
@@ -123,10 +123,34 @@
 
                </p>
             </div>
+
+              <div class="uk-comment uk-padding uk-comment-primary">
+                <header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                        <img class="uk-comment-avatar uk-border-circle" src="img/udem.jpg" width="30" height="30" alt="">
+                    </div>
+                    <div class="uk-width-expand">
+                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
+                        <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                            <li><a href="#">12 days ago</a></li>
+                            <li><a href="#">Reply</a></li>
+                        </ul>
+                    </div>
+                </header>
+                <div class="uk-comment-body">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+</div>
+
+
             <div class="uk-card-footer" style="padding: 10px;">
                <div class="uk-inline uk-remove-margin">
                   <input class="uk-input uk-form-width-large" type="text" placeholder="write a comment...">
-                  <svgicon icon = "photo-camera" class = "uk-form-icon uk-form-icon-flip uk-margin-small-top uk-padding-top" height = "25" width = "55" color ="#657786">   </svgicon>
+                  <a href="">
+                    
+                    <svgicon icon = "photo-camera" class = "uk-form-icon uk-form-icon-flip uk-margin-small-top uk-padding-top" height = "25" width = "55" color ="#657786">   </svgicon>
+                  </a>
+                  
                </div>
             </div>
          </div>
