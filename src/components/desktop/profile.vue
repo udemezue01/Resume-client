@@ -1,8 +1,8 @@
 <template>
- <div class="uk-container uk-padding">
-   <div uk-grid class="uk-grid-medium uk-child-width-1-3@m">
+ <div class="uk-container uk-align-center uk-padding">
+   <vk-grid class="uk-child-width-1-3@m">
       <!--  the first grid -->
-      <div>
+      <div class="uk-width-large@m">
         <content-loader
     :height="475"
     :width="400"
@@ -21,14 +21,17 @@
         
          <div class="uk-card uk-card-default" v-else>
             <div class="uk-card-media-top">
-               <img src="img/cover.jpg" alt="" style="border-radius: 3px;">
-               <div class="uk-overlay uk-position-center uk-padding-top" style="padding: 90px;">
-                  <img src="img/udem.jpg" alt="" class= "uk-border-circle" width="200" height="200" style="z-index: 1;position: relative;border:3px solid #21D397; ">
-               </div>
+               <img src="img/cover.jpg" alt="" style="border-radius: 3px;" class="uk-inline">
+            
+                  <img src="img/udem.jpg" alt="" class= "uk-border-circle uk-overlay uk-position-center" width="100px" height="100px">
+    
             </div>
-            <div class="uk-card-body uk-padding-large ">
+            <div class="uk-card-body uk-padding-large">
                <div class="uk-align-center">
-                  <h4 class="uk-text-center"> {{account.fullName}}</h4> <br>
+                  <h4 class="uk-text-center uk-padding"> {{account.fullName}}</h4> <br>
+                  <p> {{account.profile.status}}</p>
+
+                   <button class="uk-button uk-button-primary uk-button-medium uk-align-center"  v-on:click.prevent="userLogout()"> edit profile</button> 
                 
                </div>
             </div>
@@ -37,7 +40,7 @@
       <!-- end of the first grid -->
       <!-- 
          the second grid -->
-      <div >
+      <div class="uk-width-expand@m">
        
 
   <content-loader
@@ -124,7 +127,20 @@
                </p>
             </div>
 
-              <div class="uk-comment uk-padding uk-comment-primary">
+             
+
+
+            <div class="uk-card-footer" style="padding: 10px;">
+               <div class="uk-inline uk-remove-margin">
+                  <input class="uk-input uk-form-width-large" type="text" placeholder="write a comment...">
+                  <a href="">
+                    
+                    <svgicon icon = "photo-camera" class = "uk-form-icon uk-form-icon-flip uk-margin-small-top uk-padding-top" height = "25" width = "55" color ="#657786">   </svgicon>
+                  </a>
+                  
+               </div>
+
+                <div class="uk-comment uk-padding uk-comment-primary">
                 <header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
                     <div class="uk-width-auto">
                         <img class="uk-comment-avatar uk-border-circle" src="img/udem.jpg" width="30" height="30" alt="">
@@ -141,23 +157,12 @@
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
 </div>
-
-
-            <div class="uk-card-footer" style="padding: 10px;">
-               <div class="uk-inline uk-remove-margin">
-                  <input class="uk-input uk-form-width-large" type="text" placeholder="write a comment...">
-                  <a href="">
-                    
-                    <svgicon icon = "photo-camera" class = "uk-form-icon uk-form-icon-flip uk-margin-small-top uk-padding-top" height = "25" width = "55" color ="#657786">   </svgicon>
-                  </a>
-                  
-               </div>
             </div>
          </div>
       </div>
       <!--    end of the second of the second grid -->
       <!--  the start of th third grid -->
-      <div>
+      <div class="uk-width-large@m">
          <div class="uk-overflow-auto uk-height-max-large">
 
            <ul class="uk-list uk-list-divider" v-if="$apollo.loading">
@@ -280,8 +285,9 @@
          </div>
       </div>
       <!-- end of the third grid -->
+    </vk-grid>
    </div>
-</div>
+
 </div>
 
 </template>
@@ -306,7 +312,8 @@ export default {
 data(){
 
     return{
-      account:[]
+      account:[],
+
  
 
     }

@@ -50,9 +50,7 @@
                      </a>
                   </li>
                   <li >
-                    <!--  <a href=""  v-on:click.prevent="userLogout()" class="uk-button uk-button-default uk-button-small">
-                     post
-                     </a> -->
+                    
                      <a href="">
                        <button class="uk-button uk-button-primary uk-button-medium"  v-on:click.prevent="userLogout()"> create</button>
                      </a>

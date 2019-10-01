@@ -13,6 +13,8 @@ export const USER_PROFILE = gql`
       id
       avatar
       coverPhoto
+      status
+      location
     }
     skillSet {
       id

@@ -10,10 +10,10 @@
 
          
          <!--    the user form and registration section -->
-         <div class="uk-flex-center uk-section-default" uk-height-viewport >
+         <div class="uk-flex-center uk-section-primary" uk-height-viewport >
             <div class="uk-margin-xlarge-left web-intro " >
-               <h2 style="font-family: 'Righteous', cursive;padding-top: 10px; color:#21D397;" class="uk-text-center"> Resume</h2>
-               <p class="uk-text-center" style="color: #00000;">career social network</p>
+               <h2 style="font-family: 'Righteous', cursive;padding-top: 10px; color:white;" class="uk-text-center"> Resume</h2>
+               <p class="uk-text-center" style="color: white;">career social network</p>
             </div>
             <!--   login form -->
             <div class="uk-width-large uk-padding-large uk-align-center login-form" >
@@ -199,12 +199,13 @@ methods:{
 @import '../theme/theme.less';
 
 
-.uk-section-default {
-    background: white;
+.uk-section-primary {
+    background-image: linear-gradient(50deg,#744FFF,#21D397);
+  
     .hook-section-default;
 }
- .hook-section-default(){
-  //background-image: linear-gradient(50deg,#744FFF,#21D397);
+ .hook-section-primary(){
+  background-image: linear-gradient(50deg,#744FFF,#21D397);
 
   color: #333;
 
@@ -214,8 +215,8 @@ methods:{
  .hook-form() {
   border-radius: 12px;
   border:1px solid;
-  color: black;
-  border-color:black;
+  color: white;
+  border-color:white;
  }
 
  .hook-button(){
@@ -228,7 +229,7 @@ methods:{
 
 @form-background:  transparent;
 
-@form-placeholder-color: black;
+@form-placeholder-color: white;
 
 @button-primary-background:                     #21D397!important; 
 @button-primary-color:                          white!important;
