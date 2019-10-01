@@ -8,16 +8,14 @@ import axios from 'axios'
 import VueProgressBar from 'vue-progressbar'
 
 import VueSVGIcon from 'vue-svgicon'
-import 'uikit/dist/js/uikit.js'
-import 'uikit/dist/js/uikit-icons.js'
-import './custom-icons'
+
 import Vuikit from 'vuikit'
 //uikit css and javascript
 
 import VueContentPlaceholders from 'vue-content-placeholders'
 Vue.use(Vuikit)
 Vue.use(VueContentPlaceholders)
-import './theme/theme.less'
+
 
 import '@/assets/css/tailwind.css'
 
