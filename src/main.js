@@ -19,6 +19,8 @@ Vue.use(Vuikit)
 Vue.use(VueContentPlaceholders)
 import './theme/theme.less'
 
+import '@/assets/css/tailwind.css'
+
 Vue.use(VueSVGIcon)
 Vue.prototype.$http = axios
 
