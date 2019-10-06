@@ -148,65 +148,7 @@ computed:{
 
 <style scoped lang="less">
 
-@import '../theme/theme.less';
 
 
-.uk-section-primary {
-    background: linear-gradient(50deg,#744FFF,#21D397);
-    .hook-section-primary;
-}
- .hook-section-primary(){
-  background-image: linear-gradient(50deg,#744FFF,#21D397);
-//   animation: example 5s infinite;
-
-// @keyframes example {
-//   from {background-image: linear-gradient(50deg,#744FFF,#21D397);}
-//   to {background-image: linear-gradient(50deg,#21D397, #744FFF);}
-// }
- }
-
- .hook-form() {
-  border-radius: 10px;
-  border:1px solid;
- }
-
- .hook-button(){
-  border-radius: 10px;
- }
-
-
-@form-width-large:                              690px;
-@form-padding-vertical:                         2px;
-
-.uk-input{
-   font-family:   'Montserrat', sans-serif;
-  font-weight: bolder;
-}
-
-.uk-input::placeholder { 
-
-  color: @form-placeholder-color;
-  font-family:  'Quicksand', sans-serif;
-  font-weight: bold;
-
- }
-
-@form-background:  transparent;
-@form-color: white;
-@form-placeholder-color: white;
-@form-height:  40px;
-
-@button-primary-background:                     #21D397!important; 
-@button-primary-color:                          white!important;
-@button-primary-hover-background:               darken(@button-primary-background, 5%);
-@button-primary-hover-color:                    @global-inverse-color;
-@button-primary-active-background:              darken(@button-primary-background, 10%);
-@button-primary-active-color:                   @global-inverse-color;
-
-.hook-button-primary(){
-
- 
-
-}
 </style>
 

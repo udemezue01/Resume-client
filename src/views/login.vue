@@ -196,58 +196,7 @@ methods:{
 
 <style scoped lang="less">
 
-@import '../theme/theme.less';
 
-
-.uk-section-primary {
-    background-image: linear-gradient(50deg,#744FFF,#21D397);
-  
-    .hook-section-default;
-}
- .hook-section-primary(){
-  background-image: linear-gradient(50deg,#744FFF,#21D397);
-
-  color: #333;
-
-
- }
-
- .hook-form() {
-  border-radius: 12px;
-  border:1px solid;
-  color: white;
-  border-color:white;
- }
-
- .hook-button(){
-  border-radius: 10px;
- }
-
-
-
-
-
-@form-background:  transparent;
-
-@form-placeholder-color: white;
-
-@button-primary-background:                     #21D397!important; 
-@button-primary-color:                          white!important;
-@button-primary-hover-background:               darken(@button-primary-background, 5%);
-@button-primary-hover-color:                    @global-inverse-color;
-@button-primary-active-background:              darken(@button-primary-background, 10%);
-@button-primary-active-color:                   @global-inverse-color;
-
-.hook-button-primary(){
-
- font-size: 12px;
-
-}
-.hook-button-danger(){
-
- font-size: 12px;
-
-}
 
 
 </style>

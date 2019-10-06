@@ -62,27 +62,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
 
-@import '../../theme/theme.less';
-
-@logo-font-size: 16px;
-
-
-.hook-navbar-container() {
-  padding-left:20px;
-  padding-right:20px;
-  margin-right: auto;
-  margin-left: auto;
-
-}
-
-.hook-navbar-nav-item-hover() {
-    border-bottom: none;
-
-}
-.hook-navbar-nav-item-active() {
-    border-bottom: none;
-
-}
 
 
 </style>

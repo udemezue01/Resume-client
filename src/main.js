@@ -9,11 +9,10 @@ import VueProgressBar from 'vue-progressbar'
 
 import VueSVGIcon from 'vue-svgicon'
 
-import Vuikit from 'vuikit'
 //uikit css and javascript
 
 import VueContentPlaceholders from 'vue-content-placeholders'
-Vue.use(Vuikit)
+
 Vue.use(VueContentPlaceholders)
 
 

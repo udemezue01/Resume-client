@@ -38,8 +38,6 @@ computed:{
 
 <style scoped lang="less">
 
-@import '../theme/theme.less';
-
 
 
 </style>

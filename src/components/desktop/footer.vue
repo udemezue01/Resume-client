@@ -55,28 +55,6 @@ data(){
 
 <style lang="less" scoped>
 
-@import '../../theme/theme.less';
 
 
-@navbar-background:   #eee;
-@navbar-nav-item-color:black;
-@navbar-item-color: black;
-@navbar-nav-item-active-color: black;
-@navbar-nav-item-hover-color:  black;
-@navbar-nav-item-onclick-color:  white;
-@navbar-toggle-color:  white;
-@navbar-toggle-hover-color: white;
-@navbar-nav-item-padding-horizontal: 9px;
-@navbar-nav-item-font-size: 17px;
-@navbar-nav-item-height: 90px;
-
-
-
-.hook-navbar-container() {
-  padding-left:20px;
-  padding-right:20px;
-  margin-right: auto;
-  margin-left: auto;
-
-}
 </style>

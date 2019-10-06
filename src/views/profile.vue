@@ -62,44 +62,7 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<!-- 
-<style scoped lang="less">
-
-
-@import '../theme/theme.less';
-@padding-large-padding: 90px;
-
-@padding-large-padding-l:  100px;
-
-
-@container-max-width:                   3500px;
-
-
-
-
-@form-focus-background: transparent;
-@form-focus-color: #21D397;
-@form-color: #21D397;
-@form-height:  43px;
-
-@form-background:  transparent;
-@form-color: #d2d2d2;
-@form-placeholder-color: #657786;
- .hook-form() {
-  border-radius: 5px;
-  border:1px solid;
- }
-
-
-.hook-section-default() {
-  border-radius: 8px;
-
-}
-.uk-section-xsmall {
-    padding-top:1px;
-    padding-bottom:1px;
-}
-
+<style lang="less">
+  
+  
 </style>
- -->
