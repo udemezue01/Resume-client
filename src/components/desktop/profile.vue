@@ -1,8 +1,9 @@
 <template>
 
   <div class="">
-      <div class="flex flex-row justify-center p-40 m-auto ">
-  <div class="w-1/3 bg-white-500 h-12">
+      <div class="flex flex-row justify-center p-40 m-auto items-center">
+  <div class="w-1/3 bg-white-500 h-12 ">
+   
     <div class="max-w-md rounded overflow-hidden shadow-lg">
   <img class="w-full" src="/img/udem.jpg" alt="Sunset in the mountains">
   <div class="px-6 py-4">
@@ -19,8 +20,10 @@
 </div>
   </div>
   <div class="w-1/3 bg-white-400 h-12 ">
+
+
     
-    <div class="max-w-md rounded overflow-hidden shadow-lg">
+    <div class="max-w-md rounded overflow-hidden shadow-lg" >
   <img class="w-full" src="/img/udem.jpg" alt="Sunset in the mountains">
   <div class="px-6 py-4">
     <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
