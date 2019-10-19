@@ -1,122 +1,100 @@
 <template>
-    <div id="landing">
-   <div class="uk-cover-container">
-      <div class="uk-grid-collapse uk-child-width-1-2@m uk-child-width-1-1@s uk-flex-middle" uk-grid>
-         <!--   the large section banner -->
-         <div class="uk-cover-container uk-visible@l uk-section" uk-height-viewport>
-            <img src="img/resume1.png" alt="" uk-cover uk-height-viewport style="height: 100%;" >
-         </div>
-         <!--    end of the large image section banner -->
+  <div id="landing">
+   
+      <div class="bg-gray-200" style="min-height: 640px;">
+  <div id="nav" class="bg-white shadow">
+    <div class="md:px-8">
+      <nav class="relative flex flex-wrap items-center justify-between md:py-4">
+        <div class="relative z-10 flex-shrink-0 pl-4 py-4 md:p-0">
+          <img class="h-8 w-8" src="/img/icons/logo.png" alt="">
+        </div>
+        <div class="flex-shrink-0 pr-4 md:hidden">
+          <button ref="openButton" @click="open" type="button" class="block text-gray-600 focus:outline-none focus:text-gray-900" aria-label="Menu">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M3 6C3 5.44772 3.44772 5 4 5H20C20.5523 5 21 5.44772 21 6C21 6.55228 20.5523 7 20 7H4C3.44772 7 3 6.55228 3 6Z"/>
+              <path d="M3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12Z"/>
+              <path d="M4 17C3.44772 17 3 17.4477 3 18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18C21 17.4477 20.5523 17 20 17H4Z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="hidden md:block md:ml-10 md:flex md:items-baseline md:justify-between md:bg-transparent">
+          <div class="lg:absolute inset-0 flex items-center justify-center">
+            <a href="#" class="text-sm font-medium text-gray-900 hover:text-gray-700">Products</a>
+            <a href="#" class="ml-10 text-sm font-medium text-gray-900 hover:text-gray-700">Marketplace</a>
+            <a href="#" class="ml-10 text-sm font-medium text-gray-900 hover:text-gray-700">Partners</a>
+            <a href="#" class="ml-10 text-sm font-medium text-gray-900 hover:text-gray-700">About</a>
+          </div>
+          <div class="ml-10 relative flex items-baseline">
+            <a href="#" class="text-sm font-medium text-gray-900 hover:text-gray-700">Log in</a>
+            <a href="#" class="ml-8 px-3 py-2 font-medium text-center text-sm rounded-lg bg-gray-300 text-gray-900 hover:bg-gray-400 focus:outline-none focus:bg-gray-400">Create Account</a>
+          </div>
+        </div>
+      </nav>
+    </div>
 
-         
-         <!--    the user form and registration section -->
-         <div class="uk-flex-center uk-section-primary" uk-height-viewport >
-            <div class="uk-margin-xlarge-left web-intro " >
-               <h2 style="font-family: 'Righteous', cursive;padding-top: 10px; color:white;" class="uk-text-center"> Resume</h2>
-               <p class="uk-text-center" style="color: white;">career social network</p>
+    <div class="md:hidden">
+      <!-- Off-canvas menu background overlay -->
+      <transition
+        enter-class="opacity-0"
+        enter-active-class="ease-out transition-medium"
+        enter-to-class="opacity-100"
+        leave-class="opacity-100"
+        leave-active-class="ease-out transition-medium"
+        leave-to-class="opacity-0"
+        appear
+      >
+        <div v-show="isOpen" class="z-10 fixed inset-0 transition-opacity">
+          <div @click="close" class="absolute inset-0 bg-black opacity-50" tabindex="-1"></div>
+        </div>
+      </transition>
+      
+      <!-- Off-canvas menu -->
+      <transition
+        enter-class="translate-x-full"
+        enter-active-class="ease-out transition-slow"
+        enter-to-class="translate-x-0"
+        leave-class="translate-x-0"
+        leave-active-class="ease-in transition-medium"
+        leave-to-class="translate-x-full"
+        appear
+      >
+        <div v-show="isOpen" class="z-10 fixed inset-y-0 right-0 max-w-xs w-full bg-white transition-transform overflow-y-auto">
+          <div class="relative z-10 bg-white">
+            <div :class="isOpen ? 'block' : 'hidden'" class="absolute top-0 right-0 p-4">
+              <button ref="closeButton" @click="close" type="button" class="text-gray-600 focus:outline-none focus:text-gray-900" aria-label="Close">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M18.2929 19.7071C18.6834 20.0976 19.3166 20.0976 19.7071 19.7071C20.0976 19.3166 20.0976 18.6834 19.7071 18.2929L13.4142 12L19.7071 5.70711C20.0976 5.31658 20.0976 4.68342 19.7071 4.29289C19.3166 3.90237 18.6834 3.90237 18.2929 4.29289L12 10.5858L5.70711 4.29289C5.31658 3.90237 4.68342 3.90237 4.29289 4.29289C3.90237 4.68342 3.90237 5.31658 4.29289 5.70711L10.5858 12L4.29289 18.2929C3.90237 18.6834 3.90237 19.3166 4.29289 19.7071C4.68342 20.0976 5.31658 20.0976 5.70711 19.7071L12 13.4142L18.2929 19.7071Z"/>
+                </svg>
+              </button>
             </div>
-            <!--   login form -->
-            <div class="uk-width-large uk-padding-large uk-align-center login-form" >
-               <!-- login -->
-               <form class="toggle-class" action="">
-                  <fieldset class="uk-fieldset">
-                     <div class="uk-margin">
-                        <div class="uk-inline uk-width-1-1">
-                           <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
-                           <input class="uk-input uk-form-xlarge " required placeholder="Email" type="text" v-model= "signIn.email"  style="color: #d2d2d2;">
-                        </div>
-                     </div>
-                     <div class="uk-margin">
-                        <div class="uk-inline uk-width-1-1">
-                           <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
-                           <input class="uk-input uk-form-xlarge " required placeholder="Password" type="password" v-model= "signIn.password"  style="color: #d2d2d2;">
-                        </div>
-                     </div>
-                     <div class="uk-margin">
-                        <label><input class="uk-checkbox" type="checkbox"> Keep me logged in</label>
-                     </div>
-                     <div class="uk-margin-bottom">
-                        <button type="submit" class="uk-button uk-button-primary uk-width-1-1 uk-box-shadow-xlarge" v-on:click.submit.prevent ="userLogin" >LOG IN</button>
-                     </div>
-                  </fieldset>
-               </form>
-               <div class="uk-margin-bottom">
-                  <button type="submit" class="uk-button uk-button-danger uk-width-1-1 uk-box-shadow-xlarge">CONTINUE WITH GOOGLE</button>
-               </div>
-               <div class="uk-margin-bottom">
-                  <button type="submit" class="uk-button uk-button-facebook uk-width-1-1 uk-box-shadow-xlarge">CONTINUE WITH FACEBOOK</button>
-               </div>
-               <!-- /login -->
-               <!-- action buttons -->
-               <div>
-                  <div class="uk-text-center">
-                     <a class="uk-link-reset uk-text-small toggle-class" data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade" style="color:#0000;">Forgot your password?</a>
-                  </div>
-                  <!-- recover password -->
-                  <form class="toggle-class" action="" hidden>
-                     <div class="uk-margin">
-                        <div class="uk-inline uk-width-1-1">
-                           <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: mail"></span>
-                           <input class="uk-input" placeholder="E-mail" required type="text"  style="color: #d2d2d2;">
-                        </div>
-                     </div>
-                     <div class="uk-margin-bottom">
-                        <button type="submit" class="uk-button uk-button-primary uk-width-1-1">SEND PASSWORD</button>
-                     </div>
-                  </form>
-                  <!-- /recover password -->
-                  <a class="uk-link-reset uk-text-small toggle-class" data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade" hidden><span data-uk-icon="arrow-left"></span> Back to Login</a>
-               </div>
-               <div class="uk-margin toggle-class">
-                  <button type="submit" class="uk-button uk-button-outline uk-button-medium uk-width-1-1 uk-box-shadow-xlarge" href="#modal-center" uk-toggle>CREATE ACCOUNT</button>
-               </div>
+            <div class="px-4 pt-4 pb-6">
+              <img class="h-8 w-8" src="/img/example-logo.svg" alt="">
+              <a href="#" class="mt-8 block text-xs font-semibold text-gray-600 uppercase tracking-wider">Products</a>
+              <a href="#" class="mt-4 block font-medium text-gray-900 hover:text-gray-700">Checkout</a>
+              <a href="#" class="mt-4 block font-medium text-gray-900 hover:text-gray-700">Payments</a>
+              <a href="#" class="mt-4 block font-medium text-gray-900 hover:text-gray-700">Billing</a>
+              <a href="#" class="mt-4 block font-medium text-gray-900 hover:text-gray-700">Insights</a>
             </div>
-            <!-- the modal for creating account -->
-            <div id="modal-center" class="uk-flex-top" uk-modal>
-               <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
-                  <button class="uk-modal-close-default" type="button" uk-close></button>
-                  <div class="uk-width-large uk-padding-large uk-align-center login-form" style="border-radius: 50%;" >
-                     <!-- login -->
-                     <form class="toggle-class" action="" >
-                        <fieldset class="uk-fieldset">
-                           <div class="uk-margin">
-                              <div class="uk-inline uk-width-1-1">
-                                 <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
-                                 <input class="uk-input uk-form-xlarge " required placeholder="Full Name" type="text" style="color: #d2d2d2;"  >
-                              </div>
-                           </div>
-                           <div class="uk-margin">
-                              <div class="uk-inline uk-width-1-1">
-                                 <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
-                                 <input class="uk-input uk-form-xlarge " required placeholder="Email" type="email"  style="color: #d2d2d2;">
-                              </div>
-                           </div>
-                           <div class="uk-margin">
-                              <div class="uk-inline uk-width-1-1">
-                                 <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
-                                 <input class="uk-input uk-form-xlarge " required placeholder="Password" type="password"  style="color: #d2d2d2;">
-                              </div>
-                           </div>
-                           <div class="uk-margin-bottom">
-                              <button type="submit" class="uk-button uk-button-primary uk-width-1-1 uk-box-shadow-xlarge">REGISTER</button>
-                           </div>
-                        </fieldset>
-                     </form>
-                     <div class="uk-margin-bottom">
-                        <button type="submit" class="uk-button uk-button-facebook uk-width-1-1 uk-box-shadow-xlarge">FACEBOOK</button>
-                     </div>
-                     <div class="uk-margin-bottom">
-                        <button type="submit" class="uk-button uk-button-danger uk-width-1-1 uk-box-shadow-xlarge">GOOGLE</button>
-                     </div>
-                  </div>
-               </div>
+            <div class="border-t-2 border-gray-200 px-4 pt-6">
+              <a href="#" class="block font-medium text-gray-900 hover:text-gray-700">Marketplace</a>
+              <a href="#" class="mt-4 block font-medium text-gray-900 hover:text-gray-700">Partners</a>
+              <a href="#" class="mt-4 block font-medium text-gray-900 hover:text-gray-700">About</a>
             </div>
-            <!-- end of the modal for creating account -->
-         </div>
-      </div>
-   </div>
+          </div>
+          <div class="relative bg-white">
+            <div class="px-4 pt-4 pb-6">
+              <a href="#" class="block font-medium text-gray-900 hover:text-gray-700">Log in</a>
+            </div>
+            <div class="p-4">
+              <a href="#" class="block px-3 py-3 font-medium text-center bg-gray-300 rounded-lg text-gray-900 hover:bg-gray-400 focus:outline-none focus:bg-gray-400">Create Account</a>
+            </div>
+          </div>
+        </div>
+      </transition>
+    </div>
+  </div>
 </div>
-</div>
+
 </div>
 </template>
 
