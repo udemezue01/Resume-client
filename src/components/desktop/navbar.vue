@@ -1,33 +1,38 @@
 <template>
  <!--  The navigational bar -->
  
+   <div id="landing">
    
-  <nav class="flex items-center justify-center flex-wrap bg-white-800 p-6 fixed w-full z-10 top-0 shadow">
-    <div class="flex items-center flex-shrink-0 text-gray-500 mr-6">
-      <a class="text-black no-underline hover:text-black hover:no-underline" href="#">
-        <span class="text-2xl pl-2"><i class="em em-grinning"></i> Brand McBrandface</span>
-      </a>
+      <div class="bg-gray-200" style="min-height: 640px;">
+  <div id="nav" class="bg-white shadow">
+    <div class="md:px-8">
+      <nav class="relative flex flex-wrap items-center justify-between md:py-4">
+        <div class="relative z-10 flex-shrink-0 pl-4 py-4 md:p-0">
+          <img class="h-8 w-8" src="/img/icons/logo.png" alt="">
+        </div>
+       
+        <div class="hidden md:block md:ml-10 md:flex md:items-baseline md:justify-between md:bg-transparent">
+          <div class="lg:absolute inset-0 flex items-center justify-center">
+            <a href="#" class="text-sm font-medium text-gray-900 hover:text-gray-700">Products</a>
+            <a href="#" class="ml-10 text-sm font-medium text-gray-900 hover:text-gray-700">Marketplace</a>
+            <a href="#" class="ml-10 text-sm font-medium text-gray-900 hover:text-gray-700">Partners</a>
+            <a href="#" class="ml-10 text-sm font-medium text-gray-900 hover:text-gray-700">About</a>
+          </div>
+          <div class="ml-10 relative flex items-baseline">
+            <a href="#" class="text-sm font-medium text-gray-900 hover:text-gray-700">Log in</a>
+            <a href="#" class="ml-8 px-3 py-2 font-medium text-center text-sm rounded-lg bg-gray-300 text-gray-900 hover:bg-gray-400 focus:outline-none focus:bg-gray-400">Create Account</a>
+          </div>
+        </div>
+      </nav>
     </div>
 
    
+  </div>
+</div>
 
-    <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
-      <ul class="list-reset lg:flex justify-end flex-1 items-center">
-        <li class="mr-3">
-          <a class="inline-block py-2 px-4 text-black no-underline" href="#">Active</a>
-        </li>
-        <li class="mr-3">
-          <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="heroicon-ui" d="M12 22a10 10 0 110-20 10 10 0 010 20zm0-2a8 8 0 100-16 8 8 0 000 16zM9.56 8.93l6.37-2.12a1 1 0 011.26 1.26l-2.12 6.37a1 1 0 01-.63.63l-6.37 2.12a1 1 0 01-1.26-1.26l2.12-6.37a1 1 0 01.63-.63zm-.22 5.73l4-1.33 1.32-4-4 1.34-1.32 4z"/></svg></a>
-        </li>
-        <li class="mr-3">
-          <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="heroicon-ui" d="M15 19a3 3 0 01-6 0H4a1 1 0 010-2h1v-6a7 7 0 014.02-6.34 3 3 0 015.96 0A7 7 0 0119 11v6h1a1 1 0 010 2h-5zm-4 0a1 1 0 002 0h-2zm0-12.9A5 5 0 007 11v6h10v-6a5 5 0 00-4-4.9V5a1 1 0 00-2 0v1.1z"/></svg></a>
-        </li>
-        <li class="mr-3">
-          <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+</div>
+
+<!-- end of the navigational bar -->
 
  
 
