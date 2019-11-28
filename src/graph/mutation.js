@@ -17,7 +17,7 @@ mutation ($email:String!,$password:String!){
 
 // mutation ($full_name:String!, $email:String, $account_type:String!, $password:String!){
 
-// 	postCreate(text:$text, photo:$photo, video:$String ){
+// 	userCreate(text:$text, photo:$photo, video:$String ){
 // 		text
 // 		photo
 // 		video

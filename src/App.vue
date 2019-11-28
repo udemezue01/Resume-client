@@ -2,8 +2,8 @@
   <div id="app">
     
 <vue-progress-bar></vue-progress-bar>
-   <navbar-desktop class = "uk-visible@l" v-if="token"> </navbar-desktop>
-   <navbar-mobile class= "uk-hidden@l"  v-if="token"> </navbar-mobile>
+   <navbar-desktop class = "lg:visible" v-if="token"> </navbar-desktop>
+   <navbar-mobile class= "md:hidden"  v-if="token"> </navbar-mobile>
     <router-view/>
    
 <!-- 

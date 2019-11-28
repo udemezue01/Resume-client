@@ -1,93 +1,80 @@
 <template>
-  <div id="landing">
-  	<div class="uk-cover-container">
-       
-
-
-    <div class="uk-grid-collapse uk-child-width-1-2@m uk-child-width-1-1@s uk-flex-middle" uk-grid>
-
-    <!--   the large section banner -->
-          <div class="uk-cover-container uk-visible@l uk-section" uk-height-viewport>
-         
-                    <img src="img/work.png" alt="" uk-cover uk-height-viewport style="height: 100%;" >
-
-            </div>
-
-       <!--    end of the large image section banner -->
-
-    <!--    the user form and registration section -->
-            <div class="uk-flex-center uk-section-primary" uk-height-viewport >
-
-              <div class="uk-margin-xlarge-left web-intro " >
-                
-              <h2 style="font-family: 'Righteous', cursive;padding-top: 10px;" class="uk-text-left"> Resume.ly</h2>
-              <p class="uk-text-left">Register</p>
+ 
+<!-- Container -->
+    <div class="container mx-auto">
+      <div class="flex justify-center px-6 my-12">
+        <!-- Row -->
+        <div class="w-full xl:w-3/4 lg:w-11/12 flex">
+          <!-- Col -->
+          <div
+            class="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg"
+            style="background-image: url('https://source.unsplash.com/K4mSJ7kc0As/600x800')"
+          ></div>
+          <!-- Col -->
+          <div class="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-l-none">
+            <h3 class="pt-4 text-2xl text-center">Welcome Back!</h3>
+            <form class="px-8 pt-6 pb-8 mb-4 bg-white rounded">
+              <div class="mb-4">
+                <label class="block mb-2 text-sm font-bold text-gray-700" for="username">
+                  Username
+                </label>
+                <input
+                  class="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                  id="username"
+                  type="text"
+                  placeholder="Username"
+                />
               </div>
-             
-                
-
-  
-  
-          <div class="uk-width-large uk-padding-large" id="register-form" >
-
-
-        <form action="" class=" uk-form-stacked">
-          <fieldset class="uk-fieldset">
-         
-            <div class="uk-margin">
-            
-              <div class="uk-inline uk-width-1-1">
-                <div class="uk-margin">
-              <label> Full Name / Organisation</label>
-            </div>
-                
-                <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: user"></span>
-                <input class="uk-input uk-form-medium" required placeholder="" type="text">
+              <div class="mb-4">
+                <label class="block mb-2 text-sm font-bold text-gray-700" for="password">
+                  Password
+                </label>
+                <input
+                  class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 border border-red-500 rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                  id="password"
+                  type="password"
+                  placeholder="******************"
+                />
+                <p class="text-xs italic text-red-500">Please choose a password.</p>
               </div>
-            </div>
-            <div class="uk-margin">
-            
-              <div class="uk-inline uk-width-1-1">
-                <div class="uk-margin">
-              <label> Email</label>
-            </div>
-                
-                <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: lock"></span>
-                <input class="uk-input uk-form-medium" required placeholder="" type="email" >
+              <div class="mb-4">
+                <input class="mr-2 leading-tight" type="checkbox" id="checkbox_id" />
+                <label class="text-sm" for="checkbox_id">
+                  Remember Me
+                </label>
               </div>
-            </div>
-             <div class="uk-margin uk-width-1-1">
-             <div class="uk-margin">
-              <label> Account Type</label>
-            </div>
-                
-            <select class="uk-select uk-form-medium">
-                <option> business</option>
-                <option> Personal</option>
-            </select>
-        </div>
-
-           
-            <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-primary uk-button-medium uk-width-1-1 uk-box-shadow-xlarge" v-on:click.prevent="userRegister()" >register</button>
-            </div>
-            
-          </fieldset>
-        </form>
-        <div class="uk-margin">
-              <button type="submit" class="uk-button uk-button-danger uk-button-medium uk-width-1-1 uk-box-shadow-xlarge">Register With Google</button>
-            </div>
-        <div>
-        
-      </div>
-
-    <!-- end of register form -->
+              <div class="mb-6 text-center">
+                <button
+                  class="w-full px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+                  type="button"
+                >
+                  Sign In
+                </button>
+              </div>
+              <hr class="mb-6 border-t" />
+              <div class="text-center">
+                <a
+                  class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
+                  href="./register.html"
+                >
+                  Create an Account!
+                </a>
+              </div>
+              <div class="text-center">
+                <a
+                  class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
+                  href="./forgot-password.html"
+                >
+                  Forgot Password?
+                </a>
+              </div>
+            </form>
           </div>
+        </div>
       </div>
-  </div>
-</div>
-</div>
-</div>
+    </div>
+
+ 
 </template>
 
   

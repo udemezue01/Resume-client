@@ -10,12 +10,12 @@
           <img class="h-8 w-8" src="/img/icons/logo.png" alt="">
         </div>
        
-        <div class="hidden md:block md:ml-10 md:flex md:items-baseline md:justify-between md:bg-transparent">
-          <div class="lg:absolute inset-0 flex items-center justify-center">
-            <a href="#" class="text-sm font-medium text-gray-900 hover:text-gray-700">Products</a>
-            <a href="#" class="ml-10 text-sm font-medium text-gray-900 hover:text-gray-700">Marketplace</a>
+        <div class="md:block md:ml-10 md:flex md:items-baseline md:justify-between md:bg-transparent">
+          <div class="md:absolute inset-0 flex items-center justify-center">
+            <a href="#" class="text-sm font-medium text-gray-900 hover:text-gray-700">Resume.ly</a>
+            <!-- <a href="#" class="ml-10 text-sm font-medium text-gray-900 hover:text-gray-700">Marketplace</a>
             <a href="#" class="ml-10 text-sm font-medium text-gray-900 hover:text-gray-700">Partners</a>
-            <a href="#" class="ml-10 text-sm font-medium text-gray-900 hover:text-gray-700">About</a>
+            <a href="#" class="ml-10 text-sm font-medium text-gray-900 hover:text-gray-700">About</a> -->
           </div>
           <div class="ml-10 relative flex items-baseline">
             <a href="#" class="text-sm font-medium text-gray-900 hover:text-gray-700">Log in</a>

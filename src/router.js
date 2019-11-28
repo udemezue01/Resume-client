@@ -16,6 +16,7 @@ import feeds from '@/views/feeds.vue'
 import register from '@/views/register.vue'
 import login from '@/views/login.vue'
 import notfound from '@/views/404.vue'
+import job from '@/views/jobs.vue'
 
 
 Vue.use(Router)
@@ -63,6 +64,13 @@ const router =  new Router({
        path: '*',
       name: 'notfound',
       component: notfound,
+      //beforeEnter:requireUnauthenticated,
+      
+    },
+     {
+       path: '/jobs',
+      name: 'job',
+      component: job,
       //beforeEnter:requireUnauthenticated,
       
     }
