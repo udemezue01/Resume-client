@@ -7,9 +7,6 @@ import './registerServiceWorker'
 import axios from 'axios'
 import VueProgressBar from 'vue-progressbar'
 
-import VueSVGIcon from 'vue-svgicon'
-
-//uikit css and javascript
 
 import VueContentPlaceholders from 'vue-content-placeholders'
 
@@ -18,7 +15,7 @@ Vue.use(VueContentPlaceholders)
 
 import '@/assets/css/tailwind.css'
 
-Vue.use(VueSVGIcon)
+
 Vue.prototype.$http = axios
 
 const options = {

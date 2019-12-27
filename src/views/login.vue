@@ -1,7 +1,23 @@
   <template>
-  <div id="landing">
+  <div id="landing" class="bg-gray-200">
    
+ <div class="flex bg-gray-200">
+
+  <div class="flex-auto">
  
+
+  </div>
+
+  <div class="flex-auto">
+    
+
+  </div>
+   
+
+
+ </div>
+
+
 
 </div>
 </template>
