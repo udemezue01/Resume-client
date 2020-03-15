@@ -63,7 +63,7 @@
 </template>
 
 <script>
-  import {USER_PROFILE} from '../../graph/query.js';
+  import {USER_PROFILE} from '../../constants/query.js';
  
 
 

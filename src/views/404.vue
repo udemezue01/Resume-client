@@ -1,11 +1,14 @@
 <template>
-  <div id="landing">
-  	<div class="uk-cover-container" uk-height-viewport>
+ 
 
-      <img src="img/404.png" alt="" uk-cover>
-       
-</div>
-</div>
+
+  <div>
+  	
+
+
+  </div>
+
+
 </template>
 
   

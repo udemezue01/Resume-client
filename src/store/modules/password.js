@@ -20,26 +20,7 @@ import {
     resetError: false,
     resetLoading: false,
   };
-  const actions =  {
-    resetPassword({ commit }, { uid, token, password1, password2 }) {
-      commit(PASSWORD_RESET_BEGIN);
-      return auth.resetAccountPassword(uid, token, password1, password2)
-        .then(() => commit(PASSWORD_RESET_SUCCESS))
-        .catch(() => commit(PASSWORD_RESET_FAILURE));
-    },
-    sendPasswordResetEmail({ commit }, { email }) {
-      commit(PASSWORD_EMAIL_BEGIN);
-      return auth.sendAccountPasswordResetEmail(email)
-        .then((response) => commit(PASSWORD_EMAIL_SUCCESS, response))
-        .catch((error) => commit(PASSWORD_EMAIL_FAILURE, error));
-    },
-    clearResetStatus({ commit }) {
-      commit(PASSWORD_RESET_CLEAR);
-    },
-    clearEmailStatus({ commit }) {
-      commit(PASSWORD_EMAIL_CLEAR);
-    },
-  };
+
   const mutations = {
     [PASSWORD_RESET_BEGIN](state) {
       state.resetLoading = true;
@@ -77,6 +58,27 @@ import {
     },
   };
 
+  const actions =  {
+    resetPassword({ commit }, { uid, token, password1, password2 }) {
+      commit(PASSWORD_RESET_BEGIN);
+      return auth.resetAccountPassword(uid, token, password1, password2)
+        .then(() => commit(PASSWORD_RESET_SUCCESS))
+        .catch(() => commit(PASSWORD_RESET_FAILURE));
+    },
+    sendPasswordResetEmail({ commit }, { email }) {
+      commit(PASSWORD_EMAIL_BEGIN);
+      return auth.sendAccountPasswordResetEmail(email)
+        .then((response) => commit(PASSWORD_EMAIL_SUCCESS, response))
+        .catch((error) => commit(PASSWORD_EMAIL_FAILURE, error));
+    },
+    clearResetStatus({ commit }) {
+      commit(PASSWORD_RESET_CLEAR);
+    },
+    clearEmailStatus({ commit }) {
+      commit(PASSWORD_EMAIL_CLEAR);
+    },
+  };
+  
   export default {
   namespaced: true,
   state,

@@ -32,35 +32,8 @@ const state = {
     
   };
 
-  const actions =  {
-    createComment({ commit }, { content, created_at }) {
-      commit(COMMENT_CREATE_BEGIN);
-      return comment.createProfile(content, created_at)
-        .then(() => commit(COMMENT_CREATE_SUCCESS))
-        .catch(() => commit(COMMENT_CREATE_FAILURE));
-    },
-    getComment({ commit }, { data }) {
-      commit(COMMENT_GET_BEGIN);
-      return profile.getprofile(data)
-        .then(() => commit(COMMENT_GET_SUCCESS, data))
-        .catch(() => commit(COMMENT_GET_FAILURE));
-    },
-    deleteComment({ commit }, { url }) {
-      commit(COMMENT_DELETE_BEGIN);
-      return profile.deleteprofile(data)
-        .then(() => commit(COMMENT_DELETE_SUCCESS))
-        .catch(() => commit(COMMENT_DELETE_FAILURE));
-    },
-    updateComment({ commit }, { data }) {
-      commit(COMMENT_UPDATE_BEGIN);
-      return profile.updateProfile(data)
-        .then(() => commit(COMMENT_UPDATE_SUCCESS))
-        .catch(() => commit(COMMENT_UPDATE_FAILURE));
-    },
-  
-  };
 
-  const mutations = {
+    const mutations = {
      [COMMENT_CREATE_BEGIN](state) {
       state.commentLoading = true;
   
@@ -108,6 +81,36 @@ const state = {
    
     
   };
+
+  const actions =  {
+    createComment({ commit }, { content, created_at }) {
+      commit(COMMENT_CREATE_BEGIN);
+      return comment.createProfile(content, created_at)
+        .then(() => commit(COMMENT_CREATE_SUCCESS))
+        .catch(() => commit(COMMENT_CREATE_FAILURE));
+    },
+    getComment({ commit }, { data }) {
+      commit(COMMENT_GET_BEGIN);
+      return profile.getprofile(data)
+        .then(() => commit(COMMENT_GET_SUCCESS, data))
+        .catch(() => commit(COMMENT_GET_FAILURE));
+    },
+    deleteComment({ commit }, { url }) {
+      commit(COMMENT_DELETE_BEGIN);
+      return profile.deleteprofile(data)
+        .then(() => commit(COMMENT_DELETE_SUCCESS))
+        .catch(() => commit(COMMENT_DELETE_FAILURE));
+    },
+    updateComment({ commit }, { data }) {
+      commit(COMMENT_UPDATE_BEGIN);
+      return profile.updateProfile(data)
+        .then(() => commit(COMMENT_UPDATE_SUCCESS))
+        .catch(() => commit(COMMENT_UPDATE_FAILURE));
+    },
+  
+  };
+
+
 export default {
   namespaced: true,
   state,

@@ -1,9 +1,43 @@
 <template>
- <div class="uk-container uk-padding">
+ <div class="">
+
+         <!--  The Profile UI section -->
+
+    <div class="flex">
+
+                 <!-- The first section -->
+
+            <div class="w-2/7">
+              
+
+            </div>
+
+                  <!-- End of the first section -->
+
+                     <!--    The second section-->
+            <div class="w-3/7">
 
 
-   <profile-d class= "uk-visible@l">  </profile-d>
-   <profile-m class= "uk-hidden@l">  </profile-m>
+              
+
+
+            </div>
+
+                       <!--  End of the second section -->
+
+
+                      <!--  The third section -->
+            <div class="w-2/7">
+              
+
+            </div>
+
+                         <!--  End of the third section -->
+    
+
+      </div>
+
+         <!--      End of the Profile section -->
 
 
  </div>
@@ -12,7 +46,7 @@
 </template>
 
 <script>
-import {USER_PROFILE} from '../graph/query.js';
+import {USER_PROFILE} from '../constants/query.js';
   
 
   import {  ContentLoader } from 'vue-content-loader'; 

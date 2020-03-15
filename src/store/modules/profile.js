@@ -32,41 +32,7 @@ import {
     profile:[],
     
   };
-  const actions =  {
-    createProfile({ commit }, { username, avatar, category, created_at }) {
-      commit(PROFILE_CREATE_BEGIN);
-      return profile.createProfile(username, avatar, category, created_at)
-        .then(() => commit(PROFILE_CREATE_SUCCESS))
-        .catch(() => commit(PROFILE_CREATE_FAILURE));
-    },
-    getProfile({ commit }, { data }) {
-      commit(PROFILE_GET_BEGIN);
-      return profile.getProfile(data)
-        .then(({data}) => commit(PROFILE_GET_SUCCESS, response))
-        .catch((error) => commit(PROFILE_GET_FAILURE, error));
-    },
-    deleteProfile({ commit }, { url }) {
-      commit(PROFILE_DELETE_BEGIN);
-      return profile.deleteProfile(data)
-        .then((response) => commit(PROFILE_DELETE_SUCCESS, response))
-        .catch((error) => commit(PROFILE_DELETE_FAILURE, error));
-    },
-    updateProfile({ commit }, { data }) {
-      commit(PROFILE_UPDATE_BEGIN);
-      return profile.updateProfile(data)
-        .then((response) => commit(PROFILE_UPDATE_SUCCESS, response))
-        .catch((error) => commit(PROFILE_UPDATE_FAILURE, error));
-    },
-  
-  };
-  const getters  = {
-    getUserPost:(state, profile) =>{
-      return 
-    },
-    
 
-
-  };
   const mutations = {
      [PROFILE_CREATE_BEGIN](state) {
       state.profileLoading = true;
@@ -109,6 +75,42 @@ import {
    
     
   };
+  const actions =  {
+    createProfile({ commit }, { username, avatar, category, created_at }) {
+      commit(PROFILE_CREATE_BEGIN);
+      return profile.createProfile(username, avatar, category, created_at)
+        .then(() => commit(PROFILE_CREATE_SUCCESS))
+        .catch(() => commit(PROFILE_CREATE_FAILURE));
+    },
+    getProfile({ commit }, { data }) {
+      commit(PROFILE_GET_BEGIN);
+      return profile.getProfile(data)
+        .then(({data}) => commit(PROFILE_GET_SUCCESS, response))
+        .catch((error) => commit(PROFILE_GET_FAILURE, error));
+    },
+    deleteProfile({ commit }, { url }) {
+      commit(PROFILE_DELETE_BEGIN);
+      return profile.deleteProfile(data)
+        .then((response) => commit(PROFILE_DELETE_SUCCESS, response))
+        .catch((error) => commit(PROFILE_DELETE_FAILURE, error));
+    },
+    updateProfile({ commit }, { data }) {
+      commit(PROFILE_UPDATE_BEGIN);
+      return profile.updateProfile(data)
+        .then((response) => commit(PROFILE_UPDATE_SUCCESS, response))
+        .catch((error) => commit(PROFILE_UPDATE_FAILURE, error));
+    },
+  
+  };
+  const getters  = {
+    getUserPost:(state, profile) =>{
+      return 
+    },
+    
+
+
+  };
+  
 export default {
   namespaced: true,
   state,

@@ -22,6 +22,35 @@ const getters = {
   isAuthenticated: state => !!state.token,
 };
 
+const mutations = {
+  [LOGIN_BEGIN](state) {
+    state.authenticating = true;
+
+  },
+  [LOGIN_FAILURE](state) {
+
+    state.error = true;
+  },
+  [LOGIN_SUCCESS](state) {
+    state.authenticating = false;
+    state.error = false;
+  },
+  [LOGOUT](state) {
+    state.authenticating = false;
+    state.error = false;
+  },
+  [SET_TOKEN](state, token) {
+    localStorage.setItem(TOKEN_STORAGE_KEY, token);
+    session.defaults.headers.Authorization = `Token ${token}`;
+    state.token = token;
+  },
+  [REMOVE_TOKEN](state) {
+    localStorage.removeItem(TOKEN_STORAGE_KEY);
+    delete session.defaults.headers.Authorization;
+    state.token = null;
+  },
+};
+
 const actions = {
   login({ commit }, { email, password }) {
     commit(LOGIN_BEGIN);
@@ -54,34 +83,7 @@ const actions = {
   
 };
 
-const mutations = {
-  [LOGIN_BEGIN](state) {
-    state.authenticating = true;
 
-  },
-  [LOGIN_FAILURE](state) {
-
-    state.error = true;
-  },
-  [LOGIN_SUCCESS](state) {
-    state.authenticating = false;
-    state.error = false;
-  },
-  [LOGOUT](state) {
-    state.authenticating = false;
-    state.error = false;
-  },
-  [SET_TOKEN](state, token) {
-    localStorage.setItem(TOKEN_STORAGE_KEY, token);
-    session.defaults.headers.Authorization = `Token ${token}`;
-    state.token = token;
-  },
-  [REMOVE_TOKEN](state) {
-    localStorage.removeItem(TOKEN_STORAGE_KEY);
-    delete session.defaults.headers.Authorization;
-    state.token = null;
-  },
-};
 
 export default {
   namespaced: true,

@@ -30,48 +30,6 @@ JOB_DELETE_FAILURE
     jobs:[],
     
   };
-  const actions =  {
-    createJob({ commit }, { position, description, tags, image, location }) {
-      commit(JOB_CREATE_BEGIN);
-      return job.createJob(position, description,tags, image, location)
-        .then(() => commit(JOB_CREATE_SUCCESS))
-        .catch(() => commit(JOB_CREATE_FAILURE));
-    },
-    getJob({ commit }, { data }) {
-      commit(JOB_GET_BEGIN);
-      return job.getJob(data)
-        .then((response) => commit(JOB_GET_SUCCESS, response))
-        .catch((error) => commit(JOB_GET_FAILURE, error));
-    },
-    deleteJob({ commit }, { url }) {
-      commit(PROFILE_DELETE_BEGIN);
-      return job.deleteJob(data)
-        .then(() => commit(JOB_DELETE_SUCCESS))
-        .catch(() => commit(JOB_DELETE_FAILURE));
-    },
-    updateJob({ commit }, { data }) {
-      commit(JOB_UPDATE_BEGIN);
-      return job.updateJob(data)
-        .then((response) => commit(JOB_UPDATE_SUCCESS, response))
-        .catch((error) => commit(JOB_UPDATE_FAILURE, error));
-    },
-  
-  };
-// const getters = {
-
-//   isCompany: state =>{
-//     if (state.vacancy.user.account_type =="individual"){
-//       return !!state.vacancy
-//     }
-//     else{
-//       return state.vacancy
-//     }
-//   }
-
-// };
-
-
-  
 
   const mutations = {
      [JOB_CREATE_BEGIN](state) {
@@ -132,6 +90,50 @@ JOB_DELETE_FAILURE
    
     
   };
+  const actions =  {
+    createJob({ commit }, { position, description, tags, image, location }) {
+      commit(JOB_CREATE_BEGIN);
+      return job.createJob(position, description,tags, image, location)
+        .then(() => commit(JOB_CREATE_SUCCESS))
+        .catch(() => commit(JOB_CREATE_FAILURE));
+    },
+    getJob({ commit }, { data }) {
+      commit(JOB_GET_BEGIN);
+      return job.getJob(data)
+        .then((response) => commit(JOB_GET_SUCCESS, response))
+        .catch((error) => commit(JOB_GET_FAILURE, error));
+    },
+    deleteJob({ commit }, { url }) {
+      commit(PROFILE_DELETE_BEGIN);
+      return job.deleteJob(data)
+        .then(() => commit(JOB_DELETE_SUCCESS))
+        .catch(() => commit(JOB_DELETE_FAILURE));
+    },
+    updateJob({ commit }, { data }) {
+      commit(JOB_UPDATE_BEGIN);
+      return job.updateJob(data)
+        .then((response) => commit(JOB_UPDATE_SUCCESS, response))
+        .catch((error) => commit(JOB_UPDATE_FAILURE, error));
+    },
+  
+  };
+// const getters = {
+
+//   isCompany: state =>{
+//     if (state.vacancy.user.account_type =="individual"){
+//       return !!state.vacancy
+//     }
+//     else{
+//       return state.vacancy
+//     }
+//   }
+
+// };
+
+
+  
+
+  
 export default {
   namespaced: true,
   state,

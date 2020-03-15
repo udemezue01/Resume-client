@@ -1,11 +1,6 @@
 <template>
-  <div id="landing">
-  	<div class="uk-cover-container" uk-height-viewport>
+  
 
-     
-       
-	</div>
-</div>
 </template>
 
   
@@ -39,7 +34,6 @@ computed:{
 
 <style scoped lang="less">
 
-@import '../theme/theme.less';
 
 
 

@@ -27,43 +27,8 @@ export default {
     post:[],
     
   },
-  actions: {
 
-    createPost({ commit }, { user, content, media, created_at }) {
-      commit(POST_CREATE_BEGIN);
-      return post.createPost(user, content, media, created_at)
-        .then((response) => commit(POST_CREATE_SUCCESS, response.data))
-        .catch((error) => commit(POST_CREATE_FAILURE, error.data));
-    },
-
-
-    getPost({ commit }, { data }) {
-      commit(POST_GET_BEGIN);
-      return post.readPost(data)
-        .then(({data}) => commit(POST_GET_SUCCESS, data))
-        .catch((error) => commit(POST_GET_FAILURE, error.data));
-    },
-
-
-      deletePost({ commit }, { data }) {
-      commit(POST_DELETE_BEGIN);
-      return post.deletePost(key)
-        .then(() => commit(POST_DELETE_SUCCESS))
-        .catch(() => commit(POST_DELETE_FAILURE));
-    },
-
-
-      updatePost({ commit }, { data }) {
-      commit(POST_UPDATE_BEGIN);
-      return post.updatePost(data)
-        .then(() => commit(POST_UPDATE_SUCCESS))
-        .catch(() => commit(POST_UPDATE_FAILURE));
-    },
-  
-
-
-  },
-  mutations: {
+   mutations: {
   
     [POST_CREATE_BEGIN](state) {
       state.registrationError = true;
@@ -115,4 +80,42 @@ export default {
       state.activationLoading = false;
     },
   },
+  actions: {
+
+    createPost({ commit }, { user, content, media, created_at }) {
+      commit(POST_CREATE_BEGIN);
+      return post.createPost(user, content, media, created_at)
+        .then((response) => commit(POST_CREATE_SUCCESS, response.data))
+        .catch((error) => commit(POST_CREATE_FAILURE, error.data));
+    },
+
+
+    getPost({ commit }, { data }) {
+      commit(POST_GET_BEGIN);
+      return post.readPost(data)
+        .then(({data}) => commit(POST_GET_SUCCESS, data))
+        .catch((error) => commit(POST_GET_FAILURE, error.data));
+    },
+
+
+      deletePost({ commit }, { data }) {
+      commit(POST_DELETE_BEGIN);
+      return post.deletePost(key)
+        .then(() => commit(POST_DELETE_SUCCESS))
+        .catch(() => commit(POST_DELETE_FAILURE));
+    },
+
+
+      updatePost({ commit }, { data }) {
+      commit(POST_UPDATE_BEGIN);
+      return post.updatePost(data)
+        .then(() => commit(POST_UPDATE_SUCCESS))
+        .catch(() => commit(POST_UPDATE_FAILURE));
+    },
+  
+
+
+  },
+
+ 
 };

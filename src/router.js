@@ -11,12 +11,12 @@ import store from './store/store.js'
 //   // ...
 // })
 
-import profile from '@/views/profile.vue'
-import feeds from '@/views/feeds.vue'
-import register from '@/views/register.vue'
-import login from '@/views/login.vue'
+import Profile from '@/views/Profile.vue'
+import Feeds from '@/views/Feeds.vue'
+import Register from '@/views/Register.vue'
+import Landing from '@/views/Landing.vue'
 import notfound from '@/views/404.vue'
-import job from '@/views/jobs.vue'
+// import job from '@/views/jobs.vue'
 
 
 Vue.use(Router)
@@ -31,16 +31,16 @@ const router =  new Router({
 
     {
       path: '/',
-      name: 'login',
-      component: login,
+      name: 'Landing',
+      component: Landing,
       
      
      
     },
     {
       path: '/profile',
-      name: 'profile',
-      component: profile,
+      name: 'Profile',
+      component: Profile,
       //beforeEnter: requireAuthenticated,
 
      
@@ -49,14 +49,14 @@ const router =  new Router({
 
      {
       path: '/feeds',
-      name: 'feeds',
-      component: feeds,
+      name: 'Feeds',
+      component: Feeds,
       //beforeEnter: requireAuthenticated,
     },
       {
       path: '/register',
-      name: 'register',
-      component: register,
+      name: 'Register',
+      component: Register,
       //beforeEnter:requireUnauthenticated,
     },
 
@@ -67,13 +67,13 @@ const router =  new Router({
       //beforeEnter:requireUnauthenticated,
       
     },
-     {
-       path: '/jobs',
-      name: 'job',
-      component: job,
-      //beforeEnter:requireUnauthenticated,
+    //  {
+    //    path: '/jobs',
+    //   name: 'job',
+    //   component: job,
+    //   //beforeEnter:requireUnauthenticated,
       
-    }
+    // }
     //  {
     //   path: '/feeds',
     //   name: 'feeds',
@@ -85,24 +85,24 @@ const router =  new Router({
 })
 
 
-router.beforeEach((to, from, next) => {
-  const token  = localStorage.getItem('token');
-  if (to.fullPath === '/profile') {
-    if (!token) {
-      next('/');
-    }
-  }
-  if (to.fullPath ==='/feeds'){
-    if (!token){
-      next('/')
-    }
-  }
-  if (to.fullPath === '/') {
-    if (token) {
-      next('/profile');
-    }
-  }
-  next();
-});
+// router.beforeEach((to, from, next) => {
+//   const token  = localStorage.getItem('token');
+//   if (to.fullPath === '/profile') {
+//     if (!token) {
+//       next('/');
+//     }
+//   }
+//   if (to.fullPath ==='/feeds'){
+//     if (!token){
+//       next('/')
+//     }
+//   }
+//   if (to.fullPath === '/') {
+//     if (token) {
+//       next('/profile');
+//     }
+//   }
+//   next();
+// });
 
 export default router
