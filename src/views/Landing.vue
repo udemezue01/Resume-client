@@ -4,7 +4,7 @@
 
       <!-- The navigational bar -->
     
-    <nav class="flex justify-between px-6 py-5 bg-white shadow">
+    <nav class="flex justify-between px-6 py-5 bg-white shadow sticky top-0">
       
       <div>
         
@@ -34,12 +34,20 @@
        <div class="flex">
 
         <div class="w-1/2">
+
+          <div>
+
+            <h1 class="text-6xl text-purple-700 px-4 font-black"> Career Social Network</h1>
+            
+          </div>
+
+       
           
         </div>
 
         <div class="w-1/2">
           
-          <img src="/img/landing.svg" class="object-center h-full">
+          <img src="/img/landing.svg" class="object-cover object-center h-full w-full">
 
         </div>
          
