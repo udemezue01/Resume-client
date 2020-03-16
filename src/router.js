@@ -11,11 +11,11 @@ import store from './store/store.js'
 //   // ...
 // })
 
-import Profile from '@/views/Profile.vue'
-import Feeds from '@/views/Feeds.vue'
-import Register from '@/views/Register.vue'
-import Landing from '@/views/Landing.vue'
-import notfound from '@/views/404.vue'
+// import Profile from '@/views/Profile.vue'
+// import Feeds from '@/views/Feeds.vue'
+// import Register from '@/views/Register.vue'
+// import Landing from '@/views/Landing.vue'
+// import notfound from '@/views/404.vue'
 // import job from '@/views/jobs.vue'
 
 
@@ -37,36 +37,36 @@ const router =  new Router({
      
      
     },
-    {
-      path: '/profile',
-      name: 'Profile',
-      component: Profile,
-      //beforeEnter: requireAuthenticated,
+    // {
+    //   path: '/profile',
+    //   name: 'Profile',
+    //   component: Profile,
+    //   //beforeEnter: requireAuthenticated,
 
      
-    },
+    // },
 
 
-     {
-      path: '/feeds',
-      name: 'Feeds',
-      component: Feeds,
-      //beforeEnter: requireAuthenticated,
-    },
-      {
-      path: '/register',
-      name: 'Register',
-      component: Register,
-      //beforeEnter:requireUnauthenticated,
-    },
+    //  {
+    //   path: '/feeds',
+    //   name: 'Feeds',
+    //   component: Feeds,
+    //   //beforeEnter: requireAuthenticated,
+    // },
+    //   {
+    //   path: '/register',
+    //   name: 'Register',
+    //   component: Register,
+    //   //beforeEnter:requireUnauthenticated,
+    // },
 
-    {
-       path: '*',
-      name: 'notfound',
-      component: notfound,
-      //beforeEnter:requireUnauthenticated,
+    // {
+    //    path: '*',
+    //   name: 'notfound',
+    //   component: notfound,
+    //   //beforeEnter:requireUnauthenticated,
       
-    },
+    // },
     //  {
     //    path: '/jobs',
     //   name: 'job',
