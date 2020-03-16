@@ -12,8 +12,8 @@
 
 <script >
 //navbar 
-import navbar_d  from '@/components/desktop/Navbar.vue'
-import navbar_m from '@/components/mobile/navbar.vue'
+// import navbar_d  from '@/components/desktop/Navbar.vue'
+// import navbar_m from '@/components/mobile/navbar.vue'
 
 
 
@@ -21,10 +21,10 @@ import navbar_m from '@/components/mobile/navbar.vue'
  
 export default {
 
-components:{
-  'navbar-desktop':navbar_d,
-  'navbar-mobile':navbar_m,
-},
+// components:{
+//   'navbar-desktop':navbar_d,
+//   'navbar-mobile':navbar_m,
+// },
   
 // computed:{
 //   token () {
@@ -33,12 +33,6 @@ components:{
 // },
 
 }
+
 </script>
 
-
-<style lang="less" scoped>
-
-
-
-
-</style>
