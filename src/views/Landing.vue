@@ -35,9 +35,18 @@
 
         <div class="w-1/2">
 
-          <div>
+          <div class="m-16">
 
-            <h1 class="text-6xl text-purple-700 px-4 font-black"> Career Social Network</h1>
+            <h1 class="text-6xl text-purple-700 font-black"> Career Social Network</h1>
+
+            <p> </p>
+
+            <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-purple-700 rounded-lg m-4 hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
+        
+      
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 -ml-1 mr-2"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+        Get Started
+      </button>
             
           </div>
 
@@ -45,7 +54,7 @@
           
         </div>
 
-        <div class="w-1/2">
+        <div class="w-1/2 md:visible">
           
           <img src="/img/landing.svg" class="object-cover object-center h-full w-full">
 
