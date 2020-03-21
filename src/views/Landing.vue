@@ -33,9 +33,11 @@
 
        <div class="flex">
 
+     <!--    The first flex -->
+
         <div class="w-1/2">
 
-          <div class="m-16">
+          <div class="m-16 flex-none">
 
             <h1 class="text-6xl text-purple-700 font-black"> Career Social Network</h1>
 
@@ -54,14 +56,32 @@
           
         </div>
 
+          <!-- End of the first flex -->
+
+
+          <!-- The second flex -->
+
         <div class="w-1/2 md:visible">
           
           <img src="/img/landing.svg" class="object-cover object-center h-full w-full">
 
         </div>
          
+         <!--    End of the second flex -->
 
        </div>
+
+       <!-- End of the flex component -->
+
+      <!--  The footer section -->
+
+      <div>
+        
+
+      </div>
+
+
+     <!--  End of the footer section -->
 
 
   </div>

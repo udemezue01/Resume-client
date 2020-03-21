@@ -12,8 +12,7 @@
 
 <script >
 //navbar 
-// import navbar_d  from '@/components/desktop/Navbar.vue'
-// import navbar_m from '@/components/mobile/navbar.vue'
+import navbar from './components/Navbar.vue'
 
 
 
@@ -21,10 +20,10 @@
  
 export default {
 
-// components:{
-//   'navbar-desktop':navbar_d,
-//   'navbar-mobile':navbar_m,
-// },
+components:{
+  		
+  	'navbar':navbar,
+},
   
 // computed:{
 //   token () {
