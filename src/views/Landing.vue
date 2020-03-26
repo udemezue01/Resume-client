@@ -61,7 +61,7 @@
 
           <!-- The second flex -->
 
-        <div class="w-1/2 md:visible">
+        <div class="w-1/2">
           
           <img src="/img/landing.svg" class="object-cover object-center h-full w-full">
 
@@ -75,7 +75,43 @@
 
       <!--  The footer section -->
 
-      <div>
+     
+
+        <div class="flex justify-around p-12 shadow-md">
+
+          <div class=" ">
+            
+            <img src="/img/logo1.svg" class="block h-5 w-5"/>
+            <p class="block font-bold py-2"> Career Social Network</p>
+            
+          </div>
+          <div class="">
+            
+            <a href="" class="block"> Company</a>
+            <a href="" class="block"> About</a>
+            <a href="" class="block">press</a>
+          </div>
+          <div class="">
+            
+            <a href="" class="block"> Company</a>
+            <a href="" class="block"> About</a>
+            <a href="" class="block">press</a>
+          </div>
+          <div class="">
+            
+            <a href="" class="block"> Company</a>
+            <a href="" class="block"> About</a>
+            <a href="" class="block">press</a>
+          </div>
+          <div class="">
+            
+            <h6  class="block"> Platform</h6>
+            <a href="" class="block"> About</a>
+            <a href="" class="block">press</a>
+          </div>
+          
+
+      
         
 
       </div>
