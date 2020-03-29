@@ -15,6 +15,7 @@ import store from './store/store.js'
 // import Feeds from '@/views/Feeds.vue'
 // import Register from '@/views/Register.vue'
  import Landing from '@/views/Landing.vue'
+import Login from '@/views/Login.vue'
 // import notfound from '@/views/404.vue'
 // import job from '@/views/jobs.vue'
 
@@ -33,6 +34,15 @@ const router =  new Router({
       path: '/',
       name: 'Landing',
       component: Landing,
+      
+     
+     
+    },
+
+    {
+      path: '/',
+      name: 'login',
+      component: Login,
       
      
      
