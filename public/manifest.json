@@ -1,6 +1,6 @@
 {
-  "name": "Resume",
-  "short_name": "Resume",
+  "name": "Resume.ly",
+  "short_name": "Resume.ly",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
@@ -15,6 +15,6 @@
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#21D397",
+  "background_color": "#ffffff",
   "theme_color": "#336BAE"
 }

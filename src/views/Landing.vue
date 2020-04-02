@@ -4,7 +4,7 @@
 
       <!-- The navigational bar -->
     
-    <nav class="flex justify-between px-6 py-2 bg-white shadow sticky top-0">
+    <nav class="flex justify-between px-8 py-2 bg-white shadow sticky top-0">
       
       <div>
         
@@ -38,15 +38,15 @@
 
      <!--    The first flex -->
 
-        <div class="w-1/2">
+        <div class="w-full">
 
-          <div class="m-16 flex-none">
+          <div class="m-16">
 
-            <h1 class="text-6xl text-purple-700 font-black"> Career Social Network</h1>
+            <h1 class="text-6xl text-purple-700 font-black cursor-pointer"> Career Social Network</h1>
 
-            <p> </p>
+            <h3 class="font-bold text-gray-800 text-2xl cursor-pointer hover:text-black"> Connecting You With Global <br>  Opportunities</h3>
 
-            <button type="button" class="items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium text-white bg-purple-700 rounded-lg m-4 hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
+            <button type="button" class="items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium text-white bg-purple-700 rounded-lg m-2 hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
         
       
 
@@ -64,9 +64,9 @@
 
           <!-- The second flex -->
 
-        <div class="w-1/2">
+        <div class=" hidden md:block md:w-full">
           
-          <img src="/img/landing.svg" class="object-cover object-center h-full w-full">
+          <img src="/img/landing.svg" class=" object-cover object-center h-full w-full">
 
         </div>
          
@@ -88,29 +88,29 @@
             <p class="block font-bold py-2"> Career Social Network</p>
             
           </div>
-          <div class="">
+          <div class="hidden lg:block">
+            
+            <a href="" class="block"> Help</a>
+            <a href="" class="block"> Introduction</a>
+            <a href="" class="block">Help Center</a>
+          </div>
+          <div class=" hidden lg:block">
             
             <a href="" class="block"> Company</a>
-            <a href="" class="block"> About</a>
+            <a href="" class="block"> Team</a>
             <a href="" class="block">press</a>
           </div>
-          <div class="">
+          <div class=" hidden lg:block">
             
-            <a href="" class="block"> Company</a>
-            <a href="" class="block"> About</a>
-            <a href="" class="block">press</a>
-          </div>
-          <div class="">
-            
-            <a href="" class="block"> Company</a>
-            <a href="" class="block"> About</a>
-            <a href="" class="block">press</a>
+            <a href="" class="block"> Legal</a>
+            <a href="" class="block"> Privacy Policy </a>
+            <a href="" class="block">Terms Of Service</a>
           </div>
           <div class="">
             
             <h6  class="block"> Platform</h6>
-            <a href="" class="block"> About</a>
-            <a href="" class="block">press</a>
+            <a href="" class="block inline-flex"> Android</a>
+            <a href="" class="block">IOS</a>
           </div>
           
 
@@ -145,12 +145,6 @@ data(){
     password : ""
   },
 
-  register:{
-    full_name:"",
-    email:"",
-    account_type:""
-
-  }
 
   }
 },
