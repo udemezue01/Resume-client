@@ -90,7 +90,7 @@
           </div>
           <div class="hidden lg:block">
             
-            <a href="" class="block"> Help</a>
+            <a href="" class="block font-medium"> Help</a>
             <a href="" class="block"> Introduction</a>
             <a href="" class="block">Help Center</a>
           </div>
