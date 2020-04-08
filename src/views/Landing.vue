@@ -90,24 +90,24 @@
           </div>
           <div class="hidden lg:block">
             
-            <h3 class="block font-bold"> Help</h3>
+            <h3 class="block font-bold uppercase"> Help</h3>
             <a href="" class="block"> Introduction</a>
             <a href="" class="block">Help Center</a>
           </div>
           <div class=" hidden lg:block">
             
-            <h3 class="block font-bold"> Company</h3>
+            <h4 class="block font-bold uppercase"> Company</h4>
             <a href="" class="block"> Team</a>
             <a href="" class="block">press</a>
           </div>
           <div class=" hidden lg:block">
             
-            <h3 class="block font-bold"> Legal</h3>
+            <h3 class="block font-bold uppercase"> Legal</h3>
             <a href="" class="block"> Privacy Policy </a>
             <a href="" class="block">Terms Of Service</a>
           </div>
           <div class="">
-            <h3 class="block font-bold"> Platforms</h3>
+            <h3 class="block font-bold uppercase"> platforms</h3>
             <img src="/img/android.svg" class="block h-8 w-20">
             <img src="/img/ios.svg" class="block h-8 w-20">
             
