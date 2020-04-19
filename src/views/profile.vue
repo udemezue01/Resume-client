@@ -1,5 +1,5 @@
 <template>
- <div class="">
+ <div class="container px-16 py-4">
 
          <!--  The Profile UI section -->
 
@@ -7,7 +7,26 @@
 
                  <!-- The first section -->
 
-            <div class="w-2/7">
+            <div class="w-2/6">
+
+
+                <div class="overflow-hidden">
+                  
+                  <img src="/img/404.png" class="rounded-lg h-14 w-full">
+
+                   <!--  <img src="/img/404.png" class="mx-auto -m-t-8"> -->
+
+                    <div class="p-8">
+
+                      <h2 class="mx-auto"> Resume.ly</h2>
+                      
+
+
+                    </div>
+
+
+
+                </div>
               
 
             </div>
@@ -15,7 +34,7 @@
                   <!-- End of the first section -->
 
                      <!--    The second section-->
-            <div class="w-3/7">
+            <div class="w-3/6">
 
 
               
@@ -27,7 +46,7 @@
 
 
                       <!--  The third section -->
-            <div class="w-2/7">
+            <div class="w-1/6">
               
 
             </div>
@@ -46,20 +65,18 @@
 </template>
 
 <script>
-import {USER_PROFILE} from '../constants/query.js';
+// import {USER_PROFILE} from '../constants/query.js';
   
 
   import {  ContentLoader } from 'vue-content-loader'; 
-  import profile_d from '@/components/desktop/profile.vue';
-  import profile_m from '@/components/mobile/profile.vue';
+
  
 export default {
 
   components:{
 
    ContentLoader,
-   "profile-d":profile_d,
-   "profile-m":profile_m,
+  
 
   },
   data(){
@@ -73,7 +90,7 @@ export default {
 
 
   apollo:{
-    profile:USER_PROFILE
+    // profile:USER_PROFILE
   },
   
 

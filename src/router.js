@@ -11,11 +11,11 @@ import store from './store/store.js'
 //   // ...
 // })
 
-// import Profile from '@/views/Profile.vue'
+import Profile from '@/views/Profile.vue'
 // import Feeds from '@/views/Feeds.vue'
 // import Register from '@/views/Register.vue'
  import Landing from '@/views/Landing.vue'
-// import Login from '@/views/Login.vue'
+import Login from '@/views/Login.vue'
 // import notfound from '@/views/404.vue'
 // import job from '@/views/jobs.vue'
 
@@ -39,22 +39,22 @@ const router =  new Router({
      
     },
 
-    // {
-    //   path: '/login',
-    //   name: 'login',
-    //   component: Login,
+    {
+      path: '/login',
+      name: 'login',
+      component: Login,
       
      
      
-    // },
-    // {
-    //   path: '/profile',
-    //   name: 'Profile',
-    //   component: Profile,
-    //   //beforeEnter: requireAuthenticated,
+    },
+    {
+      path: '/profile',
+      name: 'Profile',
+      component: Profile,
+      //beforeEnter: requireAuthenticated,
 
      
-    // },
+    },
 
 
     //  {

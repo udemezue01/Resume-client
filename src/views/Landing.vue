@@ -2,39 +2,8 @@
   
   <div>
 
-      <!-- The navigational bar -->
-    
-    <nav class="flex justify-between px-6 py-2 bg-white shadow sticky top-0 lg:px-16">
       
-      <div>
-        
-        <img src="/img/logo1.svg" class="h-8 w-8">
-
-      </div>
-
-      <div>
-        
-        <router-link to = "login">
-      <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-purple-700 rounded-lg hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
-        
-      
-        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 -ml-1 mr-2"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-        Log In
-      </button>
-
-
-    </router-link>
-    
-        
-
-      </div>
-
-
-    </nav>
-
-       <!--  End of the navigational bar -->
-
-       <div class="flex">
+       <div class="flex bg-white">
 
      <!--    The first flex -->
 
@@ -42,16 +11,30 @@
 
           <div class="m-6 lg:m-16 ">
 
-            <h1 class="text-6xl text-purple-700 font-black cursor-pointer"> Career Social Network</h1>
+            <h1 class="text-6xl text-purple-700 font-black cursor-pointer leading-9"> Career Social Network</h1>
 
-            <h3 class="font-bold text-gray-800 text-2xl cursor-pointer hover:text-black"> Connecting You With Global <br>  Opportunities</h3>
+            <h3 class="font-bold text-black text-2xl cursor-pointer hover:text-black"> Connecting You With Global <br>  Opportunities</h3>
 
-            <button type="button" class="items-center -ml-1 px-4 py-2 border border-transparent text-sm leading-5 font-medium text-white bg-purple-700 rounded-lg m-2 hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
+            <button type="button" class="hidden items-center -ml-1 px-4 py-2 border border-transparent text-sm leading-5 font-medium text-white bg-purple-700 rounded-lg m-2 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
         
       
 
         Get Started
       </button>
+
+    <!--   <div class="flex justify-around">
+        
+        <div>
+          <img src="/img/android.svg" class="block h-8 w-20">
+
+        </div>
+
+        <div>
+           <img src="/img/ios.svg" class="block h-8 w-20">
+
+        </div>
+
+      </div> -->
             
           </div>
 
@@ -80,11 +63,11 @@
 
      
 
-        <div class="flex justify-around p-8 shadow-md">
+        <div class="flex justify-around p-8 bg-white">
 
           <div class=" ">
             
-            <img src="/img/logo1.svg" class="block h-5 w-5"/>
+            <img src="/img/logo2.svg" class="block h-5 w-5"/>
             <p class="block font-semibold"> Connecting You With <br> Global opportunities</p>
             
           </div>
