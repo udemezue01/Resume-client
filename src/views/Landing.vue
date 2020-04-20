@@ -13,9 +13,9 @@
 
             <h1 class="text-6xl text-purple-700 font-black cursor-pointer leading-9"> Career Social Network</h1>
 
-            <h3 class="font-bold text-black text-2xl cursor-pointer hover:text-black"> Connecting You With Global <br>  Opportunities</h3>
+            <h3 class="font-bold text-black text-4xl cursor-pointer hover:text-black"> Connecting You With Global <br>  Opportunities</h3>
 
-            <button type="button" class="hidden items-center -ml-1 px-4 py-2 border border-transparent text-sm leading-5 font-medium text-white bg-purple-700 rounded-lg m-2 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
+            <button type="button" class="hidden items-center -ml-1 px-4 py-2 mt-2 border border-transparent text-sm leading-5 font-medium text-white bg-purple-700 rounded-lg m-2 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
         
       
 
