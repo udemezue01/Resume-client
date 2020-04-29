@@ -13,7 +13,7 @@ import store from './store/store.js'
 
 import Profile from '@/views/Profile.vue'
 // import Feeds from '@/views/Feeds.vue'
-// import Register from '@/views/Register.vue'
+import Register from '@/views/Register.vue'
  import Landing from '@/views/Landing.vue'
 import Login from '@/views/Login.vue'
 // import notfound from '@/views/404.vue'
@@ -56,6 +56,13 @@ const router =  new Router({
      
     },
 
+          {
+      path: '/register',
+      name: 'Register',
+      component: Register,
+      //beforeEnter:requireUnauthenticated,
+    },
+
 
     //  {
     //   path: '/feeds',
@@ -63,12 +70,7 @@ const router =  new Router({
     //   component: Feeds,
     //   //beforeEnter: requireAuthenticated,
     // },
-    //   {
-    //   path: '/register',
-    //   name: 'Register',
-    //   component: Register,
-    //   //beforeEnter:requireUnauthenticated,
-    // },
+
 
     // {
     //    path: '*',

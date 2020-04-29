@@ -11,14 +11,13 @@
 
           <div class="m-6 lg:m-16 ">
 
-            <h1 class="text-6xl text-purple-700 font-black cursor-pointer leading-9"> Career Social Network</h1>
+            <h1 class="text-6xl text-purple-700 font-black cursor-pointer leading-6"> Career Social Network</h1>
 
-            <h3 class="font-bold text-black text-4xl cursor-pointer hover:text-black"> Connecting You With Global <br>  Opportunities</h3>
+            <h3 class=" mt-6 font-bold text-black text-4xl cursor-pointer hover:text-black"> Connecting you with global <br>  opportunities</h3>
 
-            <button type="button" class="hidden items-center -ml-1 px-4 py-2 mt-2 border border-transparent text-sm leading-5 font-medium text-white bg-purple-700 rounded-lg m-2 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
+            <button type="button" class=" mt-6 hidden items-center -ml-1 px-4 py-2  border border-transparent text-sm leading-9 font-medium text-white bg-purple-700 rounded-lg m-2 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
         
-      
-
+    
         Get Started
       </button>
 
@@ -49,7 +48,7 @@
 
         <div class=" hidden lg:block lg:w-full">
           
-          <img src="/img/landing.svg" class=" object-cover object-center h-full w-full">
+          <img src="/img/deal.svg" class=" object-cover object-center h-full w-full">
 
         </div>
          
@@ -68,7 +67,7 @@
           <div class=" ">
             
             <img src="/img/logo2.svg" class="block h-5 w-5"/>
-            <p class="block font-semibold"> Connecting You With <br> Global opportunities</p>
+            <p class="block font-semibold"> Connecting you with <br> global opportunities</p>
             
           </div>
           <div class="hidden lg:block">

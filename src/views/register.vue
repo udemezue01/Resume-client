@@ -9,54 +9,27 @@
 
 import {mapActions, mapState} from 'vuex';
 
-export default {
+export default{
 
-data(){
-  return {
-  
- 
+  data(){
 
-  register:{
-	full_name:"",
-	email:"",
-	account_type:["Personal", "Business"]
+    return{
+
+    }
+  },
+
+  method:{
+
+
+  },
+
+
+  computed:{
+
     
-
   }
 
 
-  }
-},
-computed:{
-  ...mapState('signup',[
-
-    'registrationLoading',
-    'registrationCompleted',
-    'registrationError',
-    
-    ]),
- 
-
-
-  methods:{
-
-     ...mapActions('signup', [
-
-      'createAccount',
- 
-      ]),
-
-
-    userRegister(){
-      this.createAccount(this.register)
-      .then(() => this.$router.push('/profile'))
-      .catch((err) => console.log(error))
-      
-  
-    },
-  }
-
-}
 }
 </script>
 
