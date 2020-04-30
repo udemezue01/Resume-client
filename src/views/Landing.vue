@@ -11,11 +11,11 @@
 
           <div class="m-6 lg:m-16 ">
 
-            <h1 class="text-6xl text-purple-700 font-black cursor-pointer leading-6"> Career Social Network</h1>
+            <h1 class="text-6xl text-purple-700 font-black cursor-pointer leading-tight tracking-wide"> Career Social Network</h1>
 
-            <h3 class=" mt-6 font-bold text-black text-4xl cursor-pointer hover:text-black"> Connecting you with global <br>  opportunities</h3>
+            <h3 class=" mt-6 font-extrabold text-gray-800 text-5xl cursor-pointer hover:text-gray-900"> Connecting you with global  opportunities</h3>
 
-            <button type="button" class=" mt-6 hidden items-center -ml-1 px-4 py-2  border border-transparent text-sm leading-9 font-medium text-white bg-purple-700 rounded-lg m-2 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
+            <button type="button" class=" mt-6 hidden items-center -ml-1 px-4 py-2  border border-transparent text-sm  font-extrabold text-white bg-purple-700 rounded-lg m-2 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
         
     
         Get Started
@@ -58,51 +58,7 @@
 
        <!-- End of the flex component -->
 
-      <!--  The footer section -->
-
      
-
-        <div class="flex justify-around p-8 bg-white">
-
-          <div class=" ">
-            
-            <img src="/img/logo2.svg" class="block h-5 w-5"/>
-            <p class="block font-semibold"> Connecting you with <br> global opportunities</p>
-            
-          </div>
-          <div class="hidden lg:block">
-            
-            <h3 class="block font-bold uppercase"> Help</h3>
-            <a href="" class="block"> Introduction</a>
-            <a href="" class="block">Help Center</a>
-          </div>
-          <div class=" hidden lg:block">
-            
-            <h4 class="block font-bold uppercase"> Company</h4>
-            <a href="" class="block"> Team</a>
-            <a href="" class="block">press</a>
-          </div>
-          <div class=" hidden lg:block">
-            
-            <h3 class="block font-bold uppercase"> Legal</h3>
-            <a href="" class="block"> Privacy Policy </a>
-            <a href="" class="block">Terms Of Service</a>
-          </div>
-          <div class="">
-            <h3 class="block font-bold uppercase"> platforms</h3>
-            <img src="/img/android.svg" class="block h-8 w-20">
-            <img src="/img/ios.svg" class="block h-8 w-20">
-            
-          </div>
-          
-
-      
-        
-
-      </div>
-
-
-     <!--  End of the footer section -->
 
 
   </div>

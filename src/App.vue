@@ -7,6 +7,8 @@
 
    <navbar class = "sticky top-0"> </navbar>
     <router-view/>
+
+    <footbar class = "p-6"></footbar>
    
   </div>
 </template>
@@ -14,7 +16,8 @@
 
 <script >
 //navbar 
-import navbar from '@/components/Navbar.vue'
+import navbar from '@/components/Navbar.vue';
+import footbar from '@/components/Footer.vue'; 
 
 
 
@@ -25,6 +28,7 @@ export default {
 components:{
   		
   	navbar,
+  	footbar,
 },
   
 // computed:{
