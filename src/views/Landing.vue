@@ -11,15 +11,18 @@
 
           <div class="m-6 lg:m-16 ">
 
-            <h1 class="text-6xl text-purple-700 font-black cursor-pointer leading-tight tracking-wide"> Career Social Network</h1>
+            <h1 class="text-6xl text-purple-700 font-black cursor-pointer leading-tight tracking-wide"> Resume.ly</h1>
 
             <h3 class=" mt-6 font-extrabold text-gray-800 text-5xl cursor-pointer hover:text-gray-900"> Connecting you with global  opportunities</h3>
+
+            <router-link to="/register">
 
             <button type="button" class=" mt-6 hidden items-center -ml-1 px-4 py-2  border border-transparent text-sm  font-extrabold text-white bg-purple-700 rounded-lg m-2 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
         
     
         Get Started
       </button>
+    </router-link>
 
     <!--   <div class="flex justify-around">
         

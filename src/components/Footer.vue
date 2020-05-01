@@ -8,7 +8,7 @@
 
      
 
-        <div class="flex justify-around pt-4 bg-white">
+        <div class="flex justify-around pt-4 bg-white -px-4">
 
           <div class=" ">
             

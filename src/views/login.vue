@@ -7,7 +7,7 @@
 
   <!--   The first flex -->
 
-    <div class="w-full lg:w-1/2">
+    <div class="w-full">
       
       <div class="flex items-center justify-center bg-gray-50 py-12 mt-12 px-4 sm:px-6 lg:px-8">
   <div class="max-w-md w-full">
@@ -18,9 +18,9 @@
       </h2>
       <p class="mt-2 text-center text-sm leading-5 text-gray-800 font-extrabold">
         Or
-        <a href="#" class="font-extrabold text-purple-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">
-          Create New Account
-        </a>
+        <router-link to="/register" class="font-extrabold text-purple-600 hover:text-purple-600 focus:outline-none focus:underline transition ease-in-out duration-150">
+          Create new account
+        </router-link>
       </p>
     </div>
     <form class="mt-8" action="#" method="POST">
@@ -67,7 +67,7 @@
 <!-- 
     The end of the first flex -->
 
-    <div class=" hidden lg:block">
+    <div class=" hidden lg:block lg:w-full">
       
       <img src="/img/cowork.svg" class=" object-cover object-center h-full w-full">
 
@@ -85,7 +85,42 @@
 
 
 
+
 <script >
+
+export default {
+
+
+
+  data(){
+
+    return{
+
+      email:"",
+      password:""
+
+    }
+  },
+
+  methods:{
+
+   userLogin(){
+
+    this.apollo.mutate({
+
+
+
+    })
+   }
+
+  },
+
+
+  computed:{
+
+
+  }
+}
 	
 
 
