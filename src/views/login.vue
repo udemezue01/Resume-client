@@ -69,7 +69,7 @@
 
     <div class=" hidden lg:block lg:w-full">
       
-      <img src="/img/cowork.svg" class=" object-cover object-center h-full w-full">
+      <img src="/img/fingerprint.svg" class=" object-cover object-center h-full w-full">
 
     </div>
 

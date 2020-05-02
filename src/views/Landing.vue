@@ -7,9 +7,9 @@
 
      <!--    The first flex -->
 
-        <div class="w-full">
+        <div class="w-full" id="landing">
 
-          <div class="m-6 lg:m-16 ">
+          <div class="m-6 lg:m-16">
 
             <h1 class="text-6xl text-purple-700 font-black cursor-pointer leading-tight tracking-wide"> Resume.ly</h1>
 
@@ -153,7 +153,6 @@ userSignup(){
 </script>
 
 <style scoped lang="less">
-
 
 
 
