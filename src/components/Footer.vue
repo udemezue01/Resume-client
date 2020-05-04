@@ -1,6 +1,6 @@
 <template>
 	
-<div id="navbar">
+<div id="footer" class="bg-white">
 
 
  <!--  The Footer Section -->
@@ -8,7 +8,7 @@
 
      
 
-        <div class="flex justify-around pt-4 bg-white -px-4">
+        <div class="flex justify-around pt-10">
 
           <div class=" ">
             

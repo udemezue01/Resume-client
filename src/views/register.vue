@@ -3,7 +3,7 @@
 
 <div>
   
-  <div class="flex">
+  <div class="flex bg-white">
 
   <!--   The first flex -->
 

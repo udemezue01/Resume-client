@@ -3,7 +3,7 @@
 
 <div>
 	
-  <div class="flex">
+  <div class="flex bg-white">
 
   <!--   The first flex -->
 
@@ -67,7 +67,7 @@
 <!-- 
     The end of the first flex -->
 
-    <div class=" hidden lg:block lg:w-full">
+    <div class=" hidden lg:block lg:w-full ">
       
       <img src="/img/fingerprint.svg" class=" object-cover object-center h-full w-full">
 

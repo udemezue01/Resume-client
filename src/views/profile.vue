@@ -1,5 +1,5 @@
 <template>
- <div class="container px-16 py-4">
+ <div class="container px-12 py-4 h-screen">
 
          <!--  The Profile UI section -->
 
@@ -9,24 +9,39 @@
 
             <div class="w-2/6">
 
-
-                <div class="overflow-hidden">
+                <div class="bg-white border rounded-lg overflow-hidden ">
                   
-                  <img src="/img/404.png" class="rounded-lg h-14 w-full">
+                  <img src="/img/examples.jpg" class="w-full h-64 object-cover object-center">
 
-                   <!--  <img src="/img/404.png" class="mx-auto -m-t-8"> -->
+                  <img src="/img/ali-baba.png" class="border mx-auto rounded-full h-32 w-32 -mt-16" />
 
-                    <div class="p-8">
+                  <div class="p-6 ">
+                    
+                       <h4 class="font-semibold text-center text-gray-800"> Alibaba John</h4>
+                       <p class="font-semibold text-center text-gray-600">@alibaba</p>
 
-                      <h2 class="mx-auto"> Resume.ly</h2>
-                      
+                       <div>
+                         
 
+                       </div>
 
-                    </div>
+                       <div class="align-center justify-center content-center mt-12">
+                         
+                         <button type="button" class="mt-6 hidden -ml-1 px-4 py-2  border border-transparent text-sm  font-extrabold text-white bg-purple-700 rounded-md m-2 tracking-wide lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
+        
+    
+                            Edit Profile
+      </button>
+                       </div>
 
+                  </div>
 
+                 
 
+                
                 </div>
+               
+                
               
 
             </div>

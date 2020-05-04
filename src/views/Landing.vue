@@ -17,7 +17,7 @@
 
             <router-link to="/register">
 
-            <button type="button" class=" mt-6 hidden items-center -ml-1 px-4 py-2  border border-transparent text-sm  font-extrabold text-white bg-purple-700 rounded-lg m-2 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
+            <button type="button" class=" mt-6 hidden items-center -ml-1 px-4 py-2  border border-transparent text-sm  font-extrabold text-white bg-purple-700 rounded-lg m-2 tracking-wide lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
         
     
         Get Started
