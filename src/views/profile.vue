@@ -7,7 +7,7 @@
 
                  <!-- The first section -->
 
-            <div class="w-2/6">
+            <div class="w-2/6 content-center">
 
                 <div class="bg-white border rounded-lg overflow-hidden ">
                   
@@ -22,16 +22,12 @@
 
                        <div>
                          
+                         
 
                        </div>
 
-                       <div class="align-center justify-center content-center mt-12">
-                         
-                         <button type="button" class="mt-6 hidden -ml-1 px-4 py-2  border border-transparent text-sm  font-extrabold text-white bg-purple-700 rounded-md m-2 tracking-wide lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
-        
-    
-                            Edit Profile
-      </button>
+                       <div class="mt-12">
+                        
                        </div>
 
                   </div>
@@ -50,6 +46,26 @@
 
                      <!--    The second section-->
             <div class="w-3/6">
+
+              <div>
+                
+
+              </div>
+
+              <div>
+                
+                <ul class="flex">
+                  <li class="flex-1 mr-2">
+                    <a class="text-center block border border-purple-600 rounded py-2 px-4 bg-purple-600 hover:bg-blue-700 text-white" href="#">Active Item</a>
+                  </li>
+                  <li class="flex-1 mr-2">
+                    <a class="text-center block border border-white rounded hover:border-gray-200 text-blue-500 hover:bg-gray-200 py-2 px-4" href="#">Nav Item</a>
+                  </li>
+                  <li class="text-center flex-1">
+                    <a class="block py-2 px-4 text-gray-400 cursor-not-allowed" href="#">Disabled Item</a>
+                  </li>
+                </ul>
+              </div>
 
 
               
