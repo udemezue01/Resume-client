@@ -41,7 +41,7 @@
   },
   "git": {
   "scripts": {
-    "pre-push": "surge --project https://github.com/udemezue01/Resume-client.git ./ --domain resumelive.surge.sh/"
+    "pre-push": "surge --project ./ --domain resumelive.surge.sh/"
   }
 },
   "browserslist": [
