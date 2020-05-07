@@ -5,7 +5,7 @@
 
 	<!-- The navigational bar -->
     
-    <nav class="flex justify-between items-center px-6 py-2 bg-white shadow sticky top-0 lg:px-16">
+    <nav class="flex justify-between items-center px-6 py-2 bg-white shadow sticky top-0 lg:px-8">
       
       <div class="">
         

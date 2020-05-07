@@ -8,7 +8,7 @@
 
      
 
-        <div class="flex justify-between ">
+        <div class="flex justify-between px-3">
 
           <div class=" ">
             
