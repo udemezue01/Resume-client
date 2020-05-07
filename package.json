@@ -35,10 +35,15 @@
     "less-loader": "^4.1.0",
     "surge": "^0.21.3",
     "tailwindcss": "^1.4.1",
-    "vue-template-compiler": "^2.5.21"
+    "vue-template-compiler": "^2.5.21",
+    "surge": "latest",
+  "git-scripts": "0.2.1"
   },
-
-  "devDependencies": { "surge": "latest", "git-scripts": "0.2.1" }, "git": { "scripts": { "pre-push": "surge --https://github.com/udemezue01/Resume-client.git ./  --http://resumelive.surge.sh/" } },
+  "git": {
+  "scripts": {
+    "pre-push": "surge --project https://github.com/udemezue01/Resume-client.git ./ --domain resumelive.surge.sh/"
+  }
+},
   "browserslist": [
     "> 1%",
     "last 2 versions",
