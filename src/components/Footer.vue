@@ -8,7 +8,7 @@
 
      
 
-        <div class="flex justify-around pt-10">
+        <div class="flex justify-between ">
 
           <div class=" ">
             
