@@ -9,7 +9,7 @@
 
         <div class="w-full" id="landing">
 
-          <div class="m-6 lg:m-8">
+          <div class="m-6 lg:m-10">
 
             <h1 class="text-6xl text-purple-700 font-black cursor-pointer leading-tight tracking-wide"> Resume.ly</h1>
 
