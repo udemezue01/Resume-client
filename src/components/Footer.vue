@@ -20,20 +20,20 @@
           <div class="hidden lg:block">
             
             <h3 class="block font-extrabold uppercase px-3 text-gray-900"> Help</h3>
-            <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 hover:bg-purple-200" > Introduction</a>
-            <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 hover:bg-purple-200">Help Center</a>
+            <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600" > Introduction</a>
+            <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600">Help Center</a>
           </div>
           <div class=" hidden lg:block">
             
             <h4 class="block font-extrabold uppercase px-3 text-gray-900"> Company</h4>
-            <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 hover:bg-purple-200"> Team</a>
-            <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 hover:bg-purple-200">press</a>
+            <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600"> Team</a>
+            <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600">press</a>
           </div>
           <div class=" hidden lg:block">
             
             <h3 class="block font-extrabold uppercase px-3 text-gray-900"> Legal</h3>
-            <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 hover:bg-purple-200"> Privacy Policy </a>
-            <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 hover:bg-purple-200">Terms Of Service</a>
+            <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600"> Privacy Policy </a>
+            <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600">Terms Of Service</a>
           </div>
           <div class="">
             <h3 class="block font-extrabold uppercase px-3 text-gray-900"> platforms</h3>
