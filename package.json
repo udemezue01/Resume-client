@@ -35,15 +35,8 @@
     "less-loader": "^4.1.0",
     "surge": "^0.21.3",
     "tailwindcss": "^1.4.1",
-    "vue-template-compiler": "^2.5.21",
-    "surge": "latest",
-  "git-scripts": "0.2.1"
+    "vue-template-compiler": "^2.5.21"
   },
-  "git": {
-  "scripts": {
-    "pre-push": "surge --project ./dist --domain resumelive.surge.sh"
-  }
-},
   "browserslist": [
     "> 1%",
     "last 2 versions",
