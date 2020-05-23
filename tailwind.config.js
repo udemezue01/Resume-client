@@ -1,6 +1,11 @@
 module.exports = {
   theme: {
-    extend: {}
+    extend: {},
+    fontFamily: {
+
+     'display': ['Oswald'],
+    'body': ['Open Sans'],
+    }
   },
   variants: {},
   plugins: []

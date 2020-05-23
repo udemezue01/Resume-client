@@ -10,17 +10,23 @@
 
         <div class="flex justify-between px-2">
 
-          <div class=" ">
+          <div class="lg:block ">
 
-            <a href="" class="block">  <img src="/img/logo2.svg" class="h-5 w-5"/></a>
-            <a href="" class="block font-semibold text-gray-900 rounded-lg px-3 py-2"> Connecting you with <br> global opportunities</a>
+            <h3 class="block inline-flex rounded-lg px-3 py-2 hover:bg-purple-200 hover:text-purple-600">  <img src="/img/logo2.svg" class="h-5 w-5"/> <span class="font-extrabold uppercase text-gray-800 ml-2"> Resume.ly</span></h3>
+
+            <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600">Help Center</a>
+
+
+
+             <a href="" class="block inline-flex rounded-lg px-3 py-2 hover:bg-purple-200 hover:text-purple-600">  <img src="/img/logo2.svg" class="h-5 w-5"/> <span class="font-semibold uppercase text-gray-800 "> Resume.ly</span></a>
+
       
             
           </div>
           <div class="hidden lg:block">
             
-            <h3 class="block font-extrabold uppercase px-3 text-gray-900"> Help</h3>
-            <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600" > Introduction</a>
+            <h3 class="block font-extrabold uppercase px-3 text-gray-900 font-sans"> Help</h3>
+            <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600 font-sans" > Introduction</a>
             <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600">Help Center</a>
           </div>
           <div class=" hidden lg:block">
@@ -38,8 +44,8 @@
           <div class="">
             <h3 class="block font-extrabold uppercase px-3 text-gray-900"> platforms</h3>
 
-            <a href="" class="block px-3 py-1">  <img src="/img/android.svg" class=" h-8 w-20"></a>
-            <a href="" class="block px-3 py-1">  <img src="/img/ios.svg" class="h-8 w-20"></a>
+            <a href="" class="block px-3 py-1">  <img src="/img/googleplay.svg" class=" h-6 w-25 text-gray"></a>
+            <a href="" class="block px-3 py-1">  <img src="/img/appstore.svg" class="h-6 w-25"></a>
            
            
             
