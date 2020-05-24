@@ -12,14 +12,7 @@
 
           <div class="lg:block ">
 
-            <h3 class="block inline-flex rounded-lg px-3 py-2 hover:bg-purple-200 hover:text-purple-600">  <img src="/img/logo2.svg" class="h-5 w-5"/> <span class="font-extrabold uppercase text-gray-800 ml-2"> Resume.ly</span></h3>
-
-            <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600">Help Center</a>
-
-
-
-             <a href="" class="block inline-flex rounded-lg px-3 py-2 hover:bg-purple-200 hover:text-purple-600">  <img src="/img/logo2.svg" class="h-5 w-5"/> <span class="font-semibold uppercase text-gray-800 "> Resume.ly</span></a>
-
+            <a class="block inline-flex rounded-lg px-3 py-2 hover:bg-purple-200 hover:text-purple-600">  <img src="/img/logo2.svg" class="h-5 w-5"/> <span class="font-extrabold uppercase text-gray-800 ml-2"> Resume.ly</span></a>
       
             
           </div>

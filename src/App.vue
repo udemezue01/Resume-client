@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-gray-300">
+  <div id="app" class="bg-gray-200">
     
 <!-- <vue-progress-bar></vue-progress-bar>
    <navbar-desktop class = "lg:visible" v-if="token"> </navbar-desktop>

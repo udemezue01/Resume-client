@@ -1,5 +1,5 @@
 <template>
- <div class="container px-12 py-4 h-screen">
+ <div class="container px-5 mt-6 h-screen">
 
          <!--  The Profile UI section -->
 
@@ -7,9 +7,9 @@
 
                  <!-- The first section -->
 
-            <div class="w-2/6 content-center">
+            <div class="w-2/6 ">
 
-                <div class="bg-white border rounded-lg overflow-hidden ">
+                <div class="bg-white border rounded-lg overflow-hidden shadow-lg ">
                   
                   <img src="/img/examples.jpg" class="w-full h-64 object-cover object-center">
 
@@ -26,8 +26,9 @@
 
                        </div>
 
-                       <div class="mt-12">
+                       <div class="mt-12 ">
                         
+           
                        </div>
 
                   </div>
@@ -36,6 +37,20 @@
 
                 
                 </div>
+
+               <!--  End of the profile card -->
+
+                <div class="bg-white border rounded-lg shadow-lg mt-6">
+
+                  <div class="p-6">
+                    
+                    <h4 class="text-gray-800 text-center font-semibold rounded-lg hover:bg-purple-300 px-2 py-2"> Details</h4>
+                  </div>
+                  
+
+                </div>
+
+               <!--  End of the second card -->
                
                 
               
@@ -47,28 +62,36 @@
                      <!--    The second section-->
             <div class="w-3/6">
 
-              <div>
+              <!-- start of the navbar -->
+
+              <div class="flex justify-between bg-white px-10 py-3 ml-3 rounded-lg shadow-lg">
+
+                <div>
+                  <a href="" class="inline-flex"> <span class="text-gray-800 font-semibold font-sans"> Post </span></a>
+                </div>
+                <div>
+                   <a href="" class="inline-flex"> <span class="text-gray-800 font-semibold font-sans"> Media </span></a>
+                </div>
+                <div>
+                   <a href="" class="inline-flex"> <span class="text-gray-800 font-semibold font-sans"> Jobs </span></a>
+                </div>
+                <div>
+                   <a href="" class="inline-flex"> <span class="text-gray-800 font-semibold font-sans"> Archive </span></a>
+                </div>
                 
 
               </div>
 
-              <div>
-                
-                <ul class="flex">
-                  <li class="flex-1 mr-2">
-                    <a class="text-center block border border-purple-600 rounded py-2 px-4 bg-purple-600 hover:bg-blue-700 text-white" href="#">Active Item</a>
-                  </li>
-                  <li class="flex-1 mr-2">
-                    <a class="text-center block border border-white rounded hover:border-gray-200 text-blue-500 hover:bg-gray-200 py-2 px-4" href="#">Nav Item</a>
-                  </li>
-                  <li class="text-center flex-1">
-                    <a class="block py-2 px-4 text-gray-400 cursor-not-allowed" href="#">Disabled Item</a>
-                  </li>
-                </ul>
-              </div>
+           <!--    end of the navbar -->
 
+           <!-- The toggle section for the post, jobs and application -->
 
-              
+           <div class="mt-6">
+             
+
+           </div>
+
+            <!-- End of the toggle section for the post, jobs and application -->
 
 
             </div>
