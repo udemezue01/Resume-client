@@ -41,7 +41,7 @@
   },
    "git": {
   "scripts": {
-    "pre-push": "surge --./dist ./ --domain resumelive.surge.sh/"
+    "pre-push": "surge --/dist ./ --domain resumely.surge.sh/"
   }
 },
   "browserslist": [
