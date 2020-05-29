@@ -26,7 +26,7 @@
             
             <h4 class="block font-extrabold uppercase px-3 text-gray-900"> Company</h4>
             <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600"> Team</a>
-            <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600">press</a>
+            <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600">Press</a>
           </div>
           <div class=" hidden lg:block">
             
@@ -35,7 +35,7 @@
             <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600">Terms Of Service</a>
           </div>
           <div class="">
-            <h3 class="block font-extrabold uppercase px-3 text-gray-900"> platforms</h3>
+            <h3 class="block font-extrabold uppercase px-3 text-gray-900"> Platforms</h3>
 
             <a href="" class="block px-3 py-1">  <img src="/img/googleplay.svg" class=" h-6 w-25 text-gray"></a>
             <a href="" class="block px-3 py-1">  <img src="/img/appstore.svg" class="h-6 w-25"></a>

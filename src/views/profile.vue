@@ -1,15 +1,15 @@
 <template>
- <div class="container px-5 mt-6 h-screen">
+ <div class="container  mt-6 h-screen">
 
          <!--  The Profile UI section -->
 
-    <div class="flex">
+    <div class="flex px-5">
 
                  <!-- The first section -->
 
             <div class="w-2/6 ">
 
-                <div class="bg-white border rounded-lg overflow-hidden shadow-lg ">
+                <div class="bg-white border rounded-lg overflow-hidden shadow-sm ">
                   
                   <img src="/img/examples.jpg" class="w-full h-64 object-cover object-center">
 
@@ -18,7 +18,7 @@
                   <div class="p-6 ">
                     
                        <h4 class="font-semibold text-center text-gray-800"> Alibaba John</h4>
-                       <p class="font-semibold text-center text-gray-600">@alibaba</p>
+                       <p class="font-semibold text-center text-gray-600 tracking-wider">@alibaba</p>
 
                        <div>
                          
@@ -40,7 +40,7 @@
 
                <!--  End of the profile card -->
 
-                <div class="bg-white border rounded-lg shadow-lg mt-6">
+                <div class="bg-white border rounded-lg shadow-sm mt-6">
 
                   <div class="p-6">
                     
@@ -64,10 +64,10 @@
 
               <!-- start of the navbar -->
 
-              <div class="flex justify-between bg-white px-10 py-3 ml-3 rounded-lg shadow-lg">
+              <div class="flex justify-between bg-white px-10 py-3 ml-3 rounded-lg shadow-sm">
 
-                <div>
-                  <a href="" class="inline-flex"> <span class="text-gray-800 font-semibold font-sans"> Post </span></a>
+                <div >
+                  <a href="" class="inline-flex   "> <span class="text-gray-800 font-semibold font-sans"> Post </span></a>
                 </div>
                 <div>
                    <a href="" class="inline-flex"> <span class="text-gray-800 font-semibold font-sans"> Media </span></a>
@@ -100,7 +100,17 @@
 
 
                       <!--  The third section -->
-            <div class="w-1/6">
+            <div class="w-2/6">
+
+               <div class="bg-white border rounded-lg shadow-sm ml-4 w-full">
+
+                  <div class="p-6">
+                    
+                    <h4 class="text-gray-800 text-center font-semibold rounded-lg hover:bg-purple-300 px-2 py-2"> Details</h4>
+                  </div>
+                  
+
+                </div>
               
 
             </div>
