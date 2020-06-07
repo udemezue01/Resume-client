@@ -3,7 +3,7 @@
 
          <!--  The Profile UI section -->
 
-    <div class="flex px-5">
+    <div class="flex px-5 align-center">
 
                  <!-- The first section -->
 
