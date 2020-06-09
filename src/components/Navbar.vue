@@ -9,7 +9,7 @@
       
       <div class="">
         
-        <img src="/img/logo2.svg" class="h-8 w-8"/>
+        <img src="/img/logo2.svg" class="h-6 w-6"/>
 
       </div>
 
