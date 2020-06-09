@@ -11,13 +11,13 @@ import store from './store/store.js'
 //   // ...
 // })
 
-import Profile from '@/views/Profile.vue'
-import Feeds from '@/views/Feeds.vue'
+
+import Home from '@/views/Home.vue'
 import Register from '@/views/Register.vue';
  import Landing from '@/views/Landing.vue';
 import Login from '@/views/Login.vue';
 // import notfound from '@/views/404.vue'
-// import job from '@/views/jobs.vue'
+
 
 
 Vue.use(Router)
@@ -48,9 +48,9 @@ const router =  new Router({
      
     },
     {
-      path: '/profile',
-      name: 'Profile',
-      component: Profile,
+      path: '/home',
+      name: 'Home',
+      component: Home,
       //beforeEnter: requireAuthenticated,
 
      
