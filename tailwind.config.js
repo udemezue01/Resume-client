@@ -3,7 +3,7 @@ module.exports = {
     extend: {},
     fontFamily: {
 
-     'display': ['Inter', ],
+     'display': ['lato', ],
     'body': ['Work Sans',],
     }
   },

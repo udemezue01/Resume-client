@@ -13,12 +13,12 @@
   <div class="max-w-md w-full">
     <div>
       <img class="mx-auto h-12 w-auto" src="/img/logo2.svg" alt="Workflow" />
-      <h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-gray-800">
+      <h2 class="font-body mt-6 text-center text-3xl leading-9 font-extrabold text-gray-800">
         Register your new account
       </h2>
       <p class="mt-2 text-center text-sm leading-5 text-gray-800 font-extrabold">
         Or
-         <router-link to="/login"class="font-extrabold text-purple-600 hover:text-purple-600 focus:outline-none focus:underline transition ease-in-out duration-150">
+         <router-link to="/login"class="font-body font-extrabold text-purple-600 hover:text-purple-600 focus:outline-none focus:underline transition ease-in-out duration-150">
           Login
         </router-link>
 
