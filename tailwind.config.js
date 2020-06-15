@@ -3,8 +3,8 @@ module.exports = {
     extend: {},
     fontFamily: {
 
-     'display': ['Oswald'],
-    'body': ['Open Sans'],
+     'display': ['Inter', ],
+    'body': ['Work Sans',],
     }
   },
   variants: {},
