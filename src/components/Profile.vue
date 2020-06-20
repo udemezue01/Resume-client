@@ -13,7 +13,7 @@
 
 				<div>
 					
-					<img src="/img/Ali-baba.png" class="w-24 h-24 rounded-full -mt-16">
+					<img src="/img/Ali-baba.png" class="w-24 h-24 rounded-full -mt-16 object-cover object-center">
 
 				</div>
 

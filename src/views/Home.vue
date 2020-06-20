@@ -9,8 +9,9 @@
 
             <div class="w-2/12 bg-white rounded h-screen flex-none">
 
-              
-              <ul class="list-none space-y-3 p-4">
+            	<div class="object-center align-center">
+            		
+            		<ul class="list-none space-y-3 p-4">
 
 
                 
@@ -46,6 +47,12 @@
 					<li class="hover:bg-purple-200 hover:text-purple-600 rounded-lg"> <div class="inline-flex rounded-lg px-2 py-2">   <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class = "w-6 h-6 text-gray-700 hover:text-purple-600"><path d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span class="font-body font-bold text-gray-700 ml-3 tracking-wider hidden lg:block cursor-default hover:text-purple-600"> Insights</span></div> </li>
 
               </ul>
+
+
+            	</div>
+
+              
+              
 
             </div>
 
