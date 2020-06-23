@@ -1,13 +1,13 @@
 <template>
- <div class="container h-screen">
+ <div class="container h-screen mx-auto">
 
          <!--  The Profile UI section -->
 
-    <div class="flex px-1">
+    <div class="flex">
 
                  <!-- The first section -->
 
-            <div class="w-2/12 bg-white rounded h-screen flex-none">
+            <div class="w-2/12 bg-white rounded h-screen flex-none mx-auto">
 
             	<div class="object-center align-center">
             		

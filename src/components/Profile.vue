@@ -3,7 +3,7 @@
 <div id="profile" class="p-2">
 
 <!-- 	The user profile card section -->
-	<div class="bg-white rounded-lg overflow-hidden">
+	<div class="bg-white rounded-lg overflow-hidden mx-auto">
 		
 		<img src="/img/woman.jpg" class="w-full h-64 object-center object-cover">
 
