@@ -1,5 +1,5 @@
 <template>
- <div class="container h-screen mx-auto">
+ <div class="container h-screen">
 
          <!--  The Profile UI section -->
 
