@@ -15,7 +15,7 @@
 
 
                 
-					<li class="hover:bg-purple-200 hover:text-purple-600 rounded-lg"> <div class="inline-flex rounded-lg px-2 py-2" v-on:click="dynamicComponent='Feeds'">  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" class="w-6 h-6 text-gray-700 text-center hover:text-purple-600 mx-auto" ><path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg><span class="font-body font-sans font-bold text-gray-700 ml-3 tracking-wider hidden lg:block cursor-default hover:text-purple-600"> Feeds</span></div> </li>
+					<li class="hover:bg-purple-200 hover:text-purple-600 rounded-lg"> <div class="inline-flex rounded-lg px-2 py-2 content-center" v-on:click="dynamicComponent='Feeds'">  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" class="w-6 h-6 text-gray-700 hover:text-purple-600 " ><path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg><span class="font-body font-sans font-bold text-gray-700 ml-3 tracking-wider hidden lg:block cursor-default hover:text-purple-600"> Feeds</span></div> </li>
 
 
 
@@ -59,7 +59,7 @@
                   <!-- End of the first section -->
 
                      <!--    The second section-->
-            <div class="w-8/12 flex-none">
+            <div class="w-full flex-none lg:w-8/12">
 
              
 
@@ -84,7 +84,7 @@
 
 
                       <!--  The third section -->
-            <div class="w-2/12 flex-none">
+            <div class="w-2/12 flex-none hidden lg:block">
 
               
               
