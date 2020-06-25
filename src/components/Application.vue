@@ -3,6 +3,8 @@
 <div id="application">
 
 
+		<!-- The card section -->
+
 		<div class="bg-white rounded-lg shadow-lg w-full lg:w-9/12 lg:mx-auto">
 
 		<!-- The card header -->
@@ -49,6 +51,8 @@
 
 	</div>
 
+	<!-- End of the card section -->
+
 
 
 
@@ -60,12 +64,25 @@
 </template>
 
 
-<script >
+<script>
 
 export default{
 
 
+	data(){
 
+
+	},
+
+	methods:{
+
+
+	},
+
+	computed:{
+
+
+	}
 
 
 
