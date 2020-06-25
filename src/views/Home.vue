@@ -3,7 +3,7 @@
 
          <!--  The Profile UI section -->
 
-    <div class="flex justify-between">
+    <div class="flex">
 
                  <!-- The first section -->
 
