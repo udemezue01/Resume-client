@@ -3,7 +3,7 @@
 <div id="jobs">
 
 
-	<div class="bg-white rounded-lg shadow-lg w-full lg:w-8/12 lg:mx-auto">
+	<div class="bg-white rounded-md shadow-md w-full lg:w-9/12 lg:mx-auto">
 
 		<!-- The card header -->
 

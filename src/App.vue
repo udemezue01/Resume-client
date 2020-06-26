@@ -8,7 +8,7 @@
    <navbar class = "sticky top-0"> </navbar>
     <router-view/>
 
-    <footbar class = "p-6"></footbar>
+    <footbar class = "p-6" v-if="!token"></footbar>
    
   </div>
 </template>
@@ -31,11 +31,11 @@ components:{
   	footbar,
 },
   
-// computed:{
-//   token () {
-//         return localStorage.getItem('token');
-//       }
-// },
+computed:{
+  token () {
+        return localStorage.getItem('token');
+      }
+},
 
 }
 

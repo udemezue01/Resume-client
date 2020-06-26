@@ -5,7 +5,7 @@
 
 	<!-- The navigational bar -->
     
-<nav class="flex justify-between items-center px-6 py-2 bg-white shadow sticky top-0 lg:px-6">
+<nav class="flex justify-between items-center px-6 py-3 bg-white shadow sticky top-0 lg:px-6">
 
   <div class="">
 
@@ -13,7 +13,7 @@
 
   </div>
 
-      <div class="flex px-8">
+      <div class="flex px-8" v-if ="token">
 
 
       <a href="">
@@ -30,7 +30,7 @@
 
       </div>
 
-  <div>
+  <div v-if ="!token">
 
       <router-link to = "login">
       <button type="button" class="font-body inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-extrabold rounded-md text-white bg-purple-700 rounded-lg hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
@@ -70,7 +70,16 @@
 export default{
 
 
+data(){
 
+
+},
+
+computed:{
+  token () {
+        return localStorage.getItem('token');
+      }
+},
 
 
 

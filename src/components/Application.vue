@@ -5,7 +5,7 @@
 
 		<!-- The card section -->
 
-		<div class="bg-white rounded-lg shadow-lg w-full lg:w-9/12 lg:mx-auto">
+		<div class="bg-white rounded-lg shadow-md w-full lg:w-9/12 lg:mx-auto">
 
 		<!-- The card header -->
 
