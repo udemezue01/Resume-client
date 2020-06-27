@@ -7,9 +7,9 @@
 
                  <!-- The first section -->
 
-            <div class="w-2/12 bg-white rounded h-screen flex-none mx-auto">
+            <div class="w-2/12 bg-white rounded h-screen flex-none mx-auto overflow-auto">
 
-            	<div class="object-center align-center">
+            	<div class="object-center align-center overflow-auto">
             		
             		<ul class="list-none space-y-3 p-4">
 
@@ -45,6 +45,8 @@
 					
 
 					<li class="hover:bg-purple-200 hover:text-purple-600 rounded-lg"> <div class="inline-flex rounded-lg px-2 py-2">   <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class = "w-5 h-5 text-gray-700 hover:text-purple-600"><path d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span class="font-body font-bold text-gray-700 ml-3 tracking-wider text-sm hidden lg:block cursor-default hover:text-purple-600"> Insights</span></div> </li>
+
+					<li class="bg-purple-600 hover:bg-purple-700 hover:text-purple-600 rounded-lg"> <div class="inline-flex rounded-lg px-2 py-2">   <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class = "w-5 h-5 text-white hover:text-white"><path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg><span class="font-body font-bold text-white ml-3 tracking-wider text-sm justify-center hidden lg:block cursor-default hover:text-white text-center"> Create</span></div> </li>
 
               </ul>
 
