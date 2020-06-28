@@ -26,7 +26,7 @@
             
             <h4 class="block font-body font-extrabold uppercase px-3 text-gray-900 text-xs tracking-wider"> Company</h4>
             <a href="" class=" font-body block font-semibold text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600 text-sm"> Team</a>
-            <a href="" class="block font-semibold text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600 text-sm">Press</a>
+            <a href="" class=" font-body block font-semibold text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600 text-sm">Press</a>
           </div>
           <div class=" hidden lg:block">
             

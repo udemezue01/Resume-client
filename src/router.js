@@ -97,25 +97,25 @@ const router =  new Router({
 })
 
 
-router.beforeEach((to, from, next) => {
-  const token  = localStorage.getItem('token');
-  if (to.fullPath === '/home') {
-    if (!token) {
-      next('/');
-    }
-  }
-  if (to.fullPath ==='/login'){
-    if (!token){
-      next('/')
-    }
+// router.beforeEach((to, from, next) => {
+//   const token  = localStorage.getItem('token');
+//   if (to.fullPath === '/home') {
+//     if (!token) {
+//       next('/');
+//     }
+//   }
+//   if (to.fullPath ==='/login'){
+//     if (!token){
+//       next('/')
+//     }
 
-  }
-  if (to.fullPath === '/') {
-    if (token) {
-      next('/home');
-    }
-  }
-  next();
-});
+//   }
+//   if (to.fullPath === '/') {
+//     if (token) {
+//       next('/home');
+//     }
+//   }
+//   next();
+// });
 
 export default router
