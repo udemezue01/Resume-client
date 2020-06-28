@@ -9,7 +9,7 @@
 
         <div class="w-full" id="landing">
 
-          <div class="mt-10 p-6">
+          <div class="mt-10 p-8">
 
             <h1 class="font-body text-6xl text-purple-700 font-black cursor-pointer leading-tight tracking-wide"> Resume.ly</h1>
 
@@ -17,11 +17,11 @@
 
             <router-link to="/register">
 
-            <button type="button" class=" mt-6 font-body hidden items-center -ml-1 px-4 py-2  border border-transparent text-sm  font-extrabold text-white bg-purple-700 rounded-lg m-2 tracking-wide lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
+            <button type="button" class=" mt-6 font-body hidden items-center ml-1 px-4 py-2  border border-transparent text-sm  font-extrabold text-white bg-purple-700 rounded-lg m-2 tracking-wide lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
         
     
-        Get Started
-      </button>
+        			Get Started
+      			</button>
     </router-link>
 
     <!--   <div class="flex justify-around">

@@ -24,7 +24,7 @@
 
 
 
-      <img src="/img/Ali-baba.png" class="h-6 w-6 rounded-full " />
+      <img src="/img/Ali-baba.png" class="h-6 w-6 rounded-full overflow-hidden border-purple-600 " />
 
       </div>
 
