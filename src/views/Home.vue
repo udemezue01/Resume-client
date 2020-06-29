@@ -1,5 +1,5 @@
 <template>
- <div class="container h-screen">
+ <div class=" h-screen">
 
          <!--  The Profile UI section -->
 
@@ -7,7 +7,7 @@
 
                  <!-- The first section -->
 
-            <div class="w-2/12 bg-white rounded h-screen flex-none mx-auto overflow-auto">
+            <div class="w-2/12 bg-white rounded h-screen mx-auto overflow-auto">
 
             	<div class="object-center align-center overflow-auto">
             		
@@ -100,7 +100,7 @@
 
 
                       <!--  The third section -->
-            <div class="w-full flex-none hidden lg:block">
+            <div class="w-2/12 flex-none hidden lg:block">
 
               
               
