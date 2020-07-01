@@ -7,7 +7,7 @@
 
                  <!-- The first section -->
 
-            <div class="w-2/12 bg-white rounded h-screen mx-auto overflow-auto">
+            <div class="w-2/12 bg-white h-screen mx-auto ">
 
             	<div class="object-center align-center overflow-auto">
             		
@@ -177,14 +177,14 @@ import {  ContentLoader } from 'vue-content-loader';
 
 //components import.
 
-import Application from '../components/Application.vue';
-import Archive from '../components/Archive.vue';
-import Feeds from '../components/Feeds.vue';
+import Application from '../components/Application/Application.vue';
+import Archive from '../components/Archive/Archive.vue';
+import Feeds from '../components/Feeds/Feeds.vue';
 import Footer from '../components/Footer.vue';
-import Insights from '../components/Insights.vue';
-import Jobs from '../components/Jobs.vue';
-import Profile from '../components/Profile.vue';
-import Schedule from '../components/Schedule.vue';
+import Insights from '../components/Insights/Insights.vue';
+import Jobs from '../components/Jobs/Jobs.vue';
+import Profile from '../components/Profile/Profile.vue';
+import Schedule from '../components/Schedule/Schedule.vue';
 
  
 export default {
