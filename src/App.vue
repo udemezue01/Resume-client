@@ -8,7 +8,7 @@
    <navbar class = "sticky top-0"> </navbar>
     <router-view/>
 
-    <footbar class = "p-6" v-if="!token"></footbar>
+    <footbar v-if="!token"></footbar>
    
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
 	
-<div id="footer" class="bg-white">
+<div id="footer" class="bg-white p-4 hidden lg:block">
 
 
  <!--  The Footer Section -->
