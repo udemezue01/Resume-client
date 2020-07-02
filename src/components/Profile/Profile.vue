@@ -11,20 +11,33 @@
 
 			<!-- 	The profile photo section -->
 
-				<div>
+				<div class="flex ">
 					
-					<img src="/img/Ali-baba.png" class="w-24 h-24 rounded-full -mt-16 object-cover object-center">
+					<img src="/img/Ali-baba.png" class="w-24 h-24 rounded-full -mt-20 object-cover object-center border-solid border-2 border-gray-700">
+
+					<div class="flex">
+
+						<h2 class="font-body font-bold text-gray-900"> John Alibaba </h2>
+						
+
+						<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-8 text-gray-700 ml-2"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+
+					</div>
 
 				</div>
 
 				<!-- End of the profile photo section -->
 
+				<!-- The last menu Icon section -->
+
 
 				<div>
-					 <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-8 text-gray-700" ><path d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path>
+					 <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-8 text-gray-800" ><path d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path>
 
 					 </svg>
 				</div>
+
+				<!-- End of the last menu Icon -->
 				
 
 			</div>
