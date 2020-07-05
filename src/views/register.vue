@@ -9,16 +9,16 @@
 
     <div class="w-full ">
       
-<div class="flex items-center justify-center bg-gray-50 py-12 mt-2 px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-center bg-gray-50 py-12 mt-1 px-4 sm:px-6 lg:px-8">
   <div class="max-w-md w-full">
     <div>
       <img class="mx-auto h-8 w-auto" src="/img/logo2.svg" alt="Workflow" />
-      <h2 class="mt-6 font-body text-center text-3xl leading-9 font-extrabold text-gray-800">
-        Sign in to your account
+      <h2 class="mt-6 font-body tracking-wider text-center text-3xl leading-9 font-extrabold text-gray-800">
+        Register for an account
       </h2>
       <p class="mt-2 text-center font-body text-sm leading-5 text-gray-800 font-extrabold">
         Or
-        <router-link to="/register" class="font-extrabold font-body tracking-wider text-purple-600 hover:text-purple-600 focus:outline-none focus:underline transition ease-in-out duration-150">
+        <router-link to="/login" class="font-extrabold font-body tracking-wider text-purple-600 hover:text-purple-600 focus:outline-none focus:underline transition ease-in-out duration-150">
           create new account
         </router-link>
       </p>
@@ -27,18 +27,42 @@
       <input type="hidden" name="remember" value="true" />
       <div class="rounded-md shadow-sm">
         <div>
-          <label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="email">
-        Email*
+          <label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="first name">
+        First Name*
       </label>
           <input aria-label="Email address" name="email" type="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow-md focus:outline-none focus:shadow-outline-purple-800 focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
         </div>
         <div class="mt-6">
           <label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="password">
-        Password*
+        Last Name*
       </label>
           <input aria-label="Password" name="password" type="password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow-md focus:outline-none focus:shadow-outline-purple focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
         </div>
       </div>
+
+      <div class="mt-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="password">
+        Email*
+      </label>
+          <input aria-label="Password" name="password" type="password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow-md focus:outline-none focus:shadow-outline-purple focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
+        </div>
+
+
+
+      <div class="mt-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="password">
+        Password 1*
+      </label>
+          <input aria-label="Password" name="password" type="password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow-md focus:outline-none focus:shadow-outline-purple focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
+        </div>
+
+         <div class="mt-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="password">
+        Password 2*
+      </label>
+          <input aria-label="Password" name="password" type="password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow-md focus:outline-none focus:shadow-outline-purple focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
+        </div>
+ 
 
       <div class="mt-6 flex items-center justify-between">
         <div class="flex items-center">
@@ -70,17 +94,7 @@
 </div>
 
     </div>
-<!-- 
-    The end of the first flex -->
 
-    <div class=" hidden lg:block lg:w-full">
-      
-      <img src="/img/cowork.svg" class=" object-cover object-center h-full w-full">
-
-    </div>
-
-  <!--   End of the second flex -->
-    
 
   </div>
   
