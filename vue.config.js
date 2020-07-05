@@ -1,7 +1,7 @@
 module.exports = {
   pwa: {
-    themeColor: '#21D397',
-    msTileColor: '#21D397',
+    themeColor: '#805ad5',
+    msTileColor: '#805ad5',
     name: 'Resume.ly'
   }
 }
