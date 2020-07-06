@@ -1,6 +1,5 @@
 <template>
   
-
 <div>
   
   <div class="flex bg-white">
@@ -94,9 +93,20 @@
 </div>
 
     </div>
+<!-- End of the first flex -->
 
+
+    <div class=" hidden lg:block lg:w-full ">
+      
+      <img src="/img/cowork.svg" class=" object-cover object-center h-full w-full">
+
+    </div>
+
+  <!--   End of the second flex -->
 
   </div>
+
+
   
 </div>
 
