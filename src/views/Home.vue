@@ -48,6 +48,10 @@
 
 					</li>
 
+            <li class="hover:bg-purple-200 hover:text-purple-600 rounded-lg"> <div class="inline-flex rounded-lg px-2 py-2">   <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" stroke="currentColor" class = "w-5 h-5 text-gray-800 hover:text-purple-600 justify-center"><path d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg><span class="font-body font-semibold text-gray-800 ml-3 tracking-wider text-sm hidden lg:block cursor-default hover:text-purple-600"> Support</span></div> 
+
+          </li>
+
 				
 						
 						<button type="button" class="font-body inline-flex justify-center px-4 py-2 border border-transparent text-sm leading-5 font-extrabold rounded-md text-white bg-purple-700 rounded-lg w-full hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
@@ -75,7 +79,7 @@
                   <!-- End of the first section -->
 
                      <!--    The second section-->
-            <div class="w-full flex-none lg:w-8/12">
+            <div class="w-full lg:w-8/12">
 
              
 
