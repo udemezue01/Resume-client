@@ -1,16 +1,39 @@
 import gql from 'graphql-tag'
 
 
+// USER LOGIN, REGISTER, ACCONT UPDATE, PASSWORD RESET, PASSWORD CONFIRMATION MUTATION.
+
 
 export const SIGNIN_USER_MUTATION = gql`
 
 mutation ($email:String!,$password:String!){
 	tokenAuth(email:$email, password:$password){
 		token
+		user{
+
+			id
+		}
 		
 	}
 }
 `;
+
+export const REGISTER_USER_MUTATION = gql`
+
+mutation ($first_name:String!, $last_name:String!, $email:String!,$password:String!){
+	tokenAuth(first_name:$first_name, last_name:$last_name, email:$email, password:$password){
+		user{
+
+			id
+			first_name
+			last_name
+			email
+		}
+		
+	}
+}
+`;
+
 
 
 // export const REGISTER_USER_MUTATION  = gql`

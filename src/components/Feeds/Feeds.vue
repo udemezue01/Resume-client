@@ -6,10 +6,10 @@
 
 		<!-- The card header -->
 
-		<div class="flex px-3 mt-4 py-3 justify-between">
+		<div class="flex px-3 mt-4 py-2 justify-between">
 
 			<div>
-				<img src="/img/woman.jpg" class="w-8 h-8 rounded-full border-solid border-2 border-purple-600 object-cover object-center">
+				<img src="/img/woman.jpg" class="w-8 h-8 rounded-full border-solid border-2 border-gray-600 object-cover object-center">
 
 			</div>
 

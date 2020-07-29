@@ -218,7 +218,6 @@ export default {
 
   },
 
-
   apollo:{
     // profile:USER_PROFILE
   },
@@ -229,12 +228,10 @@ export default {
 
   },
 
-  methods:{
-    
+methods:{
 
-
-  },
   
+  },
   
  
 
