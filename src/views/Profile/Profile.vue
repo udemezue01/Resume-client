@@ -1,6 +1,6 @@
 <template>
 	
-<div id="profile" class="p-2">
+<div id="profile" class="p-2 h-screen lg:px-64">
 
 <!-- 	The user profile card section -->
 	<div class="bg-white rounded-lg overflow-hidden mx-auto">
@@ -45,6 +45,43 @@
 	</div>
 
 	<!-- End of the user profile card section -->
+
+	<!-- The profile navigational bar section -->
+
+	<div class="flex justify-between py-3 bg-white mt-3 rounded-lg shadow-sm sm:px-4 lg:px-12">
+
+		<div>
+			
+			<a href="" class="font-body text-sm font-medium tracking-wider"> Post</a>
+
+		</div>
+
+		<div>
+			<a href="" class="font-body text-sm font-medium tracking-wider"> About</a>
+			
+		</div>
+
+		<div>
+			
+			<a href="" class="font-body text-sm font-medium tracking-wider"> Photos</a>
+		</div>
+
+		<div>
+			
+			<a href="" class="font-body text-sm font-medium tracking-wider"> Videos</a>
+		</div>
+
+		<div>
+			
+			<a href="" class=" font-body text-sm font-medium tracking-wider"> Collections</a>
+		</div>
+		
+		
+
+
+	</div>
+
+	<!-- End of the profile navigational bar section -->
 
 
 

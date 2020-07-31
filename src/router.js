@@ -16,6 +16,7 @@ import Home from '@/views/Home.vue'
 import Register from '@/views/Register.vue';
  import Landing from '@/views/Landing.vue';
 import Login from '@/views/Login.vue';
+import Profile from '@/views/Profile/Profile.vue';
 // import notfound from '@/views/404.vue'
 
 
@@ -34,6 +35,15 @@ const router =  new Router({
       path: '/',
       name: 'Landing',
       component: Landing,
+      
+     
+     
+    },
+
+      {
+      path: '/profile',
+      name: 'Profile',
+      component: Profile,
       
      
      
