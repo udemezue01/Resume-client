@@ -17,6 +17,7 @@ import Register from '@/views/Register.vue';
  import Landing from '@/views/Landing.vue';
 import Login from '@/views/Login.vue';
 import Profile from '@/views/Profile/Profile.vue';
+import Job from '@/views/Jobs/Jobs.vue';
 // import notfound from '@/views/404.vue'
 
 
@@ -65,6 +66,13 @@ const router =  new Router({
 
      
     },
+        {
+       path: '/jobs',
+      name: 'Job',
+      component: Job,
+      //beforeEnter:requireUnauthenticated,
+      
+    }, 
 
           {
       path: '/register',
@@ -89,13 +97,7 @@ const router =  new Router({
     //   //beforeEnter:requireUnauthenticated,
       
     // },
-    //  {
-    //    path: '/jobs',
-    //   name: 'job',
-    //   component: job,
-    //   //beforeEnter:requireUnauthenticated,
-      
-    // }
+ 
     //  {
     //   path: '/feeds',
     //   name: 'feeds',

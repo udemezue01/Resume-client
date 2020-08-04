@@ -1,50 +1,63 @@
 <template>
 	
-<div id="jobs">
+<div id="jobs" class="h-screen">
+
+	<!-- The job navigational bar -->
+
+	<div class="flex justify-between px-6 py-3 bg-purple-700 shadow-none">
+
+		<!-- The first flex -->
+
+		<div class="flex space-x-3">
+			
+			<a href="" class="font-body tracking-wider text-white">Jobs</a>
 
 
-	<div class="bg-white rounded-md shadow-md w-full lg:w-7/12 lg:mx-auto">
+		</div>
 
-		<!-- The card header -->
+	<!-- 	End of the first flex -->
 
-		<div class="flex px-6 mt-4 py-4 justify-between lg:px-8">
+	<!-- The second flex -->
 
-			<div class="inline-flex">
-				<span class="font-body font-body font-bold tracking-wider text-gray-700">Jobs</span>
-			</div>
+	<div class="flex space-x-3">
 
-				<div class="inline-flex">
-				<span class="font-body font-body font-bold tracking-wider text-gray-700">My Jobs</span>
-			</div>
+		
+			<a href="" class="font-body tracking-wider text-white">Jobs</a>
+		
+			<a href="" class="font-body tracking-wider text-white"> My Jobs</a>
 			
 
 		</div>
 
-		<!-- End of the card header -->
-			<!-- The card body  -->
+	<!-- 	End of the second flex -->
+
+			<!-- The third flex -->
+
 		<div>
-			
+			<button type="button" class="font-body inline-flex items-center px-3 py-2 border text-sm leading-5 font-bold rounded-sm text-white bg-purple-700 rounded-lg border-white tracking-wider hover:bg-purple-600 focus:outline-none focus:shadow-outline-white focus:border-white active:bg-purple-600 transition duration-150 ease-in-out">
+
+
+	     <!--  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-3 h-3 -ml-1 mr-2"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg> -->
+	     <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class = "w-5 h-5 -ml-1 mr-2 text-white"><path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+	       Post a Job
+	      </button>
 			
 		</div>
 
-			<!-- End of the card body -->
+		<!-- End of the Third flex -->
+		
 
-		<!-- The card footer  -->
+	</div>
 
-		<div class="flex mt-4 py-8">
-			
-			<div>
-				
+	<!-- End of the Job navigational bar -->
 
-			</div>
 
-			<div>
-				
+	<div class="">
 
-			</div>
-		</div>
+		<keep-alive>
+				<component v-bind:is="dynamicComponent"> </component>
 
-	<!-- 	End of the card footer -->
+		</keep-alive>
 		
 
 	</div>
@@ -60,10 +73,25 @@
 
 <script >
 
+import JobList from '../../components/Jobs/Job-List.vue';
+
 export default{
 
 
+components:{
 
+JobList,
+},
+
+data(){
+
+	return {
+
+		dynamicComponent:"JobList",
+
+
+	}
+}
 
 
 
