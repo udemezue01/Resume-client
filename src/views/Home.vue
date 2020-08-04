@@ -7,11 +7,11 @@
 
                  <!-- The first section -->
 
-            <div class="w-2/12 bg-white h-screen mx-auto ">
+            <div class="w-2/12 bg-white h-screen mx-auto items-center ">
 
-            	<div class="object-center align-center overflow-auto">
+            	<div class="object-center items-center align-center overflow-auto">
             		
-            		<ul class="list-none space-y-3 p-4">
+            		<ul class="list-none space-y-3 p-4 items-center">
 
 
                 
@@ -99,7 +99,7 @@
 
     <!-- The card header -->
 
-    <div class="flex px-3 mt-4 py-2 justify-between">
+    <div class="flex px-3 mt-4 py-2 justify-between items-center">
 
       <div>
         <img src="/img/woman.jpg" class="w-8 h-8 rounded-full border-solid border-2 border-gray-600 object-cover object-center">
@@ -126,9 +126,9 @@
 
     <!-- The card footer  -->
 
-    <div class="flex mt-2 py-4 px-3 justify-between">
+    <div class="flex mt-2 py-4 px-3 justify-between items-center">
       
-      <div class="flex spacing-x-2">
+      <div class="flex spacing-x-2 items-center">
         <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-700 hover:text-purple-600 "><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
 
         <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-700 hover:text-purple-600 "><path d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>

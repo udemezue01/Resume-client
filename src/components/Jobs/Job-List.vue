@@ -31,12 +31,12 @@
   <div class="mt-3 bg-white flex">
     
     <div>
-      <ul class="list-none">
+      <ul class="list-none mt-4">
         <li>  
 
             <div class="bg-white px-3 flex justify-between">
                 <div>
-                  <img src="/img/Ali-Baba.png" class="h-8 w-8 rounded-full">
+                  <img src="/img/Ali-Baba.png" class="h-12 w-12 rounded-full">
                 </div>
 
             </div>

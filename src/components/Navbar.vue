@@ -9,11 +9,11 @@
 
   <div class="">
 
-      <img src="/img/logo2.svg" class="h-5 w-5"/>
+      <router-link to = "/home"> <img src="/img/logo2.svg" class="h-5 w-5"/> </router-link>
 
   </div>
 
-      <div class="flex px-2 py-2 space-x-2" v-if ="!token">
+      <div class="flex px-2 py-2  items-center space-x-2" v-if ="!token">
 
        <!--  The form section of the navbar -->
 
