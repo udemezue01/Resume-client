@@ -8,7 +8,7 @@
 
      
 
-        <div class="flex justify-between px-2">
+        <div class="flex justify-between items-center px-2">
 
           <div class="lg:block ">
 

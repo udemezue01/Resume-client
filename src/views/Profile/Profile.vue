@@ -11,13 +11,13 @@
 
 			<!-- 	The profile photo section -->
 
-				<div class="flex ">
+				<div class="flex items-center">
 					
 					<img src="/img/Ali-baba.png" class="w-24 h-24 rounded-full -mt-20 object-cover object-center border-solid border-4 border-white">
 
-					<div class="flex">
+					<div class="flex items-center">
 
-						<h2 class="font-body font-medium text-gray-900"> John Alibaba </h2>
+						<h2 class="font-body tracking-wider font-bold text-gray-800"> John Alibaba </h2>
 						
 
 						<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-8 text-gray-700 ml-2"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
@@ -48,7 +48,7 @@
 
 	<!-- The profile navigational bar section -->
 
-	<div class="flex justify-between py-3 bg-white mt-3 rounded-lg shadow-sm sm:px-4 lg:px-12">
+	<div class="flex justify-between py-3 items-center bg-white mt-3 rounded-lg shadow-sm sm:px-4 lg:px-12">
 
 		<div>
 			
