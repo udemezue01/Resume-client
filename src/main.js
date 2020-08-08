@@ -85,6 +85,8 @@ Vue.use(VueApollo)
 Vue.use(VueProgressBar, options)
 
 
+
+
 Vue.config.productionTip = false
 
 new Vue({

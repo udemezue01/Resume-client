@@ -5,21 +5,21 @@
 
 	<!-- The navigational bar -->
     
-<nav class="flex justify-between items-center px-6 py-1 bg-white shadow sticky top-0 lg:px-6">
+<nav class="flex justify-between items-center relative px-6 py-2 bg-white shadow sticky top-0 lg:px-6">
 
   <div class="">
 
-      <router-link to = "/home"> <img src="/img/logo2.svg" class="h-5 w-5"/> </router-link>
+      <router-link to = "/home"> <img src="/img/logo2.svg" class="h-6 w-6"/> </router-link>
 
   </div>
 
-      <div class="flex px-2 py-2  items-center space-x-2" v-if ="!token">
+      <div class="flex px-2 py-2  items-center space-x-2" v-if ="token">
 
        <!--  The form section of the navbar -->
 
         <div>
           
-          <input type="" name="search " class="appearance-none rounded-none relative block w-full px-2 py-1 border border-gray-400 placeholder-gray-400 text-center text-gray-800 rounded-full shadow-sm font-body tracking-wide font-small focus:outline-none focus:shadow-outline-purple focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="search...">
+          <input type="" name="search " class="appearance-none rounded-none relative block w-full px-2 py-1 border border-gray-400 placeholder-gray-400 text-center text-gray-800 bg-gray-200 rounded-full shadow-sm font-body tracking-wide font-small focus:outline-none focus:shadow-outline-purple focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="search">
         </div>
 
             <router-link to = "home">
@@ -37,19 +37,38 @@
       </a>
 
 
+     
+      	  <img v-on:click = "isOpen = !isOpen"src="/img/Ali-baba.png" class="h-6 w-6 rounded-full overflow-hidden border-solid border-2 border-gray-300" />
 
 
-      <img src="/img/Ali-baba.png" class="h-8 w-8 rounded-full overflow-hidden border-solid border-2 border-purple-500" />
+    
+      
+          <!-- The drop down section -->
 
+      <div v-if = "isOpen" class="bg-white rounded-lg p-4 w-32 absolute right-0 top-auto mt-8 bg-white space-y-2 shadow-md">
+      	
+      	<a href="" class="block font-body tracking-wider text-sm font-bold text-gray-700 mt-2">Profile</a>
+        <div class="border-t border-gray-100"></div>
+      	<a href="" class="block font-body tracking-wider text-sm font-bold text-gray-700"> Edit</a>
+        <div class="border-t border-gray-100"></div>
+      	<a href="" class="block font-body tracking-wider text-sm font-bold text-gray-700"> Logout</a>
       </div>
 
-  <div v-if ="token">
+      <!-- End of the dropdown section -->
+
+      </div>
+    
+   
+        
+     
+
+  <div v-if ="!token">
 
       <router-link to = "login">
       <button type="button" class="font-body inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-extrabold rounded-md text-white bg-purple-700 rounded-lg hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
 
 
-      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 -ml-1 mr-2"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 -ml-1 mr-2"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
       Log In
       </button>
 
@@ -82,10 +101,17 @@
 
 export default{
 
+  data(){
+
+    return {
+        isOpen:false
+
+    }
+  },
 
 computed:{
-  token () {
-        return this.$root.$data.userId
+ token () {
+        return localStorage.getItem('token')
       }
 },
 

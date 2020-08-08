@@ -34,8 +34,14 @@
       <ul class="list-none mt-4">
         <li>  
 
-            <div class="bg-white px-3 flex justify-between">
+            <div class="bg-white px-3 flex justify-between items-center">
                 <div>
+                  <img src="/img/Ali-Baba.png" class="h-12 w-12 rounded-full">
+                </div>
+                 <div>
+                  <img src="/img/Ali-Baba.png" class="h-12 w-12 rounded-full">
+                </div>
+                 <div>
                   <img src="/img/Ali-Baba.png" class="h-12 w-12 rounded-full">
                 </div>
 

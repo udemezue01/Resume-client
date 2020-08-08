@@ -1,6 +1,6 @@
 <template>
 	
-<div id="footer" class="bg-white p-4 hidden lg:block">
+<div id="footer" class="bg-white p-4 hidden py-4 lg:block">
 
 
  <!--  The Footer Section -->
@@ -8,7 +8,7 @@
 
      
 
-        <div class="flex justify-between items-center px-2">
+        <div class="flex justify-between items-center px-2 py-4">
 
           <div class="lg:block ">
 

@@ -1,9 +1,9 @@
 <template>
 	
-<div id="profile" class="p-2 h-screen lg:px-64">
+<div id="profile" class="p-2 h-full lg:px-64">
 
 <!-- 	The user profile card section -->
-	<div class="bg-white rounded-lg overflow-hidden mx-auto">
+	<div class="bg-white rounded-lg overflow-hidden mx-auto shadow-md">
 		
 		<img src="/img/woman.jpg" class="w-full h-64 object-center object-cover">
 
@@ -28,6 +28,42 @@
 
 				<!-- End of the profile photo section -->
 
+				<!-- The profile navigational bar section -->
+
+	<div class="flex py-3 items-center bg-white space-x-12">
+
+		
+			
+			<a href="" class="font-body text-md font-bold tracking-wider text-gray-800 hover:text-gray-900"> About</a>
+
+
+
+	
+			
+			<a href="" class="font-body text-md font-bold tracking-wider text-gray-800 hover:text-gray-900"> Post</a>
+
+		
+
+	
+			<a href="" class="font-body text-md font-bold tracking-wider text-gray-800 hover:text-gray-900"> Photos</a>
+			
+	
+
+	
+			
+			<a href="" class="font-body text-md font-bold tracking-wider text-gray-800 hover:text-gray-900"> Videos</a>
+		
+			
+			<a href="" class="font-body text-md font-bold tracking-wider text-gray-800 hover:text-gray-900"> Collection</a>
+	
+		
+		
+
+
+	</div>
+
+	<!-- End of the profile navigational bar section -->
+
 				<!-- The last menu Icon section -->
 
 
@@ -46,42 +82,17 @@
 
 	<!-- End of the user profile card section -->
 
-	<!-- The profile navigational bar section -->
+	      <div class="mt-2">
 
-	<div class="flex justify-between py-3 items-center bg-white mt-3 rounded-lg shadow-sm sm:px-4 lg:px-12">
+             <keep-alive>
 
-		<div>
-			
-			<a href="" class="font-body text-sm font-medium tracking-wider"> Post</a>
+             	<component v-bind:is="dynamicComponent"> </component>
 
-		</div>
+             </keep-alive>
 
-		<div>
-			<a href="" class="font-body text-sm font-medium tracking-wider"> About</a>
-			
-		</div>
+         </div>
 
-		<div>
-			
-			<a href="" class="font-body text-sm font-medium tracking-wider"> Photos</a>
-		</div>
-
-		<div>
-			
-			<a href="" class="font-body text-sm font-medium tracking-wider"> Videos</a>
-		</div>
-
-		<div>
-			
-			<a href="" class=" font-body text-sm font-medium tracking-wider"> Collections</a>
-		</div>
-		
-		
-
-
-	</div>
-
-	<!-- End of the profile navigational bar section -->
+	
 
 
 
@@ -95,8 +106,28 @@
 
 <script >
 
+import About from '../../components/Profile/About.vue'
+import Photos from '../../components/Profile/Photos.vue'
+import Videos from '../../components/Profile/Videos.vue'
+import Post from '../../components/Profile/Post.vue'
+import Collections from '../../components/Profile/Collections.vue'
+
 export default{
 
+components:{
+
+	About,
+
+},
+
+data(){
+
+	return {
+
+		dynamicComponent:'About'
+
+	}
+},
 
 
 

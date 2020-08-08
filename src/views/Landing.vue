@@ -1,6 +1,6 @@
   <template>
   
-  <div>
+  <div class="h-full">
 
       
        <div class="flex bg-white justify-center">
