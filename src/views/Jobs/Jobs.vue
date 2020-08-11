@@ -12,6 +12,7 @@
 			
 			<a href="" class="font-body font-semibold text-sm tracking-wider text-gray-700">Jobs</a>
 			<a href="" class="font-body font-semibold text-sm tracking-wider text-gray-700">My Jobs</a>
+			<a href="" class="font-body font-semibold text-sm tracking-wider text-gray-700">Saved Job</a>
 
 
 		</div>
