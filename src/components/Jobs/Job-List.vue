@@ -1,13 +1,25 @@
 <template>
  <div class=" h-screen mt-3">
 
-  <div class="bg-purple-100 py-12 px-56 rounded-lg shadow-sm">
+  <div class="bg-white py-12 rounded-lg shadow-md w-full lg:w-11/12 lg:mx-auto ">
 
 
-      <h1 class="font-body tracking-wider text-center"> Search for Jobs</h1>
+      <h1 class="font-body tracking-wider text-center text-sm font-medium text-gray-800"> Search for your next Job</h1>
       
   
-    
+    <div class="flex space-x-8 items-center mt-6 mx-auto justify-center">
+
+      <div>
+        <input type="" name="" class="appearance-none rounded-none block w-full px-2 py-3 border border-gray-100 placeholder-gray-400 text-center text-gray-800 bg-gray-200 rounded-md shadow-md font-body tracking-wide font-small focus:outline-none focus:shadow-outline-purple focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="search by skill or title">
+      </div>
+      <div>
+        <input type="" name="" class="appearance-none rounded-none block w-full px-2 py-3 border border-gray-100 placeholder-gray-400 text-center text-gray-800 bg-gray-200 rounded-md shadow-md font-body tracking-wide font-small focus:outline-none focus:shadow-outline-purple focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="search">
+      </div>
+      <div>
+        <input type="" name="" class="appearance-none rounded-none block w-full px-2 py-3 border border-gray-100 placeholder-gray-400 text-center text-gray-800 bg-gray-200 rounded-md shadow-md font-body tracking-wide font-small focus:outline-none focus:shadow-outline-purple focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="search">
+      </div>
+      
+    </div>
 
   </div>
 
@@ -28,9 +40,11 @@
 <!-- 
   The Job list and detail section -->
 
-  <div class="mt-3 bg-white flex">
+  <div class="mt-3 bg-white flex lg:w-11/12 lg:mx-auto rounded-md shadow-md">
     
-    <div>
+    <div class="p-3">
+
+      <p class="font-medium font-body text-gray-700 p-3 text-sm prose"> Based on your profile</p>
       <ul class="list-none mt-4">
         <li>  
 

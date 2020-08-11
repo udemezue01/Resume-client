@@ -4,14 +4,14 @@
 
 	<!-- The job navigational bar -->
 
-	<div class="flex justify-between px-6 py-3 bg-white shadow-none items-center">
+	<div class="flex justify-between px-3 py-2 bg-white shadow-sm rounded-md mx-auto mt-3 items-center lg:w-11/12 ">
 
 		<!-- The first flex -->
 
 		<div class="flex space-x-3">
 			
-			<a href="" class="font-body font-bold tracking-wider text-gray-700">Jobs</a>
-			<a href="" class="font-body font-bold tracking-wider text-gray-700">My Jobs</a>
+			<a href="" class="font-body font-semibold text-sm tracking-wider text-gray-700">Jobs</a>
+			<a href="" class="font-body font-semibold text-sm tracking-wider text-gray-700">My Jobs</a>
 
 
 		</div>
