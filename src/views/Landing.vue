@@ -13,7 +13,7 @@
 
             <h1 class="font-body text-6xl text-purple-700 font-black cursor-pointer leading-tight tracking-wider mx-auto"> Resume.ly</h1>
 
-            <h2 class=" mt-12 mx-auto  font-body font-extrabold tracking-wider text-gray-800 text-md cursor-pointer lg:text-5xl lg:mt-6 hover:text-gray-900"> Connecting you with global  opportunities</h2>
+            <h2 class=" mt-12 mx-auto  font-body font-extrabold tracking-wider text-gray-800 cursor-pointer text-5xl lg:mt-6 hover:text-gray-900"> Connecting <br>you with global  opportunities</h2>
 
            <!--  The image to be displayed in the first flex -->
 
