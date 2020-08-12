@@ -18,6 +18,7 @@ import Register from '@/views/Register.vue';
 import Login from '@/views/Login.vue';
 import Profile from '@/views/Profile/Profile.vue';
 import Job from '@/views/Jobs/Jobs.vue';
+import Application from '@/views/Application/Application.vue';
 // import notfound from '@/views/404.vue'
 
 
@@ -70,6 +71,13 @@ const router =  new Router({
        path: '/jobs',
       name: 'Job',
       component: Job,
+      //beforeEnter:requireUnauthenticated,
+      
+    }, 
+         {
+       path: '/application',
+      name: 'Application',
+      component: Application,
       //beforeEnter:requireUnauthenticated,
       
     }, 

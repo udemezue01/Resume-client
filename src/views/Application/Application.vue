@@ -1,6 +1,6 @@
 <template>
 	
-<div id="application">
+<div id="application" class="h-full">
 
 	<!-- The job navigational bar -->
 
@@ -49,6 +49,15 @@
 	<!-- End of the Job navigational bar -->
 
 
+	<div class="">
+
+		<keep-alive>
+				<component v-bind:is="dynamicComponent"> </component>
+
+		</keep-alive>
+		
+
+	</div>
 
 
 
@@ -60,13 +69,22 @@
 
 
 <script>
+import ApplicationList from '../../components/Application/Application-List.vue';
 
 export default{
+
+	component:{
+
+
+	},
 
 
 	data(){
 
+		return{
 
+			dynamicComponent:"ApplicationList"
+		}
 	},
 
 	methods:{
