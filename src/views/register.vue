@@ -2,13 +2,12 @@
   
 <div class="h-full">
   
-  <div class="flex bg-white">
 
   <!--   The first flex -->
 
-    <div class="w-full ">
+    <div class="h-full ">
       
-<div class="flex items-center justify-center bg-gray-50 py-12 mt-1 px-4 sm:px-6 lg:px-8">
+<div class="flex items-center shadow-md justify-center bg-transparent py-12 mt-1 px-4 mx-auto sm:px-6 lg:px-8 ">
   <div class="max-w-md w-full">
     <div>
       <img class="mx-auto h-8 w-auto" src="/img/logo2.svg" alt="Workflow" />
@@ -29,13 +28,13 @@
           <label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="first name">
         First Name*
       </label>
-          <input aria-label="Email address" name="email" type="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow-md focus:outline-none focus:shadow-outline-purple-800 focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
+          <input aria-label="Email address" name="email" type="text" required class="appearance-none rounded-none block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow-md focus:outline-none focus:shadow-outline-purple-800 focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
         </div>
         <div class="mt-6">
           <label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="password">
         Last Name*
       </label>
-          <input aria-label="Password" name="password" type="password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow-md focus:outline-none focus:shadow-outline-purple focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
+          <input aria-label="Password" name="password" type="text" required class="appearance-none rounded-none block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow-md focus:outline-none focus:shadow-outline-purple focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
         </div>
       </div>
 
@@ -43,24 +42,19 @@
           <label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="password">
         Email*
       </label>
-          <input aria-label="Password" name="password" type="password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow-md focus:outline-none focus:shadow-outline-purple focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
+          <input aria-label="Password" name="password" type="email" required class="appearance-none rounded-none  block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow-md focus:outline-none focus:shadow-outline-purple focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
         </div>
 
 
 
       <div class="mt-6">
           <label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="password">
-        Password 1*
+        Password*
       </label>
-          <input aria-label="Password" name="password" type="password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow-md focus:outline-none focus:shadow-outline-purple focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
+          <input aria-label="Password" name="password" type="password" required class="appearance-none rounded-none  block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow-md focus:outline-none focus:shadow-outline-purple focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
         </div>
 
-         <div class="mt-6">
-          <label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="password">
-        Password 2*
-      </label>
-          <input aria-label="Password" name="password" type="password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow-md focus:outline-none focus:shadow-outline-purple focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
-        </div>
+      
  
 
       <div class="mt-6 flex items-center justify-between">
@@ -96,15 +90,7 @@
 <!-- End of the first flex -->
 
 
-    <div class=" hidden lg:block lg:w-full ">
-      
-      <img src="/img/cowork.svg" class=" object-cover object-center h-full w-full">
-
-    </div>
-
-  <!--   End of the second flex -->
-
-  </div>
+    
 
 
   

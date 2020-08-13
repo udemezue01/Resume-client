@@ -3,9 +3,7 @@
 
 <div class="h-full">
 	
-  <div class="flex bg-white">
 
-  <!--   The first flex -->
 
     <div class="w-full ">
       
@@ -70,19 +68,6 @@
 </div>
 
     </div>
-<!-- 
-    The end of the first flex -->
-
-    <div class=" hidden lg:block lg:w-full ">
-      
-      <img src="/img/fingerprint.svg" class=" object-cover object-center h-full w-full">
-
-    </div>
-
-  <!--   End of the second flex -->
-    
-
-  </div>
 	
 </div>
 

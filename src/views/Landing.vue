@@ -1,75 +1,64 @@
   <template>
   
-  <div class="h-full">
-
       
-       <div class="flex bg-white justify-center">
+       <div class="bg-white h-screen">
 
-     <!--    The first flex -->
 
-        <div class="w-full content-center justify-center" id="landing">
+          <div class="p-8 justify-center position-center content-center">
 
-          <div class="mt-10 p-8">
+            <h1 class="font-body text-6xl text-purple-700 font-black cursor-pointer leading-tight tracking-wider text-center mt-24"> Resume.ly</h1>
 
-            <h1 class="font-body text-6xl text-purple-700 font-black cursor-pointer leading-tight tracking-wider mx-auto"> Resume.ly</h1>
+            <h2 class=" mt-24 text-center font-body font-extrabold tracking-wider text-gray-800 cursor-pointer text-5xl lg:mt-6 hover:text-gray-900"> Connecting you with global  opportunities</h2>
 
-            <h2 class=" mt-12 mx-auto  font-body font-extrabold tracking-wider text-gray-800 cursor-pointer text-5xl lg:mt-6 hover:text-gray-900"> Connecting <br>you with global  opportunities</h2>
+           <!--  The button flex -->
 
-           <!--  The image to be displayed in the first flex -->
+              <div class="flex justify-center items-center mt-8">
 
-            <img src="/img/deal.svg" class=" object-cover object-center h-full w-full lg:hidden">
-
-            <!-- End of the image to be displayed in the first flex -->
-
-            <router-link to="/register">
+                <div>
+                   <router-link to="/register">
 
               <button type="button" class="mt-12 font-body justify-center align-center items-center ml-1 px-6 py-2  border border-transparent text-md  font-extrabold text-white bg-purple-700 rounded-lg m-2 tracking-wide lg:mt-6 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
-          			Get Started
-        			</button>
+                Get Started
+              </button>
               
           </router-link>
 
-    <!--   <div class="flex justify-around">
-        
-        <div>
-          <img src="/img/android.svg" class="block h-8 w-20">
+                </div>
 
-        </div>
+                <div>
+                  
+                     <button type="button" class="mt-12 font-body justify-center align-center items-center ml-1 px-6 py-2  border border-transparent text-md  font-extrabold text-gray-900 bg-transparent rounded-lg m-2 tracking-wide lg:mt-6 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
+                Android
+              </button>
+                </div>
 
-        <div>
-           <img src="/img/ios.svg" class="block h-8 w-20">
 
-        </div>
+                <div>
+                  
+                     <button type="button" class="mt-12 font-body justify-center align-center items-center ml-1 px-6 py-2  border border-transparent text-md  font-extrabold text-gray-800 bg-transparent rounded-lg m-2 tracking-wide lg:mt-6 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
+                Ios
+              </button>
+                </div>
 
-      </div> -->
+                
+
+              </div>
+
+             <!--  End of the flex -->
+  
+           
+
             
           </div>
 
        
           
-        </div>
-
-          <!-- End of the first flex -->
-
-
-          <!-- The second flex -->
-
-        <div class=" hidden lg:block lg:w-full">
-          
-          <img src="/img/deal.svg" class=" object-cover object-center h-full w-full">
-
-        </div>
-         
-         <!--    End of the second flex -->
 
        </div>
 
        <!-- End of the flex component -->
 
      
-
-
-  </div>
 
 
 </template>

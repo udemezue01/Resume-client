@@ -69,12 +69,14 @@
 
 
 <script>
+
 import ApplicationList from '../../components/Application/Application-List.vue';
 
 export default{
 
-	component:{
+	components:{
 
+	ApplicationList,
 
 	},
 

@@ -4,14 +4,6 @@ import store from './store/store.js'
 
 
 
-// router.beforeEach((to, from, next) => {
-
-//   const token  = localStorage.getItem('token')
-
-//   // ...
-// })
-
-
 import Home from '@/views/Home.vue'
 import Register from '@/views/Register.vue';
  import Landing from '@/views/Landing.vue';
@@ -19,6 +11,7 @@ import Login from '@/views/Login.vue';
 import Profile from '@/views/Profile/Profile.vue';
 import Job from '@/views/Jobs/Jobs.vue';
 import Application from '@/views/Application/Application.vue';
+import Archive from '@/views/Archive/Archive.vue';
 // import notfound from '@/views/404.vue'
 
 
@@ -41,8 +34,23 @@ const router =  new Router({
      
      
     },
+    {
+      path: '/home',
+      name: 'Home',
+      component: Home,
 
-      {
+
+     
+    },
+
+    {
+      path: '/register',
+      name: 'Register',
+      component: Register,
+    },
+
+
+    {
       path: '/profile',
       name: 'Profile',
       component: Profile,
@@ -59,36 +67,31 @@ const router =  new Router({
      
      
     },
+   
     {
-      path: '/home',
-      name: 'Home',
-      component: Home,
-      //beforeEnter: requireAuthenticated,
-
-     
-    },
-        {
        path: '/jobs',
       name: 'Job',
       component: Job,
-      //beforeEnter:requireUnauthenticated,
+
       
     }, 
-         {
+    {
        path: '/application',
       name: 'Application',
       component: Application,
-      //beforeEnter:requireUnauthenticated,
+  
       
     }, 
 
-          {
-      path: '/register',
-      name: 'Register',
-      component: Register,
-      //beforeEnter:requireUnauthenticated,
-    },
+    {
+       path: '/archive',
+      name: 'Archive',
+      component: Archive,
 
+      
+    }, 
+
+  
 
     //  {
     //   path: '/feeds',
@@ -106,11 +109,6 @@ const router =  new Router({
       
     // },
  
-    //  {
-    //   path: '/feeds',
-    //   name: 'feeds',
-    //   component: feeds
-    // },
    
    
   ]
