@@ -8,8 +8,8 @@
     <div class="w-full ">
       
 <div class="flex items-center justify-center bg-gray-50 py-12 mt-2 px-4 sm:px-6 lg:px-8">
-  <div class="max-w-md w-full">
-    <div>
+  <div class="max-w-md w-full ">
+    <div class="">
       <img class="mx-auto h-8 w-auto" src="/img/logo2.svg" alt="Workflow" />
       <h2 class="mt-6 font-body text-center text-3xl leading-9 font-extrabold text-gray-800">
         Sign in to your account
