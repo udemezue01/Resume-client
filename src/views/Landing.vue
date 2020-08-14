@@ -8,7 +8,7 @@
 
             <h1 class="font-body text-6xl text-purple-700 font-black cursor-pointer leading-tight tracking-wider text-center mt-24"> Resume.ly</h1>
 
-            <h2 class=" mt-24 text-center font-body font-extrabold tracking-wider text-gray-800 cursor-pointer text-5xl lg:mt-6 hover:text-gray-900"> Connecting you with global  opportunities</h2>
+            <h2 class=" mt-24 text-center font-body font-bold tracking-wider text-gray-800 cursor-pointer text-5xl lg:mt-6 hover:text-gray-900"> Connecting you with global  opportunities</h2>
 
            <!--  The button flex -->
 

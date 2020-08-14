@@ -7,7 +7,7 @@
 
                  <!-- The first section -->
 
-            <div class="w-2/12 bg-white h-screen mx-auto items-center shadow-md ">
+            <div class="w-2/12 bg-white h-screen mx-auto items-center">
 
             	<div class="object-center items-center align-center overflow-auto">
             		
