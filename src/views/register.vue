@@ -16,27 +16,39 @@
       </h2>
       <p class="mt-2 text-center font-body text-sm leading-5 text-gray-800 font-extrabold">
         Or
-        <router-link to="/login" class="font-extrabold font-body tracking-wider text-purple-600 hover:text-purple-600 focus:outline-none focus:underline transition ease-in-out duration-150">
-          create new account
+        <router-link to="/login" class="font-bold font-body tracking-wider text-purple-600 hover:text-purple-800 focus:outline-none focus:underline transition ease-in-out duration-150">
+          Sign In To Your Account
         </router-link>
       </p>
     </div>
     <form class="mt-8" action="">
       <input type="hidden" name="remember" value="true" />
       <div class="rounded-md shadow-sm">
-        <div>
+
+        <!-- The first name and the last name flex -->
+
+        <div class="flex items-center justify-between bg-transparent">
+
+          <div>
           <label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="first name">
         First Name*
       </label>
           <input aria-label="Email address" name="email" type="text" required class="appearance-none rounded-none block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow-md focus:outline-none focus:shadow-outline-purple-800 focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
         </div>
-        <div class="mt-6">
+
+        <div class="">
           <label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="password">
         Last Name*
       </label>
           <input aria-label="Password" name="password" type="text" required class="appearance-none rounded-none block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow-md focus:outline-none focus:shadow-outline-purple focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
         </div>
       </div>
+          
+        </div>
+             <!-- End of The first name and the last name flex -->
+
+        
+        
 
       <div class="mt-6">
           <label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="password">
