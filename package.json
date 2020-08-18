@@ -36,7 +36,7 @@
     "less": "^3.12.2",
     "less-loader": "^4.1.0",
     "surge": "^0.21.6",
-    "tailwindcss": "^1.6.2",
+    "tailwindcss": "^1.7.0",
     "vue-template-compiler": "^2.6.11"
   },
   "git": {
