@@ -27,13 +27,13 @@
             	<label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="email">
             Email*
           </label>
-              <input aria-label="Email address" name="email" type="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-800 rounded-md shadow-md font-body font-bold tracking-wider focus:outline-none focus:shadow-outline-purple focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="" v-model="login.email"/>
+              <input aria-label="Email address" name="email" type="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-800 rounded-md shadow-md font-body font-bold tracking-wider focus:outline-none focus:shadow-outline focus:z-10 sm:text-sm sm:leading-5" placeholder="" v-model="login.email"/>
             </div>
             <div class="mt-6">
             	<label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="password">
             Password*
           </label>
-              <input aria-label="Password" name="password" type="password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-800 rounded-md shadow-md font-body tracking-wider font-bold focus:outline-none focus:shadow-outline-purple focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="" v-model="login.password"/>
+              <input aria-label="Password" name="password" type="password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-800 rounded-md shadow-md font-body tracking-wider font-bold focus:outline-none focus:shadow-outline focus:z-10 sm:text-sm sm:leading-5" placeholder="" v-model="login.password"/>
             </div>
           </div>
 
@@ -53,7 +53,7 @@
           </div>
 
           <div class="mt-6">
-            <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-extrabold font-body tracking-wider rounded-lg text-white bg-purple-700 hover:bg-purple-600 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple active:bg-purple-700 transition duration-150 ease-in-out" v-on:click.prevent ="userLogin" >
+            <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-extrabold font-body tracking-wider rounded-lg text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:bg-purple-600 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple active:bg-purple-700 transition duration-150 ease-in-out" v-on:click.prevent ="userLogin" >
               <span class="absolute left-0 inset-y-0 flex items-center pl-3">
                 <svg class="h-5 w-5 text-white group-hover:text-indigo-400 transition ease-in-out duration-150" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
