@@ -6,9 +6,9 @@
 
           <div class="p-8 justify-center object-center">
 
-            <div class="flex justify-center space-x-3 items-center font-body text-6xl text-purple-700 font-black cursor-pointer leading-tight tracking-wider items-center  object-center text-center mt-24 ">
+            <div class="flex justify-center space-x-3 items-center font-body text-6xl text-purple-700 font-black cursor-pointer leading-tight tracking-wider items-center  object-center text-center mt-24 animate-bounce">
               <img src="/img/logo2.svg" class="h-12 w-12"/> 
-              <span> Resume.ly</span>
+              <span class=""> Resume.ly</span>
 
             </div>
 
@@ -34,15 +34,17 @@
 
                 <div>
                   
-                     <button type="button" class="mt-12 font-body justify-center align-center items-center ml-1 px-6 py-2  border border-transparent text-md  font-extrabold text-gray-900 bg-transparent rounded-lg m-2 tracking-wide lg:mt-6 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
+                     <button type="button" class="mt-12 font-body justify-center align-center items-center ml-1 px-6 py-2  border border-white text-md  font-bold text-gray-900 bg-transparent rounded-lg m-2 tracking-wide inline-flex lg:mt-6 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
+
                 Android
               </button>
+
                 </div>
 
 
                 <div>
                   
-                     <button type="button" class="mt-12 font-body justify-center align-center items-center ml-1 px-6 py-2  border border-transparent text-md  font-extrabold text-gray-800 bg-transparent rounded-lg m-2 tracking-wide lg:mt-6 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
+                     <button type="button" class="mt-12 font-body justify-center align-center items-center ml-1 px-6 py-2  border border-transparent text-md font-bold text-gray-800 bg-white rounded-lg m-2 tracking-wide lg:mt-6 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
                 Ios
               </button>
                 </div>

@@ -38,14 +38,14 @@
 
 
      
-      	  <img v-on:click = "isOpen = !isOpen"src="/img/Ali-baba.png" class="h-6 w-6 rounded-full overflow-hidden border-solid border-2 border-gray-300" />
+      	  <img v-on:click = "isOpen = !isOpen" src="/img/Ali-baba.png" class="h-6 w-6 rounded-full overflow-hidden border-solid border-2 border-gray-300" />
 
 
     
       
           <!-- The drop down section -->
 
-      <div v-if = "isOpen" class="bg-white rounded-lg p-4 w-32 absolute right-0 top-auto mt-8 bg-white space-y-2 shadow-md">
+      <div v-if = "isOpen" class="bg-white rounded-lg p-4 w-32 absolute right-0 mt-8 bg-white space-y-2 shadow-md">
       	
       	<a href="" class="block font-body tracking-wider text-sm font-bold text-gray-700 mt-2">Profile</a>
         <div class="border-t border-gray-100"></div>
