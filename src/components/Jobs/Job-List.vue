@@ -46,9 +46,9 @@
 
   <div class="mt-3 bg-white flex items-center lg:w-11/12 lg:mx-auto rounded-md shadow-md">
     
-    <div class="p-3 w-full lg:w-1/2">
+    <div class="p-2 w-full lg:w-1/2">
 
-      <p class="font-medium font-body text-gray-700 p-3 text-sm prose tracking-wider"> Based on your profile</p>
+      <p class="font-medium font-body text-gray-700 p-2 text-sm prose tracking-wider"> Based on your profile</p>
       <ul class="list-none mt-1">
         <li class="bg-white p-3">  
 
@@ -74,19 +74,22 @@
             </div>
 
             <!-- The end of the job list navigational bar -->
-            <ul class="mt-3 px-16">
+            <ul class="mt-2 px-16">
               <li class="font-normal text-xs tracking-wider"> Web developer</li>
             </ul>
 
-            <div class="flex justify-between items-center mt-4">
+            <div class="flex justify-between items-center mt-2">
 
-              <div class="flex items-center">
-                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="bookmark w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg>
+              <div class="flex items-center space-x-2">
+          
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" class="users w-5 h-5 text-gray-800"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path> </svg>
+
+                <span class="text-gray-700 font-body font-bold text-xs tracking-wider"> Applicants</span>
               </div>
 
               <div>
                 
-                <button class="font-body font-bold text-xs tracking-wider text-purple-600 bg-white border-purple-700 border-2 px-4 py-1 rounded-lg"> Apply</button>
+                <button class="font-body font-bold text-xs tracking-wider text-purple-600 bg-white border-purple-700 border-2 px-4 py-1 rounded-lg"> Details</button>
               </div>
               
             </div>
@@ -94,26 +97,24 @@
 
         </li>
 
-        <div class="border-t border-gray-400"></div>
+    <!--     <div class="border-t border-gray-400"></div> -->
 
 
 
       </ul>
 
+
     </div>
 
    <!--  End of the first flex -->
 
-    <div class="hidden lg:block">
+    <div class="hidden lg:block lg:w-1/2">
 
      
         
 
-          <img src="/img/Ali-Baba.png" class="h-24 w-24 rounded-full border-gray-500 border-2 object-center text-center mt-1 ml-24">
+          <img src="/img/Ali-Baba.png" class="h-16 w-16 rounded-full border-gray-500 border-2 mt-1 mx-auto">
     
-
-
-  
     
     
     </div>

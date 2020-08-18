@@ -12,6 +12,7 @@ import Profile from '@/views/Profile/Profile.vue';
 import Job from '@/views/Jobs/Jobs.vue';
 import Application from '@/views/Application/Application.vue';
 import Archive from '@/views/Archive/Archive.vue';
+import Messages from '@/views/Messages/Messages.vue';
 // import notfound from '@/views/404.vue'
 
 
@@ -90,6 +91,14 @@ const router =  new Router({
 
       
     }, 
+    {
+       path: '/messages',
+      name: 'Messages',
+      component: Messages,
+
+      
+    }, 
+
 
   
 

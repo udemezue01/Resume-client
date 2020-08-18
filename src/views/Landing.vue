@@ -6,7 +6,7 @@
 
           <div class="p-8 justify-center object-center">
 
-            <div class="flex justify-center space-x-3 items-center font-body text-6xl text-purple-700 font-black cursor-pointer leading-tight tracking-wider items-center  object-center text-center mt-24 animate-bounce">
+            <div class="flex justify-center space-x-3 items-center font-body text-6xl text-purple-700 font-black cursor-pointer leading-tight tracking-wider items-center  object-center text-center mt-24">
               <img src="/img/logo2.svg" class="h-12 w-12"/> 
               <span class=""> Resume.ly</span>
 
