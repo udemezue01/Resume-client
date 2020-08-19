@@ -56,12 +56,16 @@
 
             <!-- The jobs list navigational bar -->
             <div class="bg-white flex justify-between items-center w-full">
-                <div class="flex items-center space-x-3">
-                  <img src="/img/Ali-Baba.png" class="h-12 w-12 object-center rounded-full border-gray-300 border-2">
+                <div class="flex items-center space-x-4">
+                  <img src="/img/Ali-Baba.png" class="h-8 w-8 object-center rounded-full border-gray-300 border-3">
 
                   <div class="">
-                    <div class="block font-body font-medium text-sm tracking-wider prose text-gray-800"> Google Inc</div>
-                    <div class="block font-body font-light text-xs tracking-wider prose text-gray-600"> @google </div>
+
+                    <ul class="list-none">
+                        <li class="font-normal font-body text-sm tracking-wider"> Google Inc</li>
+                        <li class="font-normal text-xs tracking-wide text-gray-700"> @ Google Inc</li>
+                    </ul>
+
                   </div>
 
 
@@ -74,11 +78,10 @@
             </div>
 
             <!-- The end of the job list navigational bar -->
-            <ul class="mt-2 px-16">
-              <li class="font-normal text-xs tracking-wider"> Web developer</li>
-            </ul>
+            
+            <!-- The job list footer -->
 
-            <div class="flex justify-between items-center mt-2">
+            <div class="flex justify-between items-center mt-1">
 
               <div class="flex items-center space-x-2">
           
@@ -93,6 +96,8 @@
               </div>
               
             </div>
+
+            <!-- End of the job list footer -->
             
 
         </li>
@@ -113,7 +118,21 @@
      
         
 
-          <img src="/img/Ali-Baba.png" class="h-16 w-16 rounded-full border-gray-500 border-2 mt-1 mx-auto">
+          <img src="/img/Ali-Baba.png" class="h-16 w-16 rounded-full border-gray-500 border-2 mt-2 mx-auto">
+
+          <h1 class="text-center text-md font-body tracking-wider text-gray-900 mt-4"> Google</h1>
+          <h1 class="text-center text-xs tracking-wider text-gray-600 mt-2"> @Google</h1>
+
+
+          <ul class="list-none space-y-4 mt-3 p-3">
+
+            <li class="text-xs tracking-wider text-gray-800"> Web developer</li>
+
+            <li class="text-xs tracking-wider text-gray-800"> Web developer</li>
+
+            <li class="text-xs tracking-wider text-gray-800"> Web developer</li>
+            
+          </ul>
     
     
     

@@ -19,8 +19,8 @@
           <div class="hidden lg:block">
             
             <h3 class="block font-extrabold uppercase px-3 text-gray-900 font-body text-xs tracking-wider"> Help</h3>
-            <a href="" class="block font-medium text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600 font-body text-sm" > Introduction</a>
-            <a href="" class=" font-body block font-medium text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600 text-sm ">Help Center</a>
+            <a href="" class="block font-ordinary text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600 font-body text-sm" > Introduction</a>
+            <a href="" class=" font-body block font-ordinary text-gray-800 rounded-lg px-3 py-2 tracking-wider hover:bg-purple-200 hover:text-purple-600 text-sm ">Help Center</a>
           </div>
           <div class=" hidden lg:block">
             
