@@ -15,7 +15,7 @@
           </h2>
           <p class="mt-2 text-center font-body text-sm leading-5 text-gray-800 font-extrabold">
             Or
-            <router-link to="/register" class="font-bold font-body tracking-wider text-purple-600 hover:text-purple-800 focus:outline-none focus:underline transition ease-in-out duration-150">
+            <router-link to="/register" class="font-bold font-body tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 focus:outline-none focus:underline transition ease-in-out duration-150">
               create new account
             </router-link>
           </p>
