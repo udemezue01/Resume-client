@@ -1,6 +1,6 @@
 <template>
 	
-<div id="archive">
+<div id="archive" class="h-full h-screen">
 
 
 	<!-- The job navigational bar -->
@@ -9,9 +9,17 @@
 
 		<!-- The first flex -->
 
-		<div class="flex space-x-3">
+		<div >
+
+			<ul class="flex space-x-3 items-center">
+				
+				<li><a href="" class="font-body font-semibold text-sm tracking-wider text-gray-700">Archives</a> </li>
+
+				<li><a href="" class="font-body font-semibold text-sm tracking-wider text-gray-700">Archives</a> </li>
+
+			</ul>
 			
-			<a href="" class="font-body font-semibold text-sm tracking-wider text-gray-700">Archives</a>
+			
 			
 		</div>
 
@@ -67,7 +75,7 @@
 
 <script>
 
-import ArchiveList from '../../components/Archive/Archive-Lists.vue';
+import ArchiveList from '../../components/Archive/Archive-List.vue';
 
 export default { 
 
@@ -89,7 +97,7 @@ export default {
  methods:{
 
 
- }
+ },
 
 }
 	

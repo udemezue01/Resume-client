@@ -8,11 +8,19 @@
 
 		<!-- The first flex -->
 
-		<div class="flex space-x-3">
-			
-			<a href="" class="font-body font-semibold text-sm tracking-wider text-gray-700">Application</a>
-			<a href="" class="font-body font-semibold text-sm tracking-wider text-gray-700">My Application</a>
+		<div >
 
+			<ul class="flex space-x-3 items-center">
+				
+			<li> <a href="" class="font-body font-semibold text-sm tracking-wider text-gray-700">Application</a></li>
+				<li>
+
+					<a href="" class="font-body font-semibold text-sm tracking-wider text-gray-700">My Application</a>
+
+				 </li>
+
+			</ul>
+			
 
 		</div>
 

@@ -1,47 +1,8 @@
 <template>
- <div class=" h-screen mt-3">
-
-  <div class="bg-gray-100 py-12 rounded-lg shadow-md w-full lg:w-11/12 lg:mx-auto ">
-
-
-      <h1 class="font-body tracking-wider text-center text-lg font-medium text-gray-800 sm:text-sm"> Find your next Job</h1>
-      
-      <!-- The job search and filter section -->
-  
-    <div class="grid items-center mt-6 justify-center sm:grid-cols-1 lg:grid-cols-2 sm:px-1 lg:px-3 gap-4">
-
-      <div>
-        <input type="" name="" class="appearance-none rounded-full block w-full px-8 py-2 border border-gray-400 placeholder-gray-400 text-center text-gray-800 bg-white shadow-sm font-body tracking-wider font-small focus:outline-none focus:shadow-outline focus:z-10 sm:text-sm sm:leading-5" placeholder="search by skill or title">
-
-      </div>
-      <div>
-        <input type="" name="" class="appearance-none rounded-full block w-full px-8 py-2 border border-gray-400 placeholder-gray-400 text-center text-gray-800 bg-white shadow-sm font-body tracking-wider font-small focus:outline-none focus:shadow-outline focus:z-10 sm:text-sm sm:leading-5" placeholder="search">
-      </div>
-     <!--  <div>
-        <input type="" name="" class="appearance-none rounded-none block w-full px-12 py-2 border border-gray-400 placeholder-gray-400 text-center text-gray-800 bg-gray-200 rounded-md shadow-sm font-body tracking-wide font-small focus:outline-none focus:shadow-outline-purple focus:border-purple-700 focus:z-10 sm:text-sm sm:leading-5" placeholder="search">
-      </div> -->
-      
-    </div>
-
-  </div>
-
- <!--  End of the job filter section -->
-
-<!--   The Job filter box -->
-
-  <div class="flex">
-
-    <div></div>
-
-    <div></div>
-
-    <div></div>
-    
-
-  </div>
-
-  <!-- End of the job filter box -->
-<!-- 
+	
+	<div>
+		
+		<!-- 
   The Job list and detail section -->
 
   <div class="mt-3 bg-white flex items-center lg:w-11/12 lg:mx-auto rounded-md shadow-md">
@@ -141,72 +102,22 @@
   </div>
 
  <!--  End of the job List and detail section -->
-
-
- </div>
+	</div>
 
 
 </template>
 
-<script>
-
-//Graphql import 
-
-
-// import {USER_PROFILE} from '../constants/query.js';
-  
-
-import {  ContentLoader } from 'vue-content-loader'; 
-
-
-//components import.
-
- 
+<script >
+	
 export default {
 
-  components:{
 
-   ContentLoader,
+	data(){
 
-  
-
-  },
-
-  data(){
-
-    return {
+		return {
 
 
-
-
-
-    }
-
-  },
-
-  apollo:{
-    // profile:USER_PROFILE
-  },
-  
-
-  computed:{
-    
-
-  },
-
-methods:{
-
-  
-  },
-  
- 
-
-
-
+		}
+	}
 }
 </script>
-
-<style lang="less">
-  
-  
-</style>
