@@ -13,7 +13,7 @@
 
   </div>
 
-      <div class="flex px-2 py-2  items-center space-x-2" v-if ="token">
+      <div class="flex px-2 py-2  items-center space-x-2" v-if ="!token">
 
        <!--  The form section of the navbar -->
 
@@ -44,7 +44,7 @@
       </a>
  </li>
 
- <li>   <img v-on:click = "isOpen = !isOpen" src="/img/Ali-baba.png" class="h-6 w-6 rounded-full overflow-hidden border-solid border-2 border-gray-300" />
+ <li>   <img v-on:click = "isOpen = !isOpen" src="/img/Ali-baba.png" class="h-8 w-8 rounded-full overflow-hidden border-solid border-2 border-gray-300" />
  </li>
    
       

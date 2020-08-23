@@ -11,20 +11,20 @@
 
 			<!-- 	The profile photo section -->
 
-				<div class="flex items-center">
+				<ul class="flex items-center space-x-3">
 					
-					<img src="/img/Ali-baba.png" class="w-24 h-24 rounded-full -mt-20 object-cover object-center border-solid border-4 border-white">
+					<li> <img src="/img/Ali-baba.png" class="w-24 h-24 rounded-full -mt-20 object-cover object-center border-solid border-4 border-white"> </li>
 
-					<div class="flex items-center">
+				
 
-						<h2 class="font-body tracking-wider font-bold text-gray-800"> John Alibaba </h2>
+					<li> <h2 class="font-body tracking-wider font-bold text-gray-800"> John Alibaba </h2> </li>	
 						
 
-						<svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-8 text-gray-700 ml-2"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+					<li> <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-8 text-gray-700 ml-2"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg> </li>	
 
-					</div>
+			
 
-				</div>
+				</ul>
 
 				<!-- End of the profile photo section -->
 
@@ -45,7 +45,7 @@
 			</div>
 			<!-- The profile navigational bar section -->
 
-	<div class="flex py-3 bg-white  mt-12">
+	<div class="py-3 bg-white justify-center mt-12">
 
 		<ul class=" flex items-center justify-between px-4 space-x-32">
 
