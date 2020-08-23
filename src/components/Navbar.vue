@@ -53,9 +53,9 @@
       <div v-if = "isOpen" class="bg-white rounded-lg p-4 w-32 absolute right-0 top-0 mt-6 bg-white shadow-md">
         <ul class="list-none space-y-2">
 
-          <li class="font-body tracking-wider text-xs font-bold text-gray-700 "> Profile</li>
-          <li class="font-body tracking-wider text-xs font-bold text-gray-700 mt-2"> Edit</li>
-          <li class="font-body tracking-wider text-xs font-bold text-gray-700 mt-2"> Logout</li>
+          <li class="font-body tracking-wider text-xs font-normal text-gray-700 "> Profile</li>
+          <li class="font-body tracking-wider text-xs font-normal text-gray-700 mt-2"> Edit</li>
+          <li class="font-body tracking-wider text-xs font-normal text-gray-700 mt-2"> Logout</li>
       
           
         </ul>  
