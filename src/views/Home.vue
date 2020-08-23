@@ -99,7 +99,7 @@
 
              <div id="profile" class="px-2">
 
-  <div class="bg-white rounded-lg shadow-sm w-full lg:w-8/12 lg:mx-auto">
+  <div class="bg-white rounded-lg shadow-sm w-full lg:w-6/12 lg:mx-auto">
 
     <!-- The card header -->
 
