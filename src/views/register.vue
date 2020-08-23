@@ -1,29 +1,29 @@
 <template>
   
-<div class="h-full" id="Landing">
+<div class="-mt-1 sm:h-full lg:h-screen lg:h-full" id="Landing">
   
 
   <!--   The first flex -->
 
     <div class="h-full ">
       
-<div class="flex items-center shadow-md justify-center bg-transparent py-12 mt-1 px-4 mx-auto sm:px-6 lg:px-8 ">
-  <div class="max-w-md w-full">
-    <div>
-      <img class="mx-auto h-8 w-auto" src="/img/logo2.svg" alt="Workflow" />
-      <h2 class="mt-6 font-body tracking-wider text-center text-3xl leading-9 font-extrabold text-gray-800">
-        Register for an account
-      </h2>
-      <p class="mt-2 text-center font-body text-sm leading-5 text-gray-800 font-extrabold">
-        Or
-        <router-link to="/login" class="font-bold font-body tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 focus:outline-none focus:underline transition ease-in-out duration-150">
-          Sign In To Your Account
-        </router-link>
-      </p>
-    </div>
+<div class="flex items-center justify-center bg-transparent py-12 mt-1 px-4 mx-auto sm:px-6 lg:px-8 ">
+    <div class="max-w-md w-full">
+      <div>
+        <img class="mx-auto h-8 w-auto" src="/img/logo2.svg" alt="Workflow" />
+        <h2 class="mt-6 font-body tracking-wider text-center text-3xl leading-9 font-extrabold text-gray-800">
+          Register for an account
+        </h2>
+        <p class="mt-2 text-center font-body text-sm leading-5 text-gray-800 font-extrabold">
+          Or
+          <router-link to="/login" class="font-bold font-body tracking-wider bg-clip-text text-transparent bg-purple-600 focus:outline-none focus:underline transition ease-in-out duration-150">
+            Sign In To Your Account
+          </router-link>
+        </p>
+      </div>
     <form class="mt-8" action="">
       <input type="hidden" name="remember" value="true" />
-      <div class="rounded-md shadow-sm">
+      <div class="rounded-md">
 
         <!-- The first name and the last name flex -->
 
@@ -85,7 +85,7 @@
       </div>
 
       <div class="mt-6">
-        <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-extrabold font-body tracking-wider rounded-lg text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:bg-purple-600 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple active:bg-purple-700 transition duration-150 ease-in-out">
+        <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-extrabold font-body tracking-wider rounded-lg text-white bg-purple-600 hover:bg-purple-600 focus:outline-none focus:border-purple-700 focus:shadow-outline-purple active:bg-purple-700 transition duration-150 ease-in-out">
           <span class="absolute left-0 inset-y-0 flex items-center pl-3">
             <svg class="h-5 w-5 text-white group-hover:text-indigo-400 transition ease-in-out duration-150" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />

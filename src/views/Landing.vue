@@ -3,19 +3,37 @@
       
        <div class="sm:h-full lg:h-screen bg-white " id="Landing">
 
+       <!--  The navigational bar -->
+       <div class="flex justify-between items-center bg-transparent px-4 py-3">
+
+        <div>
+          <img src="/img/logo2.svg" class="h-6 w-6"/>
+        </div>
+
+        <div >
+          <router-link to ="login" class="text-purple-600 font-body font-medium"> Login </router-link>
+
+        </div>
+         
+
+       </div>
+
+
+     <!--   end of the navigational bar -->
+
 
           <div class="p-8 justify-center object-center">
 
             <div class="flex justify-center space-x-3 items-center font-body text-6xl text-purple-700 font-black cursor-pointer leading-tight tracking-wider items-center  object-center text-center mt-24">
     
-              <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600"> Resume.ly</span>
+              <span class="bg-clip-text text-purple-600"> Resume.ly</span>
 
             </div>
 
 
-            <h2 class=" mt-24 text-center font-body font-black tracking-wider text-gray-800 cursor-pointer text-5xl lg:mt-6 hover:text-gray-900"> Career Social Network</h2>
+            <h2 class=" mt-24 text-center font-body font-black tracking-wider text-gray-800 cursor-pointer text-3xl lg:text-5xl lg:mt-6 hover:text-gray-900"> Career Social Network</h2>
 
-            <p class="text-center mt-3 font-body font-medium tracking-wider text-gray-800 cursor-pointer text-md lg:mt-6 hover:text-gray-600"> Connecting you with global  opportunities</p>
+            <p class="text-center mt-3 font-body font-medium tracking-wider text-gray-800 cursor-pointer text-xs lg:text-lg lg:mt-6 hover:text-gray-600"> Connecting you with global  opportunities</p>
 
            <!--  The button flex -->
 
@@ -24,7 +42,7 @@
                 <li>
                    <router-link to="/register">
 
-              <button type="button" class="mt-12 font-body justify-center align-center items-center ml-1 px-6 py-2  border border-transparent text-md  font-extrabold text-white rounded-lg m-2 tracking-wide bg-gradient-to-r from-blue-600 to-purple-600 lg:mt-6 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
+              <button type="button" class="mt-12 font-body justify-center align-center items-center ml-1 px-6 py-2  border border-transparent text-md  font-extrabold text-white rounded-lg m-2 tracking-wide bg-purple-600 lg:mt-6 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
                 Get Started
               </button>
               
