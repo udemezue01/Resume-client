@@ -36,7 +36,7 @@ const router =  new Router({
      
     },
     {
-      path: '/home',
+      path: '/feeds',
       name: 'Home',
       component: Home,
 

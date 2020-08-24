@@ -1,5 +1,6 @@
 <template>
 	
+  
 <div id="footer" class="bg-white p-4 hidden py-4 lg:block">
 
 

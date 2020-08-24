@@ -5,7 +5,7 @@
    <navbar-desktop class = "lg:visible" v-if="token"> </navbar-desktop>
    <navbar-mobile class= "md:hidden"  v-if="token"> </navbar-mobile> -->
 
-   <navbar class = "sticky top-0" v-if ="!token"> </navbar>
+   <navbar class = "sticky top-0" v-if ="token"> </navbar>
     <router-view/>
 
   

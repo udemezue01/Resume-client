@@ -26,7 +26,7 @@
 
             <div class="flex justify-center space-x-3 items-center font-body text-6xl text-purple-700 font-black cursor-pointer leading-tight tracking-wider items-center  object-center text-center mt-24">
     
-              <span class="bg-clip-text text-purple-600"> Resume.ly</span>
+              <span class="text-purple-600"> Resume.ly</span>
 
             </div>
 
@@ -92,8 +92,6 @@
 import {SIGNIN_USER_MUTATION} from '../constants/mutation.js';
 
 
-
-
 export default {
 
 data(){
@@ -133,7 +131,7 @@ methods:{
 
         localStorage.setItem( 'token' , token);
         
-        this.$router.push("/profile")
+        this.$router.push("/feeds")
 
 
     }).catch(err =>{
