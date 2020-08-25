@@ -22,18 +22,18 @@
         </div>
         <form class="mt-8" action="">
           <input type="hidden" name="remember" value="true" />
-          <div class="rounded-md shadow-sm">
+          <div class="rounded-md shadow">
             <div>
             	<label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="email">
             Email*
           </label>
-              <input aria-label="Email address" name="email" type="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-800 rounded-md shadow-md font-body font-bold tracking-wider focus:outline-none focus:shadow-outline focus:z-10 sm:text-sm sm:leading-5" placeholder="" v-model="login.email"/>
+              <input aria-label="Email address" name="email" type="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-800 rounded-md shadow font-body font-bold tracking-wider focus:outline-none focus:shadow-outline focus:z-10 sm:text-sm sm:leading-5" placeholder="" v-model="login.email"/>
             </div>
             <div class="mt-6">
             	<label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="password">
             Password*
           </label>
-              <input aria-label="Password" name="password" type="password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-800 rounded-md shadow-md font-body tracking-wider font-bold focus:outline-none focus:shadow-outline focus:z-10 sm:text-sm sm:leading-5" placeholder="" v-model="login.password"/>
+              <input aria-label="Password" name="password" type="password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-800 rounded-md shadow font-body tracking-wider font-bold focus:outline-none focus:shadow-outline focus:z-10 sm:text-sm sm:leading-5" placeholder="" v-model="login.password"/>
             </div>
           </div>
 

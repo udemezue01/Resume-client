@@ -33,14 +33,14 @@
           <label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="first name">
         First Name*
       </label>
-          <input aria-label="Email address" name="email" type="text" required class="appearance-none rounded-none block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow-md focus:outline-none focus:shadow-outline focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
+          <input aria-label="Email address" name="email" type="text" required class="appearance-none rounded-none block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow focus:outline-none focus:shadow-outline focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
         </div>
 
         <div class="">
           <label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="password">
         Last Name*
       </label>
-          <input aria-label="Password" name="password" type="text" required class="appearance-none rounded-none block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow-md focus:outline-none focus:shadow-outline focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
+          <input aria-label="Password" name="password" type="text" required class="appearance-none rounded-none block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow focus:outline-none focus:shadow-outline focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
         </div>
       </div>
           
@@ -54,7 +54,7 @@
           <label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="password">
         Email*
       </label>
-          <input aria-label="Password" name="password" type="email" required class="appearance-none rounded-none  block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow-md focus:outline-none focus:shadow-outline focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
+          <input aria-label="Password" name="password" type="email" required class="appearance-none rounded-none  block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow focus:outline-none focus:shadow-outline focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
         </div>
 
 
@@ -63,7 +63,7 @@
           <label class="block text-gray-700 text-sm font-bold mb-2 font-body tracking-wider" for="password">
         Password*
       </label>
-          <input aria-label="Password" name="password" type="password" required class="appearance-none rounded-none  block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow-md focus:outline-none focus:shadow-outline focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
+          <input aria-label="Password" name="password" type="password" required class="appearance-none rounded-none  block w-full px-3 py-2 border border-gray-400 placeholder-gray-500 text-gray-900 rounded-md shadow focus:outline-none focus:shadow-outline focus:z-10 sm:text-sm sm:leading-5" placeholder="" />
         </div>
 
       

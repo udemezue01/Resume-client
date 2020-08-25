@@ -5,7 +5,7 @@
 
 	<!-- The navigational bar -->
     
-<nav class="flex justify-between items-center  px-6 py-2 bg-white shadow sticky top-0 lg:px-6">
+<nav class="flex justify-between items-center px-6 py-2 bg-white shadow sticky top-0 lg:px-6">
 
   <div class="">
 
@@ -50,7 +50,7 @@
       
           <!-- The drop down section -->
 
-      <div v-if = "isOpen" class="bg-white rounded-lg p-4 w-32 absolute right-0 top-0 mt-6 bg-white shadow-md">
+      <div v-if = "isOpen" class="bg-white rounded-lg p-4 w-32 absolute right-0 top-0 mt-6 bg-white shadow">
         <ul class="list-none space-y-2">
 
           <li class="font-body tracking-wider text-xs font-normal text-gray-700 "> Profile</li>
