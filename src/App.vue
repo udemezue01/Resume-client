@@ -1,9 +1,8 @@
 <template>
   <div id="app" class="bg-gray-100">
     
-<!-- <vue-progress-bar></vue-progress-bar>
-   <navbar-desktop class = "lg:visible" v-if="token"> </navbar-desktop>
-   <navbar-mobile class= "md:hidden"  v-if="token"> </navbar-mobile> -->
+ <vue-progress-bar></vue-progress-bar>
+
 
    <navbar class = "sticky top-0" v-if ="token"> </navbar>
     <router-view/>
@@ -17,10 +16,6 @@
 <script >
 //navbar 
 import navbar from '@/components/Navbar.vue';
-
-
-
-
  
 export default {
 

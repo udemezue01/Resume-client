@@ -153,7 +153,7 @@ export default {
     	const token  = resp.data.tokenAuth.token
     	localStorage.setItem('token', token)
 
-    	this.$router.push('/home')
+    	this.$router.push('/feeds')
     }).catch(err=>{
 
     	localStorage.removeItem('token')
