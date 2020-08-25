@@ -55,7 +55,7 @@
 
           <li class="font-body tracking-wider text-xs font-normal text-gray-700 "> Profile</li>
           <li class="font-body tracking-wider text-xs font-normal text-gray-700 mt-2"> Edit</li>
-          <li class="font-body tracking-wider text-xs font-normal text-gray-700 mt-2" v-on:click.prevent="logout()"> Logout</li>
+          <li class="inline-flex justify-center font-body tracking-wider text-xs font-normal text-gray-700 mt-2" v-on:click.prevent="logout()"> Logout</li>
       
           
         </ul>  

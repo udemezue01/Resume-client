@@ -4,7 +4,7 @@
 
 <!-- The about me section -->
 
-	<div class="bg-white py-3 rounded-md shadow-md"> 
+	<div class="bg-white py-3 rounded-md shadow"> 
 
 		<div class="flex justify-between items-center px-3">
 

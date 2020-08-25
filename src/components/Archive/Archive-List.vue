@@ -5,7 +5,7 @@
 		<!-- 
   The Job list and detail section -->
 
-  <div class="mt-3 bg-white flex items-center lg:w-11/12 lg:mx-auto rounded-md shadow-md">
+  <div class="mt-3 bg-white flex items-center lg:w-11/12 lg:mx-auto rounded-md shadow">
     
     <div class="p-2 w-full lg:w-1/2">
 

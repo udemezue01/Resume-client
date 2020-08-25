@@ -1,7 +1,7 @@
 <template>
  <div class=" h-screen mt-3">
 
-  <div class="bg-gray-100 py-12 rounded-lg shadow-md w-full lg:w-11/12 lg:mx-auto ">
+  <div class="bg-gray-100 py-12 rounded-lg shadow w-full lg:w-11/12 lg:mx-auto ">
 
 
       <h1 class="font-body tracking-wider text-center text-lg font-medium text-gray-800 sm:text-sm"> Find your next Job</h1>

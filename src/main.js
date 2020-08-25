@@ -10,13 +10,12 @@ import VueProgressBar from 'vue-progressbar'
 
 import VueContentPlaceholders from 'vue-content-placeholders'
 
-Vue.use(VueContentPlaceholders)
-
-
 import '@/assets/css/tailwind.css'
 
 
 Vue.prototype.$http = axios
+
+Vue.use(VueContentPlaceholders)
 
 const options = {
   color: '#21D397',

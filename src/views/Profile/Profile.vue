@@ -3,7 +3,7 @@
 <div id="profile" class="p-2 h-full w-full mx-auto lg:w-8/12">
 
 <!-- 	The user profile card section -->
-	<div class="bg-white rounded-lg overflow-hidden mx-auto shadow-md">
+	<div class="bg-white rounded-lg overflow-hidden mx-auto shadow">
 		
 		<img src="/img/woman.jpg" class="w-full h-64 object-center object-cover">
 
@@ -45,9 +45,9 @@
 			</div>
 			<!-- The profile navigational bar section -->
 
-	<div class="py-3 bg-white justify-center mt-12">
+	<div class="py-3 bg-white inline-flex justify-center mt-12">
 
-		<ul class=" flex items-center justify-between px-4 space-x-32">
+		<ul class=" flex items-center justify-between px-6 space-x-32">
 
 			<li> <a href="" class="font-body text-md font-bold tracking-wider text-gray-700 hover:text-gray-700"> About</a> </li>
 			<li><a href="" class="font-body text-md font-bold tracking-wider text-gray-700 hover:text-gray-700"> Post</a> </li>

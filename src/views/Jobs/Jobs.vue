@@ -4,7 +4,7 @@
 
 	<!-- The job navigational bar -->
 
-	<div class="flex justify-between px-3 py-2 bg-white shadow-md rounded-md mx-auto mt-3 items-center lg:w-11/12 ">
+	<div class="flex justify-between px-3 py-2 bg-white shadow rounded-md mx-auto mt-3 items-center lg:w-11/12 ">
 
 		<!-- The first flex -->
 
