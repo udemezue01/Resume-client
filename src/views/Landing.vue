@@ -1,7 +1,7 @@
   <template>
   
       
-       <div class="sm:h-full lg:h-screen bg-white " id="Landing">
+       <div class="h-screen h-full " id="Landing">
 
        <!--  The navigational bar -->
        <div class="flex justify-between items-center bg-transparent px-4 py-3">
@@ -22,18 +22,18 @@
      <!--   end of the navigational bar -->
 
 
-          <div class="p-8 justify-center object-center">
+          <div class="justify-center object-center">
 
-            <div class="flex justify-center space-x-3 items-center font-body text-6xl text-purple-700 font-black cursor-pointer leading-tight tracking-wider items-center  object-center text-center mt-24">
+            <div class="font-body text-6xl text-purple-700 font-black cursor-pointer leading-tight tracking-wider items-center object-center text-center mt-24">
     
-              <span class="text-purple-600"> Resume.ly</span>
+              <span class="text-purple-600 text-center"> Resume.ly</span>
 
             </div>
 
 
-            <h2 class=" mt-24 text-center font-body font-black tracking-wider text-gray-800 cursor-pointer text-3xl lg:text-5xl lg:mt-6 hover:text-gray-900"> Career Social Network</h2>
+            <h2 class=" mt-4 text-center font-body font-black tracking-wider text-gray-800 cursor-pointer text-3xl lg:text-5xl lg:mt-6 hover:text-gray-900"> Career Social Network</h2>
 
-            <p class="text-center mt-3 font-body font-medium tracking-wider text-gray-800 cursor-pointer text-xs lg:text-lg lg:mt-6 hover:text-gray-600"> Connecting you with global  opportunities</p>
+            <p class="text-center mt-4 font-body font-medium tracking-wider text-gray-700 cursor-pointer text-md lg:text-lg lg:mt-6 hover:text-gray-800"> Connecting you with global  opportunities</p>
 
            <!--  The button flex -->
 
@@ -42,7 +42,7 @@
                 <li>
                    <router-link to="/register">
 
-              <button type="button" class="mt-12 font-body justify-center align-center items-center ml-1 px-6 py-2  border border-transparent text-md  font-extrabold text-white rounded-lg m-2 tracking-wide bg-purple-600 lg:mt-6 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
+              <button type="button" class="font-body justify-center align-center items-center ml-1 px-3 py-2  border border-transparent font-extrabold text-white rounded-lg m-2 tracking-wide bg-purple-600 text-xs lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
                 Get Started
               </button>
               
@@ -51,15 +51,17 @@
                 </li>
 
                 <li>
-                  
-                    <img src="/img/google-play-badge.png" class="h-16 w-32">
+                   <button type="button" class="font-body inline-flex justify-center align-center items-center ml-1 px-3 py-2  border border-transparent text-xs  font-extrabold text-white rounded-lg m-2 tracking-wide bg-purple-600 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
+                Android
+              </button>
+                     
 
                 </li>
 
 
                 <li>
                   
-                     <button type="button" class="mt-12 font-body justify-center align-center items-center ml-1 px-6 py-2  border border-transparent text-md font-bold text-gray-800 bg-white rounded-lg m-2 tracking-wide lg:mt-6 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
+                     <button type="button" class="font-body inline-flex justify-center align-center items-center ml-1 px-3 py-2  border border-transparent text-xs  font-extrabold text-white rounded-lg m-2 tracking-wide bg-purple-600 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
                 Ios
               </button>
                 </li>

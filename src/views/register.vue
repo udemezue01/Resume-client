@@ -1,13 +1,13 @@
 <template>
   
-<div class="-mt-1 sm:h-full lg:h-screen lg:h-full" id="Landing">
+<div class="h-screen h-full" id="Landing">
   
 
   <!--   The first flex -->
 
     <div class="h-full ">
       
-<div class="flex items-center justify-center bg-transparent py-12 mt-1 px-4 mx-auto sm:px-6 lg:px-8 ">
+<div class="flex items-center justify-center bg-transparent py-12 px-4 mx-auto sm:px-6 lg:px-8 ">
     <div class="max-w-md w-full">
       <div>
         <img class="mx-auto h-8 w-auto" src="/img/logo2.svg" alt="Workflow" />

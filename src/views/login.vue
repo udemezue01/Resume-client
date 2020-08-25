@@ -1,12 +1,12 @@
 <template>
 	
 
-<div class="-mt-4 sm:h-full lg:h-screen lg:h-full bg-white" id="Landing">
+<div class="h-screen h-full" id="Landing">
 	
 
 <div class="w-full ">
       
-    <div class="flex items-center justify-center bg-gray-50 py-12 mt-2 px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div class="max-w-md w-full ">
         <div class="">
           <img class="mx-auto h-8 w-auto" src="/img/logo2.svg" alt="Workflow" />
