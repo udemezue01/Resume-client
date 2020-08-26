@@ -4,7 +4,7 @@
        <div class="h-screen h-full " id="Landing">
 
        <!--  The navigational bar -->
-       <div class="flex justify-between items-center bg-transparent px-4 py-3">
+       <div class="flex justify-between items-center bg-transparent px-4 lg:px-6 py-3">
 
         <div>
           <img src="/img/logo2.svg" class="h-6 w-6"/>
@@ -22,9 +22,9 @@
      <!--   end of the navigational bar -->
 
 
-          <div class="justify-center object-center">
+          <div class="justify-center object-center p-8">
 
-            <div class="font-body text-6xl text-purple-700 font-black cursor-pointer leading-tight tracking-wider items-center object-center text-center mt-24">
+            <div class="font-body text-6xl text-purple-700 font-black cursor-pointer items-center object-center text-center mt-24">
     
               <span class="text-purple-600 text-center"> Resume.ly</span>
 
