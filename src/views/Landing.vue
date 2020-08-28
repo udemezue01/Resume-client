@@ -24,7 +24,7 @@
 
           <div class="justify-center object-center p-8">
 
-            <div class="font-body text-6xl text-purple-700 font-black cursor-pointer items-center object-center text-center mt-24">
+            <div class="font-display text-6xl text-purple-700 font-black cursor-pointer items-center object-center text-center mt-24">
     
               <span class="text-purple-600 text-center"> Resume.ly</span>
 

@@ -3,8 +3,8 @@ module.exports = {
     extend: {},
     fontFamily: {
 
-     'display': ['lato', ],
-    'body': ['Work Sans', 'sans-serif'],
+     'display': ['Work Sans', 'sans-serif'],
+    'body': ['Open Sans', 'sans-serif'],
     }
   },
   variants: {},
