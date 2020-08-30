@@ -1,6 +1,6 @@
 <template>
 	
-	<div id="feeds-list">
+	
 		
 		 <div class="bg-white rounded-lg shadow w-full lg:w-6/12 lg:mx-auto">
 
@@ -88,7 +88,7 @@
   <!--  End of the card footer -->
     
 
-  </div>
+
  
           <!--  End of the feeds section -->
 
