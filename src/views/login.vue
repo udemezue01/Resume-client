@@ -1,7 +1,7 @@
 <template>
 	
 
-<div class="h-screen h-full" id="Landing">
+<div class="h-full lg:h-screen" id="Landing">
 	
 
 <div class="w-full ">

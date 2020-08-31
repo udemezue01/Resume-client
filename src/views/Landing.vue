@@ -1,7 +1,7 @@
   <template>
   
       
-       <div class="h-screen h-full " id="Landing">
+       <div class="h-full lg:h-screen " id="Landing">
 
        <!--  The navigational bar -->
        <div class="flex justify-between items-center bg-transparent px-4 lg:px-6 py-3">
@@ -24,9 +24,9 @@
 
           <div class="justify-center object-center p-8">
 
-            <div class="font-display text-6xl text-purple-700 font-black cursor-pointer items-center object-center text-center mt-24">
+            <div class=" text-6xl text-purple-700 font-black cursor-pointer items-center object-center text-center mt-24">
     
-              <span class="text-purple-600 text-center"> Resume.ly</span>
+              <span class="text-purple-600 text-center font-display"> Resume.ly</span>
 
             </div>
 
@@ -37,40 +37,32 @@
 
            <!--  The button flex -->
 
-              <ul class="flex justify-center items-center mt-8">
+          
+          <router-link to="/register" class="flex justify-center items-center mt-8">
 
-                <li>
-                   <router-link to="/register">
-
-              <button type="button" class="font-body justify-center align-center items-center ml-1 px-3 py-2  border border-transparent font-extrabold text-white rounded-lg m-2 tracking-wide bg-purple-600 text-xs lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
+              <button type="button" class="font-body justify-center align-center items-center ml-1 px-4 py-3  border border-transparent font-extrabold text-white rounded-lg m-2 tracking-wide bg-purple-600 text-xs lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
                 Get Started
               </button>
               
           </router-link>
 
-                </li>
-
-                <li>
-                   <button type="button" class="font-body inline-flex justify-center align-center items-center ml-1 px-3 py-2  border border-transparent text-xs  font-extrabold text-white rounded-lg m-2 tracking-wide bg-purple-600 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
-                Android
-              </button>
-                     
-
-                </li>
-
-
-                <li>
-                  
-                     <button type="button" class="font-body inline-flex justify-center align-center items-center ml-1 px-3 py-2  border border-transparent text-xs  font-extrabold text-white rounded-lg m-2 tracking-wide bg-purple-600 lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
-                Ios
-              </button>
-                </li>
-
-                
-
-              </ul>
-
+            
              <!--  End of the flex -->
+
+
+             <div class="flex mt-6 justify-center items-center">
+
+              <div>
+
+                <img src="/img/google-play-badge.png" class="h-16 w-48 object-cover object-center">
+                
+              </div>
+
+                <div>
+                  <img src="/img/google-play-badge.png" class="h-16 w-48 object-cover object-center">
+              </div>
+               
+             </div>
   
            
 
