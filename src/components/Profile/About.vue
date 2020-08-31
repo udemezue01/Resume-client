@@ -17,17 +17,48 @@
 			</div>
 			
 		</div>
-		<div class="mt-3 p-3">
 
-			<ul class="list-none">
-					<li class=" text-sm text-gray-800 tracking-wide font-body font-bold"> Username </li>
-					<li> Country </li>
-					<li> Status</li>
-					<li> Badge</li>
+	<!-- 	The grid section -->
 
-			</ul>
+		<div class="grid mt-3 p-3 grid-cols-2 gap-2">
+
+			<div class="">
+
+				<p class="font-bold text-md text-gray-700"> Bio</p>
+
+				<p class="font-bold text-xs text-gray-900"> I am an international guy that likes to stay at home and enjoy to even flex at home</p>
+				
+			</div>
+
+			<div class="">
+
+				<p class="font-bold text-md text-gray-700"> username</p>
+
+				<p class="font-bold text-xs text-gray-900"> Udemezue</p>
+				
+				
+			</div>
 			
+			<div class="">
+
+				<p class="font-bold text-md text-gray-700"> Website</p>
+
+				<p class="font-bold text-xs text-gray-900"> Tchelete.com</p>
+				
+				
+			</div>
+
+			<div class="">
+
+				<p class="font-bold text-md text-gray-700"> Location</p>
+
+				<p class="font-bold text-xs text-gray-900"> Lagos</p>
+				
+				
+			</div>
 		</div>
+
+		<!-- end of the grid section -->
 
 	</div>
 

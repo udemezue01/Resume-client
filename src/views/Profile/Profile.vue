@@ -11,7 +11,7 @@
 
 			<!-- 	The profile photo section -->
 
-				<ul class="flex items-center space-x-3">
+				<ul class="flex items-center space-x-1">
 					
 					<li> <img src="/img/Ali-baba.png" class="w-24 h-24 rounded-full -mt-20 object-cover object-center border-solid border-4 border-white"> </li>
 
