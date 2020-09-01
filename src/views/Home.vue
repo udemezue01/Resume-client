@@ -1,5 +1,5 @@
 <template>
- <div class=" h-screen">
+ <div class=" h-screen lg:h-screen">
 
          <!--  The Profile UI section -->
 
