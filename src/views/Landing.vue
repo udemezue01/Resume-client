@@ -1,7 +1,7 @@
   <template>
   
       
-       <div class="h-full lg:h-screen " id="Landing">
+       <div class="h-screen max-h-screen" id="Landing">
 
        <!--  The navigational bar -->
        <div class="flex justify-between items-center bg-transparent px-4 lg:px-6 py-3">
@@ -24,9 +24,9 @@
 
           <div class="justify-center object-center p-8">
 
-            <div class=" text-6xl text-purple-700 font-black cursor-pointer items-center object-center text-center mt-24">
+            <div class=" text-6xl text-purple-700 font-black cursor-pointer object-center mt-24">
     
-              <span class="text-purple-600 text-center font-display"> Resume.ly</span>
+              <h1 class="text-purple-600 text-center font-display"> Resume.ly</h1>
 
             </div>
 
