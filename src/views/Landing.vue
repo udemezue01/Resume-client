@@ -55,12 +55,12 @@
 
               <div>
 
-                <img src="/img/google-play-badge.png" class="h-16 w-48 object-cover object-center">
+                <img src="/img/google.png" class="h-20 w-48 object-cover object-center">
                 
               </div>
 
                 <div>
-                  <img src="/img/google-play-badge.png" class="h-16 w-48 object-cover object-center">
+                  <img src="/img/ios.png" class="h-16 w-48 object-cover object-center rounded-lg">
               </div>
                
              </div>
