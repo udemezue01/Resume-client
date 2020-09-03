@@ -8,7 +8,11 @@ import Home from '@/views/Home.vue'
 import Register from '@/views/Register.vue';
  import Landing from '@/views/Landing.vue';
 import Login from '@/views/Login.vue';
+
 import Profile from '@/views/Profile/Profile.vue';
+import profileCreate from '@/views/Profile/Create-Profile.vue';
+
+
 import Job from '@/views/Jobs/Jobs.vue';
 import Application from '@/views/Application/Application.vue';
 import Archive from '@/views/Archive/Archive.vue';
@@ -98,6 +102,15 @@ const router =  new Router({
 
       
     }, 
+
+      {
+       path: '/profile-create',
+      name: 'profileCreate',
+      component: profileCreate,
+
+      
+    }, 
+
 
 
   

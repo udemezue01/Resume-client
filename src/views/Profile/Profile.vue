@@ -1,6 +1,6 @@
 <template>
 	
-<div id="profile" class="p-2 h-full w-full mx-auto lg:w-8/12">
+<div id="profile" class="p-2 h-full w-full mx-auto lg:w-6/12">
 
 <!-- 	The user profile card section -->
 	<div class="bg-white rounded-lg overflow-hidden mx-auto shadow">
@@ -40,33 +40,29 @@
 				</div>
 
 				<!-- End of the last menu Icon -->
-				
-
+	
 			</div>
 			<!-- The profile navigational bar section -->
 
-	<div class="py-3 bg-white inline-flex justify-center mt-12">
+			<div class="py-3 bg-white flex justify-between px-4 mt-12">
 
-		<ul class=" flex items-center justify-between px-6 space-x-32">
 
-			<li> <a href="" class="font-body text-md font-bold tracking-wider text-gray-700 hover:text-gray-700"> About</a> </li>
-			<li><a href="" class="font-body text-md font-bold tracking-wider text-gray-700 hover:text-gray-700"> Post</a> </li>
-			<li> 
-			<a href="" class="font-body text-md font-bold tracking-wider text-gray-700 hover:text-gray-700"> Photos</a></li>
-			<li> <a href="" class="font-body text-md font-bold tracking-wider text-gray-700 hover:text-gray-700"> Videos</a></li>
+				<div  class="font-body text-md font-bold tracking-wider text-gray-700 hover:text-gray-800"> About </div>
 
-			<li>  	<a href="" class="font-body text-md font-bold tracking-wider text-gray-700 hover:text-gray-700"> Collection</a>
-	</li>
+				<div  class="font-body text-md font-bold tracking-wider text-gray-700 hover:text-gray-800"> Post</div>
+			
+				<div  class="font-body text-md font-bold tracking-wider text-gray-700 hover:text-gray-800"> Photos</div>
+
+
+				<div href="" class="font-body text-md font-bold tracking-wider text-gray-800 hover:text-gray-700"> Videos</div>
+
+				<div class="font-body text-md font-bold tracking-wider text-gray-700 hover:text-gray-800"> Collection</div>
 			
 
 
-		</ul>
-
-		
-			
 	
 
-	</div>
+			</div>
 
 	<!-- End of the profile navigational bar section -->
 
