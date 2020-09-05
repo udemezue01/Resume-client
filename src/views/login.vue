@@ -4,7 +4,7 @@
 <div class="h-screen max-h-screen" id="Landing">
 	
 
-<div class="w-full ">
+<div class="w-full h-screen">
       
     <div class="flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div class="max-w-md w-full ">
@@ -65,7 +65,7 @@
         </form>
           <!-- end of the form -->
 
-          <!-- The divide section -->
+           <!-- The divide section -->
 
           <div class="mt-3">
             
@@ -94,7 +94,7 @@
 
           </div>
 
-        <div class="block mt-6">
+        <div class="block mt-1">
 
           
 
@@ -125,7 +125,11 @@
 
 
       </div>
+
+
     </div>
+
+
 
     </div>
 	

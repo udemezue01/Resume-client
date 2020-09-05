@@ -4,9 +4,6 @@
   
 
   <!--   The first flex -->
-
-    <div class="h-full ">
-      
 <div class="flex items-center justify-center bg-transparent py-12 px-4 mx-auto sm:px-6 lg:px-8 ">
     <div class="max-w-md w-full">
       <div>
@@ -21,7 +18,7 @@
           </router-link>
         </p>
       </div>
-    <form class="mt-8" action="">
+    <form class="mt-2" action="">
       <input type="hidden" name="remember" value="true" />
       <div class="rounded-md">
 
@@ -100,8 +97,6 @@
   </div>
 </div>
 
-    </div>
-<!-- End of the first flex -->
 
 
     
