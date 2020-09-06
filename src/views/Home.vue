@@ -1,29 +1,29 @@
 <template>
- <div class=" h-screen max-h-screen">
+ 
 
          <!--  The Profile UI section -->
 
-    <div class="flex ">
+    <div class="flex h-screen max-h-screen">
 
                  <!-- The first section -->
 
             <div class="relative w-2/12 bg-white h-screen mx-auto items-center overflow-auto object-center">
 
-              <div class="mt-6 hidden lg:block bg-gradient-to-r from-blue-600 to-purple-600 h-10 w-full p-8 rounded-full"> 
+            <!--   <div class="mt-6 hidden lg:block bg-gradient-to-r from-blue-600 to-purple-600 h-10 w-full p-8 rounded-full"> 
 
                   <p class="text-white text-center font-display text-sm">Go premiuim</p>
 
               </div>
-
+ -->
            
             		
             		<ul class="list-none space-y-3 items-center mt-4 lg:mt-8 mx-auto p-4 lg:p-3">
 
 
-					<li class="rounded-lg hover:bg-purple-200 hover:text-purple-600"> <div class="inline-flex  rounded-lg px-2 py-2">  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-700 hover:text-purple-600 mx-auto"><path d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path></svg><span class="font-body prose font-bold text-gray-700 ml-3 tracking-wider text-md hidden lg:block cursor-default hover:text-purple-600"> Explore</span></div> </li>
+					<li class="rounded-lg hover:bg-purple-200 hover:text-purple-600"> <div class="inline-flex  rounded-lg px-2 py-2">  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 text-gray-700 hover:text-purple-600 mx-auto"><path d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path></svg><span class="font-body prose font-bold text-gray-700 ml-3 tracking-wider text-xs hidden lg:block cursor-default hover:text-purple-600"> Explore</span></div> </li>
 
 
-					<li class="rounded-lg hover:bg-purple-200 hover:text-purple-600"> <router-link to = "messages"class="inline-flex justify-center rounded-lg items-center px-2 py-2">  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-700 hover:text-purple-600 mx-auto"><path d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>  <span class="font-body font-bold text-gray-700 ml-3 tracking-wider text-md hidden lg:block cursor-default hover:text-purple-600"> Messages</span></router-link> </li>
+					<li class="rounded-lg hover:bg-purple-200 hover:text-purple-600"> <router-link to = "messages"class="inline-flex justify-center rounded-lg items-center px-2 py-2">  <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 text-gray-700 hover:text-purple-600 mx-auto"><path d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>  <span class="font-body font-bold text-gray-700 ml-3 tracking-wider text-xs hidden lg:block cursor-default hover:text-purple-600"> Messages</span></router-link> </li>
 
 
 
@@ -186,7 +186,7 @@
          <!--      End of the Profile section -->
 
 
- </div>
+
 
 
 </template>

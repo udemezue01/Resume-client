@@ -7,7 +7,7 @@
    <navbar class = "sticky top-0" v-if ="token"> </navbar>
     <router-view/>
 
-    <footbar class = "absolute inset-x-0 bottom-0 mt-4 hidden lg:block"> </footbar>
+<!--     <footbar class = "absolute inset-x-0 bottom-0 mt-4 hidden lg:block"> </footbar> -->
 
   
    

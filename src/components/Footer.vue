@@ -6,7 +6,7 @@
 
    <!--  The footer components -->
 
-         <div class=" inset-x-0 bottom-0 bg-transparent flex items-center justify-between py-2 px-4">
+         <div class="absolute inset-x-0 bottom-0 bg-transparent flex items-center justify-between py-2 px-4">
 
         
               <ul class="flex items-center text-gray-700 space-x-3 font-body text-md">
@@ -36,6 +36,8 @@
         
 
 	</div>
+
+ <!--  End of the footer -->
 	
 
 
