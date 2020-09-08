@@ -1,10 +1,10 @@
 <template>
 	
-<div id="jobs" class="h-screen">
+<div id="jobs" class="h-full">
 
 	<!-- The job navigational bar -->
 
-	<div class="flex justify-between px-3 py-2 bg-white shadow rounded-md mx-auto mt-3 items-center lg:w-11/12 ">
+	<div class="flex h-full justify-between px-3 py-2 bg-white shadow rounded-md mx-auto mt-3 items-center lg:w-11/12 ">
 
 		<!-- The first flex -->
 

@@ -12,7 +12,7 @@
 
         <div class="flex items-center space-x-3">
           <router-link to ="register" class="text-white bg-purple-600 px-3 py-2 rounded-lg font-body text-sm"> Get started </router-link>
-          <router-link to ="login" class="text-purple-600 font-body text-sm"> Login </router-link>
+          <router-link to ="login" class="text-purple-600 font-body text-sm rounded-lg px-3 py-2 hover:bg-purple-200 hover:text-purple-600"> Login </router-link>
 
         </div>
          
@@ -34,7 +34,7 @@
 
             <h2 class=" mt-2 text-center font-body font-black tracking-wider text-gray-800 cursor-pointer text-3xl lg:text-5xl lg:mt-6 hover:text-gray-900"> Career Social Network</h2>
 
-            <p class="text-center mt-4 font-body font-medium tracking-wider text-gray-700 cursor-pointer text-md lg:text-lg lg:mt-6 hover:text-gray-800"> Connecting you with global  opportunities</p>
+            <p class="text-center mt-4 font-body font-bold tracking-wider text-gray-700 cursor-pointer text-md lg:text-lg lg:mt-6 hover:text-gray-800"> Connecting you with global  opportunities</p>
 
            <!--  The button flex -->
 
@@ -76,7 +76,7 @@
 
    <!--  The footer components -->
 
-         <div class="absolute inset-x-0 bottom-0 bg-transparent flex items-center justify-between py-2 px-4">
+         <div class="absolute inset-x-0 bottom-0 mt-8 bg-transparent flex items-center justify-between py-2 px-4">
 
         
               <ul class="flex items-center text-gray-700 space-x-3 font-body text-md">

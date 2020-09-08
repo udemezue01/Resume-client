@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-gray-100 relative h-screen max-h-screen h-full">
+  <div id="app" class="bg-gray-200 relative h-full max-h-full">
     
  	<vue-progress-bar></vue-progress-bar>
 
