@@ -1,7 +1,7 @@
   <template>
   
       
-       <div class="relative h-screen max-h-screen" id="Landing">
+       <div class="relative min-h-screen" id="Landing">
 
        <!--  The navigational bar -->
        <div class="flex justify-between items-center bg-transparent px-4 lg:px-6 py-3">

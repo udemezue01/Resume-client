@@ -1,6 +1,6 @@
 <template>
 	
-<div id="profile" class="p-2 h-full w-full mx-auto lg:w-6/12">
+<div id="profile" class="p-2 h-full w-full mx-auto lg:w-8/12">
 
 <!-- 	The user profile card section -->
 	<div class="bg-white rounded-lg overflow-hidden mx-auto shadow">

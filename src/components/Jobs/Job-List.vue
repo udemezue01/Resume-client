@@ -44,7 +44,7 @@
 <!-- 
   The Job list and detail section -->
 
-  <div class="mt-3 bg-white flex items-center lg:w-11/12 lg:mx-auto rounded-md shadow-md">
+  <div class="mt-2 bg-white flex lg:w-11/12 lg:mx-auto rounded-md shadow-md">
     
     <div class="p-2 w-full lg:w-1/2">
 
@@ -55,7 +55,7 @@
           
 
             <!-- The jobs list navigational bar -->
-            <div class="bg-white flex justify-between items-center w-full">
+            <div class="bg-white flex justify-between w-full">
                 <div class="flex items-center space-x-4">
                   <img src="/img/Ali-Baba.png" class="h-8 w-8 object-center rounded-full border-gray-300 border-3">
 
@@ -103,6 +103,8 @@
         </li>
 
     <!--     <div class="border-t border-gray-400"></div> -->
+
+
 
 
 

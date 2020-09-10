@@ -1,7 +1,7 @@
 <template>
 	
 
-<div class="h-screen max-h-screen" id="Landing">
+<div class="min-h-screen" id="Landing">
 	
 
 <div class="w-full h-screen">
