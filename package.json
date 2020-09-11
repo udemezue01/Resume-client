@@ -32,7 +32,7 @@
     "@vue/cli-plugin-babel": "^4.4.6",
     "@vue/cli-plugin-pwa": "^4.4.6",
     "@vue/cli-service": "^4.4.6",
-    "git-scripts": "0.2.1",
+    "git-scripts": "^0.4.3",
     "less": "^3.12.2",
     "less-loader": "^4.1.0",
     "surge": "^0.21.6",
@@ -41,7 +41,7 @@
   },
   "git": {
     "scripts": {
-      "pre-push": "surge --/dist ./ --domain resumely.surge.sh/"
+      "pre-push": "surge --./dist ./ --domain resumely.surge.sh/"
     }
   },
   "browserslist": [
