@@ -51,7 +51,7 @@
              <!--  End of the flex -->
 
 
-             <div class="flex mt-12 justify-center items-center">
+             <div class="flex mt-12 justify-center items-center sm:grid-cols-1">
 
               <div>
 
