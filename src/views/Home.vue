@@ -175,7 +175,23 @@
 
          <!--     The pop up modal for creating a post. -->
 
-                    <div v-if="isOpen" class="bg-white p-4 top-0 bottom-0 left-0 right-0 absolute w-8 rounded-lg shadow">
+                    <div v-if="isOpen" class="bg-white inset-0 absolute w-8 rounded-lg shadow w-5/12 h-64 mx-auto mt-16">
+
+                      <!-- The modal Navbar -->
+
+                      <div class="flex justify-between px-4 shadow py-6">
+
+                        <div>
+                          
+                        </div>
+
+                           <div>
+                          
+                        </div>
+                        
+                      </div>
+
+                       <!-- End of the modal navbar -->
 
                       <div>
 
