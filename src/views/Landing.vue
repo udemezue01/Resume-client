@@ -25,14 +25,14 @@
 
           <div class="justify-center p-8 leading-tight">
 
-            <div class=" text-6xl text-purple-700 font-black cursor-pointer mt-24">
+            <div class="  text-purple-700 cursor-pointer mt-24">
     
-              <h1 class="text-purple-600 text-center font-display"> Resume.ly</h1>
+              <h1 class="text-purple-600 font-black text-center font-display text-4xl lg:text-6xl"> Resume.ly</h1>
 
             </div>
 
 
-            <h2 class=" mt-2 text-center font-body font-black tracking-wider text-gray-800 cursor-pointer text-3xl lg:text-5xl lg:mt-6 hover:text-gray-900"> Career Social Network</h2>
+            <h2 class=" mt-2 text-center font-body font-black tracking-wider text-gray-800 cursor-pointer text-2xl lg:text-5xl lg:mt-6 hover:text-gray-900"> Career Social Network</h2>
 
             <p class="text-center mt-4 font-body font-bold tracking-wider text-gray-700 cursor-pointer text-md lg:text-lg lg:mt-6 hover:text-gray-800"> Connecting you with global  opportunities</p>
 
