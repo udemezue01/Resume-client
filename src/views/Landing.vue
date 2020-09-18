@@ -64,15 +64,17 @@
               </div>
                
              </div>
-  
+
            
 
             
           </div>
 
+          
         
 
             
+
 
    <!--  The footer components -->
 
@@ -114,7 +116,7 @@
 
        </div>
 
-       <!-- End of the flex component -->
+      
 
      
 

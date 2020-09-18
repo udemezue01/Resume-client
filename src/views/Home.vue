@@ -175,6 +175,8 @@
 
          <!--     The pop up modal for creating a post. -->
 
+              <transition>
+
                     <div v-if="isOpen" class="bg-white inset-0 absolute w-8 rounded-lg shadow w-5/12 h-64 mx-auto mt-16">
 
                       <!-- The modal Navbar -->
@@ -209,6 +211,8 @@
                       
 
                     </div>
+
+                  </transition>
 
                       <!--   End of the pop of modal for creating a post -->
 
