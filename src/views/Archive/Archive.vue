@@ -75,13 +75,13 @@
 
 <script>
 
-import ArchiveList from '../../components/Archive/Archive-List.vue';
+import ArchList from '../../components/Archive/Arch-List.vue';
 
 export default { 
 
  components:{
  	
- 	ArchiveList,
+ 	ArchList,
 
  },
 
@@ -89,7 +89,7 @@ export default {
 
  	return {
 
- 		dynamicComponent:" ArchiveList",
+ 		dynamicComponent:" ArchList",
 
  	}
  },
