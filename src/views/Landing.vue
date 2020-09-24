@@ -11,8 +11,8 @@
         </div>
 
         <div class="flex items-center space-x-3">
-          <router-link to ="register" class="text-white bg-purple-600 px-3 py-2 rounded-lg font-body text-sm"> Get started </router-link>
-          <router-link to ="login" class="text-purple-600 font-body text-sm rounded-lg px-3 py-2 hover:bg-purple-200 hover:text-purple-600"> Login </router-link>
+          <router-link to ="register" class="text-white bg-purple-600 px-3 py-2 rounded-lg font-body text-sm font-extrabold"> Get started </router-link>
+          <router-link to ="login" class="font-extrabold text-purple-600 font-body text-sm rounded-lg px-3 py-2 hover:bg-purple-200 hover:text-purple-600"> Login </router-link>
 
         </div>
          
