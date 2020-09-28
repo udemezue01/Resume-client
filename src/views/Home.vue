@@ -8,7 +8,7 @@
 
                  <!-- The first section -->
 
-            <div class="relative w-2/12 bg-white h-screen overflow-auto ">
+            <div class="relative w-2/12 bg-white h-screen overflow-auto hidden lg:block ">
 
       
            
@@ -114,7 +114,7 @@
 
             
 
-                 <div class="mt-2">
+                 <div class="mt-1 p-4">
                    <Feeds> </Feeds>
 
                  </div>

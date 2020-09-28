@@ -5,6 +5,8 @@
 
 
    <navbar class = "sticky top-0" v-if ="token"> </navbar>
+
+   <navmobile >  </navmobile>
     <router-view/>
 
 <!--     <footbar class = "absolute inset-x-0 bottom-0 mt-4 hidden lg:block"> </footbar> -->
@@ -17,7 +19,8 @@
 
 <script >
 //navbar 
-import navbar from '@/components/Navbar.vue';
+import navbar from '@/components/Navbar/Navbar.vue';
+import navmobile from '@/components/Navbar/Navbar-mobile.vue';
 import footbar from '@/components/Footer.vue';
  
 export default {
@@ -25,6 +28,7 @@ export default {
 components:{
   		
   	navbar,
+    navmobile,
   	footbar,
 
 },

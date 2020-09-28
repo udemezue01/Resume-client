@@ -13,8 +13,20 @@
 
       </div>
 
-        <div>
+        <div class="relative">
         <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 text-gray-800 hover:text-purple-600 "><path d="M19 9l-7 7-7-7"></path></svg>
+
+       <!--  The dropdown section -->
+
+       <div v-if=isOpen class="p-2 bg-white space-y-2 top-0 right-0 absolute">
+
+        <div class="block"> Delete</div>
+         
+
+       </div>
+
+
+       <!-- End of the drop down section -->
         
         </div>
       
@@ -33,7 +45,7 @@
 
     <!-- The card footer  -->
 
-    <div class="flex mt-2 py-4 px-2 justify-between items-center">
+    <div class="flex mt-2 py-4 px-2 justify-between items-center ">
 
       <!-- The first div -->
       
@@ -106,6 +118,8 @@ export default{
 	data(){
 
 		return {
+
+      isOpen:false
 
 
 		}
