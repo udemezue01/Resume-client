@@ -6,7 +6,9 @@
 
    <navbar class = "sticky top-0" v-if ="token"> </navbar>
 
-   <navmobile >  </navmobile>
+   <navmobile class="lg:hidden " v-if ="!token">  </navmobile>
+
+
     <router-view/>
 
 <!--     <footbar class = "absolute inset-x-0 bottom-0 mt-4 hidden lg:block"> </footbar> -->
