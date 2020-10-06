@@ -1,6 +1,6 @@
 <template>
 	
-<div id="jobs" class="min-h-screen">
+<div id="jobs" class="min-h-screen p-2">
 
 	<!-- The job navigational bar -->
 
