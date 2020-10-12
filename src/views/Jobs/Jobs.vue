@@ -38,6 +38,26 @@
 				<a href="" class="inline-flex space-x-1 items-center">
 				<svg viewBox="0 0 20 20" stroke="currentColor" fill="none" class="bookmark-alt w-4 h-4 text-gray-800 font-medium"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm11 1H6v8l4-2 4 2V6z" clip-rule="evenodd"></path></svg>
 
+			<span class="font-body font-bold text-sm tracking-wider text-gray-700 sm:text-xs"> application </span>
+
+				</a>
+
+			</li>
+
+			<li class=" rounded-lg hover:bg-purple-200 px-3 py-2">
+				<a href="" class="inline-flex space-x-1 items-center">
+				<svg viewBox="0 0 20 20" stroke="currentColor" fill="none" class="bookmark-alt w-4 h-4 text-gray-800 font-medium"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm11 1H6v8l4-2 4 2V6z" clip-rule="evenodd"></path></svg>
+
+			<span class="font-body font-bold text-sm tracking-wider text-gray-700 sm:text-xs"> Archive </span>
+
+				</a>
+
+			</li>
+
+			<li class=" rounded-lg hover:bg-purple-200 px-3 py-2">
+				<a href="" class="inline-flex space-x-1 items-center">
+				<svg viewBox="0 0 20 20" stroke="currentColor" fill="none" class="bookmark-alt w-4 h-4 text-gray-800 font-medium"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm11 1H6v8l4-2 4 2V6z" clip-rule="evenodd"></path></svg>
+
 			<span class="font-body font-bold text-sm tracking-wider text-gray-700 sm:text-xs"> Saved Jobs </span>
 
 				</a>
