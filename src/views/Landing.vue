@@ -38,8 +38,8 @@
 
            <!--  The button flex -->
 
-         <!--  
-          <router-link to="/register" class="flex justify-center items-center mt-8">
+          
+          <!-- <router-link to="/register" class="flex justify-center items-center mt-12">
 
               <button type="button" class="font-body justify-center align-center items-center ml-1 px-4 py-3  border border-transparent font-extrabold text-white rounded-lg m-2 tracking-wide bg-purple-600 text-xs lg:block hover:bg-purple-600 focus:outline-none focus:shadow-outline-purple focus:border-purple-600 active:bg-purple-600 transition duration-150 ease-in-out">
                 Get Started
@@ -53,7 +53,7 @@
 
 
 
-             <div class="flex mt-12 justify-center items-center sm:grid-cols-1">
+             <div class="flex mt-12 justify-center items-center">
 
               <div>
 
